@@ -8,7 +8,7 @@ Installing `brainrender` is as simple as:
 pip install brainrender
 ``` 
 (Make sure to have your anaconda environment active when running `pip install)
-<!-- {% hint style="info" %} Make sure to have your anaconda environment active when running `pip install brainrender` {% endhint %} -->
+
 
 ## Advanced installation
 If you want the most recent version of `brainrender`'s code, perhaps to help developing it, you can either clone/fork the [github repository](https://github.com/BrancoLab/BrainRender) or you can get it directly from github with:
