@@ -21,6 +21,10 @@
                 
             
                 
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -61,7 +65,7 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="01-overview/overview.html" />
+    <link rel="next" href="01-overview/gallery.html" />
     
     
 
@@ -89,6 +93,8 @@
 
     
         
+        <li class="header">Overview</li>
+        
         
     
         <li class="chapter active" data-level="1.1" data-path="./">
@@ -104,19 +110,124 @@
             
         </li>
     
+        <li class="chapter " data-level="1.2" data-path="01-overview/gallery.html">
+            
+                <a href="01-overview/gallery.html">
+            
+                    
+                    gallery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01-overview/examples.html">
+            
+                <a href="01-overview/examples.html">
+            
+                    
+                    code examples
+            
+                </a>
+            
+
+            
+        </li>
+    
 
     
         
-        <li class="header">Overview</li>
+        <li class="header">Installation</li>
         
         
     
-        <li class="chapter " data-level="2.1" data-path="01-overview/overview.html">
+        <li class="chapter " data-level="2.1" data-path="02-installation/install.html">
             
-                <a href="01-overview/overview.html">
+                <a href="02-installation/install.html">
+            
+                    
+                    installing brainrender
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Usage</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="03-usage/overview.html">
+            
+                <a href="03-usage/overview.html">
             
                     
                     overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03-usage/atlas.html">
+            
+                <a href="03-usage/atlas.html">
+            
+                    
+                    the Atlas class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03-usage/scene.html">
+            
+                <a href="03-usage/scene.html">
+            
+                    
+                    the Scene class
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="03-usage/public.html">
+            
+                <a href="03-usage/public.html">
+            
+                    
+                    publicly available datasets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="03-usage/user.html">
+            
+                <a href="03-usage/user.html">
+            
+                    
+                    user-generated data
             
                 </a>
             
@@ -170,17 +281,34 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="brainrender-docs">brainrender-docs</h1>
-<p>![data/overview/humanbrainexp.png]</p>
-<p align="center">
-  <img width="600" src="https://github.com/BrancoLab/BrainREnder/raw/master/Docs/Media/humanbrainexp.png">
+<p>
+  <img style="width:100%; maring:0px; padding:0px; background-color:rgb(240, 240, 240); border-radius:12px" src="data/overview/aba.png">
 </p>
 
-<p align="center">
-  <img width="600" src="data/overview/humanbrainexp.png">
+<hr>
+<p>&#xA0;  </p>
+<h2 id="Welcome_to_the_brainrender_docs">1. Welcome to the brainrender docs</h2>
+<p style="background-color:rgb(240, 240, 240); padding:8px; border-radius:8px;">
+
+brainrender is a python package for the visualization of three dimensional neuroanatomical data. 
+It can be used to render data from publicly available dataset (e.g. Allen Brain atlas) as well as user generated experimental data. 
+The goal of brainrender is to faciliate the exploration and dissemination of neuroanatomical data by providing a user-friendly platform to create high-quality 3D renderings. 
+
 </p>
 
-<p>teststst</p>
-
+<p>&#xA0;  </p>
+<p>When developing <code>brainrender</code> we aimed to create a flexible and easy-to-use tool for the neuroscience community to use for all their rendering needs. </p>
+<p>For this reason:</p>
+<ul>
+<li>we&apos;ve build upon (brainglobe)[linkmissing]&apos;s atlas API, ensuring that you can use <code>brainrender</code> to visualise data from a wide range of species. </li>
+<li>we&apos;ve created a simple and intuitive interface to download and render data from publicly available datasets like the Allen Mouse Connectome and Janelia&apos;s Mouse Light projects.</li>
+<li>we&apos;ve built a ton of functionality into <code>brainrender</code> to ensure that we can cover all of your visualisation needs. If we missed something, and you&apos;d like to see a new feature added, get in touch on <a href="https://github.com/BrancoLab/BrainRender" target="_blank">github</a>!</li>
+<li>we&apos;re using <code>vedo</code>, a powerful <code>vtk</code>-based rendering package in python. <code>vedo</code>&apos;s flexibility ensures that you can render in brainrender any 3d object you can put into a <code>.obj</code> or <code>.stl</code> file. It&apos;s therefore easier than ever to add your custom experimental implant to the renderings. </li>
+</ul>
+<!-- `brainrender` can be used to create:
+ * [beautiful]() renderings of neuroanatomical data
+ * <a href='01-overview/regions.html' target='_blank'> interactive </a> 3d renderings to quickly share your data with collaborators and colleagues.
+ * videos and animations to showcase the intricate details of the neuroanatomy of you --><div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#brainrender-docs">brainrender-docs</a></p><li><a href="#Welcome_to_the_brainrender_docs">1. Welcome to the brainrender docs</a></li></ul></div><a href="#Welcome_to_the_brainrender_docs" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -208,7 +336,7 @@
             
                 
                 
-                <a href="01-overview/overview.html" class="navigation navigation-next navigation-unique" aria-label="Next page: overview">
+                <a href="01-overview/gallery.html" class="navigation navigation-next navigation-unique" aria-label="Next page: gallery">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -219,7 +347,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"overview","level":"2.1","depth":1,"path":"01-overview/overview.md","ref":"01-overview/overview.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["navigator"],"pluginsConfig":{"navigator":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-07-01T20:44:35.081Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-01T20:47:04.388Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"gallery","level":"1.2","depth":1,"path":"01-overview/gallery.md","ref":"01-overview/gallery.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["navigator","hints"],"pluginsConfig":{"navigator":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-07-01T21:21:09.194Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-01T21:39:13.869Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
