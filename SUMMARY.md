@@ -8,7 +8,7 @@
 * [code examples](01-overview/examples.md)
 
 ## Installation
-* [installing brainrender](02-installation/install.md)
+* [installing brainrender](02-installation/installation.md)
 
 ## Usage
 * [overview](03-usage/overview.md)
