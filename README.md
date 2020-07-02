@@ -10,6 +10,28 @@ description: A brief overview of `brainrender` functionality
 
 **`brainrender` is a python package for the visualization of three dimensional neuro-anatomical data. It can be used to render data from publicly available data set \(e.g. Allen Brain atlas\) as well as user generated experimental data. The goal of `brainrender` is to facilitate the exploration and dissemination of neuro-anatomical data by providing a user-friendly platform to create high-quality 3D renderings.**
 
+### For the impatient
+
+If you've read enough and want to dive right in, good news: you can get started creating `brainrender` scenes with two commands!
+
+With a `python < 3.8` environemnt active [install](installation/installation.md) `brainrender` with:
+
+```text
+pip install brainrender
+```
+
+Then create your first [scene](usage/scene.md) with:
+
+```text
+brainrender TH
+```
+
+Read on to learn more about `brainrender` and [how to use it,](usage/overview/) including how to create `Scenes` directly from your terminal. 
+
+### 
+
+### A few more details
+
 While developing `brainrender` we aimed to create a flexible and easy-to-use tool for the neuroscience community to use for all their rendering needs.
 
 For this reason:
@@ -21,13 +43,13 @@ For this reason:
 
 
 
-Read on on to learn how to [install](installation/installation.md) and [use](usage/overview.md) `brainrender`.
+Read on on to learn how to [install](installation/installation.md) and [use](usage/overview/) `brainrender`.
 
 ![](.gitbook/assets/humanbrainexp.png)
 
 ### Getting in touch
 
-For any question, issue or bug report you can get in touch on [the github repo](https://github.com/BrancoLab/BrainRender) or on [twitter](https://twitter.com/Federico_claudi).
+For any question, issue or bug report you can [get in touch](info/get-in-touch.md) on [the github repo](https://github.com/BrancoLab/BrainRender) or on [twitter](https://twitter.com/Federico_claudi).
 
 
 

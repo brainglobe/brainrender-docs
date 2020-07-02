@@ -49,13 +49,27 @@ Head over to the [examples](../overview/examples.md) to see how to implement thi
 
 ### Mouse connectome
 
+As part of the Mouse Connectome project the Allen Institute performed over 1000 injections of anterogradely transported viruses expressing fluorescent proteins. They then measured fluorescence level throughout the entire brain and registered the data to the Allen atlas. `brainrender` let's you download and visualise the results of these experiments by rendering tracts showing projections to and from brain regions. This can be done in two ways: `tractography` lets you visualize projections **to** a brain region \(afferent projections\) and `streamlines` lets you visualize projections **from** a brain region \(efferent projections\). 
+
+Head hover [here](atlas.md#mouse-specific) to learn more about how to download and render this data, or check the [examples](../overview/examples.md). 
+
 #### Tractography
+
+![](../.gitbook/assets/tractography.png)
 
 #### Streamlines
 
-
+![](../.gitbook/assets/streamlines.png)
 
 ## MouseLight project
+
+As part of the [MouseLight project](https://www.janelia.org/project-team/mouselight) Janelia Campus reconstructed the 3d morphology of over 1000 neurons in the muring brain and registered the data to the Allen Brain. `brainrender` lets you [download](atlas.md#get_neurons) and visualize these neuronal morphologies alongside all other source of anatomical data for the mouse brain.
+
+![](../.gitbook/assets/neurons.png)
+
+Head over to the [examples](../overview/examples.md) to see how to implement this in your `Scene`.
+
+
 
 
 

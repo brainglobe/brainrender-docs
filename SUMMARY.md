@@ -6,7 +6,6 @@
 
 * [Gallery](overview/gallery.md)
 * [Code examples](overview/examples.md)
-* [TODO](overview/todo.md)
 
 ## Installation
 
@@ -14,7 +13,8 @@
 
 ## Usage
 
-* [Overview](usage/overview.md)
+* [Overview](usage/overview/README.md)
+  * [Command Line Interface](usage/overview/command-line-interface.md)
 * [Atlas class](usage/atlas.md)
 * [Scene class](usage/scene.md)
 * [User-generated data](usage/user.md)
@@ -22,5 +22,6 @@
 
 ## Info
 
-* [Get in touch](info/get-in-touch.md)
+* [Getting in touch](info/get-in-touch.md)
+* [Referencing brainrender](info/referencing-brainrender.md)
 
