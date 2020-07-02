@@ -1,21 +1,25 @@
-# Summary
+# Table of contents
+
+* [Introduction](README.md)
 
 ## Overview
 
-* [Introduction](README.md)
-  
-* [gallery](01-overview/gallery.md)
-* [code examples](01-overview/examples.md)
+* [Introduction](overview/readme.md)
+* [gallery](overview/gallery.md)
+* [code examples](overview/examples.md)
 
 ## Installation
-* [installing brainrender](02-installation/installation.md)
+
+* [installing brainrender](installation/installation.md)
 
 ## Usage
-* [overview](03-usage/overview.md)
-* [the Atlas class](03-usage/atlas.md)
-* [the Scene class](03-usage/scene.md)
 
+* [overview](usage/overview.md)
+* [the Atlas class](usage/atlas.md)
+* [the Scene class](usage/scene.md)
 
-* [publicly available datasets](03-usage/public.md)
-* [user-generated data](03-usage/user.md)
+---
+
+* [publicly available datasets](public.md)
+* [user-generated data](user.md)
 
