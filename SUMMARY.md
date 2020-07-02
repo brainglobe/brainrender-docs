@@ -20,3 +20,7 @@
 * [User-generated data](usage/user.md)
 * [Publicly available datasets](usage/public.md)
 
+## Info
+
+* [Get in touch](info/get-in-touch.md)
+
