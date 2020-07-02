@@ -4,7 +4,6 @@
 
 ## Overview
 
-* [Introduction](overview/overview.md)
 * [Gallery](overview/gallery.md)
 * [Code examples](overview/examples.md)
 
