@@ -1,4 +1,8 @@
-# installing brainrender
+---
+description: Instructions for installing brainrender
+---
+
+# Installing brainrender
 
 ## Environment
 

@@ -1,3 +1,7 @@
+---
+description: A brief overview of brainrender functionality
+---
+
 # Introduction
 
 ![](.gitbook/assets/aba%20%281%29.png)
