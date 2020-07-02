@@ -4,5 +4,59 @@ description: An overview of brainrender's atlas class
 
 # Atlas class
 
-the atlas class and methods
+The `Atlas` class takes care of selecting and loading the data necessary for most of the actors you will be adding to your scene.
+
+
+
+### Selecting the atlas
+
+`brainrender`'s  `Atlas` functionality relies heavily on brainglobe's [atlas API](https://github.com/brainglobe/bg-atlasapi) to make sure that you can use `brainrender` features seamlessly for atlases of several different species. All you need to do is specify which atlas of those available on brainglobe \[DOCS LINK MISSING\] you want to be using, and `brainrender` will get it for your. 
+
+
+
+### Main atlas methods
+
+#### get\_brain\_regions
+
+This methods is what loads the meshes \(from `.obj`\) for any brain region you might want to add to your `Scene`. It's also where the way the brain regions should look like is specified. 
+
+#### get\_region\_CenterOfMass
+
+It does exactly what it says. Given a brain region's mesh it get's the center of mass. It has options to only use the half of the mesh corresponding to one of the hemispheres. 
+
+#### get\_plane\_at\_point
+
+This, and other similar methods, generate `Plane` actors at a specific point and a given orientation. These `Planes` can be used for many things, including slicing other actors in your scene to create more advanced visualizations.
+
+
+
+### Mouse Specific
+
+`Atlas` is also what takes care of downloading and rendering data from [publicly available datasets](public.md). These currently only include datasets based on the Allen Brain Atlas and the corresponding methods are therefore implemented in a class called `ABA`. 
+
+#### get\_neurons
+
+Fetches and renders neurons from Janelia Campus' Mouse Light project's database. It has options to select only neurons whose soma is in a specific brain region and to specify the look of the rendered neurons. 
+
+#### download\_streamlines\_for\_region and download\_streamlines\_to\_region
+
+Downloads and caches `streamlines` data. The first method loads data from experiments whose injection target a brain region \(efferent or downstream projections\). The second loads data from experiments which resulted in fluorescence being detected \(afferent or upstream projections\)
+
+#### get\_streamlines
+
+Renders `streamlines` from data downloaded with the above methods.
+
+#### get\_projection\_tracts\_to\_target
+
+Downloads `tractography` data with projections to a specific location in the mouse brain. 
+
+#### get\_tractography
+
+Renders `tractography` data downloaded with `get_projection_tracts_to_target`.
+
+
+
+
+
+
 

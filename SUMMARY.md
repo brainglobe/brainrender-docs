@@ -17,6 +17,6 @@
 * [Overview](usage/overview.md)
 * [Atlas class](usage/atlas.md)
 * [Scene class](usage/scene.md)
-* [Publicly available datasets](usage/public/README.md)
-  * [User-generated data](usage/public/user.md)
+* [User-generated data](usage/user.md)
+* [Publicly available datasets](usage/public.md)
 
