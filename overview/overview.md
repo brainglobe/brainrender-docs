@@ -1,6 +1,6 @@
 # Introduction
 
-![](.gitbook/assets/aba%20%281%29.png)
+![](../.gitbook/assets/aba.png)
 
 ## Welcome to the `brainrender` docs
 
