@@ -6,6 +6,7 @@
 
 * [Gallery](overview/gallery.md)
 * [Code examples](overview/examples.md)
+* [TODO](overview/todo.md)
 
 ## Installation
 
@@ -16,9 +17,6 @@
 * [Overview](usage/overview.md)
 * [Atlas class](usage/atlas.md)
 * [Scene class](usage/scene.md)
-
----
-
-* [Publicly available datasets](public.md)
-* [User-generated data](user.md)
+* [Publicly available datasets](usage/public/README.md)
+  * [User-generated data](usage/public/user.md)
 
