@@ -21,11 +21,13 @@ When adding new elements \(`actors`\) to your `Scene` you will encounter two sit
 1. You have the data \(e.g. location of labelled cells from [cellfinder](https://docs.cellfinder.info/)\) and you just want to visualise them.
 2. You don't have the data but you want to visualise a specific item \(e.g. a brain region in the mouse brain\).
 
+
+
 ### You have the data
 
 That's great, you've done most of the work. You've done your experiment and run the analysis, now you just want to make a good rendering of your data. Fortunately that's the easy \(and fun\) part! 
 
-For almost anything you might want to visualise  there's a dedicated method in the `Scene` class, so head over [here](scene.md) to learn more about how `Scene` works. 
+For almost anything you might want to visualize  there's a dedicated method in the `Scene` class, so head over [here](scene.md) to learn more about how `Scene` works. Head over [here](user.md) for more details about how to render your data. 
 
 
 
@@ -35,5 +37,5 @@ No worries, there's plenty of available data out there that you can use. Often t
 
 That's why `brainrender` does all the 'behind the scenes' work for you! If you want data from one of the Allen institute projects, from neuromorpho or from Janelia's Mouse Light project, all you have to do is specify what you need. Brainrender will fetching, download it and render it for you!
 
-While you'll be using `Scene` to do all of this, `Atlas` is where most of this work takes place. So head over [here](scene.md) to learn more about `Scene` and over [here](atlas.md) to learn more about `Atlas`. 
+While you'll be using `Scene` to do all of this, `Atlas` is where most of this work takes place. So head over [here](scene.md) to learn more about `Scene` and over [here](atlas.md) to learn more about `Atlas`. Have a look [here](public.md) for more details about using publicly available data.
 
