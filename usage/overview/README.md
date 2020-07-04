@@ -39,3 +39,9 @@ That's why `brainrender` does all the 'behind the scenes' work for you! If you w
 
 While you'll be using `Scene` to do all of this, `Atlas` is where most of this work takes place. So head over [here](../scene.md) to learn more about `Scene` and over [here](../atlas.md) to learn more about `Atlas`. Have a look [here](../public.md) for more details about using publicly available data.
 
+
+
+## Using Notebooks
+
+`brainrender` can be used ...
+
