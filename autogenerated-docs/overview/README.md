@@ -4,7 +4,11 @@ description: Automatically generated code documentation
 
 # brainrender
 
-This is a very simple documentation for the code. It was automatically generated with [pydoc2md](https://github.com/FedeClaudi/pydoc2md) so it's fairly limited. It shows an overview of how files are organised in the `brainrender` package and which functions/classes are defined in each. For each function it shows the definition and the docstring. 
+{% hint style="info" %}
+This is a very simple documentation for the code. It was automatically generated with [pydoc2md](https://github.com/FedeClaudi/pydoc2md) so it's fairly limited. 
+{% endhint %}
+
+This docs show an overview of how files are organized in the `brainrender` package and which functions/classes are defined in each. For each function it shows the definition and the docstring. 
 
 
 
