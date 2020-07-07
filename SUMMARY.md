@@ -4,7 +4,6 @@
 
 ## Overview
 
-* [Introduction](overview/overview.md)
 * [Gallery](overview/gallery.md)
 * [Code examples](overview/examples.md)
 
@@ -14,12 +13,15 @@
 
 ## Usage
 
-* [Overview](usage/overview.md)
+* [Overview](usage/overview/README.md)
+  * [Command Line Interface](usage/overview/command-line-interface.md)
 * [Atlas class](usage/atlas.md)
 * [Scene class](usage/scene.md)
+* [User-generated data](usage/user.md)
+* [Publicly available datasets](usage/public.md)
 
----
+## Info
 
-* [Publicly available datasets](public.md)
-* [User-generated data](user.md)
+* [Getting in touch](info/get-in-touch.md)
+* [Referencing brainrender](info/referencing-brainrender.md)
 
