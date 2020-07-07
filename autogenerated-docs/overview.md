@@ -1,5 +1,3 @@
-# index
-
 ```text
 brainrender
 ├── ABA
