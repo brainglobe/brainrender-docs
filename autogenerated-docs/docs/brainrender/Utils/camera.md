@@ -17,53 +17,117 @@ Contents
 --------
 # line: 44 - `check_camera_param`
   
-```  
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/camera.py#L44) online
+#### function definition
+
+
+```python
 def check_camera_param(camera):
 ```
+##### docstring
+  
 
 
->  no docstring
+```python
+
+"""
+ no docstring 
+"""
+```
 
 &nbsp;
 
 --------
 # line: 70 - `buildcam`
   
-```  
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/camera.py#L70) online
+#### function definition
+
+
+```python
 def buildcam(cm):
 ```
->Builds a camera from a dictionary of parameters, from vedo
+##### docstring
+  
+
+
+```python
+
+"""
+    Builds a camera from a dictionary of parameters, from vedo
+"""
+```
 
 &nbsp;
 
 --------
 # line: 108 - `set_camera_params`
   
-```  
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/camera.py#L108) online
+#### function definition
+
+
+```python
 def set_camera_params(camera, params):
 ```
+##### docstring
+  
 
 
->  no docstring
+```python
+
+"""
+ no docstring 
+"""
+```
 
 &nbsp;
 
 --------
 # line: 117 - `set_camera`
   
-```  
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/camera.py#L117) online
+#### function definition
+
+
+```python
 def set_camera(scene, camera):
 ```
->Sets the position of the camera of a brainrender scene.  
-:param scene: instance of Scene()  
-:param camera: either a string with the name of one of the available cameras, or                a dictionary of camera parameters. 
+##### docstring
+  
+
+
+```python
+
+"""
+    Sets the position of the camera of a brainrender scene.
+    
+    :param scene: instance of Scene()
+    :param camera: either a string with the name of one of the available cameras, or
+                    a dictionary of camera parameters. 
+"""
+```
 
 &nbsp;
 
 --------
 # line: 140 - `get_camera_params`
   
-```  
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/camera.py#L140) online
+#### function definition
+
+
+```python
 def get_camera_params(scene=None, camera=None):
 ```
->Given an active brainrender scene, it returnthe camera parameters. 
+##### docstring
+  
+
+
+```python
+
+"""
+    Given an active brainrender scene, it return
+    the camera parameters. 
+"""
+```

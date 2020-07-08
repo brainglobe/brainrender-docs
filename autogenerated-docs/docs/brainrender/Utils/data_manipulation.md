@@ -18,67 +18,152 @@ Contents
 --------
 # line: 1 - `return_list_smart`
   
-```  
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L1) online
+#### function definition
+
+
+```python
 def return_list_smart(lst):
 ```
->If the list has length > returns the listif it has length == 1 it returns the elementif it has length == 0 it returns None
+##### docstring
+  
+
+
+```python
+
+"""
+    If the list has length > returns the list
+    if it has length == 1 it returns the element
+    if it has length == 0 it returns None
+"""
+```
 
 &nbsp;
 
 --------
 # line: 15 - `return_dict_smart`
   
-```  
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L15) online
+#### function definition
+
+
+```python
 def return_dict_smart(dct):
 ```
+##### docstring
+  
 
 
->  no docstring
+```python
+
+"""
+ no docstring 
+"""
+```
 
 &nbsp;
 
 --------
 # line: 25 - `get_coords`
   
-```  
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L25) online
+#### function definition
+
+
+```python
 def get_coords(obj, mirror=False, mirror_ax='x'):
 ```
->Takes coordinates in various format and turns them into what's expected from VTK plotter for rendering. Can take a dict, Pandas Dataframe or Series  
-:param obj: dict, pandas.DataFrame or pandas.Series  
-:param mirror:  if True, the coordinates are mirrored around mirror_ax (Default value = False)  
-:param mirror_ax: ax to be used for mirroring ['x', 'y', 'z'] (Default value = 'x')
+##### docstring
+  
+
+
+```python
+
+"""
+    Takes coordinates in various format and turns them into what's expected from VTK plotter for rendering. 
+    Can take a dict, Pandas Dataframe or Series
+    
+    :param obj: dict, pandas.DataFrame or pandas.Series
+    :param mirror:  if True, the coordinates are mirrored around mirror_ax (Default value = False)
+    :param mirror_ax: ax to be used for mirroring ['x', 'y', 'z'] (Default value = 'x')
+"""
+```
 
 &nbsp;
 
 --------
 # line: 66 - `flatten_list`
   
-```  
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L66) online
+#### function definition
+
+
+```python
 def flatten_list(lst):
 ```
->Flattens a list of lists  
-:param lst: list
+##### docstring
+  
+
+
+```python
+
+"""
+    Flattens a list of lists
+    
+    :param lst: list
+"""
+```
 
 &nbsp;
 
 --------
 # line: 82 - `is_any_item_in_list`
   
-```  
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L82) online
+#### function definition
+
+
+```python
 def is_any_item_in_list(L1, L2):
 ```
->Checks if an item in a list is in another  list  
-:param L1:   
-:param L2: 
+##### docstring
+  
+
+
+```python
+
+"""
+    Checks if an item in a list is in another  list
+    
+    :param L1: 
+    :param L2: 
+"""
+```
 
 &nbsp;
 
 --------
 # line: 98 - `get_slice_coord`
   
-```  
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L98) online
+#### function definition
+
+
+```python
 def get_slice_coord(bounds, n):
 ```
->Given the bounds of an actor, return the point thatcorresponds to the n% of the bounds range  
-:param bounds: should be a list of two floats  
-:param n: n should be a float in range 0, 1
+##### docstring
+  
+
+
+```python
+
+"""
+    Given the bounds of an actor, return the point that
+    corresponds to the n% of the bounds range
+    
+    
+    :param bounds: should be a list of two floats
+    :param n: n should be a float in range 0, 1
+"""
+```
