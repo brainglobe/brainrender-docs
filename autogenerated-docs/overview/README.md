@@ -1,3 +1,23 @@
+---
+description: Automatically generated code documentation
+---
+
+# brainrender
+
+{% hint style="info" %}
+This is a very simple documentation for the code. It was automatically generated with [pydoc2md](https://github.com/FedeClaudi/pydoc2md) so it's fairly limited. 
+{% endhint %}
+
+This docs show an overview of how files are organized in the `brainrender` package and which functions/classes are defined in each. For each function it shows the definition and the docstring. 
+
+
+
+This documentation is meant more as a convenient place to lookup classes methods and what they do. To really learn how to use `brainrender` check the [Usage](../../usage/overview/) and [examples](../../overview/examples.md) sections.  
+
+
+
+#### Brainrender file system:
+
 ```text
 brainrender
 ├── ABA
