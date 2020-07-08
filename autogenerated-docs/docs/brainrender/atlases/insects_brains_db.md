@@ -126,8 +126,11 @@ def _get_structure_mesh(self, acronym, **kwargs):
 
 ```text
 Fetches the mesh for a brain region from the atlas.
+
 :param acronym: string, acronym of brain region
+
 :param **kwargs:
+
 ```
 
 &nbsp;
@@ -142,6 +145,7 @@ def _check_valid_region_arg(self, region):
 
 ```text
 Check that the string passed is a valid brain region name.
+
 ```
 
 &nbsp;
@@ -157,8 +161,11 @@ def _check_obj_file(self, region, obj_file):
 ```text
 If the . Obj file for a brain region hasn't been downloaded already,
     this function downloads it and writes it.
+
 :param region: string, acronym of brain region
+
 :param obj_file: path to . Obj file to write downloaded data.
+
 ```
 
 &nbsp;
@@ -173,7 +180,9 @@ def get_region_color(self, regions):
 
 ```text
 Gets the rgb color of a brain region from the atlas.
+
 :param regions:  list of regions acronyms.
+
 ```
 
 &nbsp;
@@ -202,4 +211,5 @@ def add_descendants_to_tree(tree, structure, parent_id=None):
 ```text
 Recursively goes through all the the descendants of a region and adds
     them to the tree
+
 ```

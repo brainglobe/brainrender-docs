@@ -26,6 +26,7 @@ def cap_set_frame(cap, frame_number):
 
 ```text
 Sets an opencv video capture object to a specific frame
+
 ```
 
 &nbsp;
@@ -42,6 +43,7 @@ def get_cap_selected_frame(cap, show_frame):
 
 ```text
 Gets a frame from an opencv video capture object to a specific frame
+
 ```
 
 &nbsp;
@@ -58,6 +60,7 @@ def get_video_params(cap):
 
 ```text
 Gets video parameters from an opencv video capture object
+
 ```
 
 &nbsp;
@@ -76,12 +79,18 @@ def open_cvwriter(filepath, w=None, h=None, framerate=None,
 ```text
 Creats an instance of cv. Videowriter to write frames to video using
     python opencv
+
 :param filepath: str, path to file to save
+
 :param w,h: width and height of frame in pixels
+
 :param framerate: fps of output video
+
 :param format: video format
+
 :param iscolor: bool, set as true if images are rgb, else false if
     they are gray
+
 ```
 
 &nbsp;
@@ -98,4 +107,5 @@ def save_videocap_to_video(cap, savepath, fmt, fps=30, iscolor=True):
 
 ```text
 Saves the content of a videocapture opencv object to a file
+
 ```

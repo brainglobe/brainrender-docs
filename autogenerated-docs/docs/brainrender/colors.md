@@ -47,7 +47,9 @@ def get_n_shades_of(shade, n):
 
 ```text
 :param shade:  color
+
 :param n: numnber of colors
+
 ```
 
 &nbsp;
@@ -64,6 +66,7 @@ def _isSequence(arg):
 
 ```text
 :param arg:   item to check
+
 ```
 
 &nbsp;
@@ -81,20 +84,34 @@ def getColor(rgb=None, hsv=None):
 ```text
 Convert a color or list of colors to (r,g,b) format from many
     different input formats.
+
 :param bool: hsv: if set to `true`, rgb is assumed as (hue,
     saturation, value).
+
 example:
+
  - rgb= (255, 255, 255), corresponds to white
+
  - rgb= (1,1,1) is white
+
  - hex= #ffff00 is yellow
+
  - string = 'white'
+
  - string = 'w' is white nickname
+
  - string = 'dr' is darkred
+
  - int=  7 picks color nr.  7 in a predefined color list
+
  - int= -7 picks color nr.  7 in a different predefined list
+
 |colorcubes| |colorcubes. Py|_
+
 :param rgb:  (default value = none)
+
 :param hsv:  (default value = none)
+
 ```
 
 &nbsp;
@@ -111,8 +128,11 @@ def getColorName(c):
 
 ```text
 Find the name of a color.
+
 |colorpalette| |colorpalette. Py|_
+
 :param c: c
+
 ```
 
 &nbsp;
@@ -129,7 +149,9 @@ def hsv2rgb(hsv):
 
 ```text
 Convert hsv to rgb color.
+
 :param hsv: gsv
+
 ```
 
 &nbsp;
@@ -146,7 +168,9 @@ def rgb2hsv(rgb):
 
 ```text
 Convert rgb to hsv color.
+
 :param rgb: rgb
+
 ```
 
 &nbsp;
@@ -163,6 +187,7 @@ def rgb2int(rgb_tuple):
 
 ```text
 :param rgb_tuple: rgb
+
 ```
 
 &nbsp;
@@ -179,25 +204,44 @@ def colorMap(value, name='jet', vmin=None, vmax=None):
 
 ```text
 Map a real value in range [vmin, vmax] to a (r,g,b) color scale.
+
 :param value: scalar value to transform into a color
+
 :type value: float, list
+
 :param name: color map name (default value = "jet")
+
 :type name: str, matplotlib. Colors. Linearsegmentedcolormap
+
 :param vmin:  (default value = none)
+
 :param vmax:  (default value = none)
+
 :returns: return: (r,g,b) color, or a list of (r,g,b) colors.
+
 . .  note:: most frequently used color maps:
+
 |colormaps|
+
 matplotlib full list:
+
 . .  image:: https://matplotlib. Org/1. 2. 1/_images/show_colormaps.
     Png
+
 . .  tip:: can also use directly a matplotlib color map:
+
 :example:
+
 . .  code-block:: python
+
 from vedo import colormap
+
 import matplotlib. Cm as cm
+
 print( colormap(0. 2, cm. Flag, 0, 1) )
+
 (1. 0, 0. 809016994374948, 0. 6173258487801733)
+
 ```
 
 &nbsp;
@@ -214,11 +258,16 @@ def makePalette(N, *colors):
 
 ```text
 Generate n colors starting from `color1` to `color2`
+
 by linear interpolation hsv in or rgb spaces.
+
 adapted from vedo makepalette function
+
 :param int: n: number of output colors.
+
 :param colors: input colors, any number of colors with 0 < ncolors <=
     n is okay.
+
 ```
 
 &nbsp;
@@ -235,6 +284,7 @@ def get_random_colors(n_colors=1):
 
 ```text
 :param n_colors:  (default value = 1)
+
 ```
 
 &nbsp;
@@ -251,4 +301,5 @@ def check_colors(color):
 
 ```text
 :param color: color
+
 ```

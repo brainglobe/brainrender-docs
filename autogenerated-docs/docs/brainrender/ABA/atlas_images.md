@@ -50,7 +50,9 @@ def get_atlas_by_name(self, atlas_name):
 
 ```text
 Get a brain atlas in the allen's database given it's name
+
 :param atlas_name: str with atlas name
+
 ```
 
 &nbsp;
@@ -65,7 +67,9 @@ def get_products_by_species(self, species):
 
 ```text
 Get all 'products' in the allen database for a given species
+
 :param species: str
+
 ```
 
 &nbsp;
@@ -80,8 +84,11 @@ def get_experimentsid_by_productid(self, productid, **kwargs):
 
 ```text
 Get the experiment's id that belong to the same project (product).
+
 :param productid: int with product id number
+
 :param **kwargs:
+
 ```
 
 &nbsp;
@@ -96,7 +103,9 @@ def get_experimentimages_by_expid(self, expid):
 
 ```text
 Get's images that belong to an experiment
+
 :param expid: int with experiment name.
+
 ```
 
 &nbsp;
@@ -111,7 +120,9 @@ def get_atlasimages_by_atlasid(self, atlasid):
 
 ```text
 Get the metadata of images that belong to an atlas.
+
 :param atlasid: int with atlas number
+
 ```
 
 &nbsp;
@@ -127,16 +138,23 @@ def download_images_by_imagesid(self, savedir, imagesids,
 
 ```text
 Downloads and saves images given a list of images ids.
+
 :param savedir: str, folder in which to save the image
+
 :param imagesids: list of int with images ids
+
 :param downsample: downsample factor, to reduce the image size and
     resolution (default value = 0)
+
 :param annotated: if true the images are overlayed with annotations
     (default value = true)
+
 :param snames: if true the images are overlayed with the structures
     names (default value = none)
+
 :param atlas_svg: if true fetches the images as svg, otherwise as png
     (default value = true)
+
 ```
 
 &nbsp;
@@ -152,8 +170,12 @@ def download_images_by_atlasid(self, savedir, atlasid, debug=False,
 
 ```text
 Downloads all the images that belong to an altlas
+
 :param savedir: str, folder in which to save the images
+
 :param atlasid: int, id of the atlas to use
+
 :param **kwargs: keyword arguments for self.
     Download_images_by_imagesid
+
 ```

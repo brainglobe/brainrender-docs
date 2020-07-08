@@ -30,9 +30,13 @@ def mirror_actor_at_point(actor, point, axis='x'):
 
 ```text
 Mirror an actor around a point
+
 :param actor:
+
 :param point:
+
 :param axis:  (default value = 'x')
+
 ```
 
 &nbsp;
@@ -49,7 +53,9 @@ def set_wireframe(actor):
 
 ```text
 Set an actor's look to wireframe
+
 :param actor:
+
 ```
 
 &nbsp;
@@ -66,7 +72,9 @@ def set_solid(actor):
 
 ```text
 Set an actor's look to solid
+
 :param actor:
+
 ```
 
 &nbsp;
@@ -83,8 +91,11 @@ def set_color(actor, color):
 
 ```text
 Set an actor's look to a specific color
+
 :param actor:
+
 :param color:
+
 ```
 
 &nbsp;
@@ -101,9 +112,13 @@ def set_line(actor, lw=None, c=None):
 
 ```text
 Set an actor's look to specify the line width and color
+
 :param actor:
+
 :param lw:  (default value = none)
+
 :param c:  (default value = none)
+
 ```
 
 &nbsp;
@@ -120,8 +135,11 @@ def upsample_actor(actor, fact=1):
 
 ```text
 Increase resolution of actor
+
 :param actor:
+
 :param fact:  (default value = 1)
+
 ```
 
 &nbsp;
@@ -138,8 +156,11 @@ def downsample_actor(actor, fact=0.5):
 
 ```text
 Reduce resolution of actor
+
 :param actor:
+
 :param fact:  (default value = 0. 5)
+
 ```
 
 &nbsp;
@@ -156,8 +177,11 @@ def smooth_actor(actor, factor=15):
 
 ```text
 Smooth an actor's mesh
+
 :param actor:
+
 :param factor:  (default value = 15)
+
 ```
 
 &nbsp;
@@ -176,16 +200,26 @@ def edit_actor(actor, wireframe=False, solid=False, color=False,
 
 ```text
 Apply a set of functions to edit an actor's look.
+
 :param actor:
+
 :param wireframe: if true, change look to wireframe (default value =
     false)
+
 :param solid: if true change look to soi=lid (default value = false)
+
 :param color: specify new color (default value = false)
+
 :param line: if true, edit the line's look (default value = false)
+
 :param line_kwargs: specify width and color of line (default value =
     {})
+
 :param upsample: if true, increase resolution (default value = false)
+
 :param downsample: if true, decrease resolution (default value =
     false)
+
 :param smooth: if true, smoothen actor (default value = false)
+
 ```

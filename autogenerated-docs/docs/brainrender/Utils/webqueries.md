@@ -24,7 +24,9 @@ def request(url):
 
 ```text
 Sends a request to a url
+
 :param url:
+
 ```
 
 &nbsp;

@@ -49,6 +49,7 @@ def get_all_genes(self):
 ```text
 Download metadata about all the genes available in the allen gene
     expression dataset
+
 ```
 
 &nbsp;
@@ -87,8 +88,11 @@ def get_gene_experiments(self, gene_symbol):
 
 ```text
 Given a gene_symbol it returns the list of ish
+
 experiments for this gene
+
 :param gene_symbol: str, self. Genes. Gene_symbol
+
 ```
 
 &nbsp;
@@ -103,10 +107,14 @@ def download_gene_data(self, gene):
 
 ```text
 Downloads a gene's data from the allen institute
+
 gene expression dataset and saves to cache.
+
 see: http://help. Brain-map.
     Org/display/api/downloading+3-d+expression+grid+data
+
 :param gene: int, the gene_id for the gene being downloaded.
+
 ```
 
 &nbsp;
@@ -121,6 +129,7 @@ def get_gene_data(self, gene, exp_id, metric='energy'):
 
 ```text
 Given a list of gene ids
+
 ```
 
 &nbsp;
@@ -136,11 +145,19 @@ def griddata_to_volume(self, griddata, min_quantile=None,
 
 ```text
 Takes a 3d numpy array with volumetric gene expression
+
 and returns a vedo. Volume. Isosurface actor.
+
 the isosurface needs a lower bound threshold, this can be
+
 either a user defined hard value (min_value) or the value
+
 corresponding to some percentile of the gene expression data.
+
 :param griddata: np. Ndarray, 3d array with gene expression data
+
 :param min_quantile: float, percentile for threshold
+
 :param min_value: float, value for threshold
+
 ```

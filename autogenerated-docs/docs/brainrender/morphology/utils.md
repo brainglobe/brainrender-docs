@@ -38,8 +38,12 @@ def edit_neurons(neurons, **kwargs):
 
 ```text
 Modify neurons actors after they have been created, at render time.
+
 neurons should be a list of dictionaries with soma, dendrite and axon
     actors of each neuron.
+
 :param neurons: list of dictionaries with vtk actors for each neuron
+
 :param **kwargs:
+
 ```

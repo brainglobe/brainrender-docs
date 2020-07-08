@@ -40,6 +40,7 @@ def buildcam(cm):
 
 ```text
 Builds a camera from a dictionary of parameters, from vedo
+
 ```
 
 &nbsp;
@@ -70,10 +71,14 @@ def set_camera(scene, camera):
 
 ```text
 Sets the position of the camera of a brainrender scene.
+
 :param scene: instance of scene()
+
 :param camera: either a string with the name of one of the available
     cameras, or
+
 a dictionary of camera parameters.
+
 ```
 
 &nbsp;
@@ -90,5 +95,7 @@ def get_camera_params(scene=None, camera=None):
 
 ```text
 Given an active brainrender scene, it return
+
 the camera parameters.
+
 ```
