@@ -38,7 +38,10 @@ def __init__(self, data_folder=None, base_dir=None, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">This class handles loading and parsing neuroanatomical data for the C.
+docstring:
+
+```text
+This class handles loading and parsing neuroanatomical data for the C.
     elegans connectome from
 
 https://www.biorxiv.org/content/10.1101/2020.04.30.066209v1
@@ -51,7 +54,8 @@ https://www.biorxiv.org/content/10.1101/2020.04.30.066209v1
 
 :param data_folder: str, path to a folder with data for the connectome
     # TODO replace with downloading data
-</pre>
+
+```
 
 &nbsp;
 ## **`_make_root`** [#84]
@@ -63,10 +67,14 @@ def _make_root(self, rootpath):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Creates a root mesh by merging the mesh corresponding to each neuron,
+docstring:
+
+```text
+Creates a root mesh by merging the mesh corresponding to each neuron,
 
 then saves it as an obj file at rootpath
-</pre>
+
+```
 
 &nbsp;
 ## **`get_neurons_by`** [#119]
@@ -78,7 +86,10 @@ def get_neurons_by(self, getby='pair', lookup=None):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Selects a subset of the neurons using some criteria and lookup key,
+docstring:
+
+```text
+Selects a subset of the neurons using some criteria and lookup key,
 
 based on the neurons metadata
 
@@ -89,7 +100,8 @@ based on the neurons metadata
     lookup value will be selected
 
 :returns: list of strings with neurons names
-</pre>
+
+```
 
 &nbsp;
 ## **`get_neuron_color`** [#151]
@@ -101,7 +113,10 @@ def get_neuron_color(self, neuron, colorby='type'):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Get a neuron's RGB color. Colors can be assigned based on different
+docstring:
+
+```text
+Get a neuron's RGB color. Colors can be assigned based on different
     criteria
 
 like the neuron's type or by individual neuron etc...
@@ -111,7 +126,8 @@ like the neuron's type or by individual neuron etc...
 :param colorby: str, metadata attribute to use for coloring
 
 :returns: rgb values of color
-</pre>
+
+```
 
 &nbsp;
 ## **`_get_data`** [#186]
@@ -123,8 +139,12 @@ def _get_data(self):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Loads data and metadata for the C. elegans connectome.
-</pre>
+docstring:
+
+```text
+Loads data and metadata for the C. elegans connectome.
+
+```
 
 &nbsp;
 ## **`_check_neuron_argument`** [#249]
@@ -136,12 +156,16 @@ def _check_neuron_argument(self, neurons):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Checks if a list of string includes neurons name, returns only
+docstring:
+
+```text
+Checks if a list of string includes neurons name, returns only
 
 elements of the list that are correct names
 
 :param neurons: list of strings with neurons names
-</pre>
+
+```
 
 &nbsp;
 ## **`_parse_neuron_skeleton`** [#272]
@@ -153,12 +177,16 @@ def _parse_neuron_skeleton(self, neuron):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Parses a neuron's skeleton information from skeleton .json file
+docstring:
+
+```text
+Parses a neuron's skeleton information from skeleton .json file
 
 to create a vtk actor that represents the neuron
 
 :param neuron: str, neuron name
-</pre>
+
+```
 
 &nbsp;
 ## **`_get_structure_mesh`** [#308]
@@ -170,10 +198,14 @@ def _get_structure_mesh(self, acronym, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Get's the mesh for a brainregion, for this atlas it's just for
+docstring:
+
+```text
+Get's the mesh for a brainregion, for this atlas it's just for
 
 getting/making the root mesh
-</pre>
+
+```
 
 &nbsp;
 ## **`get_neurons`** [#329]
@@ -186,7 +218,10 @@ def get_neurons(self, neurons, alpha=1, as_skeleton=False,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Renders neurons and adds returns to the scene.
+docstring:
+
+```text
+Renders neurons and adds returns to the scene.
 
 :param neurons: list of names of neurons
 
@@ -199,7 +234,8 @@ otherwise as a full mesh showing the whole morphology
 
 :param colorby: str, criteria to use to color the neurons. Accepts
     values like type, individual etc.
-</pre>
+
+```
 
 &nbsp;
 ## **`get_neurons_synapses`** [#371]
@@ -213,7 +249,10 @@ def get_neurons_synapses(self, scene_store, neurons, alpha=1,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">THIS METHODS GETS CALLED BY SCENE, self referes to the instance of
+docstring:
+
+```text
+THIS METHODS GETS CALLED BY SCENE, self referes to the instance of
     Scene not to this class.
 
 Renders neurons and adds them to the scene.
@@ -237,7 +276,8 @@ Renders neurons and adds them to the scene.
 
 :param draw_arrows: bool, default True. If true arrows are used to
     show the location of post synapses
-</pre>
+
+```
 
 &nbsp;
 ## **`dist`** [#518]

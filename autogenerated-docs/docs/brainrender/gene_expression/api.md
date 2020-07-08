@@ -48,9 +48,13 @@ def get_all_genes(self):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Download metadata about all the genes available in the Allen gene
+docstring:
+
+```text
+Download metadata about all the genes available in the Allen gene
     expression dataset
-</pre>
+
+```
 
 &nbsp;
 ## **`get_gene_id_by_name`** [#50]
@@ -90,12 +94,16 @@ def get_gene_experiments(self, gene_symbol):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Given a gene_symbol it returns the list of ISH
+docstring:
+
+```text
+Given a gene_symbol it returns the list of ISH
 
 experiments for this gene
 
 :param gene_symbol: str, self.genes.gene_symbol
-</pre>
+
+```
 
 &nbsp;
 ## **`download_gene_data`** [#107]
@@ -107,7 +115,10 @@ def download_gene_data(self, gene):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Downloads a gene's data from the Allen Institute
+docstring:
+
+```text
+Downloads a gene's data from the Allen Institute
 
 Gene Expression dataset and saves to cache.
 
@@ -115,7 +126,8 @@ See: http://help.brain-
     map.org/display/api/Downloading+3-D+Expression+Grid+Data
 
 :param gene: int, the gene_id for the gene being downloaded.
-</pre>
+
+```
 
 &nbsp;
 ## **`get_gene_data`** [#140]
@@ -127,8 +139,12 @@ def get_gene_data(self, gene, exp_id, metric='energy'):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Given a list of gene ids
-</pre>
+docstring:
+
+```text
+Given a list of gene ids
+
+```
 
 &nbsp;
 ## **`griddata_to_volume`** [#164]
@@ -141,7 +157,10 @@ def griddata_to_volume(self, griddata, min_quantile=None,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Takes a 3d numpy array with volumetric gene expression
+docstring:
+
+```text
+Takes a 3d numpy array with volumetric gene expression
 
 and returns a vedo.Volume.isosurface actor.
 
@@ -156,4 +175,5 @@ corresponding to some percentile of the gene expression data.
 :param min_quantile: float, percentile for threshold
 
 :param min_value: float, value for threshold
-</pre>
+
+```

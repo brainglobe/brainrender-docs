@@ -34,11 +34,15 @@ def listdir(fld):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">List the files into a folder with the coplete file path instead of the
+docstring:
+
+```text
+List the files into a folder with the coplete file path instead of the
     relative file path like os.listdir.
 
 :param fld: string, folder path
-</pre>
+
+```
 
 &nbsp;
 
@@ -52,8 +56,12 @@ def get_subdirs(folderpath):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Returns the subfolders in a given folder
-</pre>
+docstring:
+
+```text
+Returns the subfolders in a given folder
+
+```
 
 &nbsp;
 
@@ -131,12 +139,16 @@ def save_json(filepath, content, append=False):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Saves content to a JSON file
+docstring:
+
+```text
+Saves content to a JSON file
 
 :param filepath: path to a file (must include .json)
 
 :param content: dictionary of stuff to save
-</pre>
+
+```
 
 &nbsp;
 
@@ -150,12 +162,16 @@ def save_yaml(filepath, content, append=False, topcomment=None):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Saves content to a yaml file
+docstring:
+
+```text
+Saves content to a yaml file
 
 :param filepath: path to a file (must include .yaml)
 
 :param content: dictionary of stuff to save
-</pre>
+
+```
 
 &nbsp;
 
@@ -169,10 +185,14 @@ def load_json(filepath):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Load a JSON file
+docstring:
+
+```text
+Load a JSON file
 
 :param filepath: path to a file
-</pre>
+
+```
 
 &nbsp;
 
@@ -186,10 +206,14 @@ def load_yaml(filepath):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Load a YAML file
+docstring:
+
+```text
+Load a YAML file
 
 :param filepath: path to yaml file
-</pre>
+
+```
 
 &nbsp;
 
@@ -203,12 +227,16 @@ def load_volume_file(filepath):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Load a volume file (e.g., .nii) and returns the data
+docstring:
+
+```text
+Load a volume file (e.g., .nii) and returns the data
 
 :param filepath: path to file
 
 :param **kwargs:
-</pre>
+
+```
 
 &nbsp;
 
@@ -222,12 +250,16 @@ def load_mesh_from_file(filepath, *args, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Load a a mesh or volume from files like .obj, .stl, ...
+docstring:
+
+```text
+Load a a mesh or volume from files like .obj, .stl, ...
 
 :param filepath: path to file
 
 :param **kwargs:
-</pre>
+
+```
 
 &nbsp;
 
@@ -241,13 +273,17 @@ def connected_to_internet(url='http://www.google.com/', timeout=5):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Check that there is an internet connection
+docstring:
+
+```text
+Check that there is an internet connection
 
 :param url: url to use for testing (Default value =
     'http://www.google.com/')
 
 :param timeout:  timeout to wait for [in seconds] (Default value = 5)
-</pre>
+
+```
 
 &nbsp;
 
@@ -261,12 +297,16 @@ def send_query(query_string, clean=False):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Send a query/request to a website
+docstring:
+
+```text
+Send a query/request to a website
 
 :param query_string: string with query content
 
 :param clean:  (Default value = False)
-</pre>
+
+```
 
 &nbsp;
 
@@ -281,7 +321,10 @@ def get_probe_points_from_sharptrack(points_filepath,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Loads the location of the of probe points as extracted by SharpTrack
+docstring:
+
+```text
+Loads the location of the of probe points as extracted by SharpTrack
 
 [https://github.com/cortex-lab/allenCCF].
 
@@ -290,4 +333,5 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
 :param scale_factor: 10, sharptrack uses a 10um reference atlas so the
 
 coordinates need to be scaled to match brainrender's
-</pre>
+
+```

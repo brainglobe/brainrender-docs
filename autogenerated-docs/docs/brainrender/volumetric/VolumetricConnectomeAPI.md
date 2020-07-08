@@ -57,7 +57,10 @@ def __init__(self, base_dir=None, add_root=True, use_cache=True,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Initialise the class instance to get a few useful paths and variables.
+docstring:
+
+```text
+Initialise the class instance to get a few useful paths and variables.
 
 :param base_dir: str, path to base directory in which all of
     brainrender data are stored.
@@ -74,7 +77,8 @@ Useful to set it to false to help debugging.
 
 :param scene_kwargs: dict, params passed to the instance of Scene
     associated with this class
-</pre>
+
+```
 
 &nbsp;
 ## **`__getattr__`** [#110]
@@ -100,8 +104,12 @@ def _get_structure_id(self, struct):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Get the ID of a structure (or list of structures) given it's acronym
-</pre>
+docstring:
+
+```text
+Get the ID of a structure (or list of structures) given it's acronym
+
+```
 
 &nbsp;
 ## **`_load_voxel_data`** [#133]
@@ -113,8 +121,12 @@ def _load_voxel_data(self):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Load the VoxelData array from Knox et al 2018
-</pre>
+docstring:
+
+```text
+Load the VoxelData array from Knox et al 2018
+
+```
 
 &nbsp;
 ## **`_get_coordinates_from_voxel_id`** [#170]
@@ -126,7 +138,10 @@ def _get_coordinates_from_voxel_id(self, p0, as_source=True):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Takes the index of a voxel and returns the 3D coordinates in reference
+docstring:
+
+```text
+Takes the index of a voxel and returns the 3D coordinates in reference
     space.
 
 The index number should be extracted with either a source_mask or a
@@ -135,7 +150,8 @@ The index number should be extracted with either a source_mask or a
 If target_mask wa used set as_source as False.
 
 :param p0: int
-</pre>
+
+```
 
 &nbsp;
 ## **`_get_mask_coords`** [#186]
@@ -175,11 +191,15 @@ def _get_cache_filename(self, tgt, what):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Data are cached according to a naming convention, this function gets
+docstring:
+
+```text
+Data are cached according to a naming convention, this function gets
     the name for an object
 
 according to the convention
-</pre>
+
+```
 
 &nbsp;
 ## **`_get_from_cache`** [#242]
@@ -191,8 +211,12 @@ def _get_from_cache(self, tgt, what):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">tries to load objects from cached data, if they exist
-</pre>
+docstring:
+
+```text
+tries to load objects from cached data, if they exist
+
+```
 
 &nbsp;
 ## **`save_to_cache`** [#253]
@@ -204,8 +228,12 @@ def save_to_cache(self, tgt, what, obj):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Saves data to cache to avoid loading thema again in the future
-</pre>
+docstring:
+
+```text
+Saves data to cache to avoid loading thema again in the future
+
+```
 
 &nbsp;
 ## **`get_source`** [#264]
@@ -217,13 +245,17 @@ def get_source(self, source, hemisphere='both'):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Loads the mask for a source structure
+docstring:
+
+```text
+Loads the mask for a source structure
 
 :param source: str or list of str with acronym of source regions
 
 :param hemisphere: str, ['both', 'left', 'right']. Which hemisphere to
     consider.
-</pre>
+
+```
 
 &nbsp;
 ## **`get_target_mask`** [#286]
@@ -235,10 +267,14 @@ def get_target_mask(self, target, hemisphere):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">returns a 'key' array and a mask object
+docstring:
+
+```text
+returns a 'key' array and a mask object
 
 used to transform projection data from linear arrays to 3D volumes.
-</pre>
+
+```
 
 &nbsp;
 ## **`get_target`** [#297]
@@ -250,13 +286,17 @@ def get_target(self, target, hemisphere='both'):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Loads the mask for a target structure.
+docstring:
+
+```text
+Loads the mask for a target structure.
 
 :param target: str or list of str with acronym of target regions
 
 :param hemisphere: str, ['both', 'left', 'right']. Which hemisphere to
     consider.
-</pre>
+
+```
 
 &nbsp;
 ## **`get_projection`** [#327]
@@ -269,7 +309,10 @@ def get_projection(self, source, target, name, hemisphere='both',
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets the spatialised projection intensity from a source to a target.
+docstring:
+
+```text
+Gets the spatialised projection intensity from a source to a target.
 
 :param source: str or list of str with acronym of source regions
 
@@ -293,7 +336,8 @@ the source structure is return. Useful to see which part of source
 
 :return: 1D numpy array with mean projection from source to target
     voxels
-</pre>
+
+```
 
 &nbsp;
 ## **`get_mapped_projection`** [#400]
@@ -305,7 +349,10 @@ def get_mapped_projection(self, source, target, name, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets the spatialised projection intensity from a source to a target,
+docstring:
+
+```text
+Gets the spatialised projection intensity from a source to a target,
     but as
 
 a mapped volume instead of a linear array.
@@ -317,7 +364,8 @@ a mapped volume instead of a linear array.
 :param name: str, name of the projection
 
 :return: 3D numpy array with projectino intensity
-</pre>
+
+```
 
 &nbsp;
 ## **`get_mapped_projection_to_point`** [#416]
@@ -330,9 +378,13 @@ def get_mapped_projection_to_point(self, p0, restrict_to=None,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets projection intensity from all voxels to the voxel corresponding
+docstring:
+
+```text
+Gets projection intensity from all voxels to the voxel corresponding
     to a point of interest
-</pre>
+
+```
 
 &nbsp;
 ## **`get_mapped_projection_from_point`** [#452]
@@ -345,9 +397,13 @@ def get_mapped_projection_from_point(self, p0, restrict_to=None,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets projection intensity from all voxels to the voxel corresponding
+docstring:
+
+```text
+Gets projection intensity from all voxels to the voxel corresponding
     to a point of interest
-</pre>
+
+```
 
 &nbsp;
 ## **`add_mapped_projection`** [#497]
@@ -361,7 +417,10 @@ def add_mapped_projection(self, source, target, actor_kwargs={},
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets the spatialised projection intensity from a source to a target
+docstring:
+
+```text
+Gets the spatialised projection intensity from a source to a target
 
 and renders it as a vedo lego visualisation.
 
@@ -383,7 +442,8 @@ and renders it as a vedo lego visualisation.
 
 Look at the arguments of 'add_volume' to see what arguments are
     available.
-</pre>
+
+```
 
 &nbsp;
 ## **`add_mapped_projection_to_point`** [#551]
@@ -426,7 +486,10 @@ def add_volume(self, volume, cmap='afmhot_r', alpha=1,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Renders intensitdata from a 3D numpy array as a lego volumetric actor.
+docstring:
+
+```text
+Renders intensitdata from a 3D numpy array as a lego volumetric actor.
 
 :param volume: np 3D array with number of dimensions = those of the
     100um reference space.
@@ -437,4 +500,5 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
 
 :param add_colorbar: if True a colorbar is added to show the values of
     the colormap
-</pre>
+
+```

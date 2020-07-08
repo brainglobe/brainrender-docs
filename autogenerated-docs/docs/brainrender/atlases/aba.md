@@ -55,7 +55,10 @@ def get_neurons(self, neurons, color=None, display_axon=True,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets rendered morphological data of neurons reconstructions downloaded
+docstring:
+
+```text
+Gets rendered morphological data of neurons reconstructions downloaded
     from the
 
 Mouse Light project at Janelia (or other sources).
@@ -100,7 +103,8 @@ or a dictionary of colors for each neuron
 
 :param use_cache: bool, if True a cache is used to avoid having to
     crate a neuron's mesh anew, otherwise a new mesh is created
-</pre>
+
+```
 
 &nbsp;
 ## **`get_tractography`** [#204]
@@ -115,7 +119,10 @@ def get_tractography(self, tractography, color=None,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Renders tractography data and adds it to the scene. A subset of
+docstring:
+
+```text
+Renders tractography data and adds it to the scene. A subset of
     tractography data can receive special treatment using the  with VIP
     regions argument:
 
@@ -152,7 +159,8 @@ options:
 
 :param display_injection_volume: float, if True a spehere is added to
     display the injection coordinates and volume (Default value = True)
-</pre>
+
+```
 
 &nbsp;
 ## **`get_streamlines`** [#334]
@@ -164,7 +172,10 @@ def get_streamlines(self, sl_file, color=None, *args, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Render streamline data downloaded from
+docstring:
+
+```text
+Render streamline data downloaded from
     https://neuroinformatics.nl/HBP/allen-connectivity-viewer/streamline-
     downloader.html
 
@@ -177,7 +188,8 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
 :param *args:
 
 :param **kwargs:
-</pre>
+
+```
 
 &nbsp;
 ## **`get_projection_tracts_to_target`** [#387]
@@ -189,14 +201,18 @@ def get_projection_tracts_to_target(self, p0=None, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets tractography data for all experiments whose projections reach the
+docstring:
+
+```text
+Gets tractography data for all experiments whose projections reach the
     brain region or location of iterest.
 
 :param p0: list of 3 floats with XYZ coordinates of point to be used
     as seed (Default value = None)
 
 :param **kwargs:
-</pre>
+
+```
 
 &nbsp;
 ## **`download_streamlines_for_region`** [#415]
@@ -208,7 +224,10 @@ def download_streamlines_for_region(self, region, *args, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Using the Allen Mouse Connectivity data and corresponding API, this
+docstring:
+
+```text
+Using the Allen Mouse Connectivity data and corresponding API, this
     function finds expeirments whose injections
 
 were targeted to the region of interest and downloads the
@@ -224,7 +243,8 @@ to see how to change this behaviour.
 :param *args: arguments for ABA.experiments_source_search
 
 :param **kwargs: arguments for ABA.experiments_source_search
-</pre>
+
+```
 
 &nbsp;
 ## **`download_streamlines_to_region`** [#440]
@@ -237,7 +257,10 @@ def download_streamlines_to_region(self, p0, *args, mouse_line='wt',
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Using the Allen Mouse Connectivity data and corresponding API, this
+docstring:
+
+```text
+Using the Allen Mouse Connectivity data and corresponding API, this
     function finds injection experiments
 
 which resulted in fluorescence being found in the target point, then
@@ -251,4 +274,5 @@ which resulted in fluorescence being found in the target point, then
 :param *args:
 
 :param **kwargs:
-</pre>
+
+```

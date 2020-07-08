@@ -81,7 +81,10 @@ def __init__(self, brain_regions=None, regions_aba_color=False,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Creates and manages a Plotter instance
+docstring:
+
+```text
+Creates and manages a Plotter instance
 
 :param brain_regions: list of brain regions acronyms to be added to
     the rendered scene (default value None)
@@ -151,7 +154,8 @@ name is passed it will try to load the corresponding brainglobe atlas.
 
 :param ignore_jupyter: bool, if False brainrender auto-detects if the
     user is using jupyter and adjusts to it
-</pre>
+
+```
 
 &nbsp;
 ## **`_check_point_in_region`** [#237]
@@ -163,13 +167,17 @@ def _check_point_in_region(self, point, region_actor):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Checks if a point of defined coordinates is within the mesh of a given
+docstring:
+
+```text
+Checks if a point of defined coordinates is within the mesh of a given
     actorr
 
 :param point: 3-tuple or list of xyz coordinates
 
 :param region_actor: vedo actor
-</pre>
+
+```
 
 &nbsp;
 ## **`_get_inset`** [#249]
@@ -181,11 +189,15 @@ def _get_inset(self, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Handles the rendering of the inset showing the outline of the whole
+docstring:
+
+```text
+Handles the rendering of the inset showing the outline of the whole
     brain (root) in a corner of the scene.
 
 :param **kwargs:
-</pre>
+
+```
 
 &nbsp;
 ## **`get_n_random_points_in_region`** [#277]
@@ -197,13 +209,17 @@ def get_n_random_points_in_region(self, region, N, hemisphere=None):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets N random points inside (or on the surface) of the mesh defining a
+docstring:
+
+```text
+Gets N random points inside (or on the surface) of the mesh defining a
     brain region.
 
 :param region: str, acronym of the brain region.
 
 :param N: int, number of points to return.
-</pre>
+
+```
 
 &nbsp;
 ## **`edit_actors`** [#312]
@@ -215,12 +231,16 @@ def edit_actors(self, actors, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">edits a list of actors (e.g. render as wireframe or solid)
+docstring:
+
+```text
+edits a list of actors (e.g. render as wireframe or solid)
 
 :param actors: list of actors
 
 :param **kwargs:
-</pre>
+
+```
 
 &nbsp;
 ## **`mirror_actor_hemisphere`** [#325]
@@ -232,8 +252,12 @@ def mirror_actor_hemisphere(self, actors):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Mirrors actors from one hemisphere to the next
-</pre>
+docstring:
+
+```text
+Mirrors actors from one hemisphere to the next
+
+```
 
 &nbsp;
 ## **`cut_actors_with_plane`** [#338]
@@ -260,11 +284,15 @@ def get_cells_in_region(self, cells, region):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Selects the cells that are in a list of user provided regions from a
+docstring:
+
+```text
+Selects the cells that are in a list of user provided regions from a
     dataframe of cell locations
 
 :param cells: pd.DataFrame of cells x,y,z coordinates
-</pre>
+
+```
 
 &nbsp;
 ## **`add_root`** [#432]
@@ -276,12 +304,16 @@ def add_root(self, render=True, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">adds the root the scene (i.e. the whole brain outline)
+docstring:
+
+```text
+adds the root the scene (i.e. the whole brain outline)
 
 :param render:  (Default value = True)
 
 :param **kwargs:
-</pre>
+
+```
 
 &nbsp;
 ## **`add_brain_regions`** [#456]
@@ -293,10 +325,14 @@ def add_brain_regions(self, *args, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds brain regions meshes to scene.
+docstring:
+
+```text
+Adds brain regions meshes to scene.
 
 Check the atlas' method to know how it works
-</pre>
+
+```
 
 &nbsp;
 ## **`add_neurons`** [#481]
@@ -308,10 +344,14 @@ def add_neurons(self, *args, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds rendered morphological data of neurons reconstructions.
+docstring:
+
+```text
+Adds rendered morphological data of neurons reconstructions.
 
 Check the atlas' method to know how it works
-</pre>
+
+```
 
 &nbsp;
 ## **`add_neurons_synapses`** [#499]
@@ -323,11 +363,15 @@ def add_neurons_synapses(self, *args, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds the location of pre or post synapses for a neuron (or list of
+docstring:
+
+```text
+Adds the location of pre or post synapses for a neuron (or list of
     neurons).
 
 Check the atlas' method to know how it works.
-</pre>
+
+```
 
 &nbsp;
 ## **`add_tractography`** [#514]
@@ -339,10 +383,14 @@ def add_tractography(self, *args, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Renders tractography data and adds it to the scene.
+docstring:
+
+```text
+Renders tractography data and adds it to the scene.
 
 Check the function definition in ABA for more details
-</pre>
+
+```
 
 &nbsp;
 ## **`add_streamlines`** [#524]
@@ -354,10 +402,14 @@ def add_streamlines(self, *args, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Render streamline data.
+docstring:
+
+```text
+Render streamline data.
 
 Check the function definition in ABA for more details
-</pre>
+
+```
 
 &nbsp;
 ## **`add_actor`** [#534]
@@ -369,7 +421,10 @@ def add_actor(self, *actors, store=None):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Add a vtk actor to the scene
+docstring:
+
+```text
+Add a vtk actor to the scene
 
 :param actor:
 
@@ -377,7 +432,8 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
     actor
 
 being created. It needs to be a list
-</pre>
+
+```
 
 &nbsp;
 ## **`add_mesh_silhouette`** [#558]
@@ -389,10 +445,14 @@ def add_mesh_silhouette(self, *actors, lw=1, color='k', **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Given a list of actors it adds a colored silhouette
+docstring:
+
+```text
+Given a list of actors it adds a colored silhouette
 
 to them.
-</pre>
+
+```
 
 &nbsp;
 ## **`add_from_file`** [#566]
@@ -404,14 +464,18 @@ def add_from_file(self, *filepaths, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Add data to the scene by loading them from a file. Should handle .obj,
+docstring:
+
+```text
+Add data to the scene by loading them from a file. Should handle .obj,
     .vtk and .nii files.
 
 :param filepaths: path to the file. Can pass as many arguments as
     needed
 
 :param **kwargs:
-</pre>
+
+```
 
 &nbsp;
 ## **`add_sphere_at_point`** [#582]
@@ -424,7 +488,10 @@ def add_sphere_at_point(self, pos=[0, 0, 0], radius=100,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds a shere at a location specified by the user
+docstring:
+
+```text
+Adds a shere at a location specified by the user
 
 :param pos: list of x,y,z coordinates (Default value = [0, 0, 0])
 
@@ -435,7 +502,8 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
 :param alpha: transparency of the sphere (Default value = 1)
 
 :param **kwargs:
-</pre>
+
+```
 
 &nbsp;
 ## **`add_cells_from_file`** [#600]
@@ -448,7 +516,10 @@ def add_cells_from_file(self, filepath, hdf_key='hdf', color='red',
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Load location of cells from a file (csv and HDF) and render as spheres
+docstring:
+
+```text
+Load location of cells from a file (csv and HDF) and render as spheres
     aligned to the root mesh.
 
 :param filepath: str path to file
@@ -466,7 +537,8 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
 
 :param alpha: float, transparency of spheres used to render the cells
     (Default value = 1)
-</pre>
+
+```
 
 &nbsp;
 ## **`add_cells`** [#664]
@@ -480,7 +552,10 @@ def add_cells(self, coords, color='red', color_by_region=False,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Renders cells given their coordinates as a collection of spheres.
+docstring:
+
+```text
+Renders cells given their coordinates as a collection of spheres.
 
 :param coords: pandas dataframe with x,y,z coordinates
 
@@ -520,7 +595,8 @@ to 'color' at the same time, the dictionary will be used to specify
 
 which have the x, y, z coordinates. If not passed, it is assumed that
     the columns are ['x', 'y', 'z']
-</pre>
+
+```
 
 &nbsp;
 ## **`add_optic_cannula`** [#768]
@@ -533,7 +609,10 @@ def add_optic_cannula(self, target_region=None, pos=None, x_offset=0,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds a cylindrical vtk actor to scene to render optic cannulas. By
+docstring:
+
+```text
+Adds a cylindrical vtk actor to scene to render optic cannulas. By
     default
 
 this is a semi-transparent blue cylinder centered on the center of
@@ -564,7 +643,8 @@ the implanted cannula.
     parameters
 
 of the rendered cylinder: color, alpha, rotation axis...
-</pre>
+
+```
 
 &nbsp;
 ## **`add_text`** [#838]
@@ -576,14 +656,18 @@ def add_text(self, text, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds a 2D text to the scene. Default params are to crate a large black
+docstring:
+
+```text
+Adds a 2D text to the scene. Default params are to crate a large black
 
 text at the top of the rendering window.
 
 :param text: str with text to write
 
 :param kwargs: keyword arguments accepted by vedo.shapes.Text2D
-</pre>
+
+```
 
 &nbsp;
 ## **`add_actor_label`** [#857]
@@ -595,7 +679,10 @@ def add_actor_label(self, actors, labels, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds a 2D text ancored to a point on the actor's mesh
+docstring:
+
+```text
+Adds a 2D text ancored to a point on the actor's mesh
 
 to label what the actor is
 
@@ -613,7 +700,8 @@ if None the actor's color is used. Default None.
 
 - radius: radius of sphere used to denote label anchor. Set to 0 or
     None to hide.
-</pre>
+
+```
 
 &nbsp;
 ## **`add_line_at_point`** [#935]
@@ -625,7 +713,10 @@ def add_line_at_point(self, point, replace_coord, bounds, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds a line oriented on a given axis at a point
+docstring:
+
+```text
+Adds a line oriented on a given axis at a point
 
 :param point:list or 1d np array with coordinates of point where
     crosshair is centered
@@ -638,7 +729,8 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
 
 :param kwargs: dictionary with arguments to specify how lines should
     look like
-</pre>
+
+```
 
 &nbsp;
 ## **`add_rostrocaudal_line_at_point`** [#958]
@@ -650,14 +742,18 @@ def add_rostrocaudal_line_at_point(self, point, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Add a line at a point oriented along the trostrocaudal axis
+docstring:
+
+```text
+Add a line at a point oriented along the trostrocaudal axis
 
 :param point:list or 1d np array with coordinates of point where
     crosshair is centered
 
 :param line_kwargs: dictionary with arguments to specify how lines
     should look like
-</pre>
+
+```
 
 &nbsp;
 ## **`add_dorsoventral_line_at_point`** [#968]
@@ -669,14 +765,18 @@ def add_dorsoventral_line_at_point(self, point, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Add a line at a point oriented along the mdorsoventralediolateral axis
+docstring:
+
+```text
+Add a line at a point oriented along the mdorsoventralediolateral axis
 
 :param point:list or 1d np array with coordinates of point where
     crosshair is centered
 
 :param line_kwargs: dictionary with arguments to specify how lines
     should look like
-</pre>
+
+```
 
 &nbsp;
 ## **`add_mediolateral_line_at_point`** [#978]
@@ -688,14 +788,18 @@ def add_mediolateral_line_at_point(self, point, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Add a line at a point oriented along the mediolateral axis
+docstring:
+
+```text
+Add a line at a point oriented along the mediolateral axis
 
 :param point:list or 1d np array with coordinates of point where
     crosshair is centered
 
 :param line_kwargs: dictionary with arguments to specify how lines
     should look like
-</pre>
+
+```
 
 &nbsp;
 ## **`add_crosshair_at_point`** [#988]
@@ -708,7 +812,10 @@ def add_crosshair_at_point(self, point, ml=True, dv=True, ap=True,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Add a crosshair (set of orthogonal lines meeting at a point)
+docstring:
+
+```text
+Add a crosshair (set of orthogonal lines meeting at a point)
 
 centered on a given point.
 
@@ -732,7 +839,8 @@ centered on a given point.
 
 :param point_kwargs: dictionary with arguments to specify how the
     point should look
-</pre>
+
+```
 
 &nbsp;
 ## **`add_plane`** [#1031]
@@ -744,7 +852,10 @@ def add_plane(self, plane, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds one or more planes to the scene.
+docstring:
+
+```text
+Adds one or more planes to the scene.
 
 For more details on how to build custom planes, check:
 
@@ -757,7 +868,8 @@ method.
 the predifined planes ['sagittal', 'coronal', 'horizontal']
 
 or an instance of the Plane class from vedo.shapes
-</pre>
+
+```
 
 &nbsp;
 ## **`add_probe_from_sharptrack`** [#1070]
@@ -770,7 +882,10 @@ def add_probe_from_sharptrack(self, probe_points_file,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Visualises the position of an implanted probe in the brain.
+docstring:
+
+```text
+Visualises the position of an implanted probe in the brain.
 
 Uses the location of points along the probe extracted with SharpTrack
 
@@ -789,7 +904,8 @@ Code contributed by @tbslv on github.
 
 :param kwargs: keyword arguments used to specify how the probe should
     look like (e.g. color, alpha...)
-</pre>
+
+```
 
 &nbsp;
 ## **`apply_render_style`** [#1138]
@@ -830,8 +946,12 @@ def render(self, interactive=True, video=False, camera=None,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Takes care of rendering the scene
-</pre>
+docstring:
+
+```text
+Takes care of rendering the scene
+
+```
 
 &nbsp;
 ## **`close`** [#1261]
@@ -857,12 +977,16 @@ def export_for_web(self, filepath='brexport.html'):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">This function is used to export a brainrender scene
+docstring:
+
+```text
+This function is used to export a brainrender scene
 
 for hosting it online. It saves an html file that can
 
 be opened in a web browser to show an interactive brainrender scene
-</pre>
+
+```
 
 &nbsp;
 ## **`keypress`** [#1310]
@@ -926,7 +1050,11 @@ def render(self, _interactive=True):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)"></pre>
+docstring:
+
+```text
+
+```
 
 &nbsp;
 ## **`close`** [#1396]
@@ -976,10 +1104,14 @@ def render(self, _interactive=True, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">:param _interactive:  (Default value = True)
+docstring:
+
+```text
+:param _interactive:  (Default value = True)
 
 :param **kwargs:
-</pre>
+
+```
 
 &nbsp;
 ## **`close`** [#1467]

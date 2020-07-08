@@ -47,10 +47,14 @@ def get_n_shades_of(shade, n):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">:param shade:  color
+docstring:
+
+```text
+:param shade:  color
 
 :param n: numnber of colors
-</pre>
+
+```
 
 &nbsp;
 
@@ -64,8 +68,12 @@ def _isSequence(arg):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">:param arg:   item to check
-</pre>
+docstring:
+
+```text
+:param arg:   item to check
+
+```
 
 &nbsp;
 
@@ -79,7 +87,10 @@ def getColor(rgb=None, hsv=None):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Convert a color or list of colors to (r,g,b) format from many
+docstring:
+
+```text
+Convert a color or list of colors to (r,g,b) format from many
     different input formats.
 
 :param bool: hsv: if set to `True`, rgb is assumed as (hue,
@@ -108,7 +119,8 @@ Example:
 :param rgb:  (Default value = None)
 
 :param hsv:  (Default value = None)
-</pre>
+
+```
 
 &nbsp;
 
@@ -122,12 +134,16 @@ def getColorName(c):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Find the name of a color.
+docstring:
+
+```text
+Find the name of a color.
 
 |colorpalette| |colorpalette.py|_
 
 :param c: c
-</pre>
+
+```
 
 &nbsp;
 
@@ -141,10 +157,14 @@ def hsv2rgb(hsv):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Convert HSV to RGB color.
+docstring:
+
+```text
+Convert HSV to RGB color.
 
 :param hsv: gsv
-</pre>
+
+```
 
 &nbsp;
 
@@ -158,10 +178,14 @@ def rgb2hsv(rgb):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Convert RGB to HSV color.
+docstring:
+
+```text
+Convert RGB to HSV color.
 
 :param rgb: rgb
-</pre>
+
+```
 
 &nbsp;
 
@@ -175,8 +199,12 @@ def rgb2int(rgb_tuple):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">:param rgb_tuple: rgb
-</pre>
+docstring:
+
+```text
+:param rgb_tuple: rgb
+
+```
 
 &nbsp;
 
@@ -190,7 +218,10 @@ def colorMap(value, name='jet', vmin=None, vmax=None):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Map a real value in range [vmin, vmax] to a (r,g,b) color scale.
+docstring:
+
+```text
+Map a real value in range [vmin, vmax] to a (r,g,b) color scale.
 
 :param value: scalar value to transform into a color
 
@@ -227,7 +258,8 @@ import matplotlib.cm as cm
 print( colorMap(0.2, cm.flag, 0, 1) )
 
 (1.0, 0.809016994374948, 0.6173258487801733)
-</pre>
+
+```
 
 &nbsp;
 
@@ -241,7 +273,10 @@ def makePalette(N, *colors):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Generate N colors starting from `color1` to `color2`
+docstring:
+
+```text
+Generate N colors starting from `color1` to `color2`
 
 by linear interpolation HSV in or RGB spaces.
 
@@ -251,7 +286,8 @@ Adapted from vedo makePalette function
 
 :param colors: input colors, any number of colors with 0 < ncolors <=
     N is okay.
-</pre>
+
+```
 
 &nbsp;
 
@@ -265,8 +301,12 @@ def get_random_colors(n_colors=1):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">:param n_colors:  (Default value = 1)
-</pre>
+docstring:
+
+```text
+:param n_colors:  (Default value = 1)
+
+```
 
 &nbsp;
 
@@ -280,5 +320,9 @@ def check_colors(color):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">:param color: color
-</pre>
+docstring:
+
+```text
+:param color: color
+
+```

@@ -24,8 +24,12 @@ def cap_set_frame(cap, frame_number):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Sets an opencv video capture object to a specific frame
-</pre>
+docstring:
+
+```text
+Sets an opencv video capture object to a specific frame
+
+```
 
 &nbsp;
 
@@ -39,8 +43,12 @@ def get_cap_selected_frame(cap, show_frame):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets a frame from an opencv video capture object to a specific frame
-</pre>
+docstring:
+
+```text
+Gets a frame from an opencv video capture object to a specific frame
+
+```
 
 &nbsp;
 
@@ -54,8 +62,12 @@ def get_video_params(cap):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets video parameters from an opencv video capture object
-</pre>
+docstring:
+
+```text
+Gets video parameters from an opencv video capture object
+
+```
 
 &nbsp;
 
@@ -70,7 +82,10 @@ def open_cvwriter(filepath, w=None, h=None, framerate=None,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Creats an instance of cv.VideoWriter to write frames to video using
+docstring:
+
+```text
+Creats an instance of cv.VideoWriter to write frames to video using
     python opencv
 
 :param filepath: str, path to file to save
@@ -83,7 +98,8 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
 
 :param iscolor: bool, set as true if images are rgb, else false if
     they are gray
-</pre>
+
+```
 
 &nbsp;
 
@@ -97,5 +113,9 @@ def save_videocap_to_video(cap, savepath, fmt, fps=30, iscolor=True):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Saves the content of a videocapture opencv object to a file
-</pre>
+docstring:
+
+```text
+Saves the content of a videocapture opencv object to a file
+
+```

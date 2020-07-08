@@ -26,7 +26,10 @@ def parse_neurons_colors(neurons, color):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Prepares the color info to render neurons
+docstring:
+
+```text
+Prepares the color info to render neurons
 
 :param neurons: str, list, dict. File(s) with neurons data or list of
     rendered neurons.
@@ -48,7 +51,8 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
     color for each neuron
 
 or a dictionary of colors for each neuron
-</pre>
+
+```
 
 &nbsp;
 
@@ -64,7 +68,10 @@ def parse_tractography_colors(tractography, include_all_inj_regions,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">parses color arguments to render tracrography data
+docstring:
+
+```text
+parses color arguments to render tracrography data
 
 :param tractography: list of dictionaries with tractography data
 
@@ -93,7 +100,8 @@ if VIP_regions is passed, then only tracts for the VIP regions are
 
 :param others_color: str, color for not VIP data (Default value =
     "white")
-</pre>
+
+```
 
 &nbsp;
 
@@ -107,7 +115,10 @@ def experiments_source_search(mca, SOI, *args, source=True, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Returns data about experiments whose injection was in the SOI,
+docstring:
+
+```text
+Returns data about experiments whose injection was in the SOI,
     structure of interest
 
 :param SOI: str, structure of interest. Acronym of structure to use as
@@ -118,7 +129,8 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
 :param source:  (Default value = True)
 
 :param **kwargs:
-</pre>
+
+```
 
 &nbsp;
 
@@ -134,7 +146,10 @@ def parse_streamline(*args, filepath=None, data=None,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Given a path to a .json file with streamline data (or the data
+docstring:
+
+```text
+Given a path to a .json file with streamline data (or the data
     themselves), render the streamline as tubes actors.
 
 Either  filepath or data should be passed
@@ -159,7 +174,8 @@ Either  filepath or data should be passed
 :param *args:
 
 :param **kwargs:
-</pre>
+
+```
 
 &nbsp;
 
@@ -173,10 +189,14 @@ def make_url_given_id(expid):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Get url of JSON file for an experiment, give it's ID number
+docstring:
+
+```text
+Get url of JSON file for an experiment, give it's ID number
 
 :param expid: int with experiment ID number
-</pre>
+
+```
 
 &nbsp;
 
@@ -190,7 +210,10 @@ def download_streamlines(eids, streamlines_folder=None):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Given a list of expeirmental IDs, it downloads the streamline data
+docstring:
+
+```text
+Given a list of expeirmental IDs, it downloads the streamline data
     from the https://neuroinformatics.nl cache and saves them as
 
 json files.
@@ -199,7 +222,8 @@ json files.
 
 :param streamlines_folder: str path to the folder where the JSON files
     should be saved, if None the default is used (Default value = None)
-</pre>
+
+```
 
 &nbsp;
 
@@ -213,7 +237,10 @@ def extract_ids_from_csv(csv_file, download=False, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Parse CSV file to extract experiments IDs and link to downloadable
+docstring:
+
+```text
+Parse CSV file to extract experiments IDs and link to downloadable
     streamline data
 
 Given a CSV file with info about experiments downloaded from:
@@ -232,4 +259,5 @@ Also return the experiments IDs to download data from:
     (Default value = False)
 
 :param **kwargs:
-</pre>
+
+```

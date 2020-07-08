@@ -50,10 +50,14 @@ def get_atlas_by_name(self, atlas_name):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Get a brain atlas in the Allen's database given it's name
+docstring:
+
+```text
+Get a brain atlas in the Allen's database given it's name
 
 :param atlas_name: str with atlas name
-</pre>
+
+```
 
 &nbsp;
 ## **`get_products_by_species`** [#104]
@@ -65,10 +69,14 @@ def get_products_by_species(self, species):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Get all 'products' in the Allen Database for a given species
+docstring:
+
+```text
+Get all 'products' in the Allen Database for a given species
 
 :param species: str
-</pre>
+
+```
 
 &nbsp;
 ## **`get_experimentsid_by_productid`** [#113]
@@ -80,12 +88,16 @@ def get_experimentsid_by_productid(self, productid, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Get the experiment's ID that belong to the same project (product).
+docstring:
+
+```text
+Get the experiment's ID that belong to the same project (product).
 
 :param productid: int with product ID number
 
 :param **kwargs:
-</pre>
+
+```
 
 &nbsp;
 ## **`get_experimentimages_by_expid`** [#126]
@@ -97,10 +109,14 @@ def get_experimentimages_by_expid(self, expid):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Get's images that belong to an experiment
+docstring:
+
+```text
+Get's images that belong to an experiment
 
 :param expid: int with experiment name.
-</pre>
+
+```
 
 &nbsp;
 ## **`get_atlasimages_by_atlasid`** [#136]
@@ -112,10 +128,14 @@ def get_atlasimages_by_atlasid(self, atlasid):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Get the metadata of images that belong to an atlas.
+docstring:
+
+```text
+Get the metadata of images that belong to an atlas.
 
 :param atlasid: int with atlas number
-</pre>
+
+```
 
 &nbsp;
 ## **`download_images_by_imagesid`** [#149]
@@ -128,7 +148,10 @@ def download_images_by_imagesid(self, savedir, imagesids,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Downloads and saves images given a list of images IDs.
+docstring:
+
+```text
+Downloads and saves images given a list of images IDs.
 
 :param savedir: str, folder in which to save the image
 
@@ -145,7 +168,8 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
 
 :param atlas_svg: if True fetches the images as SVG, otherwise as PNG
     (Default value = True)
-</pre>
+
+```
 
 &nbsp;
 ## **`download_images_by_atlasid`** [#216]
@@ -158,7 +182,10 @@ def download_images_by_atlasid(self, savedir, atlasid, debug=False,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Downloads all the images that belong to an altlas
+docstring:
+
+```text
+Downloads all the images that belong to an altlas
 
 :param savedir: str, folder in which to save the images
 
@@ -166,4 +193,5 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
 
 :param **kwargs: keyword arguments for
     self.download_images_by_imagesid
-</pre>
+
+```

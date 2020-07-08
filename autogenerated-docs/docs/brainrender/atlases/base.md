@@ -55,7 +55,10 @@ def get_plane_at_point(self, pos, norm, sx, sy, color='lightgray',
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Returns a plane going through a point at pos, oriented
+docstring:
+
+```text
+Returns a plane going through a point at pos, oriented
 
 orthogonally to the vector norm and of width and height
 
@@ -69,7 +72,8 @@ sx, sy.
 :param norm: 3-tuple or list with 3d vector the plane is orthogonal to
 
 :param color, alpha: plane color and transparency
-</pre>
+
+```
 
 &nbsp;
 ## **`get_sagittal_plane`** [#42]
@@ -81,7 +85,10 @@ def get_sagittal_plane(self, pos=None, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Creates a Plane actor centered at the midpoint of root (or a user
+docstring:
+
+```text
+Creates a Plane actor centered at the midpoint of root (or a user
     given locatin)
 
 and oriented along the sagittal axis
@@ -90,7 +97,8 @@ and oriented along the sagittal axis
     of the
 
 point the plane goes through.
-</pre>
+
+```
 
 &nbsp;
 ## **`get_horizontal_plane`** [#69]
@@ -102,7 +110,10 @@ def get_horizontal_plane(self, pos=None, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Creates a Plane actor centered at the midpoint of root (or a user
+docstring:
+
+```text
+Creates a Plane actor centered at the midpoint of root (or a user
     given locatin)
 
 and oriented along the horizontal axis
@@ -111,7 +122,8 @@ and oriented along the horizontal axis
     of the
 
 point the plane goes through.
-</pre>
+
+```
 
 &nbsp;
 ## **`get_coronal_plane`** [#96]
@@ -123,7 +135,10 @@ def get_coronal_plane(self, pos=None, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Creates a Plane actor centered at the midpoint of root (or a user
+docstring:
+
+```text
+Creates a Plane actor centered at the midpoint of root (or a user
     given locatin)
 
 and oriented along the coronal axis
@@ -132,7 +147,8 @@ and oriented along the coronal axis
     of the
 
 point the plane goes through.
-</pre>
+
+```
 
 &nbsp;
 ## **`get_region_CenterOfMass`** [#124]
@@ -145,7 +161,10 @@ def get_region_CenterOfMass(self, regions, unilateral=True,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Get the center of mass of the 3d mesh of one or multiple brain
+docstring:
+
+```text
+Get the center of mass of the 3d mesh of one or multiple brain
     regions.
 
 :param regions: str, list of brain regions acronyms
@@ -160,7 +179,8 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
     just returns the CoM coordinates for that region.
 
 If a list is passed then a dictionary is returned. ]
-</pre>
+
+```
 
 &nbsp;
 ## **`_get_structure_mesh`** [#167]
@@ -188,7 +208,10 @@ def get_brain_regions(self, brain_regions, add_labels=False,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets brain regions meshes for rendering
+docstring:
+
+```text
+Gets brain regions meshes for rendering
 
 Many parameters can be passed to specify how the regions should be
     rendered.
@@ -218,7 +241,8 @@ Use the kwargs to specify more detailes on how the regins should be
 
 :param **kwargs: used to determine a bunch of thigs, including the
     look and location of lables from scene.add_labels
-</pre>
+
+```
 
 &nbsp;
 ## **`get_structure_ancestors`** [#286]
@@ -231,7 +255,10 @@ def get_structure_ancestors(self, regions, ancestors=True,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Get's the ancestors of the region(s) passed as arguments
+docstring:
+
+```text
+Get's the ancestors of the region(s) passed as arguments
 
 :param regions: str, list of str with acronums of regions of interest
 
@@ -240,7 +267,8 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
 
 :param descendants: if True, returns the descendants of the region
     (Default value = False)
-</pre>
+
+```
 
 &nbsp;
 ## **`get_structure_descendants`** [#328]
@@ -266,13 +294,17 @@ def get_structure_parent(self, acronyms):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets the parent of a brain region (or list of regions) from the
+docstring:
+
+```text
+Gets the parent of a brain region (or list of regions) from the
     hierarchical structure of the
 
 Allen Brain Atals.
 
 :param acronyms: list of acronyms of brain regions.
-</pre>
+
+```
 
 &nbsp;
 ## **`get_region_unilateral`** [#359]
@@ -285,7 +317,10 @@ def get_region_unilateral(self, region, hemisphere='both', color=None,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Regions meshes are loaded with both hemispheres' meshes by default.
+docstring:
+
+```text
+Regions meshes are loaded with both hemispheres' meshes by default.
 
 This function splits them in two.
 
@@ -298,7 +333,8 @@ This function splits them in two.
 
 :param alpha: transparency of each side's mesh.  (Default value =
     None)
-</pre>
+
+```
 
 &nbsp;
 ## **`mirror_point_across_hemispheres`** [#398]
@@ -324,7 +360,11 @@ def get_colors_from_coordinates(self, p0):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Given a point or a list of points returns a list of colors where
+docstring:
+
+```text
+Given a point or a list of points returns a list of colors where
 
 each item is the color of the brain region each point is in
-</pre>
+
+```

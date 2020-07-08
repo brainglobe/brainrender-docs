@@ -43,7 +43,10 @@ def _add_neurons_get_colors(self, neurons, color):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Parses color argument for self.add_neurons
+docstring:
+
+```text
+Parses color argument for self.add_neurons
 
 :para, neurons: list of Neuron object or file paths...
 
@@ -64,7 +67,8 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
     color for each neuron
 
 or a dictionary of colors for each neuron
-</pre>
+
+```
 
 &nbsp;
 ## **`add_neurons`** [#180]
@@ -77,7 +81,10 @@ def add_neurons(self, neurons, color=None, display_axon=True,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds rendered morphological data of neurons reconstructions downloaded
+docstring:
+
+```text
+Adds rendered morphological data of neurons reconstructions downloaded
     from the
 
 Mouse Light project at Janelia, neuromorpho.org and other sources.
@@ -121,4 +128,5 @@ or a dictionary of colors for each neuron
 
 :param neurite_radius: float > 0 , radius of tube actor representing
     neurites
-</pre>
+
+```

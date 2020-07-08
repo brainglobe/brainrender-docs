@@ -50,8 +50,12 @@ def get_cap_from_images_folder(self, img_format='%1d.png'):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">It creates a cv2 VideoCaptur 'cap' from a folder of images (frames)
-</pre>
+docstring:
+
+```text
+It creates a cv2 VideoCaptur 'cap' from a folder of images (frames)
+
+```
 
 &nbsp;
 ## **`close`** [#46]
@@ -63,9 +67,13 @@ def close(self):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Takes a folder full of frames saved as images and converts it into a
+docstring:
+
+```text
+Takes a folder full of frames saved as images and converts it into a
     video.
-</pre>
+
+```
 
 &nbsp;
 
@@ -110,7 +118,10 @@ def parse_kwargs(self, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Parses arguments for video creation
+docstring:
+
+```text
+Parses arguments for video creation
 
 Use kwargs to specify:
 
@@ -127,7 +138,8 @@ Use kwargs to specify:
 - fps: framerate of video
 
 Arguments not specified in kwargs will be assigned default values
-</pre>
+
+```
 
 &nbsp;
 ## **`make_video`** [#115]
@@ -139,7 +151,10 @@ def make_video(self, azimuth=0, elevation=0, roll=0, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Creates a video using user defined parameters
+docstring:
+
+```text
+Creates a video using user defined parameters
 
 :param azimuth: integer, specify the rotation in degrees per frame on
     the relative axis. (Default value = 0)
@@ -152,7 +167,8 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
 
 :param kwargs: use to change destination folder, video name, fps,
     duration ... check 'self.parse_kwargs' for details.
-</pre>
+
+```
 
 &nbsp;
 
@@ -188,7 +204,10 @@ def make_video(self, video_function, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Let's users use a custom function to create the video.
+docstring:
+
+```text
+Let's users use a custom function to create the video.
 
 The custom function must:
 
@@ -213,4 +232,5 @@ so that the video can be closed and saved.
     frames
 
 see: examples/advanced/custom_videomaker.py
-</pre>
+
+```

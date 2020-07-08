@@ -28,14 +28,18 @@ def mirror_actor_at_point(actor, point, axis='x'):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Mirror an actor around a point
+docstring:
+
+```text
+Mirror an actor around a point
 
 :param actor:
 
 :param point:
 
 :param axis:  (Default value = 'x')
-</pre>
+
+```
 
 &nbsp;
 
@@ -49,10 +53,14 @@ def set_wireframe(actor):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">set an actor's look to wireframe
+docstring:
+
+```text
+set an actor's look to wireframe
 
 :param actor:
-</pre>
+
+```
 
 &nbsp;
 
@@ -66,10 +74,14 @@ def set_solid(actor):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">set an actor's look to solid
+docstring:
+
+```text
+set an actor's look to solid
 
 :param actor:
-</pre>
+
+```
 
 &nbsp;
 
@@ -83,12 +95,16 @@ def set_color(actor, color):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">set an actor's look to a specific color
+docstring:
+
+```text
+set an actor's look to a specific color
 
 :param actor:
 
 :param color:
-</pre>
+
+```
 
 &nbsp;
 
@@ -102,14 +118,18 @@ def set_line(actor, lw=None, c=None):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">set an actor's look to specify the line width and color
+docstring:
+
+```text
+set an actor's look to specify the line width and color
 
 :param actor:
 
 :param lw:  (Default value = None)
 
 :param c:  (Default value = None)
-</pre>
+
+```
 
 &nbsp;
 
@@ -123,12 +143,16 @@ def upsample_actor(actor, fact=1):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Increase resolution of actor
+docstring:
+
+```text
+Increase resolution of actor
 
 :param actor:
 
 :param fact:  (Default value = 1)
-</pre>
+
+```
 
 &nbsp;
 
@@ -142,12 +166,16 @@ def downsample_actor(actor, fact=0.5):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Reduce resolution of actor
+docstring:
+
+```text
+Reduce resolution of actor
 
 :param actor:
 
 :param fact:  (Default value = 0.5)
-</pre>
+
+```
 
 &nbsp;
 
@@ -161,12 +189,16 @@ def smooth_actor(actor, factor=15):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Smooth an actor's mesh
+docstring:
+
+```text
+Smooth an actor's mesh
 
 :param actor:
 
 :param factor:  (Default value = 15)
-</pre>
+
+```
 
 &nbsp;
 
@@ -182,7 +214,10 @@ def edit_actor(actor, wireframe=False, solid=False, color=False,
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Apply a set of functions to edit an actor's look.
+docstring:
+
+```text
+Apply a set of functions to edit an actor's look.
 
 :param actor:
 
@@ -204,4 +239,5 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
     False)
 
 :param smooth: if true, smoothen actor (Default value = False)
-</pre>
+
+```

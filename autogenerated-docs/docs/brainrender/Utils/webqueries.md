@@ -22,10 +22,14 @@ def request(url):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Sends a request to a url
+docstring:
+
+```text
+Sends a request to a url
 
 :param url:
-</pre>
+
+```
 
 &nbsp;
 

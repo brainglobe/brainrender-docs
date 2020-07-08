@@ -40,8 +40,12 @@ def buildcam(cm):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Builds a camera from a dictionary of parameters, from vedo
-</pre>
+docstring:
+
+```text
+Builds a camera from a dictionary of parameters, from vedo
+
+```
 
 &nbsp;
 
@@ -71,7 +75,10 @@ def set_camera(scene, camera):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Sets the position of the camera of a brainrender scene.
+docstring:
+
+```text
+Sets the position of the camera of a brainrender scene.
 
 :param scene: instance of Scene()
 
@@ -79,7 +86,8 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
     cameras, or
 
 a dictionary of camera parameters.
-</pre>
+
+```
 
 &nbsp;
 
@@ -93,7 +101,11 @@ def get_camera_params(scene=None, camera=None):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Given an active brainrender scene, it return
+docstring:
+
+```text
+Given an active brainrender scene, it return
 
 the camera parameters.
-</pre>
+
+```

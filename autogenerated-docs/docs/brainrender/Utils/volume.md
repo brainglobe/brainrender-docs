@@ -22,7 +22,10 @@ def load_labelled_volume(data, vmin=0, alpha=1, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Load volume image from .nrrd file.
+docstring:
+
+```text
+Load volume image from .nrrd file.
 
 It assume that voxels with value = 0 are empty while voxels with
     values > 0
@@ -39,7 +42,8 @@ are labelles (e.g. to indicate the location of a brain region in a
 
 :param alpha: float in range [0, 1], transparency [for the part of
     volume with value > vmin]
-</pre>
+
+```
 
 &nbsp;
 
@@ -53,7 +57,10 @@ def extract_volume_surface(vol, threshold=0.1, smooth=False):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Returns a vedo mesh actor with just the outer surface of a volume
+docstring:
+
+```text
+Returns a vedo mesh actor with just the outer surface of a volume
 
 :param vol: instance of Volume class from vedo
 
@@ -61,7 +68,8 @@ docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     bo
     isosurface extraction
 
 :param smooth: bool, if True the surface mesh is smoothed
-</pre>
+
+```
 
 &nbsp;
 
@@ -75,7 +83,10 @@ def extract_label_mesh(vol, lbl):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Given a vedo Volume with a scalar value labelling each voxel,
+docstring:
+
+```text
+Given a vedo Volume with a scalar value labelling each voxel,
 
 this function returns a mesh of only the voxels whose value matches
     the lbl argument
@@ -83,4 +94,5 @@ this function returns a mesh of only the voxels whose value matches
 :param vol: a vedo Volume
 
 :param lbl: float or int
-</pre>
+
+```

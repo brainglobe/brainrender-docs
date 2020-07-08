@@ -138,12 +138,16 @@ def _get_structure_mesh(self, acronym, **kwargs):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Fetches the mesh for a brain region from the atlas.
+docstring:
+
+```text
+Fetches the mesh for a brain region from the atlas.
 
 :param acronym: string, acronym of brain region
 
 :param **kwargs:
-</pre>
+
+```
 
 &nbsp;
 ## **`_check_valid_region_arg`** [#315]
@@ -155,8 +159,12 @@ def _check_valid_region_arg(self, region):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Check that the string passed is a valid brain region name.
-</pre>
+docstring:
+
+```text
+Check that the string passed is a valid brain region name.
+
+```
 
 &nbsp;
 ## **`_check_obj_file`** [#326]
@@ -168,13 +176,17 @@ def _check_obj_file(self, region, obj_file):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">If the .obj file for a brain region hasn't been downloaded already,
+docstring:
+
+```text
+If the .obj file for a brain region hasn't been downloaded already,
     this function downloads it and writes it.
 
 :param region: string, acronym of brain region
 
 :param obj_file: path to .obj file to write downloaded data.
-</pre>
+
+```
 
 &nbsp;
 ## **`get_region_color`** [#339]
@@ -186,10 +198,14 @@ def get_region_color(self, regions):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets the RGB color of a brain region from the atlas.
+docstring:
+
+```text
+Gets the RGB color of a brain region from the atlas.
 
 :param regions:  list of regions acronyms.
-</pre>
+
+```
 
 &nbsp;
 ## **`get_brain_regions`** [#368]
@@ -216,6 +232,10 @@ def add_descendants_to_tree(tree, structure, parent_id=None):
 ```
 
 &nbsp;  
-docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Recursively goes through all the the descendants of a region and adds
+docstring:
+
+```text
+Recursively goes through all the the descendants of a region and adds
     them to the tree
-</pre>
+
+```
