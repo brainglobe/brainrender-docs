@@ -5,21 +5,21 @@
 Contents
 ========
 
-* [line: 6 - `mirror_actor_at_point`](#line-6---mirror_actor_at_point)
-* [line: 60 - `set_wireframe`](#line-60---set_wireframe)
-* [line: 70 - `set_solid`](#line-70---set_solid)
-* [line: 80 - `set_color`](#line-80---set_color)
-* [line: 91 - `set_line`](#line-91---set_line)
-* [line: 106 - `upsample_actor`](#line-106---upsample_actor)
-* [line: 117 - `downsample_actor`](#line-117---downsample_actor)
-* [line: 128 - `smooth_actor`](#line-128---smooth_actor)
-* [line: 139 - `edit_actor`](#line-139---edit_actor)
+* [line: 6 `mirror_actor_at_point`](#line-6-mirror_actor_at_point)
+* [line: 60 `set_wireframe`](#line-60-set_wireframe)
+* [line: 70 `set_solid`](#line-70-set_solid)
+* [line: 80 `set_color`](#line-80-set_color)
+* [line: 91 `set_line`](#line-91-set_line)
+* [line: 106 `upsample_actor`](#line-106-upsample_actor)
+* [line: 117 `downsample_actor`](#line-117-downsample_actor)
+* [line: 128 `smooth_actor`](#line-128-smooth_actor)
+* [line: 139 `edit_actor`](#line-139-edit_actor)
 
 
 &nbsp;
 
 --------
-# line: 6 - `mirror_actor_at_point`
+# line: 6 `mirror_actor_at_point`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L6) online
 #### function definition
@@ -46,7 +46,7 @@ def mirror_actor_at_point(actor, point, axis='x'):
 &nbsp;
 
 --------
-# line: 60 - `set_wireframe`
+# line: 60 `set_wireframe`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L60) online
 #### function definition
@@ -71,7 +71,7 @@ def set_wireframe(actor):
 &nbsp;
 
 --------
-# line: 70 - `set_solid`
+# line: 70 `set_solid`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L70) online
 #### function definition
@@ -96,7 +96,7 @@ def set_solid(actor):
 &nbsp;
 
 --------
-# line: 80 - `set_color`
+# line: 80 `set_color`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L80) online
 #### function definition
@@ -122,7 +122,7 @@ def set_color(actor, color):
 &nbsp;
 
 --------
-# line: 91 - `set_line`
+# line: 91 `set_line`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L91) online
 #### function definition
@@ -149,7 +149,7 @@ def set_line(actor, lw=None, c=None):
 &nbsp;
 
 --------
-# line: 106 - `upsample_actor`
+# line: 106 `upsample_actor`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L106) online
 #### function definition
@@ -175,7 +175,7 @@ def upsample_actor(actor, fact=1):
 &nbsp;
 
 --------
-# line: 117 - `downsample_actor`
+# line: 117 `downsample_actor`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L117) online
 #### function definition
@@ -201,7 +201,7 @@ def downsample_actor(actor, fact=0.5):
 &nbsp;
 
 --------
-# line: 128 - `smooth_actor`
+# line: 128 `smooth_actor`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L128) online
 #### function definition
@@ -227,7 +227,7 @@ def smooth_actor(actor, factor=15):
 &nbsp;
 
 --------
-# line: 139 - `edit_actor`
+# line: 139 `edit_actor`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L139) online
 #### function definition

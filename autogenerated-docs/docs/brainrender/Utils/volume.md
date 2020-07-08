@@ -5,15 +5,15 @@
 Contents
 ========
 
-* [line: 9 - `load_labelled_volume`](#line-9---load_labelled_volume)
-* [line: 40 - `extract_volume_surface`](#line-40---extract_volume_surface)
-* [line: 62 - `extract_label_mesh`](#line-62---extract_label_mesh)
+* [line: 9 `load_labelled_volume`](#line-9-load_labelled_volume)
+* [line: 40 `extract_volume_surface`](#line-40-extract_volume_surface)
+* [line: 62 `extract_label_mesh`](#line-62-extract_label_mesh)
 
 
 &nbsp;
 
 --------
-# line: 9 - `load_labelled_volume`
+# line: 9 `load_labelled_volume`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/volume.py#L9) online
 #### function definition
@@ -43,7 +43,7 @@ def load_labelled_volume(data, vmin=0, alpha=1, **kwargs):
 &nbsp;
 
 --------
-# line: 40 - `extract_volume_surface`
+# line: 40 `extract_volume_surface`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/volume.py#L40) online
 #### function definition
@@ -70,7 +70,7 @@ def extract_volume_surface(vol, threshold=0.1, smooth=False):
 &nbsp;
 
 --------
-# line: 62 - `extract_label_mesh`
+# line: 62 `extract_label_mesh`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/volume.py#L62) online
 #### function definition

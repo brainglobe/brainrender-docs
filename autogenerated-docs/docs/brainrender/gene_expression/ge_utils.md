@@ -5,16 +5,16 @@
 Contents
 ========
 
-* [line: 11 - `check_gene_cached`](#line-11---check_gene_cached)
-* [line: 34 - `download_and_cache`](#line-34---download_and_cache)
-* [line: 54 - `load_cached_gene`](#line-54---load_cached_gene)
-* [line: 70 - `read_raw`](#line-70---read_raw)
+* [line: 11 `check_gene_cached`](#line-11-check_gene_cached)
+* [line: 34 `download_and_cache`](#line-34-download_and_cache)
+* [line: 54 `load_cached_gene`](#line-54-load_cached_gene)
+* [line: 70 `read_raw`](#line-70-read_raw)
 
 
 &nbsp;
 
 --------
-# line: 11 - `check_gene_cached`
+# line: 11 `check_gene_cached`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/gene_expression/ge_utils.py#L11) online
 #### function definition
@@ -43,7 +43,7 @@ def check_gene_cached(cache_folder, gene_id, exp_id):
 &nbsp;
 
 --------
-# line: 34 - `download_and_cache`
+# line: 34 `download_and_cache`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/gene_expression/ge_utils.py#L34) online
 #### function definition
@@ -70,7 +70,7 @@ def download_and_cache(url, cachedir):
 &nbsp;
 
 --------
-# line: 54 - `load_cached_gene`
+# line: 54 `load_cached_gene`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/gene_expression/ge_utils.py#L54) online
 #### function definition
@@ -93,7 +93,7 @@ def load_cached_gene(cache, metric, grid_size):
 &nbsp;
 
 --------
-# line: 70 - `read_raw`
+# line: 70 `read_raw`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/gene_expression/ge_utils.py#L70) online
 #### function definition

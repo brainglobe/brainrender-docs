@@ -6,14 +6,14 @@ Contents
 ========
 
 * [**ImageDownload**](#imagedownload)
-* [line: 34 - `__init__`](#line-34---__init__)
-* [line: 89 - `get_atlas_by_name`](#line-89---get_atlas_by_name)
-* [line: 104 - `get_products_by_species`](#line-104---get_products_by_species)
-* [line: 113 - `get_experimentsid_by_productid`](#line-113---get_experimentsid_by_productid)
-* [line: 126 - `get_experimentimages_by_expid`](#line-126---get_experimentimages_by_expid)
-* [line: 136 - `get_atlasimages_by_atlasid`](#line-136---get_atlasimages_by_atlasid)
-* [line: 149 - `download_images_by_imagesid`](#line-149---download_images_by_imagesid)
-* [line: 216 - `download_images_by_atlasid`](#line-216---download_images_by_atlasid)
+* [line: 34 `__init__`](#line-34-__init__)
+* [line: 89 `get_atlas_by_name`](#line-89-get_atlas_by_name)
+* [line: 104 `get_products_by_species`](#line-104-get_products_by_species)
+* [line: 113 `get_experimentsid_by_productid`](#line-113-get_experimentsid_by_productid)
+* [line: 126 `get_experimentimages_by_expid`](#line-126-get_experimentimages_by_expid)
+* [line: 136 `get_atlasimages_by_atlasid`](#line-136-get_atlasimages_by_atlasid)
+* [line: 149 `download_images_by_imagesid`](#line-149-download_images_by_imagesid)
+* [line: 216 `download_images_by_atlasid`](#line-216-download_images_by_atlasid)
 
 
 &nbsp;
@@ -31,7 +31,7 @@ Handles query to the Allen ImageDownloadApi and saves the data
 &nbsp;
 
 --------
-# line: 34 - `__init__`
+# line: 34 `__init__`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/atlas_images.py#L34) online
 #### function definition
@@ -54,7 +54,7 @@ def __init__(self):
 &nbsp;
 
 --------
-# line: 89 - `get_atlas_by_name`
+# line: 89 `get_atlas_by_name`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/atlas_images.py#L89) online
 #### function definition
@@ -79,7 +79,7 @@ def get_atlas_by_name(self, atlas_name):
 &nbsp;
 
 --------
-# line: 104 - `get_products_by_species`
+# line: 104 `get_products_by_species`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/atlas_images.py#L104) online
 #### function definition
@@ -104,7 +104,7 @@ def get_products_by_species(self, species):
 &nbsp;
 
 --------
-# line: 113 - `get_experimentsid_by_productid`
+# line: 113 `get_experimentsid_by_productid`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/atlas_images.py#L113) online
 #### function definition
@@ -130,7 +130,7 @@ def get_experimentsid_by_productid(self, productid, **kwargs):
 &nbsp;
 
 --------
-# line: 126 - `get_experimentimages_by_expid`
+# line: 126 `get_experimentimages_by_expid`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/atlas_images.py#L126) online
 #### function definition
@@ -155,7 +155,7 @@ def get_experimentimages_by_expid(self, expid):
 &nbsp;
 
 --------
-# line: 136 - `get_atlasimages_by_atlasid`
+# line: 136 `get_atlasimages_by_atlasid`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/atlas_images.py#L136) online
 #### function definition
@@ -180,7 +180,7 @@ def get_atlasimages_by_atlasid(self, atlasid):
 &nbsp;
 
 --------
-# line: 149 - `download_images_by_imagesid`
+# line: 149 `download_images_by_imagesid`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/atlas_images.py#L149) online
 #### function definition
@@ -211,7 +211,7 @@ def download_images_by_imagesid(self, savedir, imagesids, downsample=0, annotate
 &nbsp;
 
 --------
-# line: 216 - `download_images_by_atlasid`
+# line: 216 `download_images_by_atlasid`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/atlas_images.py#L216) online
 #### function definition

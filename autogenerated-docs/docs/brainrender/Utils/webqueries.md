@@ -5,15 +5,15 @@
 Contents
 ========
 
-* [line: 10 - `request`](#line-10---request)
-* [line: 30 - `fail_on_no_connection`](#line-30---fail_on_no_connection)
-* [line: 34 - `inner`](#line-34---inner)
+* [line: 10 `request`](#line-10-request)
+* [line: 30 `fail_on_no_connection`](#line-30-fail_on_no_connection)
+* [line: 34 `inner`](#line-34-inner)
 
 
 &nbsp;
 
 --------
-# line: 10 - `request`
+# line: 10 `request`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/webqueries.py#L10) online
 #### function definition
@@ -38,7 +38,7 @@ def request(url):
 &nbsp;
 
 --------
-# line: 30 - `fail_on_no_connection`
+# line: 30 `fail_on_no_connection`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/webqueries.py#L30) online
 #### function definition
@@ -61,7 +61,7 @@ def fail_on_no_connection(func):
 &nbsp;
 
 --------
-# line: 34 - `inner`
+# line: 34 `inner`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/webqueries.py#L34) online
 #### function definition

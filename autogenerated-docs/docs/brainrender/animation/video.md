@@ -6,16 +6,16 @@ Contents
 ========
 
 * [**Video**](#video)
-* [line: 19 - `__init__`](#line-19---__init__)
-* [line: 23 - `get_cap_from_images_folder`](#line-23---get_cap_from_images_folder)
-* [line: 46 - `close`](#line-46---close)
+* [line: 19 `__init__`](#line-19-__init__)
+* [line: 23 `get_cap_from_images_folder`](#line-23-get_cap_from_images_folder)
+* [line: 46 `close`](#line-46-close)
 * [**BasicVideoMaker**](#basicvideomaker)
-* [line: 79 - `__init__`](#line-79---__init__)
-* [line: 95 - `parse_kwargs`](#line-95---parse_kwargs)
-* [line: 115 - `make_video`](#line-115---make_video)
+* [line: 79 `__init__`](#line-79-__init__)
+* [line: 95 `parse_kwargs`](#line-95-parse_kwargs)
+* [line: 115 `make_video`](#line-115-make_video)
 * [**CustomVideoMaker**](#customvideomaker)
-* [line: 163 - `__init__`](#line-163---__init__)
-* [line: 166 - `make_video`](#line-166---make_video)
+* [line: 163 `__init__`](#line-163-__init__)
+* [line: 166 `make_video`](#line-166-make_video)
 
 
 &nbsp;
@@ -31,7 +31,7 @@ Contents
 &nbsp;
 
 --------
-# line: 19 - `__init__`
+# line: 19 `__init__`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/animation/video.py#L19) online
 #### function definition
@@ -54,7 +54,7 @@ def __init__(self, *args, fmt='mp4', **kwargs):
 &nbsp;
 
 --------
-# line: 23 - `get_cap_from_images_folder`
+# line: 23 `get_cap_from_images_folder`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/animation/video.py#L23) online
 #### function definition
@@ -77,7 +77,7 @@ def get_cap_from_images_folder(self, img_format='%1d.png'):
 &nbsp;
 
 --------
-# line: 46 - `close`
+# line: 46 `close`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/animation/video.py#L46) online
 #### function definition
@@ -121,7 +121,7 @@ Use kwargs to specify:
 &nbsp;
 
 --------
-# line: 79 - `__init__`
+# line: 79 `__init__`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/animation/video.py#L79) online
 #### function definition
@@ -144,7 +144,7 @@ def __init__(self, scene, **kwargs):
 &nbsp;
 
 --------
-# line: 95 - `parse_kwargs`
+# line: 95 `parse_kwargs`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/animation/video.py#L95) online
 #### function definition
@@ -176,7 +176,7 @@ def parse_kwargs(self, **kwargs):
 &nbsp;
 
 --------
-# line: 115 - `make_video`
+# line: 115 `make_video`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/animation/video.py#L115) online
 #### function definition
@@ -216,7 +216,7 @@ Subclasses BasicVideoMaker and replaces make_video method.
 &nbsp;
 
 --------
-# line: 163 - `__init__`
+# line: 163 `__init__`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/animation/video.py#L163) online
 #### function definition
@@ -239,7 +239,7 @@ def __init__(self, scene, **kwargs):
 &nbsp;
 
 --------
-# line: 166 - `make_video`
+# line: 166 `make_video`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/animation/video.py#L166) online
 #### function definition

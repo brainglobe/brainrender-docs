@@ -6,14 +6,14 @@ Contents
 ========
 
 * [**GeneExpressionAPI**](#geneexpressionapi)
-* [line: 36 - `__init__`](#line-36---__init__)
-* [line: 42 - `get_all_genes`](#line-42---get_all_genes)
-* [line: 50 - `get_gene_id_by_name`](#line-50---get_gene_id_by_name)
-* [line: 67 - `get_gene_symbol_by_id`](#line-67---get_gene_symbol_by_id)
-* [line: 82 - `get_gene_experiments`](#line-82---get_gene_experiments)
-* [line: 107 - `download_gene_data`](#line-107---download_gene_data)
-* [line: 140 - `get_gene_data`](#line-140---get_gene_data)
-* [line: 164 - `griddata_to_volume`](#line-164---griddata_to_volume)
+* [line: 36 `__init__`](#line-36-__init__)
+* [line: 42 `get_all_genes`](#line-42-get_all_genes)
+* [line: 50 `get_gene_id_by_name`](#line-50-get_gene_id_by_name)
+* [line: 67 `get_gene_symbol_by_id`](#line-67-get_gene_symbol_by_id)
+* [line: 82 `get_gene_experiments`](#line-82-get_gene_experiments)
+* [line: 107 `download_gene_data`](#line-107-download_gene_data)
+* [line: 140 `get_gene_data`](#line-140-get_gene_data)
+* [line: 164 `griddata_to_volume`](#line-164-griddata_to_volume)
 
 
 &nbsp;
@@ -29,7 +29,7 @@ Contents
 &nbsp;
 
 --------
-# line: 36 - `__init__`
+# line: 36 `__init__`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/gene_expression/api.py#L36) online
 #### function definition
@@ -52,7 +52,7 @@ def __init__(self, base_dir=None, **kwargs):
 &nbsp;
 
 --------
-# line: 42 - `get_all_genes`
+# line: 42 `get_all_genes`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/gene_expression/api.py#L42) online
 #### function definition
@@ -75,7 +75,7 @@ def get_all_genes(self):
 &nbsp;
 
 --------
-# line: 50 - `get_gene_id_by_name`
+# line: 50 `get_gene_id_by_name`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/gene_expression/api.py#L50) online
 #### function definition
@@ -98,7 +98,7 @@ def get_gene_id_by_name(self, gene_name):
 &nbsp;
 
 --------
-# line: 67 - `get_gene_symbol_by_id`
+# line: 67 `get_gene_symbol_by_id`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/gene_expression/api.py#L67) online
 #### function definition
@@ -121,7 +121,7 @@ def get_gene_symbol_by_id(self, gene_id):
 &nbsp;
 
 --------
-# line: 82 - `get_gene_experiments`
+# line: 82 `get_gene_experiments`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/gene_expression/api.py#L82) online
 #### function definition
@@ -147,7 +147,7 @@ def get_gene_experiments(self, gene_symbol):
 &nbsp;
 
 --------
-# line: 107 - `download_gene_data`
+# line: 107 `download_gene_data`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/gene_expression/api.py#L107) online
 #### function definition
@@ -174,7 +174,7 @@ def download_gene_data(self, gene):
 &nbsp;
 
 --------
-# line: 140 - `get_gene_data`
+# line: 140 `get_gene_data`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/gene_expression/api.py#L140) online
 #### function definition
@@ -197,7 +197,7 @@ def get_gene_data(self, gene, exp_id, metric='energy'):
 &nbsp;
 
 --------
-# line: 164 - `griddata_to_volume`
+# line: 164 `griddata_to_volume`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/gene_expression/api.py#L164) online
 #### function definition

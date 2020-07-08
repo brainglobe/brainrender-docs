@@ -5,14 +5,14 @@
 Contents
 ========
 
-* [line: 11 - `get_neuron_actors_with_morphapi`](#line-11---get_neuron_actors_with_morphapi)
-* [line: 50 - `edit_neurons`](#line-50---edit_neurons)
+* [line: 11 `get_neuron_actors_with_morphapi`](#line-11-get_neuron_actors_with_morphapi)
+* [line: 50 `edit_neurons`](#line-50-edit_neurons)
 
 
 &nbsp;
 
 --------
-# line: 11 - `get_neuron_actors_with_morphapi`
+# line: 11 `get_neuron_actors_with_morphapi`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/morphology/utils.py#L11) online
 #### function definition
@@ -35,7 +35,7 @@ def get_neuron_actors_with_morphapi(swcfile=None, neuron=None, neurite_radius=No
 &nbsp;
 
 --------
-# line: 50 - `edit_neurons`
+# line: 50 `edit_neurons`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/morphology/utils.py#L50) online
 #### function definition

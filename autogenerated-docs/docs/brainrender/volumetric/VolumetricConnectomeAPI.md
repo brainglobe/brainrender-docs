@@ -6,27 +6,27 @@ Contents
 ========
 
 * [**VolumetricAPI**](#volumetricapi)
-* [line: 47 - `__init__`](#line-47---__init__)
-* [line: 110 - `__getattr__`](#line-110---__getattr__)
-* [line: 124 - `_get_structure_id`](#line-124---_get_structure_id)
-* [line: 133 - `_load_voxel_data`](#line-133---_load_voxel_data)
-* [line: 170 - `_get_coordinates_from_voxel_id`](#line-170---_get_coordinates_from_voxel_id)
-* [line: 186 - `_get_mask_coords`](#line-186---_get_mask_coords)
-* [line: 201 - `_get_voxel_id_from_coordinates`](#line-201---_get_voxel_id_from_coordinates)
-* [line: 223 - `_get_cache_filename`](#line-223---_get_cache_filename)
-* [line: 242 - `_get_from_cache`](#line-242---_get_from_cache)
-* [line: 253 - `save_to_cache`](#line-253---save_to_cache)
-* [line: 264 - `get_source`](#line-264---get_source)
-* [line: 286 - `get_target_mask`](#line-286---get_target_mask)
-* [line: 297 - `get_target`](#line-297---get_target)
-* [line: 327 - `get_projection`](#line-327---get_projection)
-* [line: 400 - `get_mapped_projection`](#line-400---get_mapped_projection)
-* [line: 416 - `get_mapped_projection_to_point`](#line-416---get_mapped_projection_to_point)
-* [line: 452 - `get_mapped_projection_from_point`](#line-452---get_mapped_projection_from_point)
-* [line: 497 - `add_mapped_projection`](#line-497---add_mapped_projection)
-* [line: 551 - `add_mapped_projection_to_point`](#line-551---add_mapped_projection_to_point)
-* [line: 625 - `add_mapped_projection_from_point`](#line-625---add_mapped_projection_from_point)
-* [line: 630 - `add_volume`](#line-630---add_volume)
+* [line: 47 `__init__`](#line-47-__init__)
+* [line: 110 `__getattr__`](#line-110-__getattr__)
+* [line: 124 `_get_structure_id`](#line-124-_get_structure_id)
+* [line: 133 `_load_voxel_data`](#line-133-_load_voxel_data)
+* [line: 170 `_get_coordinates_from_voxel_id`](#line-170-_get_coordinates_from_voxel_id)
+* [line: 186 `_get_mask_coords`](#line-186-_get_mask_coords)
+* [line: 201 `_get_voxel_id_from_coordinates`](#line-201-_get_voxel_id_from_coordinates)
+* [line: 223 `_get_cache_filename`](#line-223-_get_cache_filename)
+* [line: 242 `_get_from_cache`](#line-242-_get_from_cache)
+* [line: 253 `save_to_cache`](#line-253-save_to_cache)
+* [line: 264 `get_source`](#line-264-get_source)
+* [line: 286 `get_target_mask`](#line-286-get_target_mask)
+* [line: 297 `get_target`](#line-297-get_target)
+* [line: 327 `get_projection`](#line-327-get_projection)
+* [line: 400 `get_mapped_projection`](#line-400-get_mapped_projection)
+* [line: 416 `get_mapped_projection_to_point`](#line-416-get_mapped_projection_to_point)
+* [line: 452 `get_mapped_projection_from_point`](#line-452-get_mapped_projection_from_point)
+* [line: 497 `add_mapped_projection`](#line-497-add_mapped_projection)
+* [line: 551 `add_mapped_projection_to_point`](#line-551-add_mapped_projection_to_point)
+* [line: 625 `add_mapped_projection_from_point`](#line-625-add_mapped_projection_from_point)
+* [line: 630 `add_volume`](#line-630-add_volume)
 
 
 &nbsp;
@@ -51,7 +51,7 @@ To download the data, this class uses code from: https://github.com/AllenInstitu
 &nbsp;
 
 --------
-# line: 47 - `__init__`
+# line: 47 `__init__`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L47) online
 #### function definition
@@ -81,7 +81,7 @@ def __init__(self, base_dir=None, add_root=True, use_cache=True, scene_kwargs={}
 &nbsp;
 
 --------
-# line: 110 - `__getattr__`
+# line: 110 `__getattr__`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L110) online
 #### function definition
@@ -104,7 +104,7 @@ def __getattr__(self, attr):
 &nbsp;
 
 --------
-# line: 124 - `_get_structure_id`
+# line: 124 `_get_structure_id`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L124) online
 #### function definition
@@ -127,7 +127,7 @@ def _get_structure_id(self, struct):
 &nbsp;
 
 --------
-# line: 133 - `_load_voxel_data`
+# line: 133 `_load_voxel_data`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L133) online
 #### function definition
@@ -150,7 +150,7 @@ def _load_voxel_data(self):
 &nbsp;
 
 --------
-# line: 170 - `_get_coordinates_from_voxel_id`
+# line: 170 `_get_coordinates_from_voxel_id`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L170) online
 #### function definition
@@ -177,7 +177,7 @@ def _get_coordinates_from_voxel_id(self, p0, as_source=True):
 &nbsp;
 
 --------
-# line: 186 - `_get_mask_coords`
+# line: 186 `_get_mask_coords`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L186) online
 #### function definition
@@ -200,7 +200,7 @@ def _get_mask_coords(self, as_source):
 &nbsp;
 
 --------
-# line: 201 - `_get_voxel_id_from_coordinates`
+# line: 201 `_get_voxel_id_from_coordinates`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L201) online
 #### function definition
@@ -223,7 +223,7 @@ def _get_voxel_id_from_coordinates(self, p0, as_source=True):
 &nbsp;
 
 --------
-# line: 223 - `_get_cache_filename`
+# line: 223 `_get_cache_filename`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L223) online
 #### function definition
@@ -247,7 +247,7 @@ def _get_cache_filename(self, tgt, what):
 &nbsp;
 
 --------
-# line: 242 - `_get_from_cache`
+# line: 242 `_get_from_cache`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L242) online
 #### function definition
@@ -270,7 +270,7 @@ def _get_from_cache(self, tgt, what):
 &nbsp;
 
 --------
-# line: 253 - `save_to_cache`
+# line: 253 `save_to_cache`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L253) online
 #### function definition
@@ -293,7 +293,7 @@ def save_to_cache(self, tgt, what, obj):
 &nbsp;
 
 --------
-# line: 264 - `get_source`
+# line: 264 `get_source`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L264) online
 #### function definition
@@ -319,7 +319,7 @@ def get_source(self, source, hemisphere='both'):
 &nbsp;
 
 --------
-# line: 286 - `get_target_mask`
+# line: 286 `get_target_mask`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L286) online
 #### function definition
@@ -343,7 +343,7 @@ def get_target_mask(self, target, hemisphere):
 &nbsp;
 
 --------
-# line: 297 - `get_target`
+# line: 297 `get_target`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L297) online
 #### function definition
@@ -369,7 +369,7 @@ def get_target(self, target, hemisphere='both'):
 &nbsp;
 
 --------
-# line: 327 - `get_projection`
+# line: 327 `get_projection`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L327) online
 #### function definition
@@ -403,7 +403,7 @@ def get_projection(self, source, target, name, hemisphere='both', projection_mod
 &nbsp;
 
 --------
-# line: 400 - `get_mapped_projection`
+# line: 400 `get_mapped_projection`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L400) online
 #### function definition
@@ -433,7 +433,7 @@ def get_mapped_projection(self, source, target, name, **kwargs):
 &nbsp;
 
 --------
-# line: 416 - `get_mapped_projection_to_point`
+# line: 416 `get_mapped_projection_to_point`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L416) online
 #### function definition
@@ -456,7 +456,7 @@ def get_mapped_projection_to_point(self, p0, restrict_to=None, restrict_to_hemis
 &nbsp;
 
 --------
-# line: 452 - `get_mapped_projection_from_point`
+# line: 452 `get_mapped_projection_from_point`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L452) online
 #### function definition
@@ -479,7 +479,7 @@ def get_mapped_projection_from_point(self, p0, restrict_to=None, restrict_to_hem
 &nbsp;
 
 --------
-# line: 497 - `add_mapped_projection`
+# line: 497 `add_mapped_projection`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L497) online
 #### function definition
@@ -511,7 +511,7 @@ def add_mapped_projection(self, source, target, actor_kwargs={}, render_source_r
 &nbsp;
 
 --------
-# line: 551 - `add_mapped_projection_to_point`
+# line: 551 `add_mapped_projection_to_point`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L551) online
 #### function definition
@@ -534,7 +534,7 @@ def add_mapped_projection_to_point(self, p0, show_point=True, show_point_region=
 &nbsp;
 
 --------
-# line: 625 - `add_mapped_projection_from_point`
+# line: 625 `add_mapped_projection_from_point`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L625) online
 #### function definition
@@ -557,7 +557,7 @@ def add_mapped_projection_from_point(self, *args, **kwargs):
 &nbsp;
 
 --------
-# line: 630 - `add_volume`
+# line: 630 `add_volume`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L630) online
 #### function definition

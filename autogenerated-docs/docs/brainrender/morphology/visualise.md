@@ -6,9 +6,9 @@ Contents
 ========
 
 * [**MorphologyScene**](#morphologyscene)
-* [line: 35 - `__init__`](#line-35---__init__)
-* [line: 62 - `_add_neurons_get_colors`](#line-62---_add_neurons_get_colors)
-* [line: 180 - `add_neurons`](#line-180---add_neurons)
+* [line: 35 `__init__`](#line-35-__init__)
+* [line: 62 `_add_neurons_get_colors`](#line-62-_add_neurons_get_colors)
+* [line: 180 `add_neurons`](#line-180-add_neurons)
 
 
 &nbsp;
@@ -24,7 +24,7 @@ Contents
 &nbsp;
 
 --------
-# line: 35 - `__init__`
+# line: 35 `__init__`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/morphology/visualise.py#L35) online
 #### function definition
@@ -47,7 +47,7 @@ def __init__(self, *args, **kwargs):
 &nbsp;
 
 --------
-# line: 62 - `_add_neurons_get_colors`
+# line: 62 `_add_neurons_get_colors`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/morphology/visualise.py#L62) online
 #### function definition
@@ -79,7 +79,7 @@ def _add_neurons_get_colors(self, neurons, color):
 &nbsp;
 
 --------
-# line: 180 - `add_neurons`
+# line: 180 `add_neurons`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/morphology/visualise.py#L180) online
 #### function definition

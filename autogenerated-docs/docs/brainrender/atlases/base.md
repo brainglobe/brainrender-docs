@@ -6,20 +6,20 @@ Contents
 ========
 
 * [**Base**](#base)
-* [line: 18 - `__init__`](#line-18---__init__)
-* [line: 26 - `get_plane_at_point`](#line-26---get_plane_at_point)
-* [line: 42 - `get_sagittal_plane`](#line-42---get_sagittal_plane)
-* [line: 69 - `get_horizontal_plane`](#line-69---get_horizontal_plane)
-* [line: 96 - `get_coronal_plane`](#line-96---get_coronal_plane)
-* [line: 124 - `get_region_CenterOfMass`](#line-124---get_region_centerofmass)
-* [line: 167 - `_get_structure_mesh`](#line-167---_get_structure_mesh)
-* [line: 171 - `get_brain_regions`](#line-171---get_brain_regions)
-* [line: 286 - `get_structure_ancestors`](#line-286---get_structure_ancestors)
-* [line: 328 - `get_structure_descendants`](#line-328---get_structure_descendants)
-* [line: 333 - `get_structure_parent`](#line-333---get_structure_parent)
-* [line: 359 - `get_region_unilateral`](#line-359---get_region_unilateral)
-* [line: 398 - `mirror_point_across_hemispheres`](#line-398---mirror_point_across_hemispheres)
-* [line: 403 - `get_colors_from_coordinates`](#line-403---get_colors_from_coordinates)
+* [line: 18 `__init__`](#line-18-__init__)
+* [line: 26 `get_plane_at_point`](#line-26-get_plane_at_point)
+* [line: 42 `get_sagittal_plane`](#line-42-get_sagittal_plane)
+* [line: 69 `get_horizontal_plane`](#line-69-get_horizontal_plane)
+* [line: 96 `get_coronal_plane`](#line-96-get_coronal_plane)
+* [line: 124 `get_region_CenterOfMass`](#line-124-get_region_centerofmass)
+* [line: 167 `_get_structure_mesh`](#line-167-_get_structure_mesh)
+* [line: 171 `get_brain_regions`](#line-171-get_brain_regions)
+* [line: 286 `get_structure_ancestors`](#line-286-get_structure_ancestors)
+* [line: 328 `get_structure_descendants`](#line-328-get_structure_descendants)
+* [line: 333 `get_structure_parent`](#line-333-get_structure_parent)
+* [line: 359 `get_region_unilateral`](#line-359-get_region_unilateral)
+* [line: 398 `mirror_point_across_hemispheres`](#line-398-mirror_point_across_hemispheres)
+* [line: 403 `get_colors_from_coordinates`](#line-403-get_colors_from_coordinates)
 
 
 &nbsp;
@@ -35,7 +35,7 @@ Contents
 &nbsp;
 
 --------
-# line: 18 - `__init__`
+# line: 18 `__init__`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L18) online
 #### function definition
@@ -58,7 +58,7 @@ def __init__(self):
 &nbsp;
 
 --------
-# line: 26 - `get_plane_at_point`
+# line: 26 `get_plane_at_point`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L26) online
 #### function definition
@@ -88,7 +88,7 @@ def get_plane_at_point(self, pos, norm, sx, sy, color='lightgray', alpha=0.25, *
 &nbsp;
 
 --------
-# line: 42 - `get_sagittal_plane`
+# line: 42 `get_sagittal_plane`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L42) online
 #### function definition
@@ -115,7 +115,7 @@ def get_sagittal_plane(self, pos=None, **kwargs):
 &nbsp;
 
 --------
-# line: 69 - `get_horizontal_plane`
+# line: 69 `get_horizontal_plane`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L69) online
 #### function definition
@@ -142,7 +142,7 @@ def get_horizontal_plane(self, pos=None, **kwargs):
 &nbsp;
 
 --------
-# line: 96 - `get_coronal_plane`
+# line: 96 `get_coronal_plane`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L96) online
 #### function definition
@@ -169,7 +169,7 @@ def get_coronal_plane(self, pos=None, **kwargs):
 &nbsp;
 
 --------
-# line: 124 - `get_region_CenterOfMass`
+# line: 124 `get_region_CenterOfMass`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L124) online
 #### function definition
@@ -198,7 +198,7 @@ def get_region_CenterOfMass(self, regions, unilateral=True, hemisphere='right'):
 &nbsp;
 
 --------
-# line: 167 - `_get_structure_mesh`
+# line: 167 `_get_structure_mesh`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L167) online
 #### function definition
@@ -221,7 +221,7 @@ def _get_structure_mesh(self, acronym, **kwargs):
 &nbsp;
 
 --------
-# line: 171 - `get_brain_regions`
+# line: 171 `get_brain_regions`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L171) online
 #### function definition
@@ -255,7 +255,7 @@ def get_brain_regions(self, brain_regions, add_labels=False, colors=None, use_or
 &nbsp;
 
 --------
-# line: 286 - `get_structure_ancestors`
+# line: 286 `get_structure_ancestors`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L286) online
 #### function definition
@@ -282,7 +282,7 @@ def get_structure_ancestors(self, regions, ancestors=True, descendants=False):
 &nbsp;
 
 --------
-# line: 328 - `get_structure_descendants`
+# line: 328 `get_structure_descendants`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L328) online
 #### function definition
@@ -305,7 +305,7 @@ def get_structure_descendants(self, regions):
 &nbsp;
 
 --------
-# line: 333 - `get_structure_parent`
+# line: 333 `get_structure_parent`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L333) online
 #### function definition
@@ -331,7 +331,7 @@ def get_structure_parent(self, acronyms):
 &nbsp;
 
 --------
-# line: 359 - `get_region_unilateral`
+# line: 359 `get_region_unilateral`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L359) online
 #### function definition
@@ -360,7 +360,7 @@ def get_region_unilateral(self, region, hemisphere='both', color=None, alpha=Non
 &nbsp;
 
 --------
-# line: 398 - `mirror_point_across_hemispheres`
+# line: 398 `mirror_point_across_hemispheres`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L398) online
 #### function definition
@@ -383,7 +383,7 @@ def mirror_point_across_hemispheres(self, point):
 &nbsp;
 
 --------
-# line: 403 - `get_colors_from_coordinates`
+# line: 403 `get_colors_from_coordinates`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L403) online
 #### function definition

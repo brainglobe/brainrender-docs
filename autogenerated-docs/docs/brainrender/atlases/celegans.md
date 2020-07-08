@@ -6,18 +6,18 @@ Contents
 ========
 
 * [**Celegans**](#celegans)
-* [line: 62 - `__init__`](#line-62---__init__)
-* [line: 84 - `_make_root`](#line-84---_make_root)
-* [line: 119 - `get_neurons_by`](#line-119---get_neurons_by)
-* [line: 151 - `get_neuron_color`](#line-151---get_neuron_color)
-* [line: 186 - `_get_data`](#line-186---_get_data)
-* [line: 249 - `_check_neuron_argument`](#line-249---_check_neuron_argument)
-* [line: 272 - `_parse_neuron_skeleton`](#line-272---_parse_neuron_skeleton)
-* [line: 308 - `_get_structure_mesh`](#line-308---_get_structure_mesh)
-* [line: 329 - `get_neurons`](#line-329---get_neurons)
-* [line: 371 - `get_neurons_synapses`](#line-371---get_neurons_synapses)
-* [line: 518 - `dist`](#line-518---dist)
-* [line: 525 - `get_point`](#line-525---get_point)
+* [line: 62 `__init__`](#line-62-__init__)
+* [line: 84 `_make_root`](#line-84-_make_root)
+* [line: 119 `get_neurons_by`](#line-119-get_neurons_by)
+* [line: 151 `get_neuron_color`](#line-151-get_neuron_color)
+* [line: 186 `_get_data`](#line-186-_get_data)
+* [line: 249 `_check_neuron_argument`](#line-249-_check_neuron_argument)
+* [line: 272 `_parse_neuron_skeleton`](#line-272-_parse_neuron_skeleton)
+* [line: 308 `_get_structure_mesh`](#line-308-_get_structure_mesh)
+* [line: 329 `get_neurons`](#line-329-get_neurons)
+* [line: 371 `get_neurons_synapses`](#line-371-get_neurons_synapses)
+* [line: 518 `dist`](#line-518-dist)
+* [line: 525 `get_point`](#line-525-get_point)
 
 
 &nbsp;
@@ -33,7 +33,7 @@ Contents
 &nbsp;
 
 --------
-# line: 62 - `__init__`
+# line: 62 `__init__`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L62) online
 #### function definition
@@ -61,7 +61,7 @@ def __init__(self, data_folder=None, base_dir=None, **kwargs):
 &nbsp;
 
 --------
-# line: 84 - `_make_root`
+# line: 84 `_make_root`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L84) online
 #### function definition
@@ -85,7 +85,7 @@ def _make_root(self, rootpath):
 &nbsp;
 
 --------
-# line: 119 - `get_neurons_by`
+# line: 119 `get_neurons_by`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L119) online
 #### function definition
@@ -114,7 +114,7 @@ def get_neurons_by(self, getby='pair', lookup=None):
 &nbsp;
 
 --------
-# line: 151 - `get_neuron_color`
+# line: 151 `get_neuron_color`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L151) online
 #### function definition
@@ -142,7 +142,7 @@ def get_neuron_color(self, neuron, colorby='type'):
 &nbsp;
 
 --------
-# line: 186 - `_get_data`
+# line: 186 `_get_data`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L186) online
 #### function definition
@@ -165,7 +165,7 @@ def _get_data(self):
 &nbsp;
 
 --------
-# line: 249 - `_check_neuron_argument`
+# line: 249 `_check_neuron_argument`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L249) online
 #### function definition
@@ -191,7 +191,7 @@ def _check_neuron_argument(self, neurons):
 &nbsp;
 
 --------
-# line: 272 - `_parse_neuron_skeleton`
+# line: 272 `_parse_neuron_skeleton`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L272) online
 #### function definition
@@ -217,7 +217,7 @@ def _parse_neuron_skeleton(self, neuron):
 &nbsp;
 
 --------
-# line: 308 - `_get_structure_mesh`
+# line: 308 `_get_structure_mesh`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L308) online
 #### function definition
@@ -241,7 +241,7 @@ def _get_structure_mesh(self, acronym, **kwargs):
 &nbsp;
 
 --------
-# line: 329 - `get_neurons`
+# line: 329 `get_neurons`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L329) online
 #### function definition
@@ -270,7 +270,7 @@ def get_neurons(self, neurons, alpha=1, as_skeleton=False, colorby='type'):
 &nbsp;
 
 --------
-# line: 371 - `get_neurons_synapses`
+# line: 371 `get_neurons_synapses`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L371) online
 #### function definition
@@ -303,7 +303,7 @@ def get_neurons_synapses(self, scene_store, neurons, alpha=1, pre=False, post=Fa
 &nbsp;
 
 --------
-# line: 518 - `dist`
+# line: 518 `dist`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L518) online
 #### function definition
@@ -326,7 +326,7 @@ def dist(p1, p2):
 &nbsp;
 
 --------
-# line: 525 - `get_point`
+# line: 525 `get_point`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L525) online
 #### function definition

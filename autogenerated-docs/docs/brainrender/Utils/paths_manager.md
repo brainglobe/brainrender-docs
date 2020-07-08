@@ -6,7 +6,7 @@ Contents
 ========
 
 * [**Paths**](#paths)
-* [line: 69 - `__init__`](#line-69---__init__)
+* [line: 69 `__init__`](#line-69-__init__)
 
 
 &nbsp;
@@ -22,7 +22,7 @@ Contents
 &nbsp;
 
 --------
-# line: 69 - `__init__`
+# line: 69 `__init__`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/paths_manager.py#L69) online
 #### function definition

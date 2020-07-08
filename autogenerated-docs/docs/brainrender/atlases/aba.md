@@ -6,13 +6,13 @@ Contents
 ========
 
 * [**ABA**](#aba)
-* [line: 46 - `__init__`](#line-46---__init__)
-* [line: 76 - `get_neurons`](#line-76---get_neurons)
-* [line: 204 - `get_tractography`](#line-204---get_tractography)
-* [line: 334 - `get_streamlines`](#line-334---get_streamlines)
-* [line: 387 - `get_projection_tracts_to_target`](#line-387---get_projection_tracts_to_target)
-* [line: 415 - `download_streamlines_for_region`](#line-415---download_streamlines_for_region)
-* [line: 440 - `download_streamlines_to_region`](#line-440---download_streamlines_to_region)
+* [line: 46 `__init__`](#line-46-__init__)
+* [line: 76 `get_neurons`](#line-76-get_neurons)
+* [line: 204 `get_tractography`](#line-204-get_tractography)
+* [line: 334 `get_streamlines`](#line-334-get_streamlines)
+* [line: 387 `get_projection_tracts_to_target`](#line-387-get_projection_tracts_to_target)
+* [line: 415 `download_streamlines_for_region`](#line-415-download_streamlines_for_region)
+* [line: 440 `download_streamlines_to_region`](#line-440-download_streamlines_to_region)
 
 
 &nbsp;
@@ -34,7 +34,7 @@ and neuronal morphology data.
 &nbsp;
 
 --------
-# line: 46 - `__init__`
+# line: 46 `__init__`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/aba.py#L46) online
 #### function definition
@@ -57,7 +57,7 @@ def __init__(self):
 &nbsp;
 
 --------
-# line: 76 - `get_neurons`
+# line: 76 `get_neurons`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/aba.py#L76) online
 #### function definition
@@ -98,7 +98,7 @@ def get_neurons(self, neurons, color=None, display_axon=True, display_dendrites=
 &nbsp;
 
 --------
-# line: 204 - `get_tractography`
+# line: 204 `get_tractography`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/aba.py#L204) online
 #### function definition
@@ -138,7 +138,7 @@ def get_tractography(self, tractography, color=None, color_by='manual', others_a
 &nbsp;
 
 --------
-# line: 334 - `get_streamlines`
+# line: 334 `get_streamlines`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/aba.py#L334) online
 #### function definition
@@ -166,7 +166,7 @@ def get_streamlines(self, sl_file, color=None, *args, **kwargs):
 &nbsp;
 
 --------
-# line: 387 - `get_projection_tracts_to_target`
+# line: 387 `get_projection_tracts_to_target`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/aba.py#L387) online
 #### function definition
@@ -192,7 +192,7 @@ def get_projection_tracts_to_target(self, p0=None, **kwargs):
 &nbsp;
 
 --------
-# line: 415 - `download_streamlines_for_region`
+# line: 415 `download_streamlines_for_region`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/aba.py#L415) online
 #### function definition
@@ -222,7 +222,7 @@ def download_streamlines_for_region(self, region, *args, **kwargs):
 &nbsp;
 
 --------
-# line: 440 - `download_streamlines_to_region`
+# line: 440 `download_streamlines_to_region`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/aba.py#L440) online
 #### function definition

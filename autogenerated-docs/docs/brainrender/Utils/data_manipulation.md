@@ -5,18 +5,18 @@
 Contents
 ========
 
-* [line: 1 - `return_list_smart`](#line-1---return_list_smart)
-* [line: 15 - `return_dict_smart`](#line-15---return_dict_smart)
-* [line: 25 - `get_coords`](#line-25---get_coords)
-* [line: 66 - `flatten_list`](#line-66---flatten_list)
-* [line: 82 - `is_any_item_in_list`](#line-82---is_any_item_in_list)
-* [line: 98 - `get_slice_coord`](#line-98---get_slice_coord)
+* [line: 1 `return_list_smart`](#line-1-return_list_smart)
+* [line: 15 `return_dict_smart`](#line-15-return_dict_smart)
+* [line: 25 `get_coords`](#line-25-get_coords)
+* [line: 66 `flatten_list`](#line-66-flatten_list)
+* [line: 82 `is_any_item_in_list`](#line-82-is_any_item_in_list)
+* [line: 98 `get_slice_coord`](#line-98-get_slice_coord)
 
 
 &nbsp;
 
 --------
-# line: 1 - `return_list_smart`
+# line: 1 `return_list_smart`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L1) online
 #### function definition
@@ -41,7 +41,7 @@ def return_list_smart(lst):
 &nbsp;
 
 --------
-# line: 15 - `return_dict_smart`
+# line: 15 `return_dict_smart`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L15) online
 #### function definition
@@ -64,7 +64,7 @@ def return_dict_smart(dct):
 &nbsp;
 
 --------
-# line: 25 - `get_coords`
+# line: 25 `get_coords`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L25) online
 #### function definition
@@ -92,7 +92,7 @@ def get_coords(obj, mirror=False, mirror_ax='x'):
 &nbsp;
 
 --------
-# line: 66 - `flatten_list`
+# line: 66 `flatten_list`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L66) online
 #### function definition
@@ -117,7 +117,7 @@ def flatten_list(lst):
 &nbsp;
 
 --------
-# line: 82 - `is_any_item_in_list`
+# line: 82 `is_any_item_in_list`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L82) online
 #### function definition
@@ -143,7 +143,7 @@ def is_any_item_in_list(L1, L2):
 &nbsp;
 
 --------
-# line: 98 - `get_slice_coord`
+# line: 98 `get_slice_coord`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L98) online
 #### function definition

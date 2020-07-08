@@ -5,17 +5,17 @@
 Contents
 ========
 
-* [line: 15 - `cap_set_frame`](#line-15---cap_set_frame)
-* [line: 22 - `get_cap_selected_frame`](#line-22---get_cap_selected_frame)
-* [line: 35 - `get_video_params`](#line-35---get_video_params)
-* [line: 56 - `open_cvwriter`](#line-56---open_cvwriter)
-* [line: 81 - `save_videocap_to_video`](#line-81---save_videocap_to_video)
+* [line: 15 `cap_set_frame`](#line-15-cap_set_frame)
+* [line: 22 `get_cap_selected_frame`](#line-22-get_cap_selected_frame)
+* [line: 35 `get_video_params`](#line-35-get_video_params)
+* [line: 56 `open_cvwriter`](#line-56-open_cvwriter)
+* [line: 81 `save_videocap_to_video`](#line-81-save_videocap_to_video)
 
 
 &nbsp;
 
 --------
-# line: 15 - `cap_set_frame`
+# line: 15 `cap_set_frame`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/video.py#L15) online
 #### function definition
@@ -38,7 +38,7 @@ def cap_set_frame(cap, frame_number):
 &nbsp;
 
 --------
-# line: 22 - `get_cap_selected_frame`
+# line: 22 `get_cap_selected_frame`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/video.py#L22) online
 #### function definition
@@ -61,7 +61,7 @@ def get_cap_selected_frame(cap, show_frame):
 &nbsp;
 
 --------
-# line: 35 - `get_video_params`
+# line: 35 `get_video_params`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/video.py#L35) online
 #### function definition
@@ -84,7 +84,7 @@ def get_video_params(cap):
 &nbsp;
 
 --------
-# line: 56 - `open_cvwriter`
+# line: 56 `open_cvwriter`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/video.py#L56) online
 #### function definition
@@ -112,7 +112,7 @@ def open_cvwriter(filepath, w=None, h=None, framerate=None, format='.mp4', iscol
 &nbsp;
 
 --------
-# line: 81 - `save_videocap_to_video`
+# line: 81 `save_videocap_to_video`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/video.py#L81) online
 #### function definition

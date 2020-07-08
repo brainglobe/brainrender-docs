@@ -5,139 +5,52 @@
 Contents
 ========
 
-- [Contents](#contents)
-- [**Scene**](#scene)
-- [line: 48 - `__init__`](#line-48---init)
-      - [function definition](#function-definition)
-        - [docstring](#docstring)
-- [line: 237 - `_check_point_in_region`](#line-237---_check_point_in_region)
-      - [function definition](#function-definition-1)
-        - [docstring](#docstring-1)
-- [line: 249 - `_get_inset`](#line-249---_get_inset)
-      - [function definition](#function-definition-2)
-        - [docstring](#docstring-2)
-- [line: 277 - `get_n_random_points_in_region`](#line-277---get_n_random_points_in_region)
-      - [function definition](#function-definition-3)
-        - [docstring](#docstring-3)
-- [line: 312 - `edit_actors`](#line-312---edit_actors)
-      - [function definition](#function-definition-4)
-        - [docstring](#docstring-4)
-- [line: 325 - `mirror_actor_hemisphere`](#line-325---mirror_actor_hemisphere)
-      - [function definition](#function-definition-5)
-        - [docstring](#docstring-5)
-- [line: 338 - `cut_actors_with_plane`](#line-338---cut_actors_with_plane)
-      - [function definition](#function-definition-6)
-        - [docstring](#docstring-6)
-- [line: 405 - `get_cells_in_region`](#line-405---get_cells_in_region)
-      - [function definition](#function-definition-7)
-        - [docstring](#docstring-7)
-- [line: 432 - `add_root`](#line-432---add_root)
-      - [function definition](#function-definition-8)
-        - [docstring](#docstring-8)
-- [line: 456 - `add_brain_regions`](#line-456---add_brain_regions)
-      - [function definition](#function-definition-9)
-        - [docstring](#docstring-9)
-- [line: 481 - `add_neurons`](#line-481---add_neurons)
-      - [function definition](#function-definition-10)
-        - [docstring](#docstring-10)
-- [line: 499 - `add_neurons_synapses`](#line-499---add_neurons_synapses)
-      - [function definition](#function-definition-11)
-        - [docstring](#docstring-11)
-- [line: 514 - `add_tractography`](#line-514---add_tractography)
-      - [function definition](#function-definition-12)
-        - [docstring](#docstring-12)
-- [line: 524 - `add_streamlines`](#line-524---add_streamlines)
-      - [function definition](#function-definition-13)
-        - [docstring](#docstring-13)
-- [line: 534 - `add_actor`](#line-534---add_actor)
-      - [function definition](#function-definition-14)
-        - [docstring](#docstring-14)
-- [line: 558 - `add_mesh_silhouette`](#line-558---add_mesh_silhouette)
-      - [function definition](#function-definition-15)
-        - [docstring](#docstring-15)
-- [line: 566 - `add_from_file`](#line-566---add_from_file)
-      - [function definition](#function-definition-16)
-        - [docstring](#docstring-16)
-- [line: 582 - `add_sphere_at_point`](#line-582---add_sphere_at_point)
-      - [function definition](#function-definition-17)
-        - [docstring](#docstring-17)
-- [line: 600 - `add_cells_from_file`](#line-600---add_cells_from_file)
-      - [function definition](#function-definition-18)
-        - [docstring](#docstring-18)
-- [line: 664 - `add_cells`](#line-664---add_cells)
-      - [function definition](#function-definition-19)
-        - [docstring](#docstring-19)
-- [line: 768 - `add_optic_cannula`](#line-768---add_optic_cannula)
-      - [function definition](#function-definition-20)
-        - [docstring](#docstring-20)
-- [line: 838 - `add_text`](#line-838---add_text)
-      - [function definition](#function-definition-21)
-        - [docstring](#docstring-21)
-- [line: 857 - `add_actor_label`](#line-857---add_actor_label)
-      - [function definition](#function-definition-22)
-        - [docstring](#docstring-22)
-- [line: 935 - `add_line_at_point`](#line-935---add_line_at_point)
-      - [function definition](#function-definition-23)
-        - [docstring](#docstring-23)
-- [line: 958 - `add_rostrocaudal_line_at_point`](#line-958---add_rostrocaudal_line_at_point)
-      - [function definition](#function-definition-24)
-        - [docstring](#docstring-24)
-- [line: 968 - `add_dorsoventral_line_at_point`](#line-968---add_dorsoventral_line_at_point)
-      - [function definition](#function-definition-25)
-        - [docstring](#docstring-25)
-- [line: 978 - `add_mediolateral_line_at_point`](#line-978---add_mediolateral_line_at_point)
-      - [function definition](#function-definition-26)
-        - [docstring](#docstring-26)
-- [line: 988 - `add_crosshair_at_point`](#line-988---add_crosshair_at_point)
-      - [function definition](#function-definition-27)
-        - [docstring](#docstring-27)
-- [line: 1031 - `add_plane`](#line-1031---add_plane)
-      - [function definition](#function-definition-28)
-        - [docstring](#docstring-28)
-- [line: 1070 - `add_probe_from_sharptrack`](#line-1070---add_probe_from_sharptrack)
-      - [function definition](#function-definition-29)
-        - [docstring](#docstring-29)
-- [line: 1138 - `apply_render_style`](#line-1138---apply_render_style)
-      - [function definition](#function-definition-30)
-        - [docstring](#docstring-30)
-- [line: 1157 - `get_actors`](#line-1157---get_actors)
-      - [function definition](#function-definition-31)
-        - [docstring](#docstring-31)
-- [line: 1179 - `render`](#line-1179---render)
-      - [function definition](#function-definition-32)
-        - [docstring](#docstring-32)
-- [line: 1261 - `close`](#line-1261---close)
-      - [function definition](#function-definition-33)
-        - [docstring](#docstring-33)
-- [line: 1264 - `export_for_web`](#line-1264---export_for_web)
-      - [function definition](#function-definition-34)
-        - [docstring](#docstring-34)
-- [line: 1310 - `keypress`](#line-1310---keypress)
-      - [function definition](#function-definition-35)
-        - [docstring](#docstring-35)
-- [line: 1343 - `take_screenshot`](#line-1343---take_screenshot)
-      - [function definition](#function-definition-36)
-        - [docstring](#docstring-36)
-- [**DualScene**](#dualscene)
-- [line: 1356 - `__init__`](#line-1356---init)
-      - [function definition](#function-definition-37)
-        - [docstring](#docstring-37)
-- [line: 1359 - `render`](#line-1359---render)
-      - [function definition](#function-definition-38)
-        - [docstring](#docstring-38)
-- [line: 1396 - `close`](#line-1396---close)
-      - [function definition](#function-definition-39)
-        - [docstring](#docstring-39)
-- [**MultiScene**](#multiscene)
-- [line: 1403 - `__init__`](#line-1403---init)
-      - [function definition](#function-definition-40)
-        - [docstring](#docstring-40)
-- [line: 1416 - `render`](#line-1416---render)
-      - [function definition](#function-definition-41)
-        - [docstring](#docstring-41)
-- [line: 1467 - `close`](#line-1467---close)
-      - [function definition](#function-definition-42)
-        - [docstring](#docstring-42)
+* [**Scene**](#scene)
+* [line: 48 `__init__`](#line-48-__init__)
+* [line: 237 `_check_point_in_region`](#line-237-_check_point_in_region)
+* [line: 249 `_get_inset`](#line-249-_get_inset)
+* [line: 277 `get_n_random_points_in_region`](#line-277-get_n_random_points_in_region)
+* [line: 312 `edit_actors`](#line-312-edit_actors)
+* [line: 325 `mirror_actor_hemisphere`](#line-325-mirror_actor_hemisphere)
+* [line: 338 `cut_actors_with_plane`](#line-338-cut_actors_with_plane)
+* [line: 405 `get_cells_in_region`](#line-405-get_cells_in_region)
+* [line: 432 `add_root`](#line-432-add_root)
+* [line: 456 `add_brain_regions`](#line-456-add_brain_regions)
+* [line: 481 `add_neurons`](#line-481-add_neurons)
+* [line: 499 `add_neurons_synapses`](#line-499-add_neurons_synapses)
+* [line: 514 `add_tractography`](#line-514-add_tractography)
+* [line: 524 `add_streamlines`](#line-524-add_streamlines)
+* [line: 534 `add_actor`](#line-534-add_actor)
+* [line: 558 `add_mesh_silhouette`](#line-558-add_mesh_silhouette)
+* [line: 566 `add_from_file`](#line-566-add_from_file)
+* [line: 582 `add_sphere_at_point`](#line-582-add_sphere_at_point)
+* [line: 600 `add_cells_from_file`](#line-600-add_cells_from_file)
+* [line: 664 `add_cells`](#line-664-add_cells)
+* [line: 768 `add_optic_cannula`](#line-768-add_optic_cannula)
+* [line: 838 `add_text`](#line-838-add_text)
+* [line: 857 `add_actor_label`](#line-857-add_actor_label)
+* [line: 935 `add_line_at_point`](#line-935-add_line_at_point)
+* [line: 958 `add_rostrocaudal_line_at_point`](#line-958-add_rostrocaudal_line_at_point)
+* [line: 968 `add_dorsoventral_line_at_point`](#line-968-add_dorsoventral_line_at_point)
+* [line: 978 `add_mediolateral_line_at_point`](#line-978-add_mediolateral_line_at_point)
+* [line: 988 `add_crosshair_at_point`](#line-988-add_crosshair_at_point)
+* [line: 1031 `add_plane`](#line-1031-add_plane)
+* [line: 1070 `add_probe_from_sharptrack`](#line-1070-add_probe_from_sharptrack)
+* [line: 1138 `apply_render_style`](#line-1138-apply_render_style)
+* [line: 1157 `get_actors`](#line-1157-get_actors)
+* [line: 1179 `render`](#line-1179-render)
+* [line: 1261 `close`](#line-1261-close)
+* [line: 1264 `export_for_web`](#line-1264-export_for_web)
+* [line: 1310 `keypress`](#line-1310-keypress)
+* [line: 1343 `take_screenshot`](#line-1343-take_screenshot)
+* [**DualScene**](#dualscene)
+* [line: 1356 `__init__`](#line-1356-__init__)
+* [line: 1359 `render`](#line-1359-render)
+* [line: 1396 `close`](#line-1396-close)
+* [**MultiScene**](#multiscene)
+* [line: 1403 `__init__`](#line-1403-__init__)
+* [line: 1416 `render`](#line-1416-render)
+* [line: 1467 `close`](#line-1467-close)
 
 
 &nbsp;
@@ -159,7 +72,7 @@ and other classes within the same package.
 &nbsp;
 
 --------
-# line: 48 - `__init__`
+# line: 48 `__init__`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L48) online
 #### function definition
@@ -208,7 +121,7 @@ def __init__(self, brain_regions=None, regions_aba_color=False, neurons=None, tr
 &nbsp;
 
 --------
-# line: 237 - `_check_point_in_region`
+# line: 237 `_check_point_in_region`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L237) online
 #### function definition
@@ -234,7 +147,7 @@ def _check_point_in_region(self, point, region_actor):
 &nbsp;
 
 --------
-# line: 249 - `_get_inset`
+# line: 249 `_get_inset`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L249) online
 #### function definition
@@ -259,7 +172,7 @@ def _get_inset(self, **kwargs):
 &nbsp;
 
 --------
-# line: 277 - `get_n_random_points_in_region`
+# line: 277 `get_n_random_points_in_region`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L277) online
 #### function definition
@@ -285,7 +198,7 @@ def get_n_random_points_in_region(self, region, N, hemisphere=None):
 &nbsp;
 
 --------
-# line: 312 - `edit_actors`
+# line: 312 `edit_actors`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L312) online
 #### function definition
@@ -310,7 +223,7 @@ def edit_actors(self, actors, **kwargs):
 &nbsp;
 
 --------
-# line: 325 - `mirror_actor_hemisphere`
+# line: 325 `mirror_actor_hemisphere`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L325) online
 #### function definition
@@ -333,7 +246,7 @@ def mirror_actor_hemisphere(self, actors):
 &nbsp;
 
 --------
-# line: 338 - `cut_actors_with_plane`
+# line: 338 `cut_actors_with_plane`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L338) online
 #### function definition
@@ -356,7 +269,7 @@ def cut_actors_with_plane(self, plane, actors=None, showplane=False, returncut=F
 &nbsp;
 
 --------
-# line: 405 - `get_cells_in_region`
+# line: 405 `get_cells_in_region`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L405) online
 #### function definition
@@ -381,7 +294,7 @@ def get_cells_in_region(self, cells, region):
 &nbsp;
 
 --------
-# line: 432 - `add_root`
+# line: 432 `add_root`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L432) online
 #### function definition
@@ -407,7 +320,7 @@ def add_root(self, render=True, **kwargs):
 &nbsp;
 
 --------
-# line: 456 - `add_brain_regions`
+# line: 456 `add_brain_regions`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L456) online
 #### function definition
@@ -431,7 +344,7 @@ def add_brain_regions(self, *args, **kwargs):
 &nbsp;
 
 --------
-# line: 481 - `add_neurons`
+# line: 481 `add_neurons`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L481) online
 #### function definition
@@ -455,7 +368,7 @@ def add_neurons(self, *args, **kwargs):
 &nbsp;
 
 --------
-# line: 499 - `add_neurons_synapses`
+# line: 499 `add_neurons_synapses`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L499) online
 #### function definition
@@ -479,7 +392,7 @@ def add_neurons_synapses(self, *args, **kwargs):
 &nbsp;
 
 --------
-# line: 514 - `add_tractography`
+# line: 514 `add_tractography`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L514) online
 #### function definition
@@ -503,7 +416,7 @@ def add_tractography(self, *args, **kwargs):
 &nbsp;
 
 --------
-# line: 524 - `add_streamlines`
+# line: 524 `add_streamlines`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L524) online
 #### function definition
@@ -527,7 +440,7 @@ def add_streamlines(self, *args, **kwargs):
 &nbsp;
 
 --------
-# line: 534 - `add_actor`
+# line: 534 `add_actor`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L534) online
 #### function definition
@@ -554,7 +467,7 @@ def add_actor(self, *actors, store=None):
 &nbsp;
 
 --------
-# line: 558 - `add_mesh_silhouette`
+# line: 558 `add_mesh_silhouette`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L558) online
 #### function definition
@@ -578,7 +491,7 @@ def add_mesh_silhouette(self, *actors, lw=1, color='k', **kwargs):
 &nbsp;
 
 --------
-# line: 566 - `add_from_file`
+# line: 566 `add_from_file`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L566) online
 #### function definition
@@ -604,7 +517,7 @@ def add_from_file(self, *filepaths, **kwargs):
 &nbsp;
 
 --------
-# line: 582 - `add_sphere_at_point`
+# line: 582 `add_sphere_at_point`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L582) online
 #### function definition
@@ -633,7 +546,7 @@ def add_sphere_at_point(self, pos=[0, 0, 0], radius=100, color='black', alpha=1,
 &nbsp;
 
 --------
-# line: 600 - `add_cells_from_file`
+# line: 600 `add_cells_from_file`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L600) online
 #### function definition
@@ -663,7 +576,7 @@ def add_cells_from_file(self, filepath, hdf_key='hdf', color='red', radius=25, r
 &nbsp;
 
 --------
-# line: 664 - `add_cells`
+# line: 664 `add_cells`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L664) online
 #### function definition
@@ -701,7 +614,7 @@ def add_cells(self, coords, color='red', color_by_region=False, color_by_metadat
 &nbsp;
 
 --------
-# line: 768 - `add_optic_cannula`
+# line: 768 `add_optic_cannula`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L768) online
 #### function definition
@@ -736,7 +649,7 @@ def add_optic_cannula(self, target_region=None, pos=None, x_offset=0, y_offset=0
 &nbsp;
 
 --------
-# line: 838 - `add_text`
+# line: 838 `add_text`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L838) online
 #### function definition
@@ -763,7 +676,7 @@ def add_text(self, text, **kwargs):
 &nbsp;
 
 --------
-# line: 857 - `add_actor_label`
+# line: 857 `add_actor_label`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L857) online
 #### function definition
@@ -795,7 +708,7 @@ def add_actor_label(self, actors, labels, **kwargs):
 &nbsp;
 
 --------
-# line: 935 - `add_line_at_point`
+# line: 935 `add_line_at_point`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L935) online
 #### function definition
@@ -823,7 +736,7 @@ def add_line_at_point(self, point, replace_coord, bounds, **kwargs):
 &nbsp;
 
 --------
-# line: 958 - `add_rostrocaudal_line_at_point`
+# line: 958 `add_rostrocaudal_line_at_point`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L958) online
 #### function definition
@@ -849,7 +762,7 @@ def add_rostrocaudal_line_at_point(self, point, **kwargs):
 &nbsp;
 
 --------
-# line: 968 - `add_dorsoventral_line_at_point`
+# line: 968 `add_dorsoventral_line_at_point`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L968) online
 #### function definition
@@ -875,7 +788,7 @@ def add_dorsoventral_line_at_point(self, point, **kwargs):
 &nbsp;
 
 --------
-# line: 978 - `add_mediolateral_line_at_point`
+# line: 978 `add_mediolateral_line_at_point`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L978) online
 #### function definition
@@ -901,7 +814,7 @@ def add_mediolateral_line_at_point(self, point, **kwargs):
 &nbsp;
 
 --------
-# line: 988 - `add_crosshair_at_point`
+# line: 988 `add_crosshair_at_point`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L988) online
 #### function definition
@@ -933,7 +846,7 @@ def add_crosshair_at_point(self, point, ml=True, dv=True, ap=True, show_point=Tr
 &nbsp;
 
 --------
-# line: 1031 - `add_plane`
+# line: 1031 `add_plane`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1031) online
 #### function definition
@@ -963,7 +876,7 @@ def add_plane(self, plane, **kwargs):
 &nbsp;
 
 --------
-# line: 1070 - `add_probe_from_sharptrack`
+# line: 1070 `add_probe_from_sharptrack`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1070) online
 #### function definition
@@ -994,7 +907,7 @@ def add_probe_from_sharptrack(self, probe_points_file, points_kwargs={}, **kwarg
 &nbsp;
 
 --------
-# line: 1138 - `apply_render_style`
+# line: 1138 `apply_render_style`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1138) online
 #### function definition
@@ -1017,7 +930,7 @@ def apply_render_style(self):
 &nbsp;
 
 --------
-# line: 1157 - `get_actors`
+# line: 1157 `get_actors`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1157) online
 #### function definition
@@ -1040,7 +953,7 @@ def get_actors(self):
 &nbsp;
 
 --------
-# line: 1179 - `render`
+# line: 1179 `render`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1179) online
 #### function definition
@@ -1063,7 +976,7 @@ def render(self, interactive=True, video=False, camera=None, zoom=None, **kwargs
 &nbsp;
 
 --------
-# line: 1261 - `close`
+# line: 1261 `close`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1261) online
 #### function definition
@@ -1086,7 +999,7 @@ def close(self):
 &nbsp;
 
 --------
-# line: 1264 - `export_for_web`
+# line: 1264 `export_for_web`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1264) online
 #### function definition
@@ -1111,7 +1024,7 @@ def export_for_web(self, filepath='brexport.html'):
 &nbsp;
 
 --------
-# line: 1310 - `keypress`
+# line: 1310 `keypress`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1310) online
 #### function definition
@@ -1134,7 +1047,7 @@ def keypress(self, key):
 &nbsp;
 
 --------
-# line: 1343 - `take_screenshot`
+# line: 1343 `take_screenshot`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1343) online
 #### function definition
@@ -1169,7 +1082,7 @@ def take_screenshot(self):
 &nbsp;
 
 --------
-# line: 1356 - `__init__`
+# line: 1356 `__init__`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1356) online
 #### function definition
@@ -1192,7 +1105,7 @@ def __init__(self, *args, **kwargs):
 &nbsp;
 
 --------
-# line: 1359 - `render`
+# line: 1359 `render`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1359) online
 #### function definition
@@ -1215,7 +1128,7 @@ def render(self, _interactive=True):
 &nbsp;
 
 --------
-# line: 1396 - `close`
+# line: 1396 `close`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1396) online
 #### function definition
@@ -1250,7 +1163,7 @@ def close(self):
 &nbsp;
 
 --------
-# line: 1403 - `__init__`
+# line: 1403 `__init__`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1403) online
 #### function definition
@@ -1273,7 +1186,7 @@ def __init__(self, N, scenes=None, *args, **kwargs):
 &nbsp;
 
 --------
-# line: 1416 - `render`
+# line: 1416 `render`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1416) online
 #### function definition
@@ -1297,7 +1210,7 @@ def render(self, _interactive=True, **kwargs):
 &nbsp;
 
 --------
-# line: 1467 - `close`
+# line: 1467 `close`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1467) online
 #### function definition

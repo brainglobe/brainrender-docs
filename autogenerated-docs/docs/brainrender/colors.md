@@ -5,24 +5,24 @@
 Contents
 ========
 
-* [line: 392 - `get_random_colormap`](#line-392---get_random_colormap)
-* [line: 396 - `get_n_shades_of`](#line-396---get_n_shades_of)
-* [line: 409 - `_isSequence`](#line-409---_issequence)
-* [line: 425 - `getColor`](#line-425---getcolor)
-* [line: 510 - `getColorName`](#line-510---getcolorname)
-* [line: 529 - `hsv2rgb`](#line-529---hsv2rgb)
-* [line: 539 - `rgb2hsv`](#line-539---rgb2hsv)
-* [line: 549 - `rgb2int`](#line-549---rgb2int)
-* [line: 563 - `colorMap`](#line-563---colormap)
-* [line: 629 - `makePalette`](#line-629---makepalette)
-* [line: 684 - `get_random_colors`](#line-684---get_random_colors)
-* [line: 701 - `check_colors`](#line-701---check_colors)
+* [line: 392 `get_random_colormap`](#line-392-get_random_colormap)
+* [line: 396 `get_n_shades_of`](#line-396-get_n_shades_of)
+* [line: 409 `_isSequence`](#line-409-_issequence)
+* [line: 425 `getColor`](#line-425-getcolor)
+* [line: 510 `getColorName`](#line-510-getcolorname)
+* [line: 529 `hsv2rgb`](#line-529-hsv2rgb)
+* [line: 539 `rgb2hsv`](#line-539-rgb2hsv)
+* [line: 549 `rgb2int`](#line-549-rgb2int)
+* [line: 563 `colorMap`](#line-563-colormap)
+* [line: 629 `makePalette`](#line-629-makepalette)
+* [line: 684 `get_random_colors`](#line-684-get_random_colors)
+* [line: 701 `check_colors`](#line-701-check_colors)
 
 
 &nbsp;
 
 --------
-# line: 392 - `get_random_colormap`
+# line: 392 `get_random_colormap`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L392) online
 #### function definition
@@ -45,7 +45,7 @@ def get_random_colormap():
 &nbsp;
 
 --------
-# line: 396 - `get_n_shades_of`
+# line: 396 `get_n_shades_of`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L396) online
 #### function definition
@@ -69,7 +69,7 @@ def get_n_shades_of(shade, n):
 &nbsp;
 
 --------
-# line: 409 - `_isSequence`
+# line: 409 `_isSequence`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L409) online
 #### function definition
@@ -92,7 +92,7 @@ def _isSequence(arg):
 &nbsp;
 
 --------
-# line: 425 - `getColor`
+# line: 425 `getColor`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L425) online
 #### function definition
@@ -129,7 +129,7 @@ def getColor(rgb=None, hsv=None):
 &nbsp;
 
 --------
-# line: 510 - `getColorName`
+# line: 510 `getColorName`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L510) online
 #### function definition
@@ -155,7 +155,7 @@ def getColorName(c):
 &nbsp;
 
 --------
-# line: 529 - `hsv2rgb`
+# line: 529 `hsv2rgb`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L529) online
 #### function definition
@@ -180,7 +180,7 @@ def hsv2rgb(hsv):
 &nbsp;
 
 --------
-# line: 539 - `rgb2hsv`
+# line: 539 `rgb2hsv`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L539) online
 #### function definition
@@ -205,7 +205,7 @@ def rgb2hsv(rgb):
 &nbsp;
 
 --------
-# line: 549 - `rgb2int`
+# line: 549 `rgb2int`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L549) online
 #### function definition
@@ -228,7 +228,7 @@ def rgb2int(rgb_tuple):
 &nbsp;
 
 --------
-# line: 563 - `colorMap`
+# line: 563 `colorMap`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L563) online
 #### function definition
@@ -270,7 +270,7 @@ def colorMap(value, name='jet', vmin=None, vmax=None):
 &nbsp;
 
 --------
-# line: 629 - `makePalette`
+# line: 629 `makePalette`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L629) online
 #### function definition
@@ -298,7 +298,7 @@ def makePalette(N, *colors):
 &nbsp;
 
 --------
-# line: 684 - `get_random_colors`
+# line: 684 `get_random_colors`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L684) online
 #### function definition
@@ -321,7 +321,7 @@ def get_random_colors(n_colors=1):
 &nbsp;
 
 --------
-# line: 701 - `check_colors`
+# line: 701 `check_colors`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L701) online
 #### function definition

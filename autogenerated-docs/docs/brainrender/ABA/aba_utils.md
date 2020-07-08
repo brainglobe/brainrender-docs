@@ -5,19 +5,19 @@
 Contents
 ========
 
-* [line: 28 - `parse_neurons_colors`](#line-28---parse_neurons_colors)
-* [line: 147 - `parse_tractography_colors`](#line-147---parse_tractography_colors)
-* [line: 243 - `experiments_source_search`](#line-243---experiments_source_search)
-* [line: 301 - `parse_streamline`](#line-301---parse_streamline)
-* [line: 378 - `make_url_given_id`](#line-378---make_url_given_id)
-* [line: 390 - `download_streamlines`](#line-390---download_streamlines)
-* [line: 430 - `extract_ids_from_csv`](#line-430---extract_ids_from_csv)
+* [line: 28 `parse_neurons_colors`](#line-28-parse_neurons_colors)
+* [line: 147 `parse_tractography_colors`](#line-147-parse_tractography_colors)
+* [line: 243 `experiments_source_search`](#line-243-experiments_source_search)
+* [line: 301 `parse_streamline`](#line-301-parse_streamline)
+* [line: 378 `make_url_given_id`](#line-378-make_url_given_id)
+* [line: 390 `download_streamlines`](#line-390-download_streamlines)
+* [line: 430 `extract_ids_from_csv`](#line-430-extract_ids_from_csv)
 
 
 &nbsp;
 
 --------
-# line: 28 - `parse_neurons_colors`
+# line: 28 `parse_neurons_colors`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/aba_utils.py#L28) online
 #### function definition
@@ -49,7 +49,7 @@ def parse_neurons_colors(neurons, color):
 &nbsp;
 
 --------
-# line: 147 - `parse_tractography_colors`
+# line: 147 `parse_tractography_colors`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/aba_utils.py#L147) online
 #### function definition
@@ -85,7 +85,7 @@ def parse_tractography_colors(tractography, include_all_inj_regions, color=None,
 &nbsp;
 
 --------
-# line: 243 - `experiments_source_search`
+# line: 243 `experiments_source_search`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/aba_utils.py#L243) online
 #### function definition
@@ -112,7 +112,7 @@ def experiments_source_search(mca, SOI, *args, source=True, **kwargs):
 &nbsp;
 
 --------
-# line: 301 - `parse_streamline`
+# line: 301 `parse_streamline`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/aba_utils.py#L301) online
 #### function definition
@@ -145,7 +145,7 @@ def parse_streamline(*args, filepath=None, data=None, show_injection_site=True, 
 &nbsp;
 
 --------
-# line: 378 - `make_url_given_id`
+# line: 378 `make_url_given_id`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/aba_utils.py#L378) online
 #### function definition
@@ -170,7 +170,7 @@ def make_url_given_id(expid):
 &nbsp;
 
 --------
-# line: 390 - `download_streamlines`
+# line: 390 `download_streamlines`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/aba_utils.py#L390) online
 #### function definition
@@ -197,7 +197,7 @@ def download_streamlines(eids, streamlines_folder=None):
 &nbsp;
 
 --------
-# line: 430 - `extract_ids_from_csv`
+# line: 430 `extract_ids_from_csv`
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/aba_utils.py#L430) online
 #### function definition
