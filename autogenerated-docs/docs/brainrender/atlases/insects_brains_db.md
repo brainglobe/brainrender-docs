@@ -6,19 +6,19 @@ Contents
 ========
 
 * [**IBDB**](#ibdb)
-	* [**`__init__`**  [#55]](#__init__--55)
-	* [**`get_brain_id_from_species_name`**  [#80]](#get_brain_id_from_species_name--80)
-	* [**`get_structures_hierarchy`**  [#97]](#get_structures_hierarchy--97)
-	* [**`get_structures_reconstructions`**  [#132]](#get_structures_reconstructions--132)
-	* [**`get_brain`**  [#216]](#get_brain--216)
-	* [**`download_and_write_mesh`**  [#245]](#download_and_write_mesh--245)
-	* [**`make_root_mesh`**  [#262]](#make_root_mesh--262)
-	* [**`_get_structure_mesh`**  [#281]](#_get_structure_mesh--281)
-	* [**`_check_valid_region_arg`**  [#315]](#_check_valid_region_arg--315)
-	* [**`_check_obj_file`**  [#326]](#_check_obj_file--326)
-	* [**`get_region_color`**  [#339]](#get_region_color--339)
-	* [**`get_brain_regions`**  [#368]](#get_brain_regions--368)
-	* [**`add_descendants_to_tree`**  [#98]](#add_descendants_to_tree--98)
+	* [**`__init__`** [#55]](#__init__-55)
+	* [**`get_brain_id_from_species_name`** [#80]](#get_brain_id_from_species_name-80)
+	* [**`get_structures_hierarchy`** [#97]](#get_structures_hierarchy-97)
+	* [**`get_structures_reconstructions`** [#132]](#get_structures_reconstructions-132)
+	* [**`get_brain`** [#216]](#get_brain-216)
+	* [**`download_and_write_mesh`** [#245]](#download_and_write_mesh-245)
+	* [**`make_root_mesh`** [#262]](#make_root_mesh-262)
+	* [**`_get_structure_mesh`** [#281]](#_get_structure_mesh-281)
+	* [**`_check_valid_region_arg`** [#315]](#_check_valid_region_arg-315)
+	* [**`_check_obj_file`** [#326]](#_check_obj_file-326)
+	* [**`get_region_color`** [#339]](#get_region_color-339)
+	* [**`get_brain_regions`** [#368]](#get_brain_regions-368)
+	* [**`add_descendants_to_tree`** [#98]](#add_descendants_to_tree-98)
 
 
 &nbsp;
@@ -30,7 +30,7 @@ Contents
 
 
 &nbsp;
-## **`__init__`**  [#55]
+## **`__init__`** [#55]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/insects_brains_db.py#L55) online
 
@@ -42,7 +42,7 @@ def __init__(self, species=None, sex=None, base_dir=None, make_root=True, **kwar
 no docstring
 
 &nbsp;
-## **`get_brain_id_from_species_name`**  [#80]
+## **`get_brain_id_from_species_name`** [#80]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/insects_brains_db.py#L80) online
 
@@ -54,7 +54,7 @@ def get_brain_id_from_species_name(self, sel_species):
 no docstring
 
 &nbsp;
-## **`get_structures_hierarchy`**  [#97]
+## **`get_structures_hierarchy`** [#97]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/insects_brains_db.py#L97) online
 
@@ -66,7 +66,7 @@ def get_structures_hierarchy(self):
 no docstring
 
 &nbsp;
-## **`get_structures_reconstructions`**  [#132]
+## **`get_structures_reconstructions`** [#132]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/insects_brains_db.py#L132) online
 
@@ -78,7 +78,7 @@ def get_structures_reconstructions(self, species, sex):
 no docstring
 
 &nbsp;
-## **`get_brain`**  [#216]
+## **`get_brain`** [#216]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/insects_brains_db.py#L216) online
 
@@ -90,7 +90,7 @@ def get_brain(self, species=None, sex=None):
 no docstring
 
 &nbsp;
-## **`download_and_write_mesh`**  [#245]
+## **`download_and_write_mesh`** [#245]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/insects_brains_db.py#L245) online
 
@@ -102,7 +102,7 @@ def download_and_write_mesh(self, acronym, obj_path):
 no docstring
 
 &nbsp;
-## **`make_root_mesh`**  [#262]
+## **`make_root_mesh`** [#262]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/insects_brains_db.py#L262) online
 
@@ -114,7 +114,7 @@ def make_root_mesh(self):
 no docstring
 
 &nbsp;
-## **`_get_structure_mesh`**  [#281]
+## **`_get_structure_mesh`** [#281]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/insects_brains_db.py#L281) online
 
@@ -124,14 +124,13 @@ def _get_structure_mesh(self, acronym, **kwargs):
 
 
 ```text
-Fetches the mesh for a brain region from the atlas. 
+Fetches the mesh for a brain region from the atlas.
 :param acronym: string, acronym of brain region
 :param **kwargs:
-
 ```
 
 &nbsp;
-## **`_check_valid_region_arg`**  [#315]
+## **`_check_valid_region_arg`** [#315]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/insects_brains_db.py#L315) online
 
@@ -141,12 +140,11 @@ def _check_valid_region_arg(self, region):
 
 
 ```text
-Check that the string passed is a valid brain region name. 
-
+Check that the string passed is a valid brain region name.
 ```
 
 &nbsp;
-## **`_check_obj_file`**  [#326]
+## **`_check_obj_file`** [#326]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/insects_brains_db.py#L326) online
 
@@ -156,14 +154,15 @@ def _check_obj_file(self, region, obj_file):
 
 
 ```text
-If the . Obj file for a brain region hasn't been downloaded already, this function downloads it and writes it. 
+If the . Obj file for a brain region hasn't been downloaded
+already, this function downloads it and writes it.
 :param region: string, acronym of brain region
-:param obj_file: path to . Obj file to write downloaded data. 
-
+:param obj_file: path to . Obj file to write downloaded
+data.
 ```
 
 &nbsp;
-## **`get_region_color`**  [#339]
+## **`get_region_color`** [#339]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/insects_brains_db.py#L339) online
 
@@ -173,13 +172,12 @@ def get_region_color(self, regions):
 
 
 ```text
-Gets the rgb color of a brain region from the atlas. 
-:param regions:  list of regions acronyms. 
-
+Gets the rgb color of a brain region from the atlas.
+:param regions:  list of regions acronyms.
 ```
 
 &nbsp;
-## **`get_brain_regions`**  [#368]
+## **`get_brain_regions`** [#368]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/insects_brains_db.py#L368) online
 
@@ -191,7 +189,7 @@ def get_brain_regions(self, brain_regions, alpha=None, colors=None, use_original
 no docstring
 
 &nbsp;
-## **`add_descendants_to_tree`**  [#98]
+## **`add_descendants_to_tree`** [#98]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/insects_brains_db.py#L98) online
 
@@ -201,6 +199,6 @@ def add_descendants_to_tree(tree, structure, parent_id=None):
 
 
 ```text
-Recursively goes through all the the descendants of a region and adds them to the tree
-
+Recursively goes through all the the descendants of a region
+and adds them to the tree
 ```
