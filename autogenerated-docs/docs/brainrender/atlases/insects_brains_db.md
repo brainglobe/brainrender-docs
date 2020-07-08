@@ -37,8 +37,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def __init__(self, species=None, sex=None, base_dir=None,
     make_root=True, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -49,8 +51,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_brain_id_from_species_name(self, sel_species):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -61,8 +65,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_structures_hierarchy(self):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -73,8 +79,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_structures_reconstructions(self, species, sex):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -85,8 +93,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_brain(self, species=None, sex=None):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -97,8 +107,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def download_and_write_mesh(self, acronym, obj_path):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -109,8 +121,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def make_root_mesh(self):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -121,17 +135,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def _get_structure_mesh(self, acronym, **kwargs):
-```  
+```
 
-
-```text
-Fetches the mesh for a brain region from the atlas.
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Fetches the mesh for a brain region from the atlas.
 
 :param acronym: string, acronym of brain region
 
 :param **kwargs:
-
-```
+</pre>
 
 &nbsp;
 ## **`_check_valid_region_arg`** [#315]
@@ -140,13 +152,11 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def _check_valid_region_arg(self, region):
-```  
-
-
-```text
-Check that the string passed is a valid brain region name.
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Check that the string passed is a valid brain region name.
+</pre>
 
 &nbsp;
 ## **`_check_obj_file`** [#326]
@@ -155,18 +165,16 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def _check_obj_file(self, region, obj_file):
-```  
+```
 
-
-```text
-If the . Obj file for a brain region hasn't been downloaded already,
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">If the .obj file for a brain region hasn't been downloaded already,
     this function downloads it and writes it.
 
 :param region: string, acronym of brain region
 
-:param obj_file: path to . Obj file to write downloaded data.
-
-```
+:param obj_file: path to .obj file to write downloaded data.
+</pre>
 
 &nbsp;
 ## **`get_region_color`** [#339]
@@ -175,15 +183,13 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_region_color(self, regions):
-```  
+```
 
-
-```text
-Gets the rgb color of a brain region from the atlas.
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets the RGB color of a brain region from the atlas.
 
 :param regions:  list of regions acronyms.
-
-```
+</pre>
 
 &nbsp;
 ## **`get_brain_regions`** [#368]
@@ -193,8 +199,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def get_brain_regions(self, brain_regions, alpha=None, colors=None,
     use_original_color=True, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -205,11 +213,9 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def add_descendants_to_tree(tree, structure, parent_id=None):
-```  
-
-
-```text
-Recursively goes through all the the descendants of a region and adds
-    them to the tree
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Recursively goes through all the the descendants of a region and adds
+    them to the tree
+</pre>

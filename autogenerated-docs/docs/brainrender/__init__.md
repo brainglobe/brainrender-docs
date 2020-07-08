@@ -17,7 +17,9 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def reset_defaults():
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring

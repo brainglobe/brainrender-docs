@@ -31,8 +31,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def __init__(self, base_dir=None, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -43,14 +45,12 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_all_genes(self):
-```  
-
-
-```text
-Download metadata about all the genes available in the allen gene
-    expression dataset
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Download metadata about all the genes available in the Allen gene
+    expression dataset
+</pre>
 
 &nbsp;
 ## **`get_gene_id_by_name`** [#50]
@@ -59,8 +59,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_gene_id_by_name(self, gene_name):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -71,8 +73,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_gene_symbol_by_id(self, gene_id):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -83,17 +87,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_gene_experiments(self, gene_symbol):
-```  
+```
 
-
-```text
-Given a gene_symbol it returns the list of ish
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Given a gene_symbol it returns the list of ISH
 
 experiments for this gene
 
-:param gene_symbol: str, self. Genes. Gene_symbol
-
-```
+:param gene_symbol: str, self.genes.gene_symbol
+</pre>
 
 &nbsp;
 ## **`download_gene_data`** [#107]
@@ -102,20 +104,18 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def download_gene_data(self, gene):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Downloads a gene's data from the Allen Institute
 
-```text
-Downloads a gene's data from the allen institute
+Gene Expression dataset and saves to cache.
 
-gene expression dataset and saves to cache.
-
-see: http://help. Brain-map.
-    Org/display/api/downloading+3-d+expression+grid+data
+See: http://help.brain-
+    map.org/display/api/Downloading+3-D+Expression+Grid+Data
 
 :param gene: int, the gene_id for the gene being downloaded.
-
-```
+</pre>
 
 &nbsp;
 ## **`get_gene_data`** [#140]
@@ -124,13 +124,11 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_gene_data(self, gene, exp_id, metric='energy'):
-```  
-
-
-```text
-Given a list of gene ids
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Given a list of gene ids
+</pre>
 
 &nbsp;
 ## **`griddata_to_volume`** [#164]
@@ -140,24 +138,22 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def griddata_to_volume(self, griddata, min_quantile=None,
     min_value=None, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Takes a 3d numpy array with volumetric gene expression
 
-```text
-Takes a 3d numpy array with volumetric gene expression
+and returns a vedo.Volume.isosurface actor.
 
-and returns a vedo. Volume. Isosurface actor.
-
-the isosurface needs a lower bound threshold, this can be
+The isosurface needs a lower bound threshold, this can be
 
 either a user defined hard value (min_value) or the value
 
 corresponding to some percentile of the gene expression data.
 
-:param griddata: np. Ndarray, 3d array with gene expression data
+:param griddata: np.ndarray, 3d array with gene expression data
 
 :param min_quantile: float, percentile for threshold
 
 :param min_value: float, value for threshold
-
-```
+</pre>

@@ -33,8 +33,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def __init__(self, *args, fmt='mp4', **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -45,13 +47,11 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_cap_from_images_folder(self, img_format='%1d.png'):
-```  
-
-
-```text
-It creates a cv2 videocaptur 'cap' from a folder of images (frames)
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">It creates a cv2 VideoCaptur 'cap' from a folder of images (frames)
+</pre>
 
 &nbsp;
 ## **`close`** [#46]
@@ -60,14 +60,12 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def close(self):
-```  
-
-
-```text
-Takes a folder full of frames saved as images and converts it into a
-    video.
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Takes a folder full of frames saved as images and converts it into a
+    video.
+</pre>
 
 &nbsp;
 
@@ -95,8 +93,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def __init__(self, scene, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -107,19 +107,18 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def parse_kwargs(self, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Parses arguments for video creation
 
-```text
-Parses arguments for video creation
-
-use kwargs to specify:
+Use kwargs to specify:
 
 - save_fld: folder where to save video
 
 - save_name: video name
 
-- video_format: e. G.  mp4
+- video_format: e.g. mp4
 
 - duration: video duration in seconds
 
@@ -127,9 +126,8 @@ use kwargs to specify:
 
 - fps: framerate of video
 
-arguments not specified in kwargs will be assigned default values
-
-```
+Arguments not specified in kwargs will be assigned default values
+</pre>
 
 &nbsp;
 ## **`make_video`** [#115]
@@ -138,25 +136,23 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def make_video(self, azimuth=0, elevation=0, roll=0, **kwargs):
-```  
+```
 
-
-```text
-Creates a video using user defined parameters
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Creates a video using user defined parameters
 
 :param azimuth: integer, specify the rotation in degrees per frame on
-    the relative axis.  (default value = 0)
+    the relative axis. (Default value = 0)
 
 :param elevation: integer, specify the rotation in degrees per frame
-    on the relative axis.  (default value = 0)
+    on the relative axis. (Default value = 0)
 
 :param roll: integer, specify the rotation in degrees per frame on the
-    relative axis.  (default value = 0)
+    relative axis. (Default value = 0)
 
 :param kwargs: use to change destination folder, video name, fps,
-    duration . . .  check 'self. Parse_kwargs' for details.
-
-```
+    duration ... check 'self.parse_kwargs' for details.
+</pre>
 
 &nbsp;
 
@@ -175,8 +171,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def __init__(self, scene, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -187,34 +185,32 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def make_video(self, video_function, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Let's users use a custom function to create the video.
 
-```text
-Let's users use a custom function to create the video.
+The custom function must:
 
-the custom function must:
+- have a 'scene' keyword argument to accept a Scene() instance
 
-- have a 'scene' keyword argument to accept a scene() instance
-
-- have a 'videomaker' keyword argument to accept the customvideomaker
+- have a 'videomaker' keyword argument to accept the CustomVideoMaker
     (self) instance
 
-- have a 'video' keyword that takes the video argument
+- have a 'video' keyword that takes the Video argument
 
-- return the instance of video
+- return the instance of Video
 
-the custom function can manipulate actors and camera in the scene and
+The custom function can manipulate actors and camera in the scene and
 
-add frames to the video with 'video. Addframe()'.
+add frames to the video with 'video.addFrame()'.
 
-once all frames are ready it has to return the video object
+Once all frames are ready it has to return the video object
 
 so that the video can be closed and saved.
 
 :param video_function: custom function used to generate the video's
     frames
 
-see: examples/advanced/custom_videomaker. Py
-
-```
+see: examples/advanced/custom_videomaker.py
+</pre>

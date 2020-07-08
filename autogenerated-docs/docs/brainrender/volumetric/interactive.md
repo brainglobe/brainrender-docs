@@ -32,8 +32,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def __init__(self, target_region, *args, projection_type='afferent',
     cmap=None, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -44,8 +46,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def _reset_actors(self):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -56,8 +60,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def _move_crosshair(self):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -68,8 +74,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def _update_projection(self):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -80,8 +88,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def _update(self):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -92,8 +102,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def slider_ap(self, widget, event):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -104,8 +116,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def slider_dv(self, widget, event):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -116,7 +130,9 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def slider_ml(self, widget, event):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring

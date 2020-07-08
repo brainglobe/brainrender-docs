@@ -36,8 +36,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def __init__(self):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -50,16 +52,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 def get_neurons(self, neurons, color=None, display_axon=True,
     display_dendrites=True, alpha=1, neurite_radius=None,
     soma_radius=None, use_cache=True):
-```  
+```
 
-
-```text
-Gets rendered morphological data of neurons reconstructions downloaded
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets rendered morphological data of neurons reconstructions downloaded
     from the
 
-mouse light project at janelia (or other sources).
+Mouse Light project at Janelia (or other sources).
 
-accepts neurons argument as:
+Accepts neurons argument as:
 
 - file(s) with morphological data
 
@@ -68,17 +69,17 @@ accepts neurons argument as:
 - dictionary or list of dictionary with actors for different neuron
     parts
 
-:param neurons: str, list, dict.  file(s) with neurons data or list of
+:param neurons: str, list, dict. File(s) with neurons data or list of
     rendered neurons.
 
-:param display_axon, display_dendrites: if set to false the
+:param display_axon, display_dendrites: if set to False the
     corresponding neurite is not rendered
 
-:param color: default none.  can be:
+:param color: default None. Can be:
 
-- none: each neuron is given a random color
+- None: each neuron is given a random color
 
-- color: rbg, hex etc.  if a single color is passed all neurons will
+- color: rbg, hex etc. If a single color is passed all neurons will
     have that color
 
 - cmap: str with name of a colormap: neurons are colored based on
@@ -92,15 +93,14 @@ accepts neurons argument as:
 
 or a dictionary of colors for each neuron
 
-:param alpha: float in range 0,1.  neurons transparency
+:param alpha: float in range 0,1. Neurons transparency
 
 :param neurite_radius: float > 0 , radius of tube actor representing
     neurites
 
-:param use_cache: bool, if true a cache is used to avoid having to
+:param use_cache: bool, if True a cache is used to avoid having to
     crate a neuron's mesh anew, otherwise a new mesh is created
-
-```
+</pre>
 
 &nbsp;
 ## **`get_tractography`** [#204]
@@ -112,15 +112,14 @@ def get_tractography(self, tractography, color=None,
     color_by='manual', others_alpha=1, verbose=True, VIP_regions=[],
     VIP_color=None, others_color='white', include_all_inj_regions=False,
     display_injection_volume=True):
-```  
+```
 
-
-```text
-Renders tractography data and adds it to the scene.  a subset of
-    tractography data can receive special treatment using the  with vip
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Renders tractography data and adds it to the scene. A subset of
+    tractography data can receive special treatment using the  with VIP
     regions argument:
 
-if the injection site for the tractography data is in a vip regions,
+if the injection site for the tractography data is in a VIP regions,
     this is colored differently.
 
 :param tractography: list of dictionaries with tractography data
@@ -128,7 +127,7 @@ if the injection site for the tractography data is in a vip regions,
 :param color: color of rendered tractography data
 
 :param color_by: str, specifies which criteria to use to color the
-    tractography (default value = "manual")
+    tractography (Default value = "manual")
 
 options:
 
@@ -136,25 +135,24 @@ options:
 
 - target_region, color by the injected region
 
-:param others_alpha: float (default value = 1)
+:param others_alpha: float (Default value = 1)
 
-:param verbose: bool (default value = true)
+:param verbose: bool (Default value = True)
 
-:param vip_regions: list of brain regions with vip treatement (default
+:param VIP_regions: list of brain regions with VIP treatement (Default
     value = [])
 
-:param vip_color: str, color to use for vip data (default value =
-    none)
+:param VIP_color: str, color to use for VIP data (Default value =
+    None)
 
-:param others_color: str, color for not vip data (default value =
+:param others_color: str, color for not VIP data (Default value =
     "white")
 
-:param include_all_inj_regions: bool (default value = false)
+:param include_all_inj_regions: bool (Default value = False)
 
-:param display_injection_volume: float, if true a spehere is added to
-    display the injection coordinates and volume (default value = true)
-
-```
+:param display_injection_volume: float, if True a spehere is added to
+    display the injection coordinates and volume (Default value = True)
+</pre>
 
 &nbsp;
 ## **`get_streamlines`** [#334]
@@ -163,14 +161,14 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_streamlines(self, sl_file, color=None, *args, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Render streamline data downloaded from
+    https://neuroinformatics.nl/HBP/allen-connectivity-viewer/streamline-
+    downloader.html
 
-```text
-Render streamline data downloaded from https://neuroinformatics.
-    Nl/hbp/allen-connectivity-viewer/streamline-downloader. Html
-
-:param sl_file: path to json file with streamliens data [or list of
+:param sl_file: path to JSON file with streamliens data [or list of
     files]
 
 :param color: either a single color or a list of colors to color each
@@ -179,8 +177,7 @@ Render streamline data downloaded from https://neuroinformatics.
 :param *args:
 
 :param **kwargs:
-
-```
+</pre>
 
 &nbsp;
 ## **`get_projection_tracts_to_target`** [#387]
@@ -189,19 +186,17 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_projection_tracts_to_target(self, p0=None, **kwargs):
-```  
+```
 
-
-```text
-Gets tractography data for all experiments whose projections reach the
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets tractography data for all experiments whose projections reach the
     brain region or location of iterest.
 
-:param p0: list of 3 floats with xyz coordinates of point to be used
-    as seed (default value = none)
+:param p0: list of 3 floats with XYZ coordinates of point to be used
+    as seed (Default value = None)
 
 :param **kwargs:
-
-```
+</pre>
 
 &nbsp;
 ## **`download_streamlines_for_region`** [#415]
@@ -210,28 +205,26 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def download_streamlines_for_region(self, region, *args, **kwargs):
-```  
+```
 
-
-```text
-Using the allen mouse connectivity data and corresponding api, this
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Using the Allen Mouse Connectivity data and corresponding API, this
     function finds expeirments whose injections
 
 were targeted to the region of interest and downloads the
-    corresponding streamlines data.  by default, experiements
+    corresponding streamlines data. By default, experiements
 
-are selected for only wt mice and onl when the region was the primary
-    injection target.  look at "aba. Experiments_source_search"
+are selected for only WT mice and onl when the region was the primary
+    injection target. Look at "ABA.experiments_source_search"
 
 to see how to change this behaviour.
 
 :param region: str with region to use for research
 
-:param *args: arguments for aba. Experiments_source_search
+:param *args: arguments for ABA.experiments_source_search
 
-:param **kwargs: arguments for aba. Experiments_source_search
-
-```
+:param **kwargs: arguments for ABA.experiments_source_search
+</pre>
 
 &nbsp;
 ## **`download_streamlines_to_region`** [#440]
@@ -241,23 +234,21 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def download_streamlines_to_region(self, p0, *args, mouse_line='wt',
     **kwargs):
-```  
+```
 
-
-```text
-Using the allen mouse connectivity data and corresponding api, this
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Using the Allen Mouse Connectivity data and corresponding API, this
     function finds injection experiments
 
 which resulted in fluorescence being found in the target point, then
     downloads the streamlines data.
 
-:param p0: list of floats with xyz coordinates
+:param p0: list of floats with XYZ coordinates
 
-:param mouse_line: str with name of the mouse line to use(default
+:param mouse_line: str with name of the mouse line to use(Default
     value = "wt")
 
 :param *args:
 
 :param **kwargs:
-
-```
+</pre>

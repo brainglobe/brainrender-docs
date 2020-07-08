@@ -19,15 +19,13 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def request(url):
-```  
+```
 
-
-```text
-Sends a request to a url
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Sends a request to a url
 
 :param url:
-
-```
+</pre>
 
 &nbsp;
 
@@ -38,8 +36,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def fail_on_no_connection(func):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -52,7 +52,9 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def inner(*args, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring

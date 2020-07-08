@@ -23,20 +23,19 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def parse_neurons_colors(neurons, color):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Prepares the color info to render neurons
 
-```text
-Prepares the color info to render neurons
-
-:param neurons: str, list, dict.  file(s) with neurons data or list of
+:param neurons: str, list, dict. File(s) with neurons data or list of
     rendered neurons.
 
-:param color: default none.  can be:
+:param color: default None. Can be:
 
-- none: each neuron is given a random color
+- None: each neuron is given a random color
 
-- color: rbg, hex etc.  if a single color is passed all neurons will
+- color: rbg, hex etc. If a single color is passed all neurons will
     have that color
 
 - cmap: str with name of a colormap: neurons are colored based on
@@ -49,8 +48,7 @@ Prepares the color info to render neurons
     color for each neuron
 
 or a dictionary of colors for each neuron
-
-```
+</pre>
 
 &nbsp;
 
@@ -63,41 +61,39 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 def parse_tractography_colors(tractography, include_all_inj_regions,
     color=None, color_by='manual', VIP_regions=[], VIP_color=None,
     others_color='salmon'):
-```  
+```
 
-
-```text
-Parses color arguments to render tracrography data
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">parses color arguments to render tracrography data
 
 :param tractography: list of dictionaries with tractography data
 
 :param color: color of rendered tractography data
 
 :param color_by: str, specifies which criteria to use to color the
-    tractography (default value = "manual")
+    tractography (Default value = "manual")
 
-options:
+Options:
 
 - manual: the user needs to provide a color or list of colors
 
 - target_region: tracts are colored according to the region where the
     injection was done.
 
-if vip_regions is passed, then only tracts for the vip regions are
+if VIP_regions is passed, then only tracts for the VIP regions are
     colored
 
-:param vip_regions: list of brain regions with vip treatement (default
+:param VIP_regions: list of brain regions with VIP treatement (Default
     value = [])
 
-:param vip_color: str, color to use for vip data (default value =
-    none)
+:param VIP_color: str, color to use for VIP data (Default value =
+    None)
 
-:param include_all_inj_regions: bool (default value = false)
+:param include_all_inj_regions: bool (Default value = False)
 
-:param others_color: str, color for not vip data (default value =
+:param others_color: str, color for not VIP data (Default value =
     "white")
-
-```
+</pre>
 
 &nbsp;
 
@@ -108,23 +104,21 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def experiments_source_search(mca, SOI, *args, source=True, **kwargs):
-```  
+```
 
-
-```text
-Returns data about experiments whose injection was in the soi,
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Returns data about experiments whose injection was in the SOI,
     structure of interest
 
-:param soi: str, structure of interest.  acronym of structure to use
-    as seed for teh search
+:param SOI: str, structure of interest. Acronym of structure to use as
+    seed for teh search
 
 :param *args:
 
-:param source:  (default value = true)
+:param source:  (Default value = True)
 
 :param **kwargs:
-
-```
+</pre>
 
 &nbsp;
 
@@ -137,37 +131,35 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 def parse_streamline(*args, filepath=None, data=None,
     show_injection_site=True, color='ivory', alpha=0.8, radius=10,
     **kwargs):
-```  
+```
 
-
-```text
-Given a path to a . Json file with streamline data (or the data
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Given a path to a .json file with streamline data (or the data
     themselves), render the streamline as tubes actors.
 
-either  filepath or data should be passed
+Either  filepath or data should be passed
 
-:param filepath: str, optional.  path to . Json file with streamline
-    data (default value = none)
+:param filepath: str, optional. Path to .json file with streamline
+    data (Default value = None)
 
-:param data: panadas. Dataframe, optional.  dataframe with streamline
-    data.  (default value = none)
+:param data: panadas.DataFrame, optional. DataFrame with streamline
+    data. (Default value = None)
 
-:param color: str color of the streamlines (default value = 'ivory')
+:param color: str color of the streamlines (Default value = 'ivory')
 
-:param alpha: float transparency of the streamlines (default value = .
-    8)
+:param alpha: float transparency of the streamlines (Default value =
+    .8)
 
-:param radius: int radius of the streamlines actor (default value =
+:param radius: int radius of the streamlines actor (Default value =
     10)
 
-:param show_injection_site: bool, if true spheres are used to render
-    the injection volume (default value = true)
+:param show_injection_site: bool, if True spheres are used to render
+    the injection volume (Default value = True)
 
 :param *args:
 
 :param **kwargs:
-
-```
+</pre>
 
 &nbsp;
 
@@ -178,15 +170,13 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def make_url_given_id(expid):
-```  
-
-
-```text
-Get url of json file for an experiment, give it's id number
-
-:param expid: int with experiment id number
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Get url of JSON file for an experiment, give it's ID number
+
+:param expid: int with experiment ID number
+</pre>
 
 &nbsp;
 
@@ -197,21 +187,19 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def download_streamlines(eids, streamlines_folder=None):
-```  
+```
 
-
-```text
-Given a list of expeirmental ids, it downloads the streamline data
-    from the https://neuroinformatics. Nl cache and saves them as
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Given a list of expeirmental IDs, it downloads the streamline data
+    from the https://neuroinformatics.nl cache and saves them as
 
 json files.
 
-:param eids: list of integers with experiments ids
+:param eids: list of integers with experiments IDs
 
-:param streamlines_folder: str path to the folder where the json files
-    should be saved, if none the default is used (default value = none)
-
-```
+:param streamlines_folder: str path to the folder where the JSON files
+    should be saved, if None the default is used (Default value = None)
+</pre>
 
 &nbsp;
 
@@ -222,28 +210,26 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def extract_ids_from_csv(csv_file, download=False, **kwargs):
-```  
+```
 
-
-```text
-Parse csv file to extract experiments ids and link to downloadable
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Parse CSV file to extract experiments IDs and link to downloadable
     streamline data
 
-given a csv file with info about experiments downloaded from:
-    http://connectivity. Brain-map. Org
+Given a CSV file with info about experiments downloaded from:
+    http://connectivity.brain-map.org
 
-extract experiments id and get links to download (compressed)
-    streamline data from https://neuroinformatics. Nl.
+extract experiments ID and get links to download (compressed)
+    streamline data from https://neuroinformatics.nl.
 
-also return the experiments ids to download data from:
-    https://neuroinformatics. Nl/hbp/allen-connectivity-viewer/streamline-
-    downloader. Html
+Also return the experiments IDs to download data from:
+    https://neuroinformatics.nl/HBP/allen-connectivity-viewer/streamline-
+    downloader.html
 
 :param csv_file: str with path to csv file
 
-:param download: if true the data are downloaded automatically
-    (default value = false)
+:param download: if True the data are downloaded automatically
+    (Default value = False)
 
 :param **kwargs:
-
-```
+</pre>

@@ -21,8 +21,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def check_camera_param(camera):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -35,13 +37,11 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def buildcam(cm):
-```  
-
-
-```text
-Builds a camera from a dictionary of parameters, from vedo
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Builds a camera from a dictionary of parameters, from vedo
+</pre>
 
 &nbsp;
 
@@ -52,8 +52,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def set_camera_params(camera, params):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -66,20 +68,18 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def set_camera(scene, camera):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Sets the position of the camera of a brainrender scene.
 
-```text
-Sets the position of the camera of a brainrender scene.
-
-:param scene: instance of scene()
+:param scene: instance of Scene()
 
 :param camera: either a string with the name of one of the available
     cameras, or
 
 a dictionary of camera parameters.
-
-```
+</pre>
 
 &nbsp;
 
@@ -90,12 +90,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_camera_params(scene=None, camera=None):
-```  
+```
 
-
-```text
-Given an active brainrender scene, it return
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Given an active brainrender scene, it return
 
 the camera parameters.
-
-```
+</pre>

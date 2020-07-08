@@ -24,7 +24,9 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def __init__(self, name=None, *args, base_dir=None, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring

@@ -22,17 +22,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def return_list_smart(lst):
-```  
+```
 
-
-```text
-If the list has length > returns the list
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">If the list has length > returns the list
 
 if it has length == 1 it returns the element
 
-if it has length == 0 it returns none
-
-```
+if it has length == 0 it returns None
+</pre>
 
 &nbsp;
 
@@ -43,8 +41,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def return_dict_smart(dct):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -57,24 +57,22 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_coords(obj, mirror=False, mirror_ax='x'):
-```  
-
-
-```text
-Takes coordinates in various format and turns them into what's
-    expected from vtk plotter for rendering.
-
-can take a dict, pandas dataframe or series
-
-:param obj: dict, pandas. Dataframe or pandas. Series
-
-:param mirror:  if true, the coordinates are mirrored around mirror_ax
-    (default value = false)
-
-:param mirror_ax: ax to be used for mirroring ['x', 'y', 'z'] (default
-    value = 'x')
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Takes coordinates in various format and turns them into what's
+    expected from VTK plotter for rendering.
+
+Can take a dict, Pandas Dataframe or Series
+
+:param obj: dict, pandas.DataFrame or pandas.Series
+
+:param mirror:  if True, the coordinates are mirrored around mirror_ax
+    (Default value = False)
+
+:param mirror_ax: ax to be used for mirroring ['x', 'y', 'z'] (Default
+    value = 'x')
+</pre>
 
 &nbsp;
 
@@ -85,15 +83,13 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def flatten_list(lst):
-```  
+```
 
-
-```text
-Flattens a list of lists
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Flattens a list of lists
 
 :param lst: list
-
-```
+</pre>
 
 &nbsp;
 
@@ -104,17 +100,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def is_any_item_in_list(L1, L2):
-```  
-
-
-```text
-Checks if an item in a list is in another  list
-
-:param l1:
-
-:param l2:
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Checks if an item in a list is in another  list
+
+:param L1:
+
+:param L2:
+</pre>
 
 &nbsp;
 
@@ -125,16 +119,14 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_slice_coord(bounds, n):
-```  
+```
 
-
-```text
-Given the bounds of an actor, return the point that
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Given the bounds of an actor, return the point that
 
 corresponds to the n% of the bounds range
 
 :param bounds: should be a list of two floats
 
 :param n: n should be a float in range 0, 1
-
-```
+</pre>

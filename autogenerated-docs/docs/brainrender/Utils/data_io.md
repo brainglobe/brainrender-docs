@@ -31,16 +31,14 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def listdir(fld):
-```  
+```
 
-
-```text
-List the files into a folder with the coplete file path instead of the
-    relative file path like os. Listdir.
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">List the files into a folder with the coplete file path instead of the
+    relative file path like os.listdir.
 
 :param fld: string, folder path
-
-```
+</pre>
 
 &nbsp;
 
@@ -51,13 +49,11 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_subdirs(folderpath):
-```  
-
-
-```text
-Returns the subfolders in a given folder
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Returns the subfolders in a given folder
+</pre>
 
 &nbsp;
 
@@ -68,8 +64,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def check_file_exists(filepath, raise_error=False):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -82,8 +80,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_file_name(filepath):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -96,8 +96,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def load_npy_from_gz(filepath):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -110,8 +112,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def save_npy_to_gz(filepath, data):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -124,17 +128,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def save_json(filepath, content, append=False):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Saves content to a JSON file
 
-```text
-Saves content to a json file
-
-:param filepath: path to a file (must include . Json)
+:param filepath: path to a file (must include .json)
 
 :param content: dictionary of stuff to save
-
-```
+</pre>
 
 &nbsp;
 
@@ -145,17 +147,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def save_yaml(filepath, content, append=False, topcomment=None):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Saves content to a yaml file
 
-```text
-Saves content to a yaml file
-
-:param filepath: path to a file (must include . Yaml)
+:param filepath: path to a file (must include .yaml)
 
 :param content: dictionary of stuff to save
-
-```
+</pre>
 
 &nbsp;
 
@@ -166,15 +166,13 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def load_json(filepath):
-```  
+```
 
-
-```text
-Load a json file
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Load a JSON file
 
 :param filepath: path to a file
-
-```
+</pre>
 
 &nbsp;
 
@@ -185,15 +183,13 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def load_yaml(filepath):
-```  
+```
 
-
-```text
-Load a yaml file
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Load a YAML file
 
 :param filepath: path to yaml file
-
-```
+</pre>
 
 &nbsp;
 
@@ -204,17 +200,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def load_volume_file(filepath):
-```  
+```
 
-
-```text
-Load a volume file (e. G. , . Nii) and returns the data
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Load a volume file (e.g., .nii) and returns the data
 
 :param filepath: path to file
 
 :param **kwargs:
-
-```
+</pre>
 
 &nbsp;
 
@@ -225,17 +219,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def load_mesh_from_file(filepath, *args, **kwargs):
-```  
+```
 
-
-```text
-Load a a mesh or volume from files like . Obj, . Stl, . . .
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Load a a mesh or volume from files like .obj, .stl, ...
 
 :param filepath: path to file
 
 :param **kwargs:
-
-```
+</pre>
 
 &nbsp;
 
@@ -246,18 +238,16 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def connected_to_internet(url='http://www.google.com/', timeout=5):
-```  
-
-
-```text
-Check that there is an internet connection
-
-:param url: url to use for testing (default value = 'http://www.
-    Google. Com/')
-
-:param timeout:  timeout to wait for [in seconds] (default value = 5)
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Check that there is an internet connection
+
+:param url: url to use for testing (Default value =
+    'http://www.google.com/')
+
+:param timeout:  timeout to wait for [in seconds] (Default value = 5)
+</pre>
 
 &nbsp;
 
@@ -268,17 +258,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def send_query(query_string, clean=False):
-```  
+```
 
-
-```text
-Send a query/request to a website
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Send a query/request to a website
 
 :param query_string: string with query content
 
-:param clean:  (default value = false)
-
-```
+:param clean:  (Default value = False)
+</pre>
 
 &nbsp;
 
@@ -290,18 +278,16 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def get_probe_points_from_sharptrack(points_filepath,
     scale_factor=10):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Loads the location of the of probe points as extracted by SharpTrack
 
-```text
-Loads the location of the of probe points as extracted by sharptrack
+[https://github.com/cortex-lab/allenCCF].
 
-[https://github. Com/cortex-lab/allenccf].
-
-:param points_filepath: str, path to a . Mat file with probe points
+:param points_filepath: str, path to a .mat file with probe points
 
 :param scale_factor: 10, sharptrack uses a 10um reference atlas so the
 
 coordinates need to be scaled to match brainrender's
-
-```
+</pre>

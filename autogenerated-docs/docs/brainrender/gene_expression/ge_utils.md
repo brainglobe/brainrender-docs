@@ -20,13 +20,12 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def check_gene_cached(cache_folder, gene_id, exp_id):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">A gene is saved in a folder in cache_folder
 
-```text
-A gene is saved in a folder in cache_folder
-
-with gene_id-exp_id as name.  if the folder doesn't
+with gene_id-exp_id as name. If the folder doesn't
 
 exist the gene is not cached.
 
@@ -35,8 +34,7 @@ exist the gene is not cached.
 :param gene_id: str name of gene
 
 :param exp_id: id of experiment
-
-```
+</pre>
 
 &nbsp;
 
@@ -47,19 +45,17 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def download_and_cache(url, cachedir):
-```  
+```
 
-
-```text
-Given a url to download a gene's ish experiment data,
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Given a url to download a gene's ISH experiment data,
 
 this function download and unzips the data
 
 :param url: str, utl to download data
 
 :param cachedir: str, path to folder where data will be downloaded
-
-```
+</pre>
 
 &nbsp;
 
@@ -70,13 +66,11 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def load_cached_gene(cache, metric, grid_size):
-```  
-
-
-```text
-Loads a gene's data from cache
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Loads a gene's data from cache
+</pre>
 
 &nbsp;
 
@@ -87,21 +81,19 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def read_raw(filepath, grid_size):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">reads a .raw file with gene expression data
 
-```text
-Reads a . Raw file with gene expression data
-
-downloaded from the allen atlas and returns
+downloaded from the Allen atlas and returns
 
 a numpy array with the correct grid_size.
 
-see as reference:
+See as reference:
 
-http://help. Brain-map. Org/display/mousebrain/api#api-
-    expression3dgridsz
+http://help.brain-map.org/display/mousebrain/API#API-
+    Expression3DGridsz
 
-:param filepath: str or path object
-
-```
+:param filepath: str or Path object
+</pre>

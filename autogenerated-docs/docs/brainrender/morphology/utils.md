@@ -19,8 +19,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def get_neuron_actors_with_morphapi(swcfile=None, neuron=None,
     neurite_radius=None, use_cache=True, soma_radius=None):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -33,11 +35,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def edit_neurons(neurons, **kwargs):
-```  
+```
 
-
-```text
-Modify neurons actors after they have been created, at render time.
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Modify neurons actors after they have been created, at render time.
 
 neurons should be a list of dictionaries with soma, dendrite and axon
     actors of each neuron.
@@ -45,5 +46,4 @@ neurons should be a list of dictionaries with soma, dendrite and axon
 :param neurons: list of dictionaries with vtk actors for each neuron
 
 :param **kwargs:
-
-```
+</pre>

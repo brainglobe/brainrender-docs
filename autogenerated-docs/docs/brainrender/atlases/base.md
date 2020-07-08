@@ -37,8 +37,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def __init__(self):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -50,11 +52,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def get_plane_at_point(self, pos, norm, sx, sy, color='lightgray',
     alpha=0.25, **kwargs):
-```  
+```
 
-
-```text
-Returns a plane going through a point at pos, oriented
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Returns a plane going through a point at pos, oriented
 
 orthogonally to the vector norm and of width and height
 
@@ -68,8 +69,7 @@ sx, sy.
 :param norm: 3-tuple or list with 3d vector the plane is orthogonal to
 
 :param color, alpha: plane color and transparency
-
-```
+</pre>
 
 &nbsp;
 ## **`get_sagittal_plane`** [#42]
@@ -78,21 +78,19 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_sagittal_plane(self, pos=None, **kwargs):
-```  
+```
 
-
-```text
-Creates a plane actor centered at the midpoint of root (or a user
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Creates a Plane actor centered at the midpoint of root (or a user
     given locatin)
 
 and oriented along the sagittal axis
 
-:param pos: if not none, passe a list of 3 xyz defining the position
+:param pos: if not None, passe a list of 3 xyz defining the position
     of the
 
 point the plane goes through.
-
-```
+</pre>
 
 &nbsp;
 ## **`get_horizontal_plane`** [#69]
@@ -101,21 +99,19 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_horizontal_plane(self, pos=None, **kwargs):
-```  
+```
 
-
-```text
-Creates a plane actor centered at the midpoint of root (or a user
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Creates a Plane actor centered at the midpoint of root (or a user
     given locatin)
 
 and oriented along the horizontal axis
 
-:param pos: if not none, passe a list of 3 xyz defining the position
+:param pos: if not None, passe a list of 3 xyz defining the position
     of the
 
 point the plane goes through.
-
-```
+</pre>
 
 &nbsp;
 ## **`get_coronal_plane`** [#96]
@@ -124,21 +120,19 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_coronal_plane(self, pos=None, **kwargs):
-```  
+```
 
-
-```text
-Creates a plane actor centered at the midpoint of root (or a user
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Creates a Plane actor centered at the midpoint of root (or a user
     given locatin)
 
 and oriented along the coronal axis
 
-:param pos: if not none, passe a list of 3 xyz defining the position
+:param pos: if not None, passe a list of 3 xyz defining the position
     of the
 
 point the plane goes through.
-
-```
+</pre>
 
 &nbsp;
 ## **`get_region_CenterOfMass`** [#124]
@@ -148,27 +142,25 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def get_region_CenterOfMass(self, regions, unilateral=True,
     hemisphere='right'):
-```  
+```
 
-
-```text
-Get the center of mass of the 3d mesh of one or multiple brain
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Get the center of mass of the 3d mesh of one or multiple brain
     regions.
 
 :param regions: str, list of brain regions acronyms
 
-:param unilateral: bool, if true, the com is relative to one
-    hemisphere (default value = true)
+:param unilateral: bool, if True, the CoM is relative to one
+    hemisphere (Default value = True)
 
-:param hemisphere: str, if unilteral=true, specifies which hemisphere
-    to use ['left' or 'right'] (default value = "right")
+:param hemisphere: str, if unilteral=True, specifies which hemisphere
+    to use ['left' or 'right'] (Default value = "right")
 
 :returns: coms = {list, dict} -- [if only one regions is passed, then
-    just returns the com coordinates for that region.
+    just returns the CoM coordinates for that region.
 
-if a list is passed then a dictionary is returned.  ]
-
-```
+If a list is passed then a dictionary is returned. ]
+</pre>
 
 &nbsp;
 ## **`_get_structure_mesh`** [#167]
@@ -177,8 +169,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def _get_structure_mesh(self, acronym, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -191,42 +185,40 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 def get_brain_regions(self, brain_regions, add_labels=False,
     colors=None, use_original_color=True, alpha=None, hemisphere=None,
     verbose=False, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets brain regions meshes for rendering
 
-```text
-Gets brain regions meshes for rendering
-
-many parameters can be passed to specify how the regions should be
+Many parameters can be passed to specify how the regions should be
     rendered.
 
-to treat a subset of the rendered regions, specify which regions are
-    vip.
+To treat a subset of the rendered regions, specify which regions are
+    VIP.
 
-use the kwargs to specify more detailes on how the regins should be
-    rendered (e. G.  wireframe look)
+Use the kwargs to specify more detailes on how the regins should be
+    rendered (e.g. wireframe look)
 
 :param brain_regions: str list of acronyms of brain regions
 
-:param colors: str, color of rendered brian regions (default value =
-    none)
+:param colors: str, color of rendered brian regions (Default value =
+    None)
 
-:param use_original_color: bool, if true, the allen's default color
-    for the region is used.   (default value = false)
+:param use_original_color: bool, if True, the allen's default color
+    for the region is used.  (Default value = False)
 
 :param alpha: float, transparency of the rendered brain regions
-    (default value = none)
+    (Default value = None)
 
-:param hemisphere: str (default value = none)
+:param hemisphere: str (Default value = None)
 
-:param add_labels: bool (default false).  if true a label is added to
-    each regions' actor.  the label is visible when hovering the mouse
-    over the actor
+:param add_labels: bool (default False). If true a label is added to
+    each regions' actor. The label is visible when hovering the mouse over
+    the actor
 
 :param **kwargs: used to determine a bunch of thigs, including the
-    look and location of lables from scene. Add_labels
-
-```
+    look and location of lables from scene.add_labels
+</pre>
 
 &nbsp;
 ## **`get_structure_ancestors`** [#286]
@@ -236,21 +228,19 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def get_structure_ancestors(self, regions, ancestors=True,
     descendants=False):
-```  
+```
 
-
-```text
-Get's the ancestors of the region(s) passed as arguments
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Get's the ancestors of the region(s) passed as arguments
 
 :param regions: str, list of str with acronums of regions of interest
 
-:param ancestors: if true, returns the ancestors of the region
-    (default value = true)
+:param ancestors: if True, returns the ancestors of the region
+    (Default value = True)
 
-:param descendants: if true, returns the descendants of the region
-    (default value = false)
-
-```
+:param descendants: if True, returns the descendants of the region
+    (Default value = False)
+</pre>
 
 &nbsp;
 ## **`get_structure_descendants`** [#328]
@@ -259,8 +249,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_structure_descendants(self, regions):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -271,18 +263,16 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_structure_parent(self, acronyms):
-```  
+```
 
-
-```text
-Gets the parent of a brain region (or list of regions) from the
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets the parent of a brain region (or list of regions) from the
     hierarchical structure of the
 
-allen brain atals.
+Allen Brain Atals.
 
 :param acronyms: list of acronyms of brain regions.
-
-```
+</pre>
 
 &nbsp;
 ## **`get_region_unilateral`** [#359]
@@ -292,25 +282,23 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def get_region_unilateral(self, region, hemisphere='both', color=None,
     alpha=None):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Regions meshes are loaded with both hemispheres' meshes by default.
 
-```text
-Regions meshes are loaded with both hemispheres' meshes by default.
-
-this function splits them in two.
+This function splits them in two.
 
 :param region: str, actors of brain region
 
 :param hemisphere: str, which hemisphere to return ['left', 'right' or
-    'both'] (default value = "both")
+    'both'] (Default value = "both")
 
-:param color: color of each side's mesh.  (default value = none)
+:param color: color of each side's mesh. (Default value = None)
 
-:param alpha: transparency of each side's mesh.   (default value =
-    none)
-
-```
+:param alpha: transparency of each side's mesh.  (Default value =
+    None)
+</pre>
 
 &nbsp;
 ## **`mirror_point_across_hemispheres`** [#398]
@@ -319,8 +307,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def mirror_point_across_hemispheres(self, point):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -331,12 +321,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_colors_from_coordinates(self, p0):
-```  
+```
 
-
-```text
-Given a point or a list of points returns a list of colors where
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Given a point or a list of points returns a list of colors where
 
 each item is the color of the brain region each point is in
-
-```
+</pre>

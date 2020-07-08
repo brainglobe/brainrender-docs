@@ -21,13 +21,11 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def cap_set_frame(cap, frame_number):
-```  
-
-
-```text
-Sets an opencv video capture object to a specific frame
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Sets an opencv video capture object to a specific frame
+</pre>
 
 &nbsp;
 
@@ -38,13 +36,11 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_cap_selected_frame(cap, show_frame):
-```  
-
-
-```text
-Gets a frame from an opencv video capture object to a specific frame
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets a frame from an opencv video capture object to a specific frame
+</pre>
 
 &nbsp;
 
@@ -55,13 +51,11 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_video_params(cap):
-```  
-
-
-```text
-Gets video parameters from an opencv video capture object
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets video parameters from an opencv video capture object
+</pre>
 
 &nbsp;
 
@@ -73,11 +67,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def open_cvwriter(filepath, w=None, h=None, framerate=None,
     format='.mp4', iscolor=False):
-```  
+```
 
-
-```text
-Creats an instance of cv. Videowriter to write frames to video using
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Creats an instance of cv.VideoWriter to write frames to video using
     python opencv
 
 :param filepath: str, path to file to save
@@ -90,8 +83,7 @@ Creats an instance of cv. Videowriter to write frames to video using
 
 :param iscolor: bool, set as true if images are rgb, else false if
     they are gray
-
-```
+</pre>
 
 &nbsp;
 
@@ -102,10 +94,8 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def save_videocap_to_video(cap, savepath, fmt, fps=30, iscolor=True):
-```  
-
-
-```text
-Saves the content of a videocapture opencv object to a file
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Saves the content of a videocapture opencv object to a file
+</pre>

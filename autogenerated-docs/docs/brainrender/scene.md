@@ -78,42 +78,41 @@ def __init__(self, brain_regions=None, regions_aba_color=False,
     ignore_jupyter=False, display_inset=None, base_dir=None, camera=None,
     screenshot_kwargs={}, use_default_key_bindings=False, title=None,
     atlas=None, atlas_kwargs=dict(), **kwargs):
-```  
+```
 
-
-```text
-Creates and manages a plotter instance
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Creates and manages a Plotter instance
 
 :param brain_regions: list of brain regions acronyms to be added to
-    the rendered scene (default value none)
+    the rendered scene (default value None)
 
-:param regions_aba_color: if true, use the allen brain atlas regions
-    colors (default value none)
+:param regions_aba_color: if True, use the Allen Brain Atlas regions
+    colors (default value None)
 
-:param neurons: path to json or swc file with data of neurons to be
-    rendered [or list of files] (default value none)
+:param neurons: path to JSON or SWC file with data of neurons to be
+    rendered [or list of files] (default value None)
 
-:param tracts: list of json files with tractography data to be
-    rendered (default value none)
+:param tracts: list of JSON files with tractography data to be
+    rendered (default value None)
 
-:param add_root: if false a rendered outline of the whole brain is
-    added to the scene (default value none)
+:param add_root: if False a rendered outline of the whole brain is
+    added to the scene (default value None)
 
-:param verbose: if false less feedback is printed to screen (default
-    value true)
+:param verbose: if False less feedback is printed to screen (default
+    value True)
 
-:param display_insert: if false the inset displaying the brain's
+:param display_insert: if False the inset displaying the brain's
     outline is not rendered (but the root is added to the scene) (default
-    value none)
+    value None)
 
 :param base_dir: path to directory to use for saving data (default
-    value none)
+    value None)
 
 :param camera: name of the camera parameters setting to use (controls
     the orientation of the rendered scene)
 
 :param kwargs: can be used to pass path to individual data folders.
-    see brainrender/utils/paths_manager. Py
+    See brainrender/Utils/paths_manager.py
 
 :param screenshot_kwargs: pass a dictionary with keys:
 
@@ -125,7 +124,7 @@ Creates and manages a plotter instance
 
 - scale -> float, values > 1 yield higher resultion screenshots
 
-:param use_default_key_bindings: if true the defualt keybindings from
+:param use_default_key_bindings: if True the defualt keybindings from
     vedo are used, otherwise
 
 a custom function that can be used to take screenshots with the
@@ -134,26 +133,25 @@ a custom function that can be used to take screenshots with the
 :param title: str, if a string is passed a text is added to the top of
     the rendering window as a title
 
-:param atlas: str, class.  default none.  if a string is passed it
+:param atlas: str, class. Default None. If a string is passed it
     whould be the name of a valide
 
-brainglobe_api atlas.  alternative a class object can be passed, this
+brainglobe_api atlas. Alternative a class object can be passed, this
     should support the functionality
 
 expected of an atlas class.
 
 if no atlas is passed the allen brain atlas for the adult mouse brain
-    is used.  if a string with the atlas
+    is used. If a string with the atlas
 
 name is passed it will try to load the corresponding brainglobe atlas.
 
 :param atlas_kwargs: dictionary used to pass extra arguments to atlas
     class
 
-:param ignore_jupyter: bool, if false brainrender auto-detects if the
+:param ignore_jupyter: bool, if False brainrender auto-detects if the
     user is using jupyter and adjusts to it
-
-```
+</pre>
 
 &nbsp;
 ## **`_check_point_in_region`** [#237]
@@ -162,18 +160,16 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def _check_point_in_region(self, point, region_actor):
-```  
+```
 
-
-```text
-Checks if a point of defined coordinates is within the mesh of a given
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Checks if a point of defined coordinates is within the mesh of a given
     actorr
 
 :param point: 3-tuple or list of xyz coordinates
 
 :param region_actor: vedo actor
-
-```
+</pre>
 
 &nbsp;
 ## **`_get_inset`** [#249]
@@ -182,16 +178,14 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def _get_inset(self, **kwargs):
-```  
+```
 
-
-```text
-Handles the rendering of the inset showing the outline of the whole
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Handles the rendering of the inset showing the outline of the whole
     brain (root) in a corner of the scene.
 
 :param **kwargs:
-
-```
+</pre>
 
 &nbsp;
 ## **`get_n_random_points_in_region`** [#277]
@@ -200,18 +194,16 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_n_random_points_in_region(self, region, N, hemisphere=None):
-```  
+```
 
-
-```text
-Gets n random points inside (or on the surface) of the mesh defining a
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Gets N random points inside (or on the surface) of the mesh defining a
     brain region.
 
 :param region: str, acronym of the brain region.
 
-:param n: int, number of points to return.
-
-```
+:param N: int, number of points to return.
+</pre>
 
 &nbsp;
 ## **`edit_actors`** [#312]
@@ -220,17 +212,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def edit_actors(self, actors, **kwargs):
-```  
+```
 
-
-```text
-Edits a list of actors (e. G.  render as wireframe or solid)
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">edits a list of actors (e.g. render as wireframe or solid)
 
 :param actors: list of actors
 
 :param **kwargs:
-
-```
+</pre>
 
 &nbsp;
 ## **`mirror_actor_hemisphere`** [#325]
@@ -239,13 +229,11 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def mirror_actor_hemisphere(self, actors):
-```  
-
-
-```text
-Mirrors actors from one hemisphere to the next
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Mirrors actors from one hemisphere to the next
+</pre>
 
 &nbsp;
 ## **`cut_actors_with_plane`** [#338]
@@ -255,8 +243,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def cut_actors_with_plane(self, plane, actors=None, showplane=False,
     returncut=False, close_actors=False, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -267,16 +257,14 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_cells_in_region(self, cells, region):
-```  
+```
 
-
-```text
-Selects the cells that are in a list of user provided regions from a
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Selects the cells that are in a list of user provided regions from a
     dataframe of cell locations
 
-:param cells: pd. Dataframe of cells x,y,z coordinates
-
-```
+:param cells: pd.DataFrame of cells x,y,z coordinates
+</pre>
 
 &nbsp;
 ## **`add_root`** [#432]
@@ -285,17 +273,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def add_root(self, render=True, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">adds the root the scene (i.e. the whole brain outline)
 
-```text
-Adds the root the scene (i. E.  the whole brain outline)
-
-:param render:  (default value = true)
+:param render:  (Default value = True)
 
 :param **kwargs:
-
-```
+</pre>
 
 &nbsp;
 ## **`add_brain_regions`** [#456]
@@ -304,15 +290,13 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def add_brain_regions(self, *args, **kwargs):
-```  
-
-
-```text
-Adds brain regions meshes to scene.
-
-check the atlas' method to know how it works
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds brain regions meshes to scene.
+
+Check the atlas' method to know how it works
+</pre>
 
 &nbsp;
 ## **`add_neurons`** [#481]
@@ -321,15 +305,13 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def add_neurons(self, *args, **kwargs):
-```  
-
-
-```text
-Adds rendered morphological data of neurons reconstructions.
-
-check the atlas' method to know how it works
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds rendered morphological data of neurons reconstructions.
+
+Check the atlas' method to know how it works
+</pre>
 
 &nbsp;
 ## **`add_neurons_synapses`** [#499]
@@ -338,16 +320,14 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def add_neurons_synapses(self, *args, **kwargs):
-```  
+```
 
-
-```text
-Adds the location of pre or post synapses for a neuron (or list of
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds the location of pre or post synapses for a neuron (or list of
     neurons).
 
-check the atlas' method to know how it works.
-
-```
+Check the atlas' method to know how it works.
+</pre>
 
 &nbsp;
 ## **`add_tractography`** [#514]
@@ -356,15 +336,13 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def add_tractography(self, *args, **kwargs):
-```  
-
-
-```text
-Renders tractography data and adds it to the scene.
-
-check the function definition in aba for more details
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Renders tractography data and adds it to the scene.
+
+Check the function definition in ABA for more details
+</pre>
 
 &nbsp;
 ## **`add_streamlines`** [#524]
@@ -373,15 +351,13 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def add_streamlines(self, *args, **kwargs):
-```  
-
-
-```text
-Render streamline data.
-
-check the function definition in aba for more details
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Render streamline data.
+
+Check the function definition in ABA for more details
+</pre>
 
 &nbsp;
 ## **`add_actor`** [#534]
@@ -390,20 +366,18 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def add_actor(self, *actors, store=None):
-```  
+```
 
-
-```text
-Add a vtk actor to the scene
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Add a vtk actor to the scene
 
 :param actor:
 
-:param store: one of the items in self. Actors to use to store the
+:param store: one of the items in self.actors to use to store the
     actor
 
-being created.  it needs to be a list
-
-```
+being created. It needs to be a list
+</pre>
 
 &nbsp;
 ## **`add_mesh_silhouette`** [#558]
@@ -412,15 +386,13 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def add_mesh_silhouette(self, *actors, lw=1, color='k', **kwargs):
-```  
+```
 
-
-```text
-Given a list of actors it adds a colored silhouette
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Given a list of actors it adds a colored silhouette
 
 to them.
-
-```
+</pre>
 
 &nbsp;
 ## **`add_from_file`** [#566]
@@ -429,19 +401,17 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def add_from_file(self, *filepaths, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Add data to the scene by loading them from a file. Should handle .obj,
+    .vtk and .nii files.
 
-```text
-Add data to the scene by loading them from a file.  should handle .
-    Obj, . Vtk and . Nii files.
-
-:param filepaths: path to the file.  can pass as many arguments as
+:param filepaths: path to the file. Can pass as many arguments as
     needed
 
 :param **kwargs:
-
-```
+</pre>
 
 &nbsp;
 ## **`add_sphere_at_point`** [#582]
@@ -451,23 +421,21 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def add_sphere_at_point(self, pos=[0, 0, 0], radius=100,
     color='black', alpha=1, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds a shere at a location specified by the user
 
-```text
-Adds a shere at a location specified by the user
+:param pos: list of x,y,z coordinates (Default value = [0, 0, 0])
 
-:param pos: list of x,y,z coordinates (default value = [0, 0, 0])
+:param radius: int, radius of the sphere (Default value = 100)
 
-:param radius: int, radius of the sphere (default value = 100)
+:param color: color of the sphere (Default value = "black")
 
-:param color: color of the sphere (default value = "black")
-
-:param alpha: transparency of the sphere (default value = 1)
+:param alpha: transparency of the sphere (Default value = 1)
 
 :param **kwargs:
-
-```
+</pre>
 
 &nbsp;
 ## **`add_cells_from_file`** [#600]
@@ -477,30 +445,28 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def add_cells_from_file(self, filepath, hdf_key='hdf', color='red',
     radius=25, res=3, alpha=1):
-```  
+```
 
-
-```text
-Load location of cells from a file (csv and hdf) and render as spheres
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Load location of cells from a file (csv and HDF) and render as spheres
     aligned to the root mesh.
 
 :param filepath: str path to file
 
-:param hdf_key: str (default value = none)
+:param hdf_key: str (Default value = None)
 
-:param color: str, color of spheres used to render the cells (default
+:param color: str, color of spheres used to render the cells (Default
     value = "red")
 
 :param radius: int, radius of spheres used to render the cells
-    (default value = 25)
+    (Default value = 25)
 
 :param res: int, resolution of spheres used to render the cells
-    (default value = 3)
+    (Default value = 3)
 
 :param alpha: float, transparency of spheres used to render the cells
-    (default value = 1)
-
-```
+    (Default value = 1)
+</pre>
 
 &nbsp;
 ## **`add_cells`** [#664]
@@ -511,39 +477,38 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 def add_cells(self, coords, color='red', color_by_region=False,
     color_by_metadata=None, radius=25, res=3, alpha=1, col_names=None,
     regions=None, verbose=True):
-```  
+```
 
-
-```text
-Renders cells given their coordinates as a collection of spheres.
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Renders cells given their coordinates as a collection of spheres.
 
 :param coords: pandas dataframe with x,y,z coordinates
 
-:param color: str, color of spheres used to render the cells (default
+:param color: str, color of spheres used to render the cells (Default
     value = "red").
 
-alternatively a list of colors specifying the color of each cell.
+Alternatively a list of colors specifying the color of each cell.
 
 :param radius: int, radius of spheres used to render the cells
-    (default value = 25)
+    (Default value = 25)
 
 :param res: int, resolution of spheres used to render the cells
-    (default value = 3)
+    (Default value = 3)
 
 :param alpha: float, transparency of spheres used to render the cells
-    (default value = 1)
+    (Default value = 1)
 
-:param color_by_region: bool.  if true the cells are colored according
+:param color_by_region: bool. If true the cells are colored according
     to the color of the brain region they are in
 
 :param color_by_metadata: str, if the name of a column of the coords
     dataframe is passed, cells are colored according
 
-to their value for that column.  if color_by_metadata is passed and a
+to their value for that column. If color_by_metadata is passed and a
     dictionary is passed
 
 to 'color' at the same time, the dictionary will be used to specify
-    the colors used.  therefore
+    the colors used. Therefore
 
 `color` should map values in the metadata column to colors
 
@@ -551,12 +516,11 @@ to 'color' at the same time, the dictionary will be used to specify
     cells in these regions will be added to the scene
 
 :param col_names: list of strings with names of pandas dataframe
-    columns.  if passed it should be a list of 3 columns
+    columns. If passed it should be a list of 3 columns
 
-which have the x, y, z coordinates.  if not passed, it is assumed that
+which have the x, y, z coordinates. If not passed, it is assumed that
     the columns are ['x', 'y', 'z']
-
-```
+</pre>
 
 &nbsp;
 ## **`add_optic_cannula`** [#768]
@@ -566,11 +530,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def add_optic_cannula(self, target_region=None, pos=None, x_offset=0,
     y_offset=0, z_offset=(- 500), use_line=False, **kwargs):
-```  
+```
 
-
-```text
-Adds a cylindrical vtk actor to scene to render optic cannulas.  by
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds a cylindrical vtk actor to scene to render optic cannulas. By
     default
 
 this is a semi-transparent blue cylinder centered on the center of
@@ -581,15 +544,15 @@ a specified target region and oriented vertically.
 :param target_region: str, acronym of target region to extract
     coordinates
 
-of implanted fiber.  by defualt the fiber will be centered on the
+of implanted fiber. By defualt the fiber will be centered on the
     center
 
 of mass of the target region but the offset arguments can be used to
 
-fine tune the position.  alternative pass a 'pos' argument with xyz
+fine tune the position. Alternative pass a 'pos' argument with XYZ
     coords.
 
-:param pos: list or tuple or np. Array with x,y,z coordinates.  must
+:param pos: list or tuple or np.array with X,Y,Z coordinates. Must
     have length = 3.
 
 :param x_offset, y_offset, z_offset: int, used to fine tune the
@@ -600,9 +563,8 @@ the implanted cannula.
 :param **kwargs: used to specify which hemisphere the cannula is and
     parameters
 
-of the rendered cylinder: color, alpha, rotation axis. . .
-
-```
+of the rendered cylinder: color, alpha, rotation axis...
+</pre>
 
 &nbsp;
 ## **`add_text`** [#838]
@@ -611,20 +573,17 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def add_text(self, text, **kwargs):
-```  
+```
 
-
-```text
-Adds a 2d text to the scene.  default params are to crate a large
-    black
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds a 2D text to the scene. Default params are to crate a large black
 
 text at the top of the rendering window.
 
 :param text: str with text to write
 
-:param kwargs: keyword arguments accepted by vedo. Shapes. Text2d
-
-```
+:param kwargs: keyword arguments accepted by vedo.shapes.Text2D
+</pre>
 
 &nbsp;
 ## **`add_actor_label`** [#857]
@@ -633,11 +592,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def add_actor_label(self, actors, labels, **kwargs):
-```  
+```
 
-
-```text
-Adds a 2d text ancored to a point on the actor's mesh
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds a 2D text ancored to a point on the actor's mesh
 
 to label what the actor is
 
@@ -645,18 +603,17 @@ to label what the actor is
 
 text appearance and location:
 
-- size: int, text size.  default 300
+- size: int, text size. Default 300
 
-- color: str, text color.  a list of colors can be passed
+- color: str, text color. A list of colors can be passed
 
-if none the actor's color is used.  default none.
+if None the actor's color is used. Default None.
 
 - xoffset, yoffset, zoffset: integers that shift the label position
 
-- radius: radius of sphere used to denote label anchor.  set to 0 or
-    none to hide.
-
-```
+- radius: radius of sphere used to denote label anchor. Set to 0 or
+    None to hide.
+</pre>
 
 &nbsp;
 ## **`add_line_at_point`** [#935]
@@ -665,16 +622,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def add_line_at_point(self, point, replace_coord, bounds, **kwargs):
-```  
+```
 
-
-```text
-Adds a line oriented on a given axis at a point
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds a line oriented on a given axis at a point
 
 :param point:list or 1d np array with coordinates of point where
     crosshair is centered
 
-:param replace_coord: index of the coordinate to replace (i. E.  along
+:param replace_coord: index of the coordinate to replace (i.e. along
     which axis is the line oriented)
 
 :param bounds: list of two floats with lower and upper bound for line,
@@ -682,8 +638,7 @@ Adds a line oriented on a given axis at a point
 
 :param kwargs: dictionary with arguments to specify how lines should
     look like
-
-```
+</pre>
 
 &nbsp;
 ## **`add_rostrocaudal_line_at_point`** [#958]
@@ -692,19 +647,17 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def add_rostrocaudal_line_at_point(self, point, **kwargs):
-```  
+```
 
-
-```text
-Add a line at a point oriented along the trostrocaudal axis
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Add a line at a point oriented along the trostrocaudal axis
 
 :param point:list or 1d np array with coordinates of point where
     crosshair is centered
 
 :param line_kwargs: dictionary with arguments to specify how lines
     should look like
-
-```
+</pre>
 
 &nbsp;
 ## **`add_dorsoventral_line_at_point`** [#968]
@@ -713,19 +666,17 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def add_dorsoventral_line_at_point(self, point, **kwargs):
-```  
+```
 
-
-```text
-Add a line at a point oriented along the mdorsoventralediolateral axis
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Add a line at a point oriented along the mdorsoventralediolateral axis
 
 :param point:list or 1d np array with coordinates of point where
     crosshair is centered
 
 :param line_kwargs: dictionary with arguments to specify how lines
     should look like
-
-```
+</pre>
 
 &nbsp;
 ## **`add_mediolateral_line_at_point`** [#978]
@@ -734,19 +685,17 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def add_mediolateral_line_at_point(self, point, **kwargs):
-```  
+```
 
-
-```text
-Add a line at a point oriented along the mediolateral axis
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Add a line at a point oriented along the mediolateral axis
 
 :param point:list or 1d np array with coordinates of point where
     crosshair is centered
 
 :param line_kwargs: dictionary with arguments to specify how lines
     should look like
-
-```
+</pre>
 
 &nbsp;
 ## **`add_crosshair_at_point`** [#988]
@@ -756,27 +705,26 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def add_crosshair_at_point(self, point, ml=True, dv=True, ap=True,
     show_point=True, line_kwargs={}, point_kwargs={}):
-```  
+```
 
-
-```text
-Add a crosshair (set of orthogonal lines meeting at a point)
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Add a crosshair (set of orthogonal lines meeting at a point)
 
 centered on a given point.
 
 :param point: list or 1d np array with coordinates of point where
     crosshair is centered
 
-:param ml: bool, if true a line oriented on the mediolateral axis is
+:param ml: bool, if True a line oriented on the mediolateral axis is
     added
 
-:param dv: bool, if true a line oriented on the dorsoventral axis is
+:param dv: bool, if True a line oriented on the dorsoventral axis is
     added
 
-:param ap: bool, if true a line oriented on the anteriorposterior or
+:param ap: bool, if True a line oriented on the anteriorposterior or
     rostsrocaudal axis is added
 
-:param show_point: bool, if true a sphere at the loation of the point
+:param show_point: bool, if True a sphere at the loation of the point
     is shown
 
 :param line_kwargs: dictionary with arguments to specify how lines
@@ -784,8 +732,7 @@ centered on a given point.
 
 :param point_kwargs: dictionary with arguments to specify how the
     point should look
-
-```
+</pre>
 
 &nbsp;
 ## **`add_plane`** [#1031]
@@ -794,15 +741,14 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def add_plane(self, plane, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds one or more planes to the scene.
 
-```text
-Adds one or more planes to the scene.
+For more details on how to build custom planes, check:
 
-for more details on how to build custom planes, check:
-
-brainrender/atlases/base. Py -> base. Get_plane_at_point
+brainrender/atlases/base.py -> Base.get_plane_at_point
 
 method.
 
@@ -810,9 +756,8 @@ method.
 
 the predifined planes ['sagittal', 'coronal', 'horizontal']
 
-or an instance of the plane class from vedo. Shapes
-
-```
+or an instance of the Plane class from vedo.shapes
+</pre>
 
 &nbsp;
 ## **`add_probe_from_sharptrack`** [#1070]
@@ -822,31 +767,29 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def add_probe_from_sharptrack(self, probe_points_file,
     points_kwargs={}, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Visualises the position of an implanted probe in the brain.
 
-```text
-Visualises the position of an implanted probe in the brain.
+Uses the location of points along the probe extracted with SharpTrack
 
-uses the location of points along the probe extracted with sharptrack
+[https://github.com/cortex-lab/allenCCF].
 
-[https://github. Com/cortex-lab/allenccf].
-
-it renders the position of points along the probe and a line fit
+It renders the position of points along the probe and a line fit
     through them.
 
-code contributed by @tbslv on github.
+Code contributed by @tbslv on github.
 
-:param probe_points_file: str, path to a . Mat file with probe points
+:param probe_points_file: str, path to a .mat file with probe points
     coordinates
 
 :param points_kwargs: dict, used to specify how probe points should
-    look like (e. G color, alpha. . . )
+    look like (e.g color, alpha...)
 
 :param kwargs: keyword arguments used to specify how the probe should
-    look like (e. G.  color, alpha. . . )
-
-```
+    look like (e.g. color, alpha...)
+</pre>
 
 &nbsp;
 ## **`apply_render_style`** [#1138]
@@ -855,8 +798,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def apply_render_style(self):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -867,8 +812,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def get_actors(self):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -880,13 +827,11 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def render(self, interactive=True, video=False, camera=None,
     zoom=None, **kwargs):
-```  
-
-
-```text
-Takes care of rendering the scene
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Takes care of rendering the scene
+</pre>
 
 &nbsp;
 ## **`close`** [#1261]
@@ -895,8 +840,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def close(self):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -907,17 +854,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def export_for_web(self, filepath='brexport.html'):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">This function is used to export a brainrender scene
 
-```text
-This function is used to export a brainrender scene
-
-for hosting it online.  it saves an html file that can
+for hosting it online. It saves an html file that can
 
 be opened in a web browser to show an interactive brainrender scene
-
-```
+</pre>
 
 &nbsp;
 ## **`keypress`** [#1310]
@@ -926,8 +871,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def keypress(self, key):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -938,8 +885,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def take_screenshot(self):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -960,8 +909,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def __init__(self, *args, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -972,12 +923,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def render(self, _interactive=True):
-```  
-
-
-```text
-
 ```
+
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)"></pre>
 
 &nbsp;
 ## **`close`** [#1396]
@@ -986,8 +935,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def close(self):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -1008,8 +959,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def __init__(self, N, scenes=None, *args, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -1020,15 +973,13 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def render(self, _interactive=True, **kwargs):
-```  
+```
 
-
-```text
-:param _interactive:  (default value = true)
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">:param _interactive:  (Default value = True)
 
 :param **kwargs:
-
-```
+</pre>
 
 &nbsp;
 ## **`close`** [#1467]
@@ -1037,7 +988,9 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def close(self):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring

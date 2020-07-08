@@ -25,19 +25,17 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def mirror_actor_at_point(actor, point, axis='x'):
-```  
+```
 
-
-```text
-Mirror an actor around a point
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Mirror an actor around a point
 
 :param actor:
 
 :param point:
 
-:param axis:  (default value = 'x')
-
-```
+:param axis:  (Default value = 'x')
+</pre>
 
 &nbsp;
 
@@ -48,15 +46,13 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def set_wireframe(actor):
-```  
+```
 
-
-```text
-Set an actor's look to wireframe
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">set an actor's look to wireframe
 
 :param actor:
-
-```
+</pre>
 
 &nbsp;
 
@@ -67,15 +63,13 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def set_solid(actor):
-```  
+```
 
-
-```text
-Set an actor's look to solid
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">set an actor's look to solid
 
 :param actor:
-
-```
+</pre>
 
 &nbsp;
 
@@ -86,17 +80,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def set_color(actor, color):
-```  
+```
 
-
-```text
-Set an actor's look to a specific color
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">set an actor's look to a specific color
 
 :param actor:
 
 :param color:
-
-```
+</pre>
 
 &nbsp;
 
@@ -107,19 +99,17 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def set_line(actor, lw=None, c=None):
-```  
+```
 
-
-```text
-Set an actor's look to specify the line width and color
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">set an actor's look to specify the line width and color
 
 :param actor:
 
-:param lw:  (default value = none)
+:param lw:  (Default value = None)
 
-:param c:  (default value = none)
-
-```
+:param c:  (Default value = None)
+</pre>
 
 &nbsp;
 
@@ -130,17 +120,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def upsample_actor(actor, fact=1):
-```  
+```
 
-
-```text
-Increase resolution of actor
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Increase resolution of actor
 
 :param actor:
 
-:param fact:  (default value = 1)
-
-```
+:param fact:  (Default value = 1)
+</pre>
 
 &nbsp;
 
@@ -151,17 +139,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def downsample_actor(actor, fact=0.5):
-```  
+```
 
-
-```text
-Reduce resolution of actor
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Reduce resolution of actor
 
 :param actor:
 
-:param fact:  (default value = 0. 5)
-
-```
+:param fact:  (Default value = 0.5)
+</pre>
 
 &nbsp;
 
@@ -172,17 +158,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def smooth_actor(actor, factor=15):
-```  
+```
 
-
-```text
-Smooth an actor's mesh
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Smooth an actor's mesh
 
 :param actor:
 
-:param factor:  (default value = 15)
-
-```
+:param factor:  (Default value = 15)
+</pre>
 
 &nbsp;
 
@@ -195,31 +179,29 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 def edit_actor(actor, wireframe=False, solid=False, color=False,
     line=False, line_kwargs={}, upsample=False, downsample=False,
     smooth=False):
-```  
+```
 
-
-```text
-Apply a set of functions to edit an actor's look.
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Apply a set of functions to edit an actor's look.
 
 :param actor:
 
-:param wireframe: if true, change look to wireframe (default value =
-    false)
+:param wireframe: if true, change look to wireframe (Default value =
+    False)
 
-:param solid: if true change look to soi=lid (default value = false)
+:param solid: if true change look to soi=lid (Default value = False)
 
-:param color: specify new color (default value = false)
+:param color: specify new color (Default value = False)
 
-:param line: if true, edit the line's look (default value = false)
+:param line: if true, edit the line's look (Default value = False)
 
-:param line_kwargs: specify width and color of line (default value =
+:param line_kwargs: specify width and color of line (Default value =
     {})
 
-:param upsample: if true, increase resolution (default value = false)
+:param upsample: if true, increase resolution (Default value = False)
 
-:param downsample: if true, decrease resolution (default value =
-    false)
+:param downsample: if true, decrease resolution (Default value =
+    False)
 
-:param smooth: if true, smoothen actor (default value = false)
-
-```
+:param smooth: if true, smoothen actor (Default value = False)
+</pre>

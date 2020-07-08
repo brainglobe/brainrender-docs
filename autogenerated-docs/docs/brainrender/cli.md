@@ -17,7 +17,9 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def main(regions, atlas=None, cartoon=False, debug=False, file=None):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring

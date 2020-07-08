@@ -26,8 +26,10 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def __init__(self, *args, **kwargs):
-```  
+```
 
+&nbsp;  
+docstring:
 
 no docstring
 
@@ -38,19 +40,18 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 
 ```python
 def _add_neurons_get_colors(self, neurons, color):
-```  
+```
 
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Parses color argument for self.add_neurons
 
-```text
-Parses color argument for self. Add_neurons
+:para, neurons: list of Neuron object or file paths...
 
-:para, neurons: list of neuron object or file paths. . .
+:param color: default None. Can be:
 
-:param color: default none.  can be:
+- None: each neuron is colored according to the default color
 
-- none: each neuron is colored according to the default color
-
-- color: rbg, hex etc.  if a single color is passed all neurons will
+- color: rbg, hex etc. If a single color is passed all neurons will
     have that color
 
 - cmap: str with name of a colormap: neurons are colored based on
@@ -63,8 +64,7 @@ Parses color argument for self. Add_neurons
     color for each neuron
 
 or a dictionary of colors for each neuron
-
-```
+</pre>
 
 &nbsp;
 ## **`add_neurons`** [#180]
@@ -74,16 +74,15 @@ Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/
 ```python
 def add_neurons(self, neurons, color=None, display_axon=True,
     display_dendrites=True, alpha=1, neurite_radius=None):
-```  
+```
 
-
-```text
-Adds rendered morphological data of neurons reconstructions downloaded
+&nbsp;  
+docstring:<pre style="background-color:rgba(0, 0, 0, .2);                     border-radius:12px;                     padding:12px 24px;                     box-shadow: 1px 1px 1px rgba(0, 0, 0, .1)">Adds rendered morphological data of neurons reconstructions downloaded
     from the
 
-mouse light project at janelia, neuromorpho. Org and other sources.
+Mouse Light project at Janelia, neuromorpho.org and other sources.
 
-accepts neurons argument as:
+Accepts neurons argument as:
 
 - file(s) with morphological data
 
@@ -92,19 +91,19 @@ accepts neurons argument as:
 - dictionary or list of dictionary with actors for different neuron
     parts
 
-:param self: instance of brainrender scene to use to render neurons
+:param self: instance of brainrender Scene to use to render neurons
 
-:param neurons: str, list, dict.  file(s) with neurons data or list of
+:param neurons: str, list, dict. File(s) with neurons data or list of
     rendered neurons.
 
-:param display_axon, display_dendrites: if set to false the
+:param display_axon, display_dendrites: if set to False the
     corresponding neurite is not rendered
 
-:param color: default none.  can be:
+:param color: default None. Can be:
 
-- none: each neuron is colored according to the default color
+- None: each neuron is colored according to the default color
 
-- color: rbg, hex etc.  if a single color is passed all neurons will
+- color: rbg, hex etc. If a single color is passed all neurons will
     have that color
 
 - cmap: str with name of a colormap: neurons are colored based on
@@ -118,9 +117,8 @@ accepts neurons argument as:
 
 or a dictionary of colors for each neuron
 
-:param alpha: float in range 0,1.  neurons transparency
+:param alpha: float in range 0,1. Neurons transparency
 
 :param neurite_radius: float > 0 , radius of tube actor representing
     neurites
-
-```
+</pre>
