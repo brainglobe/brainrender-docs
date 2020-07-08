@@ -5,165 +5,121 @@
 Contents
 ========
 
-* [line: 1 `return_list_smart`](#line-1-return_list_smart)
-* [line: 15 `return_dict_smart`](#line-15-return_dict_smart)
-* [line: 25 `get_coords`](#line-25-get_coords)
-* [line: 66 `flatten_list`](#line-66-flatten_list)
-* [line: 82 `is_any_item_in_list`](#line-82-is_any_item_in_list)
-* [line: 98 `get_slice_coord`](#line-98-get_slice_coord)
+* [**`return_list_smart`**  [#1]](#return_list_smart--1)
+* [**`return_dict_smart`**  [#15]](#return_dict_smart--15)
+* [**`get_coords`**  [#25]](#get_coords--25)
+* [**`flatten_list`**  [#66]](#flatten_list--66)
+* [**`is_any_item_in_list`**  [#82]](#is_any_item_in_list--82)
+* [**`get_slice_coord`**  [#98]](#get_slice_coord--98)
 
 
 &nbsp;
 
 --------
-# line: 1 `return_list_smart`
+# **`return_list_smart`**  [#1]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L1) online
-#### function definition
-
 
 ```python
 def return_list_smart(lst):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+If the list has length > returns the list
+if it has length == 1 it returns the element
+if it has length == 0 it returns none
 
-"""
-    If the list has length > returns the list
-    if it has length == 1 it returns the element
-    if it has length == 0 it returns None
-"""
 ```
 
 &nbsp;
 
 --------
-# line: 15 `return_dict_smart`
+# **`return_dict_smart`**  [#15]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L15) online
-#### function definition
-
 
 ```python
 def return_dict_smart(dct):
-```
-##### docstring
-  
+```  
 
 
-```python
-
-"""
- no docstring 
-"""
-```
+no docstring
 
 &nbsp;
 
 --------
-# line: 25 `get_coords`
+# **`get_coords`**  [#25]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L25) online
-#### function definition
-
 
 ```python
 def get_coords(obj, mirror=False, mirror_ax='x'):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Takes coordinates in various format and turns them into what's expected from vtk plotter for rendering.  
+can take a dict, pandas dataframe or series
+:param obj: dict, pandas. Dataframe or pandas. Series
+:param mirror:  if true, the coordinates are mirrored around mirror_ax (default value = false)
+:param mirror_ax: ax to be used for mirroring ['x', 'y', 'z'] (default value = 'x')
 
-"""
-    Takes coordinates in various format and turns them into what's expected from VTK plotter for rendering. 
-    Can take a dict, Pandas Dataframe or Series
-    
-    :param obj: dict, pandas.DataFrame or pandas.Series
-    :param mirror:  if True, the coordinates are mirrored around mirror_ax (Default value = False)
-    :param mirror_ax: ax to be used for mirroring ['x', 'y', 'z'] (Default value = 'x')
-"""
 ```
 
 &nbsp;
 
 --------
-# line: 66 `flatten_list`
+# **`flatten_list`**  [#66]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L66) online
-#### function definition
-
 
 ```python
 def flatten_list(lst):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Flattens a list of lists
+:param lst: list
 
-"""
-    Flattens a list of lists
-    
-    :param lst: list
-"""
 ```
 
 &nbsp;
 
 --------
-# line: 82 `is_any_item_in_list`
+# **`is_any_item_in_list`**  [#82]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L82) online
-#### function definition
-
 
 ```python
 def is_any_item_in_list(L1, L2):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Checks if an item in a list is in another  list
+:param l1: 
+:param l2: 
 
-"""
-    Checks if an item in a list is in another  list
-    
-    :param L1: 
-    :param L2: 
-"""
 ```
 
 &nbsp;
 
 --------
-# line: 98 `get_slice_coord`
+# **`get_slice_coord`**  [#98]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L98) online
-#### function definition
-
 
 ```python
 def get_slice_coord(bounds, n):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Given the bounds of an actor, return the point that
+corresponds to the n% of the bounds range
+:param bounds: should be a list of two floats
+:param n: n should be a float in range 0, 1
 
-"""
-    Given the bounds of an actor, return the point that
-    corresponds to the n% of the bounds range
-    
-    
-    :param bounds: should be a list of two floats
-    :param n: n should be a float in range 0, 1
-"""
 ```

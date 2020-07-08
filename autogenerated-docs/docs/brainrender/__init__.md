@@ -5,28 +5,19 @@
 Contents
 ========
 
-* [line: 67 `reset_defaults`](#line-67-reset_defaults)
+* [**`reset_defaults`**  [#67]](#reset_defaults--67)
 
 
 &nbsp;
 
 --------
-# line: 67 `reset_defaults`
+# **`reset_defaults`**  [#67]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/__init__.py#L67) online
-#### function definition
-
 
 ```python
 def reset_defaults():
-```
-##### docstring
-  
+```  
 
 
-```python
-
-"""
- no docstring 
-"""
-```
+no docstring

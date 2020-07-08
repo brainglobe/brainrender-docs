@@ -6,19 +6,17 @@ Contents
 ========
 
 * [**InteractiveVolumetric**](#interactivevolumetric)
-* [line: 7 `__init__`](#line-7-__init__)
-* [line: 75 `_reset_actors`](#line-75-_reset_actors)
-* [line: 78 `_move_crosshair`](#line-78-_move_crosshair)
-* [line: 96 `_update_projection`](#line-96-_update_projection)
-* [line: 118 `_update`](#line-118-_update)
-* [line: 130 `slider_ap`](#line-130-slider_ap)
-* [line: 134 `slider_dv`](#line-134-slider_dv)
-* [line: 138 `slider_ml`](#line-138-slider_ml)
+	* [**`__init__`**  [#7]](#__init__--7)
+	* [**`_reset_actors`**  [#75]](#_reset_actors--75)
+	* [**`_move_crosshair`**  [#78]](#_move_crosshair--78)
+	* [**`_update_projection`**  [#96]](#_update_projection--96)
+	* [**`_update`**  [#118]](#_update--118)
+	* [**`slider_ap`**  [#130]](#slider_ap--130)
+	* [**`slider_dv`**  [#134]](#slider_dv--134)
+	* [**`slider_ml`**  [#138]](#slider_ml--138)
 
 
 &nbsp;
-
---------
 
 --------
 # **InteractiveVolumetric**
@@ -27,185 +25,97 @@ Contents
 
 
 &nbsp;
-
---------
-# line: 7 `__init__`
+## **`__init__`**  [#7]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/interactive.py#L7) online
-#### function definition
-
 
 ```python
 def __init__(self, target_region, *args, projection_type='afferent', cmap=None, **kwargs):
-```
-##### docstring
-  
+```  
 
 
-```python
-
-"""
- no docstring 
-"""
-```
+no docstring
 
 &nbsp;
-
---------
-# line: 75 `_reset_actors`
+## **`_reset_actors`**  [#75]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/interactive.py#L75) online
-#### function definition
-
 
 ```python
 def _reset_actors(self):
-```
-##### docstring
-  
+```  
 
 
-```python
-
-"""
- no docstring 
-"""
-```
+no docstring
 
 &nbsp;
-
---------
-# line: 78 `_move_crosshair`
+## **`_move_crosshair`**  [#78]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/interactive.py#L78) online
-#### function definition
-
 
 ```python
 def _move_crosshair(self):
-```
-##### docstring
-  
+```  
 
 
-```python
-
-"""
- no docstring 
-"""
-```
+no docstring
 
 &nbsp;
-
---------
-# line: 96 `_update_projection`
+## **`_update_projection`**  [#96]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/interactive.py#L96) online
-#### function definition
-
 
 ```python
 def _update_projection(self):
-```
-##### docstring
-  
+```  
 
 
-```python
-
-"""
- no docstring 
-"""
-```
+no docstring
 
 &nbsp;
-
---------
-# line: 118 `_update`
+## **`_update`**  [#118]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/interactive.py#L118) online
-#### function definition
-
 
 ```python
 def _update(self):
-```
-##### docstring
-  
+```  
 
 
-```python
-
-"""
- no docstring 
-"""
-```
+no docstring
 
 &nbsp;
-
---------
-# line: 130 `slider_ap`
+## **`slider_ap`**  [#130]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/interactive.py#L130) online
-#### function definition
-
 
 ```python
 def slider_ap(self, widget, event):
-```
-##### docstring
-  
+```  
 
 
-```python
-
-"""
- no docstring 
-"""
-```
+no docstring
 
 &nbsp;
-
---------
-# line: 134 `slider_dv`
+## **`slider_dv`**  [#134]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/interactive.py#L134) online
-#### function definition
-
 
 ```python
 def slider_dv(self, widget, event):
-```
-##### docstring
-  
+```  
 
 
-```python
-
-"""
- no docstring 
-"""
-```
+no docstring
 
 &nbsp;
-
---------
-# line: 138 `slider_ml`
+## **`slider_ml`**  [#138]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/interactive.py#L138) online
-#### function definition
-
 
 ```python
 def slider_ml(self, widget, event):
-```
-##### docstring
-  
+```  
 
 
-```python
-
-"""
- no docstring 
-"""
-```
+no docstring

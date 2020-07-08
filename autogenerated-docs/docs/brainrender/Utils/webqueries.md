@@ -5,78 +5,53 @@
 Contents
 ========
 
-* [line: 10 `request`](#line-10-request)
-* [line: 30 `fail_on_no_connection`](#line-30-fail_on_no_connection)
-* [line: 34 `inner`](#line-34-inner)
+* [**`request`**  [#10]](#request--10)
+* [**`fail_on_no_connection`**  [#30]](#fail_on_no_connection--30)
+* [**`inner`**  [#34]](#inner--34)
 
 
 &nbsp;
 
 --------
-# line: 10 `request`
+# **`request`**  [#10]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/webqueries.py#L10) online
-#### function definition
-
 
 ```python
 def request(url):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Sends a request to a url
+:param url: 
 
-"""
-    Sends a request to a url
-    
-    :param url: 
-"""
 ```
 
 &nbsp;
 
 --------
-# line: 30 `fail_on_no_connection`
+# **`fail_on_no_connection`**  [#30]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/webqueries.py#L30) online
-#### function definition
-
 
 ```python
 def fail_on_no_connection(func):
-```
-##### docstring
-  
+```  
 
 
-```python
-
-"""
- no docstring 
-"""
-```
+no docstring
 
 &nbsp;
 
 --------
-# line: 34 `inner`
+# **`inner`**  [#34]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/webqueries.py#L34) online
-#### function definition
-
 
 ```python
 def inner(*args, **kwargs):
-```
-##### docstring
-  
+```  
 
 
-```python
-
-"""
- no docstring 
-"""
-```
+no docstring

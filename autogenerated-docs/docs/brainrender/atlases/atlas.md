@@ -6,12 +6,10 @@ Contents
 ========
 
 * [**Atlas**](#atlas)
-* [line: 18 `__init__`](#line-18-__init__)
+	* [**`__init__`**  [#18]](#__init__--18)
 
 
 &nbsp;
-
---------
 
 --------
 # **Atlas**
@@ -20,24 +18,13 @@ Contents
 
 
 &nbsp;
-
---------
-# line: 18 `__init__`
+## **`__init__`**  [#18]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/atlas.py#L18) online
-#### function definition
-
 
 ```python
 def __init__(self, name=None, *args, base_dir=None, **kwargs):
-```
-##### docstring
-  
+```  
 
 
-```python
-
-"""
- no docstring 
-"""
-```
+no docstring

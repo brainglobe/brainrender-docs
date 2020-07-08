@@ -6,32 +6,30 @@ Contents
 ========
 
 * [**VolumetricAPI**](#volumetricapi)
-* [line: 47 `__init__`](#line-47-__init__)
-* [line: 110 `__getattr__`](#line-110-__getattr__)
-* [line: 124 `_get_structure_id`](#line-124-_get_structure_id)
-* [line: 133 `_load_voxel_data`](#line-133-_load_voxel_data)
-* [line: 170 `_get_coordinates_from_voxel_id`](#line-170-_get_coordinates_from_voxel_id)
-* [line: 186 `_get_mask_coords`](#line-186-_get_mask_coords)
-* [line: 201 `_get_voxel_id_from_coordinates`](#line-201-_get_voxel_id_from_coordinates)
-* [line: 223 `_get_cache_filename`](#line-223-_get_cache_filename)
-* [line: 242 `_get_from_cache`](#line-242-_get_from_cache)
-* [line: 253 `save_to_cache`](#line-253-save_to_cache)
-* [line: 264 `get_source`](#line-264-get_source)
-* [line: 286 `get_target_mask`](#line-286-get_target_mask)
-* [line: 297 `get_target`](#line-297-get_target)
-* [line: 327 `get_projection`](#line-327-get_projection)
-* [line: 400 `get_mapped_projection`](#line-400-get_mapped_projection)
-* [line: 416 `get_mapped_projection_to_point`](#line-416-get_mapped_projection_to_point)
-* [line: 452 `get_mapped_projection_from_point`](#line-452-get_mapped_projection_from_point)
-* [line: 497 `add_mapped_projection`](#line-497-add_mapped_projection)
-* [line: 551 `add_mapped_projection_to_point`](#line-551-add_mapped_projection_to_point)
-* [line: 625 `add_mapped_projection_from_point`](#line-625-add_mapped_projection_from_point)
-* [line: 630 `add_volume`](#line-630-add_volume)
+	* [**`__init__`**  [#47]](#__init__--47)
+	* [**`__getattr__`**  [#110]](#__getattr__--110)
+	* [**`_get_structure_id`**  [#124]](#_get_structure_id--124)
+	* [**`_load_voxel_data`**  [#133]](#_load_voxel_data--133)
+	* [**`_get_coordinates_from_voxel_id`**  [#170]](#_get_coordinates_from_voxel_id--170)
+	* [**`_get_mask_coords`**  [#186]](#_get_mask_coords--186)
+	* [**`_get_voxel_id_from_coordinates`**  [#201]](#_get_voxel_id_from_coordinates--201)
+	* [**`_get_cache_filename`**  [#223]](#_get_cache_filename--223)
+	* [**`_get_from_cache`**  [#242]](#_get_from_cache--242)
+	* [**`save_to_cache`**  [#253]](#save_to_cache--253)
+	* [**`get_source`**  [#264]](#get_source--264)
+	* [**`get_target_mask`**  [#286]](#get_target_mask--286)
+	* [**`get_target`**  [#297]](#get_target--297)
+	* [**`get_projection`**  [#327]](#get_projection--327)
+	* [**`get_mapped_projection`**  [#400]](#get_mapped_projection--400)
+	* [**`get_mapped_projection_to_point`**  [#416]](#get_mapped_projection_to_point--416)
+	* [**`get_mapped_projection_from_point`**  [#452]](#get_mapped_projection_from_point--452)
+	* [**`add_mapped_projection`**  [#497]](#add_mapped_projection--497)
+	* [**`add_mapped_projection_to_point`**  [#551]](#add_mapped_projection_to_point--551)
+	* [**`add_mapped_projection_from_point`**  [#625]](#add_mapped_projection_from_point--625)
+	* [**`add_volume`**  [#630]](#add_volume--630)
 
 
 &nbsp;
-
---------
 
 --------
 # **VolumetricAPI**
@@ -49,536 +47,342 @@ To download the data, this class uses code from: https://github.com/AllenInstitu
 ```
 
 &nbsp;
-
---------
-# line: 47 `__init__`
+## **`__init__`**  [#47]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L47) online
-#### function definition
-
 
 ```python
 def __init__(self, base_dir=None, add_root=True, use_cache=True, scene_kwargs={}, **kwargs):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Initialise the class instance to get a few useful paths and variables.  
+:param base_dir: str, path to base directory in which all of brainrender data are stored.  
+pass only if you want to use a different one from what's default. 
+:param add_root: bool, if true the root mesh is added to the rendered scene
+:param use_cache: if true data are loaded from a cache to speed things up. 
+useful to set it to false to help debugging. 
+:param scene_kwargs: dict, params passed to the instance of scene associated with this class
 
-"""
-    Initialise the class instance to get a few useful paths and variables. 
-    
-    :param base_dir: str, path to base directory in which all of brainrender data are stored. 
-            Pass only if you want to use a different one from what's default.
-    :param add_root: bool, if True the root mesh is added to the rendered scene
-    :param use_cache: if true data are loaded from a cache to speed things up.
-            Useful to set it to false to help debugging.
-    :param scene_kwargs: dict, params passed to the instance of Scene associated with this class
-"""
 ```
 
 &nbsp;
-
---------
-# line: 110 `__getattr__`
+## **`__getattr__`**  [#110]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L110) online
-#### function definition
-
 
 ```python
 def __getattr__(self, attr):
-```
-##### docstring
-  
+```  
 
 
-```python
-
-"""
- no docstring 
-"""
-```
+no docstring
 
 &nbsp;
-
---------
-# line: 124 `_get_structure_id`
+## **`_get_structure_id`**  [#124]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L124) online
-#### function definition
-
 
 ```python
 def _get_structure_id(self, struct):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Get the id of a structure (or list of structures) given it's acronym
 
-"""
-    Get the ID of a structure (or list of structures) given it's acronym
-"""
 ```
 
 &nbsp;
-
---------
-# line: 133 `_load_voxel_data`
+## **`_load_voxel_data`**  [#133]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L133) online
-#### function definition
-
 
 ```python
 def _load_voxel_data(self):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Load the voxeldata array from knox et al 2018
 
-"""
-    Load the VoxelData array from Knox et al 2018
-"""
 ```
 
 &nbsp;
-
---------
-# line: 170 `_get_coordinates_from_voxel_id`
+## **`_get_coordinates_from_voxel_id`**  [#170]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L170) online
-#### function definition
-
 
 ```python
 def _get_coordinates_from_voxel_id(self, p0, as_source=True):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Takes the index of a voxel and returns the 3d coordinates in reference space.  
+the index number should be extracted with either a source_mask or a target_mask. 
+if target_mask wa used set as_source as false. 
+:param p0: int
 
-"""
-    Takes the index of a voxel and returns the 3D coordinates in reference space. 
-    The index number should be extracted with either a source_mask or a target_mask.
-    If target_mask wa used set as_source as False.
-    
-    :param p0: int
-"""
 ```
 
 &nbsp;
-
---------
-# line: 186 `_get_mask_coords`
+## **`_get_mask_coords`**  [#186]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L186) online
-#### function definition
-
 
 ```python
 def _get_mask_coords(self, as_source):
-```
-##### docstring
-  
+```  
 
 
-```python
-
-"""
- no docstring 
-"""
-```
+no docstring
 
 &nbsp;
-
---------
-# line: 201 `_get_voxel_id_from_coordinates`
+## **`_get_voxel_id_from_coordinates`**  [#201]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L201) online
-#### function definition
-
 
 ```python
 def _get_voxel_id_from_coordinates(self, p0, as_source=True):
-```
-##### docstring
-  
+```  
 
 
-```python
-
-"""
- no docstring 
-"""
-```
+no docstring
 
 &nbsp;
-
---------
-# line: 223 `_get_cache_filename`
+## **`_get_cache_filename`**  [#223]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L223) online
-#### function definition
-
 
 ```python
 def _get_cache_filename(self, tgt, what):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Data are cached according to a naming convention, this function gets the name for an object
+according to the convention
 
-"""
-    Data are cached according to a naming convention, this function gets the name for an object
-    according to the convention
-"""
 ```
 
 &nbsp;
-
---------
-# line: 242 `_get_from_cache`
+## **`_get_from_cache`**  [#242]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L242) online
-#### function definition
-
 
 ```python
 def _get_from_cache(self, tgt, what):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Tries to load objects from cached data, if they exist
 
-"""
-    tries to load objects from cached data, if they exist
-"""
 ```
 
 &nbsp;
-
---------
-# line: 253 `save_to_cache`
+## **`save_to_cache`**  [#253]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L253) online
-#### function definition
-
 
 ```python
 def save_to_cache(self, tgt, what, obj):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Saves data to cache to avoid loading thema again in the future
 
-"""
-    Saves data to cache to avoid loading thema again in the future
-"""
 ```
 
 &nbsp;
-
---------
-# line: 264 `get_source`
+## **`get_source`**  [#264]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L264) online
-#### function definition
-
 
 ```python
 def get_source(self, source, hemisphere='both'):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Loads the mask for a source structure
+:param source: str or list of str with acronym of source regions
+:param hemisphere: str, ['both', 'left', 'right'].  which hemisphere to consider. 
 
-"""
-    Loads the mask for a source structure
-    
-    :param source: str or list of str with acronym of source regions
-    :param hemisphere: str, ['both', 'left', 'right']. Which hemisphere to consider.
-"""
 ```
 
 &nbsp;
-
---------
-# line: 286 `get_target_mask`
+## **`get_target_mask`**  [#286]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L286) online
-#### function definition
-
 
 ```python
 def get_target_mask(self, target, hemisphere):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Returns a 'key' array and a mask object
+used to transform projection data from linear arrays to 3d volumes. 
 
-"""
-    returns a 'key' array and a mask object
-    used to transform projection data from linear arrays to 3D volumes.
-"""
 ```
 
 &nbsp;
-
---------
-# line: 297 `get_target`
+## **`get_target`**  [#297]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L297) online
-#### function definition
-
 
 ```python
 def get_target(self, target, hemisphere='both'):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Loads the mask for a target structure.   
+:param target: str or list of str with acronym of target regions
+:param hemisphere: str, ['both', 'left', 'right'].  which hemisphere to consider. 
 
-"""
-    Loads the mask for a target structure.  
-    
-    :param target: str or list of str with acronym of target regions
-    :param hemisphere: str, ['both', 'left', 'right']. Which hemisphere to consider.
-"""
 ```
 
 &nbsp;
-
---------
-# line: 327 `get_projection`
+## **`get_projection`**  [#327]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L327) online
-#### function definition
-
 
 ```python
 def get_projection(self, source, target, name, hemisphere='both', projection_mode='mean', mode='target'):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Gets the spatialised projection intensity from a source to a target.  
+:param source: str or list of str with acronym of source regions
+:param target: str or list of str with acronym of target regions
+:param name: str, name of the projection
+:param projection_mode: str, if 'mean' the data from different experiments are averaged, 
+if 'max' the highest value is taken. 
+:param mode: str.  if 'target' the spatialised projection strength in the target structures is returned, usefule
+to see where source projects to in target.  otherwise if 'source' the spatialised projection strength in
+the source structure is return.  useful to see which part of source projects to target. 
+:return: 1d numpy array with mean projection from source to target voxels
 
-"""
-    Gets the spatialised projection intensity from a source to a target. 
-    
-    :param source: str or list of str with acronym of source regions
-    :param target: str or list of str with acronym of target regions
-    :param name: str, name of the projection
-    :param projection_mode: str, if 'mean' the data from different experiments are averaged, 
-                        if 'max' the highest value is taken.
-    :param mode: str. If 'target' the spatialised projection strength in the target structures is returned, usefule
-            to see where source projects to in target. Otherwise if 'source' the spatialised projection strength in
-            the source structure is return. Useful to see which part of source projects to target.
-    
-    :return: 1D numpy array with mean projection from source to target voxels
-"""
 ```
 
 &nbsp;
-
---------
-# line: 400 `get_mapped_projection`
+## **`get_mapped_projection`**  [#400]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L400) online
-#### function definition
-
 
 ```python
 def get_mapped_projection(self, source, target, name, **kwargs):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Gets the spatialised projection intensity from a source to a target, but as 
+a mapped volume instead of a linear array.  
+:param source: str or list of str with acronym of source regions
+:param target: str or list of str with acronym of target regions
+:param name: str, name of the projection
+:return: 3d numpy array with projectino intensity
 
-"""
-    Gets the spatialised projection intensity from a source to a target, but as 
-    a mapped volume instead of a linear array. 
-    
-    :param source: str or list of str with acronym of source regions
-    :param target: str or list of str with acronym of target regions
-    :param name: str, name of the projection
-    
-    :return: 3D numpy array with projectino intensity
-"""
 ```
 
 &nbsp;
-
---------
-# line: 416 `get_mapped_projection_to_point`
+## **`get_mapped_projection_to_point`**  [#416]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L416) online
-#### function definition
-
 
 ```python
 def get_mapped_projection_to_point(self, p0, restrict_to=None, restrict_to_hemisphere='both'):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Gets projection intensity from all voxels to the voxel corresponding to a point of interest
 
-"""
-    Gets projection intensity from all voxels to the voxel corresponding to a point of interest
-"""
 ```
 
 &nbsp;
-
---------
-# line: 452 `get_mapped_projection_from_point`
+## **`get_mapped_projection_from_point`**  [#452]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L452) online
-#### function definition
-
 
 ```python
 def get_mapped_projection_from_point(self, p0, restrict_to=None, restrict_to_hemisphere='both'):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Gets projection intensity from all voxels to the voxel corresponding to a point of interest
 
-"""
-    Gets projection intensity from all voxels to the voxel corresponding to a point of interest
-"""
 ```
 
 &nbsp;
-
---------
-# line: 497 `add_mapped_projection`
+## **`add_mapped_projection`**  [#497]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L497) online
-#### function definition
-
 
 ```python
 def add_mapped_projection(self, source, target, actor_kwargs={}, render_source_region=False, render_target_region=False, regions_kwargs={}, **kwargs):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Gets the spatialised projection intensity from a source to a target
+and renders it as a vedo lego visualisation. 
+:param source: str or list of str with acronym of source regions
+:param target: str or list of str with acronym of target regions
+:param render_source_region: bool, if true a wireframe mesh of source regions is rendered
+:param render_target_region: bool, if true a wireframe mesh of target regions is rendered
+:param regions_kwargs: pass options to specify how brain regions should look like
+:param kwargs: kwargs can be used to control how the rendered object looks like.  
+look at the arguments of 'add_volume' to see what arguments are available.  
 
-"""
-    Gets the spatialised projection intensity from a source to a target
-    and renders it as a vedo lego visualisation.
-    
-    :param source: str or list of str with acronym of source regions
-    :param target: str or list of str with acronym of target regions
-    :param render_source_region: bool, if true a wireframe mesh of source regions is rendered
-    :param render_target_region: bool, if true a wireframe mesh of target regions is rendered
-    :param regions_kwargs: pass options to specify how brain regions should look like
-    :param kwargs: kwargs can be used to control how the rendered object looks like. 
-            Look at the arguments of 'add_volume' to see what arguments are available. 
-"""
 ```
 
 &nbsp;
-
---------
-# line: 551 `add_mapped_projection_to_point`
+## **`add_mapped_projection_to_point`**  [#551]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L551) online
-#### function definition
-
 
 ```python
 def add_mapped_projection_to_point(self, p0, show_point=True, show_point_region=False, show_crosshair=True, crosshair_kwargs={}, point_region_kwargs={}, point_kwargs={}, from_point=False, **kwargs):
-```
-##### docstring
-  
+```  
 
 
-```python
-
-"""
- no docstring 
-"""
-```
+no docstring
 
 &nbsp;
-
---------
-# line: 625 `add_mapped_projection_from_point`
+## **`add_mapped_projection_from_point`**  [#625]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L625) online
-#### function definition
-
 
 ```python
 def add_mapped_projection_from_point(self, *args, **kwargs):
-```
-##### docstring
-  
+```  
 
 
-```python
-
-"""
- no docstring 
-"""
-```
+no docstring
 
 &nbsp;
-
---------
-# line: 630 `add_volume`
+## **`add_volume`**  [#630]
   
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L630) online
-#### function definition
-
 
 ```python
 def add_volume(self, volume, cmap='afmhot_r', alpha=1, add_colorbar=True, **kwargs):
-```
-##### docstring
-  
+```  
 
 
-```python
+```text
+Renders intensitdata from a 3d numpy array as a lego volumetric actor.  
+:param volume: np 3d array with number of dimensions = those of the 100um reference space.  
+:param cmap: str with name of colormap to use
+:param alpha: float, transparency
+:param add_colorbar: if true a colorbar is added to show the values of the colormap
 
-"""
-    Renders intensitdata from a 3D numpy array as a lego volumetric actor. 
-    
-    :param volume: np 3D array with number of dimensions = those of the 100um reference space. 
-    :param cmap: str with name of colormap to use
-    :param alpha: float, transparency
-    
-    :param add_colorbar: if True a colorbar is added to show the values of the colormap
-"""
 ```
