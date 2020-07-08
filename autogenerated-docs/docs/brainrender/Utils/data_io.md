@@ -35,8 +35,8 @@ def listdir(fld):
 
 
 ```text
-List the files into a folder with the coplete file path
-instead of the relative file path like os. Listdir.
+List the files into a folder with the coplete file path instead of the
+    relative file path like os. Listdir.
 :param fld: string, folder path
 ```
 
@@ -232,10 +232,9 @@ def connected_to_internet(url='http://www.google.com/', timeout=5):
 
 ```text
 Check that there is an internet connection
-:param url: url to use for testing (default value =
-'http://www. Google. Com/')
-:param timeout:  timeout to wait for [in seconds] (default
-value = 5)
+:param url: url to use for testing (default value = 'http://www.
+    Google. Com/')
+:param timeout:  timeout to wait for [in seconds] (default value = 5)
 ```
 
 &nbsp;
@@ -264,17 +263,15 @@ Send a query/request to a website
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_io.py#L215) online
 
 ```python
-def get_probe_points_from_sharptrack(points_filepath, scale_factor=10):
+def get_probe_points_from_sharptrack(points_filepath,
+    scale_factor=10):
 ```  
 
 
 ```text
-Loads the location of the of probe points as extracted by
-sharptrack
+Loads the location of the of probe points as extracted by sharptrack
 [https://github. Com/cortex-lab/allenccf].
-:param points_filepath: str, path to a . Mat file with probe
-points
-:param scale_factor: 10, sharptrack uses a 10um reference
-atlas so the
+:param points_filepath: str, path to a . Mat file with probe points
+:param scale_factor: 10, sharptrack uses a 10um reference atlas so the
 coordinates need to be scaled to match brainrender's
 ```

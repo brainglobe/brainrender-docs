@@ -79,10 +79,10 @@ def getColor(rgb=None, hsv=None):
 
 
 ```text
-Convert a color or list of colors to (r,g,b) format from
-many different input formats.
+Convert a color or list of colors to (r,g,b) format from many
+    different input formats.
 :param bool: hsv: if set to `true`, rgb is assumed as (hue,
-saturation, value).
+    saturation, value).
 example:
  - rgb= (255, 255, 255), corresponds to white
  - rgb= (1,1,1) is white
@@ -178,21 +178,19 @@ def colorMap(value, name='jet', vmin=None, vmax=None):
 
 
 ```text
-Map a real value in range [vmin, vmax] to a (r,g,b) color
-scale.
+Map a real value in range [vmin, vmax] to a (r,g,b) color scale.
 :param value: scalar value to transform into a color
 :type value: float, list
 :param name: color map name (default value = "jet")
 :type name: str, matplotlib. Colors. Linearsegmentedcolormap
 :param vmin:  (default value = none)
 :param vmax:  (default value = none)
-:returns: return: (r,g,b) color, or a list of (r,g,b)
-colors.
+:returns: return: (r,g,b) color, or a list of (r,g,b) colors.
 . .  note:: most frequently used color maps:
 |colormaps|
 matplotlib full list:
-. .  image:: https://matplotlib. Org/1. 2.
-1/_images/show_colormaps. Png
+. .  image:: https://matplotlib. Org/1. 2. 1/_images/show_colormaps.
+    Png
 . .  tip:: can also use directly a matplotlib color map:
 :example:
 . .  code-block:: python
@@ -219,8 +217,8 @@ Generate n colors starting from `color1` to `color2`
 by linear interpolation hsv in or rgb spaces.
 adapted from vedo makepalette function
 :param int: n: number of output colors.
-:param colors: input colors, any number of colors with 0 <
-ncolors <= n is okay.
+:param colors: input colors, any number of colors with 0 < ncolors <=
+    n is okay.
 ```
 
 &nbsp;

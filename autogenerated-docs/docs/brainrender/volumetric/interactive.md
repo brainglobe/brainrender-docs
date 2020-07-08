@@ -30,7 +30,8 @@ Contents
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/interactive.py#L7) online
 
 ```python
-def __init__(self, target_region, *args, projection_type='afferent', cmap=None, **kwargs):
+def __init__(self, target_region, *args, projection_type='afferent',
+    cmap=None, **kwargs):
 ```  
 
 

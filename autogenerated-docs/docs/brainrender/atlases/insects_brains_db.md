@@ -35,7 +35,8 @@ Contents
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/insects_brains_db.py#L55) online
 
 ```python
-def __init__(self, species=None, sex=None, base_dir=None, make_root=True, **kwargs):
+def __init__(self, species=None, sex=None, base_dir=None,
+    make_root=True, **kwargs):
 ```  
 
 
@@ -154,11 +155,10 @@ def _check_obj_file(self, region, obj_file):
 
 
 ```text
-If the . Obj file for a brain region hasn't been downloaded
-already, this function downloads it and writes it.
+If the . Obj file for a brain region hasn't been downloaded already,
+    this function downloads it and writes it.
 :param region: string, acronym of brain region
-:param obj_file: path to . Obj file to write downloaded
-data.
+:param obj_file: path to . Obj file to write downloaded data.
 ```
 
 &nbsp;
@@ -182,7 +182,8 @@ Gets the rgb color of a brain region from the atlas.
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/insects_brains_db.py#L368) online
 
 ```python
-def get_brain_regions(self, brain_regions, alpha=None, colors=None, use_original_color=True, **kwargs):
+def get_brain_regions(self, brain_regions, alpha=None, colors=None,
+    use_original_color=True, **kwargs):
 ```  
 
 
@@ -199,6 +200,6 @@ def add_descendants_to_tree(tree, structure, parent_id=None):
 
 
 ```text
-Recursively goes through all the the descendants of a region
-and adds them to the tree
+Recursively goes through all the the descendants of a region and adds
+    them to the tree
 ```

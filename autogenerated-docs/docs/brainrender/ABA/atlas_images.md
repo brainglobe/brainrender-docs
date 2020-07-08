@@ -79,8 +79,7 @@ def get_experimentsid_by_productid(self, productid, **kwargs):
 
 
 ```text
-Get the experiment's id that belong to the same project
-(product).
+Get the experiment's id that belong to the same project (product).
 :param productid: int with product id number
 :param **kwargs:
 ```
@@ -121,7 +120,8 @@ Get the metadata of images that belong to an atlas.
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/atlas_images.py#L149) online
 
 ```python
-def download_images_by_imagesid(self, savedir, imagesids, downsample=0, annotated=True, snames=None, atlas_svg=True):
+def download_images_by_imagesid(self, savedir, imagesids,
+    downsample=0, annotated=True, snames=None, atlas_svg=True):
 ```  
 
 
@@ -129,14 +129,14 @@ def download_images_by_imagesid(self, savedir, imagesids, downsample=0, annotate
 Downloads and saves images given a list of images ids.
 :param savedir: str, folder in which to save the image
 :param imagesids: list of int with images ids
-:param downsample: downsample factor, to reduce the image
-size and resolution (default value = 0)
-:param annotated: if true the images are overlayed with
-annotations  (default value = true)
-:param snames: if true the images are overlayed with the
-structures names (default value = none)
-:param atlas_svg: if true fetches the images as svg,
-otherwise as png (default value = true)
+:param downsample: downsample factor, to reduce the image size and
+    resolution (default value = 0)
+:param annotated: if true the images are overlayed with annotations
+    (default value = true)
+:param snames: if true the images are overlayed with the structures
+    names (default value = none)
+:param atlas_svg: if true fetches the images as svg, otherwise as png
+    (default value = true)
 ```
 
 &nbsp;
@@ -145,7 +145,8 @@ otherwise as png (default value = true)
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/atlas_images.py#L216) online
 
 ```python
-def download_images_by_atlasid(self, savedir, atlasid, debug=False, **kwargs):
+def download_images_by_atlasid(self, savedir, atlasid, debug=False,
+    **kwargs):
 ```  
 
 
@@ -154,5 +155,5 @@ Downloads all the images that belong to an altlas
 :param savedir: str, folder in which to save the images
 :param atlasid: int, id of the atlas to use
 :param **kwargs: keyword arguments for self.
-Download_images_by_imagesid
+    Download_images_by_imagesid
 ```

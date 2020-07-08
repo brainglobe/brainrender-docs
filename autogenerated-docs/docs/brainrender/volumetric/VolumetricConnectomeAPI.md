@@ -52,24 +52,23 @@ To download the data, this class uses code from: https://github.com/AllenInstitu
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L47) online
 
 ```python
-def __init__(self, base_dir=None, add_root=True, use_cache=True, scene_kwargs={}, **kwargs):
+def __init__(self, base_dir=None, add_root=True, use_cache=True,
+    scene_kwargs={}, **kwargs):
 ```  
 
 
 ```text
-Initialise the class instance to get a few useful paths and
-variables.
+Initialise the class instance to get a few useful paths and variables.
 :param base_dir: str, path to base directory in which all of
-brainrender data are stored.
-pass only if you want to use a different one from what's
-default.
-:param add_root: bool, if true the root mesh is added to the
-rendered scene
-:param use_cache: if true data are loaded from a cache to
-speed things up.
+    brainrender data are stored.
+pass only if you want to use a different one from what's default.
+:param add_root: bool, if true the root mesh is added to the rendered
+    scene
+:param use_cache: if true data are loaded from a cache to speed things
+    up.
 useful to set it to false to help debugging.
-:param scene_kwargs: dict, params passed to the instance of
-scene associated with this class
+:param scene_kwargs: dict, params passed to the instance of scene
+    associated with this class
 ```
 
 &nbsp;
@@ -95,8 +94,7 @@ def _get_structure_id(self, struct):
 
 
 ```text
-Get the id of a structure (or list of structures) given it's
-acronym
+Get the id of a structure (or list of structures) given it's acronym
 ```
 
 &nbsp;
@@ -124,10 +122,10 @@ def _get_coordinates_from_voxel_id(self, p0, as_source=True):
 
 
 ```text
-Takes the index of a voxel and returns the 3d coordinates in
-reference space.
-the index number should be extracted with either a
-source_mask or a target_mask.
+Takes the index of a voxel and returns the 3d coordinates in reference
+    space.
+the index number should be extracted with either a source_mask or a
+    target_mask.
 if target_mask wa used set as_source as false.
 :param p0: int
 ```
@@ -167,8 +165,8 @@ def _get_cache_filename(self, tgt, what):
 
 
 ```text
-Data are cached according to a naming convention, this
-function gets the name for an object
+Data are cached according to a naming convention, this function gets
+    the name for an object
 according to the convention
 ```
 
@@ -197,8 +195,7 @@ def save_to_cache(self, tgt, what, obj):
 
 
 ```text
-Saves data to cache to avoid loading thema again in the
-future
+Saves data to cache to avoid loading thema again in the future
 ```
 
 &nbsp;
@@ -213,10 +210,9 @@ def get_source(self, source, hemisphere='both'):
 
 ```text
 Loads the mask for a source structure
-:param source: str or list of str with acronym of source
-regions
-:param hemisphere: str, ['both', 'left', 'right'].  which
-hemisphere to consider.
+:param source: str or list of str with acronym of source regions
+:param hemisphere: str, ['both', 'left', 'right'].  which hemisphere
+    to consider.
 ```
 
 &nbsp;
@@ -231,8 +227,7 @@ def get_target_mask(self, target, hemisphere):
 
 ```text
 Returns a 'key' array and a mask object
-used to transform projection data from linear arrays to 3d
-volumes.
+used to transform projection data from linear arrays to 3d volumes.
 ```
 
 &nbsp;
@@ -247,10 +242,9 @@ def get_target(self, target, hemisphere='both'):
 
 ```text
 Loads the mask for a target structure.
-:param target: str or list of str with acronym of target
-regions
-:param hemisphere: str, ['both', 'left', 'right'].  which
-hemisphere to consider.
+:param target: str or list of str with acronym of target regions
+:param hemisphere: str, ['both', 'left', 'right'].  which hemisphere
+    to consider.
 ```
 
 &nbsp;
@@ -259,29 +253,27 @@ hemisphere to consider.
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L327) online
 
 ```python
-def get_projection(self, source, target, name, hemisphere='both', projection_mode='mean', mode='target'):
+def get_projection(self, source, target, name, hemisphere='both',
+    projection_mode='mean', mode='target'):
 ```  
 
 
 ```text
-Gets the spatialised projection intensity from a source to a
-target.
-:param source: str or list of str with acronym of source
-regions
-:param target: str or list of str with acronym of target
-regions
+Gets the spatialised projection intensity from a source to a target.
+:param source: str or list of str with acronym of source regions
+:param target: str or list of str with acronym of target regions
 :param name: str, name of the projection
-:param projection_mode: str, if 'mean' the data from
-different experiments are averaged,
+:param projection_mode: str, if 'mean' the data from different
+    experiments are averaged,
 if 'max' the highest value is taken.
-:param mode: str.  if 'target' the spatialised projection
-strength in the target structures is returned, usefule
-to see where source projects to in target.  otherwise if
-'source' the spatialised projection strength in
-the source structure is return.  useful to see which part of
-source projects to target.
-:return: 1d numpy array with mean projection from source to
-target voxels
+:param mode: str.  if 'target' the spatialised projection strength in
+    the target structures is returned, usefule
+to see where source projects to in target.  otherwise if 'source' the
+    spatialised projection strength in
+the source structure is return.  useful to see which part of source
+    projects to target.
+:return: 1d numpy array with mean projection from source to target
+    voxels
 ```
 
 &nbsp;
@@ -295,13 +287,11 @@ def get_mapped_projection(self, source, target, name, **kwargs):
 
 
 ```text
-Gets the spatialised projection intensity from a source to a
-target, but as
+Gets the spatialised projection intensity from a source to a target,
+    but as
 a mapped volume instead of a linear array.
-:param source: str or list of str with acronym of source
-regions
-:param target: str or list of str with acronym of target
-regions
+:param source: str or list of str with acronym of source regions
+:param target: str or list of str with acronym of target regions
 :param name: str, name of the projection
 :return: 3d numpy array with projectino intensity
 ```
@@ -312,13 +302,14 @@ regions
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L416) online
 
 ```python
-def get_mapped_projection_to_point(self, p0, restrict_to=None, restrict_to_hemisphere='both'):
+def get_mapped_projection_to_point(self, p0, restrict_to=None,
+    restrict_to_hemisphere='both'):
 ```  
 
 
 ```text
-Gets projection intensity from all voxels to the voxel
-corresponding to a point of interest
+Gets projection intensity from all voxels to the voxel corresponding
+    to a point of interest
 ```
 
 &nbsp;
@@ -327,13 +318,14 @@ corresponding to a point of interest
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L452) online
 
 ```python
-def get_mapped_projection_from_point(self, p0, restrict_to=None, restrict_to_hemisphere='both'):
+def get_mapped_projection_from_point(self, p0, restrict_to=None,
+    restrict_to_hemisphere='both'):
 ```  
 
 
 ```text
-Gets projection intensity from all voxels to the voxel
-corresponding to a point of interest
+Gets projection intensity from all voxels to the voxel corresponding
+    to a point of interest
 ```
 
 &nbsp;
@@ -342,28 +334,27 @@ corresponding to a point of interest
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L497) online
 
 ```python
-def add_mapped_projection(self, source, target, actor_kwargs={}, render_source_region=False, render_target_region=False, regions_kwargs={}, **kwargs):
+def add_mapped_projection(self, source, target, actor_kwargs={},
+    render_source_region=False, render_target_region=False,
+    regions_kwargs={}, **kwargs):
 ```  
 
 
 ```text
-Gets the spatialised projection intensity from a source to a
-target
+Gets the spatialised projection intensity from a source to a target
 and renders it as a vedo lego visualisation.
-:param source: str or list of str with acronym of source
-regions
-:param target: str or list of str with acronym of target
-regions
-:param render_source_region: bool, if true a wireframe mesh
-of source regions is rendered
-:param render_target_region: bool, if true a wireframe mesh
-of target regions is rendered
-:param regions_kwargs: pass options to specify how brain
-regions should look like
-:param kwargs: kwargs can be used to control how the
-rendered object looks like.
-look at the arguments of 'add_volume' to see what arguments
-are available.
+:param source: str or list of str with acronym of source regions
+:param target: str or list of str with acronym of target regions
+:param render_source_region: bool, if true a wireframe mesh of source
+    regions is rendered
+:param render_target_region: bool, if true a wireframe mesh of target
+    regions is rendered
+:param regions_kwargs: pass options to specify how brain regions
+    should look like
+:param kwargs: kwargs can be used to control how the rendered object
+    looks like.
+look at the arguments of 'add_volume' to see what arguments are
+    available.
 ```
 
 &nbsp;
@@ -372,7 +363,9 @@ are available.
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L551) online
 
 ```python
-def add_mapped_projection_to_point(self, p0, show_point=True, show_point_region=False, show_crosshair=True, crosshair_kwargs={}, point_region_kwargs={}, point_kwargs={}, from_point=False, **kwargs):
+def add_mapped_projection_to_point(self, p0, show_point=True,
+    show_point_region=False, show_crosshair=True, crosshair_kwargs={},
+    point_region_kwargs={}, point_kwargs={}, from_point=False, **kwargs):
 ```  
 
 
@@ -396,17 +389,17 @@ no docstring
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L630) online
 
 ```python
-def add_volume(self, volume, cmap='afmhot_r', alpha=1, add_colorbar=True, **kwargs):
+def add_volume(self, volume, cmap='afmhot_r', alpha=1,
+    add_colorbar=True, **kwargs):
 ```  
 
 
 ```text
-Renders intensitdata from a 3d numpy array as a lego
-volumetric actor.
-:param volume: np 3d array with number of dimensions = those
-of the 100um reference space.
+Renders intensitdata from a 3d numpy array as a lego volumetric actor.
+:param volume: np 3d array with number of dimensions = those of the
+    100um reference space.
 :param cmap: str with name of colormap to use
 :param alpha: float, transparency
-:param add_colorbar: if true a colorbar is added to show the
-values of the colormap
+:param add_colorbar: if true a colorbar is added to show the values of
+    the colormap
 ```

@@ -58,14 +58,14 @@ def get_coords(obj, mirror=False, mirror_ax='x'):
 
 
 ```text
-Takes coordinates in various format and turns them into
-what's expected from vtk plotter for rendering.
+Takes coordinates in various format and turns them into what's
+    expected from vtk plotter for rendering.
 can take a dict, pandas dataframe or series
 :param obj: dict, pandas. Dataframe or pandas. Series
-:param mirror:  if true, the coordinates are mirrored around
-mirror_ax (default value = false)
-:param mirror_ax: ax to be used for mirroring ['x', 'y',
-'z'] (default value = 'x')
+:param mirror:  if true, the coordinates are mirrored around mirror_ax
+    (default value = false)
+:param mirror_ax: ax to be used for mirroring ['x', 'y', 'z'] (default
+    value = 'x')
 ```
 
 &nbsp;

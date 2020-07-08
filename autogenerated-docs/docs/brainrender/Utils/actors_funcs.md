@@ -168,26 +168,24 @@ Smooth an actor's mesh
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L139) online
 
 ```python
-def edit_actor(actor, wireframe=False, solid=False, color=False, line=False, line_kwargs={}, upsample=False, downsample=False, smooth=False):
+def edit_actor(actor, wireframe=False, solid=False, color=False,
+    line=False, line_kwargs={}, upsample=False, downsample=False,
+    smooth=False):
 ```  
 
 
 ```text
 Apply a set of functions to edit an actor's look.
 :param actor:
-:param wireframe: if true, change look to wireframe (default
-value = false)
-:param solid: if true change look to soi=lid (default value
-= false)
+:param wireframe: if true, change look to wireframe (default value =
+    false)
+:param solid: if true change look to soi=lid (default value = false)
 :param color: specify new color (default value = false)
-:param line: if true, edit the line's look (default value =
-false)
-:param line_kwargs: specify width and color of line (default
-value = {})
-:param upsample: if true, increase resolution (default value
-= false)
-:param downsample: if true, decrease resolution (default
-value = false)
-:param smooth: if true, smoothen actor (default value =
-false)
+:param line: if true, edit the line's look (default value = false)
+:param line_kwargs: specify width and color of line (default value =
+    {})
+:param upsample: if true, increase resolution (default value = false)
+:param downsample: if true, decrease resolution (default value =
+    false)
+:param smooth: if true, smoothen actor (default value = false)
 ```

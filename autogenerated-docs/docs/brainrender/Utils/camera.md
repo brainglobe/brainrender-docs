@@ -71,8 +71,8 @@ def set_camera(scene, camera):
 ```text
 Sets the position of the camera of a brainrender scene.
 :param scene: instance of scene()
-:param camera: either a string with the name of one of the
-available cameras, or
+:param camera: either a string with the name of one of the available
+    cameras, or
 a dictionary of camera parameters.
 ```
 

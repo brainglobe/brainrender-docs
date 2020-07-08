@@ -73,59 +73,60 @@ and other classes within the same package.
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L48) online
 
 ```python
-def __init__(self, brain_regions=None, regions_aba_color=False, neurons=None, tracts=None, add_root=None, verbose=True, ignore_jupyter=False, display_inset=None, base_dir=None, camera=None, screenshot_kwargs={}, use_default_key_bindings=False, title=None, atlas=None, atlas_kwargs=dict(), **kwargs):
+def __init__(self, brain_regions=None, regions_aba_color=False,
+    neurons=None, tracts=None, add_root=None, verbose=True,
+    ignore_jupyter=False, display_inset=None, base_dir=None, camera=None,
+    screenshot_kwargs={}, use_default_key_bindings=False, title=None,
+    atlas=None, atlas_kwargs=dict(), **kwargs):
 ```  
 
 
 ```text
 Creates and manages a plotter instance
-:param brain_regions: list of brain regions acronyms to be
-added to the rendered scene (default value none)
-:param regions_aba_color: if true, use the allen brain atlas
-regions colors (default value none)
-:param neurons: path to json or swc file with data of
-neurons to be rendered [or list of files] (default value
-none)
-:param tracts: list of json files with tractography data to
-be rendered (default value none)
-:param add_root: if false a rendered outline of the whole
-brain is added to the scene (default value none)
-:param verbose: if false less feedback is printed to screen
-(default value true)
-:param display_insert: if false the inset displaying the
-brain's outline is not rendered (but the root is added to
-the scene) (default value none)
-:param base_dir: path to directory to use for saving data
-(default value none)
-:param camera: name of the camera parameters setting to use
-(controls the orientation of the rendered scene)
-:param kwargs: can be used to pass path to individual data
-folders.  see brainrender/utils/paths_manager. Py
+:param brain_regions: list of brain regions acronyms to be added to
+    the rendered scene (default value none)
+:param regions_aba_color: if true, use the allen brain atlas regions
+    colors (default value none)
+:param neurons: path to json or swc file with data of neurons to be
+    rendered [or list of files] (default value none)
+:param tracts: list of json files with tractography data to be
+    rendered (default value none)
+:param add_root: if false a rendered outline of the whole brain is
+    added to the scene (default value none)
+:param verbose: if false less feedback is printed to screen (default
+    value true)
+:param display_insert: if false the inset displaying the brain's
+    outline is not rendered (but the root is added to the scene) (default
+    value none)
+:param base_dir: path to directory to use for saving data (default
+    value none)
+:param camera: name of the camera parameters setting to use (controls
+    the orientation of the rendered scene)
+:param kwargs: can be used to pass path to individual data folders.
+    see brainrender/utils/paths_manager. Py
 :param screenshot_kwargs: pass a dictionary with keys:
 - 'folder' -> str, path to folder where to save screenshots
 - 'name' -> str, filename to prepend to screenshots files
 - 'format' -> str, 'png', 'svg' or 'jpg'
-- scale -> float, values > 1 yield higher resultion
-screenshots
-:param use_default_key_bindings: if true the defualt
-keybindings from vedo are used, otherwise
-a custom function that can be used to take screenshots with
-the parameter above.
-:param title: str, if a string is passed a text is added to
-the top of the rendering window as a title
-:param atlas: str, class.  default none.  if a string is
-passed it whould be the name of a valide
-brainglobe_api atlas.  alternative a class object can be
-passed, this should support the functionality
+- scale -> float, values > 1 yield higher resultion screenshots
+:param use_default_key_bindings: if true the defualt keybindings from
+    vedo are used, otherwise
+a custom function that can be used to take screenshots with the
+    parameter above.
+:param title: str, if a string is passed a text is added to the top of
+    the rendering window as a title
+:param atlas: str, class.  default none.  if a string is passed it
+    whould be the name of a valide
+brainglobe_api atlas.  alternative a class object can be passed, this
+    should support the functionality
 expected of an atlas class.
-if no atlas is passed the allen brain atlas for the adult
-mouse brain is used.  if a string with the atlas
-name is passed it will try to load the corresponding
-brainglobe atlas.
-:param atlas_kwargs: dictionary used to pass extra arguments
-to atlas class
-:param ignore_jupyter: bool, if false brainrender auto-
-detects if the user is using jupyter and adjusts to it
+if no atlas is passed the allen brain atlas for the adult mouse brain
+    is used.  if a string with the atlas
+name is passed it will try to load the corresponding brainglobe atlas.
+:param atlas_kwargs: dictionary used to pass extra arguments to atlas
+    class
+:param ignore_jupyter: bool, if false brainrender auto-detects if the
+    user is using jupyter and adjusts to it
 ```
 
 &nbsp;
@@ -139,8 +140,8 @@ def _check_point_in_region(self, point, region_actor):
 
 
 ```text
-Checks if a point of defined coordinates is within the mesh
-of a given actorr
+Checks if a point of defined coordinates is within the mesh of a given
+    actorr
 :param point: 3-tuple or list of xyz coordinates
 :param region_actor: vedo actor
 ```
@@ -156,8 +157,8 @@ def _get_inset(self, **kwargs):
 
 
 ```text
-Handles the rendering of the inset showing the outline of
-the whole brain (root) in a corner of the scene.
+Handles the rendering of the inset showing the outline of the whole
+    brain (root) in a corner of the scene.
 :param **kwargs:
 ```
 
@@ -172,8 +173,8 @@ def get_n_random_points_in_region(self, region, N, hemisphere=None):
 
 
 ```text
-Gets n random points inside (or on the surface) of the mesh
-defining a brain region.
+Gets n random points inside (or on the surface) of the mesh defining a
+    brain region.
 :param region: str, acronym of the brain region.
 :param n: int, number of points to return.
 ```
@@ -214,7 +215,8 @@ Mirrors actors from one hemisphere to the next
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L338) online
 
 ```python
-def cut_actors_with_plane(self, plane, actors=None, showplane=False, returncut=False, close_actors=False, **kwargs):
+def cut_actors_with_plane(self, plane, actors=None, showplane=False,
+    returncut=False, close_actors=False, **kwargs):
 ```  
 
 
@@ -231,8 +233,8 @@ def get_cells_in_region(self, cells, region):
 
 
 ```text
-Selects the cells that are in a list of user provided
-regions from a dataframe of cell locations
+Selects the cells that are in a list of user provided regions from a
+    dataframe of cell locations
 :param cells: pd. Dataframe of cells x,y,z coordinates
 ```
 
@@ -293,8 +295,8 @@ def add_neurons_synapses(self, *args, **kwargs):
 
 
 ```text
-Adds the location of pre or post synapses for a neuron (or
-list of neurons).
+Adds the location of pre or post synapses for a neuron (or list of
+    neurons).
 check the atlas' method to know how it works.
 ```
 
@@ -341,8 +343,8 @@ def add_actor(self, *actors, store=None):
 ```text
 Add a vtk actor to the scene
 :param actor:
-:param store: one of the items in self. Actors to use to
-store the actor
+:param store: one of the items in self. Actors to use to store the
+    actor
 being created.  it needs to be a list
 ```
 
@@ -372,10 +374,10 @@ def add_from_file(self, *filepaths, **kwargs):
 
 
 ```text
-Add data to the scene by loading them from a file.  should
-handle . Obj, . Vtk and . Nii files.
-:param filepaths: path to the file.  can pass as many
-arguments as needed
+Add data to the scene by loading them from a file.  should handle .
+    Obj, . Vtk and . Nii files.
+:param filepaths: path to the file.  can pass as many arguments as
+    needed
 :param **kwargs:
 ```
 
@@ -385,16 +387,15 @@ arguments as needed
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L582) online
 
 ```python
-def add_sphere_at_point(self, pos=[0, 0, 0], radius=100, color='black', alpha=1, **kwargs):
+def add_sphere_at_point(self, pos=[0, 0, 0], radius=100,
+    color='black', alpha=1, **kwargs):
 ```  
 
 
 ```text
 Adds a shere at a location specified by the user
-:param pos: list of x,y,z coordinates (default value = [0,
-0, 0])
-:param radius: int, radius of the sphere (default value =
-100)
+:param pos: list of x,y,z coordinates (default value = [0, 0, 0])
+:param radius: int, radius of the sphere (default value = 100)
 :param color: color of the sphere (default value = "black")
 :param alpha: transparency of the sphere (default value = 1)
 :param **kwargs:
@@ -406,23 +407,24 @@ Adds a shere at a location specified by the user
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L600) online
 
 ```python
-def add_cells_from_file(self, filepath, hdf_key='hdf', color='red', radius=25, res=3, alpha=1):
+def add_cells_from_file(self, filepath, hdf_key='hdf', color='red',
+    radius=25, res=3, alpha=1):
 ```  
 
 
 ```text
-Load location of cells from a file (csv and hdf) and render
-as spheres aligned to the root mesh.
+Load location of cells from a file (csv and hdf) and render as spheres
+    aligned to the root mesh.
 :param filepath: str path to file
 :param hdf_key: str (default value = none)
-:param color: str, color of spheres used to render the cells
-(default value = "red")
-:param radius: int, radius of spheres used to render the
-cells (default value = 25)
-:param res: int, resolution of spheres used to render the
-cells (default value = 3)
-:param alpha: float, transparency of spheres used to render
-the cells (default value = 1)
+:param color: str, color of spheres used to render the cells (default
+    value = "red")
+:param radius: int, radius of spheres used to render the cells
+    (default value = 25)
+:param res: int, resolution of spheres used to render the cells
+    (default value = 3)
+:param alpha: float, transparency of spheres used to render the cells
+    (default value = 1)
 ```
 
 &nbsp;
@@ -431,41 +433,39 @@ the cells (default value = 1)
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L664) online
 
 ```python
-def add_cells(self, coords, color='red', color_by_region=False, color_by_metadata=None, radius=25, res=3, alpha=1, col_names=None, regions=None, verbose=True):
+def add_cells(self, coords, color='red', color_by_region=False,
+    color_by_metadata=None, radius=25, res=3, alpha=1, col_names=None,
+    regions=None, verbose=True):
 ```  
 
 
 ```text
-Renders cells given their coordinates as a collection of
-spheres.
+Renders cells given their coordinates as a collection of spheres.
 :param coords: pandas dataframe with x,y,z coordinates
-:param color: str, color of spheres used to render the cells
-(default value = "red").
-alternatively a list of colors specifying the color of each
-cell.
-:param radius: int, radius of spheres used to render the
-cells (default value = 25)
-:param res: int, resolution of spheres used to render the
-cells (default value = 3)
-:param alpha: float, transparency of spheres used to render
-the cells (default value = 1)
-:param color_by_region: bool.  if true the cells are colored
-according to the color of the brain region they are in
-:param color_by_metadata: str, if the name of a column of
-the coords dataframe is passed, cells are colored according
-to their value for that column.  if color_by_metadata is
-passed and a dictionary is passed
-to 'color' at the same time, the dictionary will be used to
-specify the colors used.  therefore
+:param color: str, color of spheres used to render the cells (default
+    value = "red").
+alternatively a list of colors specifying the color of each cell.
+:param radius: int, radius of spheres used to render the cells
+    (default value = 25)
+:param res: int, resolution of spheres used to render the cells
+    (default value = 3)
+:param alpha: float, transparency of spheres used to render the cells
+    (default value = 1)
+:param color_by_region: bool.  if true the cells are colored according
+    to the color of the brain region they are in
+:param color_by_metadata: str, if the name of a column of the coords
+    dataframe is passed, cells are colored according
+to their value for that column.  if color_by_metadata is passed and a
+    dictionary is passed
+to 'color' at the same time, the dictionary will be used to specify
+    the colors used.  therefore
 `color` should map values in the metadata column to colors
-:param regions: if a list of brain regions acronym is
-passed, only cells in these regions will be added to the
-scene
-:param col_names: list of strings with names of pandas
-dataframe columns.  if passed it should be a list of 3
-columns
-which have the x, y, z coordinates.  if not passed, it is
-assumed that the columns are ['x', 'y', 'z']
+:param regions: if a list of brain regions acronym is passed, only
+    cells in these regions will be added to the scene
+:param col_names: list of strings with names of pandas dataframe
+    columns.  if passed it should be a list of 3 columns
+which have the x, y, z coordinates.  if not passed, it is assumed that
+    the columns are ['x', 'y', 'z']
 ```
 
 &nbsp;
@@ -474,31 +474,31 @@ assumed that the columns are ['x', 'y', 'z']
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L768) online
 
 ```python
-def add_optic_cannula(self, target_region=None, pos=None, x_offset=0, y_offset=0, z_offset=(- 500), use_line=False, **kwargs):
+def add_optic_cannula(self, target_region=None, pos=None, x_offset=0,
+    y_offset=0, z_offset=(- 500), use_line=False, **kwargs):
 ```  
 
 
 ```text
-Adds a cylindrical vtk actor to scene to render optic
-cannulas.  by default
-this is a semi-transparent blue cylinder centered on the
-center of mass of
+Adds a cylindrical vtk actor to scene to render optic cannulas.  by
+    default
+this is a semi-transparent blue cylinder centered on the center of
+    mass of
 a specified target region and oriented vertically.
-:param target_region: str, acronym of target region to
-extract coordinates
-of implanted fiber.  by defualt the fiber will be centered
-on the center
-of mass of the target region but the offset arguments can be
-used to
-fine tune the position.  alternative pass a 'pos' argument
-with xyz coords.
-:param pos: list or tuple or np. Array with x,y,z
-coordinates.  must have length = 3.
-:param x_offset, y_offset, z_offset: int, used to fine tune
-the coordinates of
+:param target_region: str, acronym of target region to extract
+    coordinates
+of implanted fiber.  by defualt the fiber will be centered on the
+    center
+of mass of the target region but the offset arguments can be used to
+fine tune the position.  alternative pass a 'pos' argument with xyz
+    coords.
+:param pos: list or tuple or np. Array with x,y,z coordinates.  must
+    have length = 3.
+:param x_offset, y_offset, z_offset: int, used to fine tune the
+    coordinates of
 the implanted cannula.
-:param **kwargs: used to specify which hemisphere the
-cannula is and parameters
+:param **kwargs: used to specify which hemisphere the cannula is and
+    parameters
 of the rendered cylinder: color, alpha, rotation axis. . .
 ```
 
@@ -513,12 +513,11 @@ def add_text(self, text, **kwargs):
 
 
 ```text
-Adds a 2d text to the scene.  default params are to crate a
-large black
+Adds a 2d text to the scene.  default params are to crate a large
+    black
 text at the top of the rendering window.
 :param text: str with text to write
-:param kwargs: keyword arguments accepted by vedo. Shapes.
-Text2d
+:param kwargs: keyword arguments accepted by vedo. Shapes. Text2d
 ```
 
 &nbsp;
@@ -539,10 +538,9 @@ text appearance and location:
 - size: int, text size.  default 300
 - color: str, text color.  a list of colors can be passed
 if none the actor's color is used.  default none.
-- xoffset, yoffset, zoffset: integers that shift the label
-position
-- radius: radius of sphere used to denote label anchor.  set
-to 0 or none to hide.
+- xoffset, yoffset, zoffset: integers that shift the label position
+- radius: radius of sphere used to denote label anchor.  set to 0 or
+    none to hide.
 ```
 
 &nbsp;
@@ -557,14 +555,14 @@ def add_line_at_point(self, point, replace_coord, bounds, **kwargs):
 
 ```text
 Adds a line oriented on a given axis at a point
-:param point:list or 1d np array with coordinates of point
-where crosshair is centered
-:param replace_coord: index of the coordinate to replace (i.
-E.  along which axis is the line oriented)
-:param bounds: list of two floats with lower and upper bound
-for line, determins the extent of the line
-:param kwargs: dictionary with arguments to specify how
-lines should look like
+:param point:list or 1d np array with coordinates of point where
+    crosshair is centered
+:param replace_coord: index of the coordinate to replace (i. E.  along
+    which axis is the line oriented)
+:param bounds: list of two floats with lower and upper bound for line,
+    determins the extent of the line
+:param kwargs: dictionary with arguments to specify how lines should
+    look like
 ```
 
 &nbsp;
@@ -579,10 +577,10 @@ def add_rostrocaudal_line_at_point(self, point, **kwargs):
 
 ```text
 Add a line at a point oriented along the trostrocaudal axis
-:param point:list or 1d np array with coordinates of point
-where crosshair is centered
-:param line_kwargs: dictionary with arguments to specify how
-lines should look like
+:param point:list or 1d np array with coordinates of point where
+    crosshair is centered
+:param line_kwargs: dictionary with arguments to specify how lines
+    should look like
 ```
 
 &nbsp;
@@ -596,12 +594,11 @@ def add_dorsoventral_line_at_point(self, point, **kwargs):
 
 
 ```text
-Add a line at a point oriented along the
-mdorsoventralediolateral axis
-:param point:list or 1d np array with coordinates of point
-where crosshair is centered
-:param line_kwargs: dictionary with arguments to specify how
-lines should look like
+Add a line at a point oriented along the mdorsoventralediolateral axis
+:param point:list or 1d np array with coordinates of point where
+    crosshair is centered
+:param line_kwargs: dictionary with arguments to specify how lines
+    should look like
 ```
 
 &nbsp;
@@ -616,10 +613,10 @@ def add_mediolateral_line_at_point(self, point, **kwargs):
 
 ```text
 Add a line at a point oriented along the mediolateral axis
-:param point:list or 1d np array with coordinates of point
-where crosshair is centered
-:param line_kwargs: dictionary with arguments to specify how
-lines should look like
+:param point:list or 1d np array with coordinates of point where
+    crosshair is centered
+:param line_kwargs: dictionary with arguments to specify how lines
+    should look like
 ```
 
 &nbsp;
@@ -628,27 +625,28 @@ lines should look like
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L988) online
 
 ```python
-def add_crosshair_at_point(self, point, ml=True, dv=True, ap=True, show_point=True, line_kwargs={}, point_kwargs={}):
+def add_crosshair_at_point(self, point, ml=True, dv=True, ap=True,
+    show_point=True, line_kwargs={}, point_kwargs={}):
 ```  
 
 
 ```text
 Add a crosshair (set of orthogonal lines meeting at a point)
 centered on a given point.
-:param point: list or 1d np array with coordinates of point
-where crosshair is centered
-:param ml: bool, if true a line oriented on the mediolateral
-axis is added
-:param dv: bool, if true a line oriented on the dorsoventral
-axis is added
-:param ap: bool, if true a line oriented on the
-anteriorposterior or rostsrocaudal axis is added
-:param show_point: bool, if true a sphere at the loation of
-the point is shown
-:param line_kwargs: dictionary with arguments to specify how
-lines should look like
-:param point_kwargs: dictionary with arguments to specify
-how the point should look
+:param point: list or 1d np array with coordinates of point where
+    crosshair is centered
+:param ml: bool, if true a line oriented on the mediolateral axis is
+    added
+:param dv: bool, if true a line oriented on the dorsoventral axis is
+    added
+:param ap: bool, if true a line oriented on the anteriorposterior or
+    rostsrocaudal axis is added
+:param show_point: bool, if true a sphere at the loation of the point
+    is shown
+:param line_kwargs: dictionary with arguments to specify how lines
+    should look like
+:param point_kwargs: dictionary with arguments to specify how the
+    point should look
 ```
 
 &nbsp;
@@ -677,24 +675,24 @@ or an instance of the plane class from vedo. Shapes
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1070) online
 
 ```python
-def add_probe_from_sharptrack(self, probe_points_file, points_kwargs={}, **kwargs):
+def add_probe_from_sharptrack(self, probe_points_file,
+    points_kwargs={}, **kwargs):
 ```  
 
 
 ```text
 Visualises the position of an implanted probe in the brain.
-uses the location of points along the probe extracted with
-sharptrack
+uses the location of points along the probe extracted with sharptrack
 [https://github. Com/cortex-lab/allenccf].
-it renders the position of points along the probe and a line
-fit through them.
+it renders the position of points along the probe and a line fit
+    through them.
 code contributed by @tbslv on github.
-:param probe_points_file: str, path to a . Mat file with
-probe points coordinates
-:param points_kwargs: dict, used to specify how probe points
-should look like (e. G color, alpha. . . )
-:param kwargs: keyword arguments used to specify how the
-probe should look like (e. G.  color, alpha. . . )
+:param probe_points_file: str, path to a . Mat file with probe points
+    coordinates
+:param points_kwargs: dict, used to specify how probe points should
+    look like (e. G color, alpha. . . )
+:param kwargs: keyword arguments used to specify how the probe should
+    look like (e. G.  color, alpha. . . )
 ```
 
 &nbsp;
@@ -727,7 +725,8 @@ no docstring
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1179) online
 
 ```python
-def render(self, interactive=True, video=False, camera=None, zoom=None, **kwargs):
+def render(self, interactive=True, video=False, camera=None,
+    zoom=None, **kwargs):
 ```  
 
 
@@ -760,8 +759,7 @@ def export_for_web(self, filepath='brexport.html'):
 ```text
 This function is used to export a brainrender scene
 for hosting it online.  it saves an html file that can
-be opened in a web browser to show an interactive
-brainrender scene
+be opened in a web browser to show an interactive brainrender scene
 ```
 
 &nbsp;

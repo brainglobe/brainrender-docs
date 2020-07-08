@@ -27,8 +27,7 @@ def check_gene_cached(cache_folder, gene_id, exp_id):
 A gene is saved in a folder in cache_folder
 with gene_id-exp_id as name.  if the folder doesn't
 exist the gene is not cached.
-:param cache_folder: str, path to general cache folder for
-all data
+:param cache_folder: str, path to general cache folder for all data
 :param gene_id: str name of gene
 :param exp_id: id of experiment
 ```
@@ -49,8 +48,7 @@ def download_and_cache(url, cachedir):
 Given a url to download a gene's ish experiment data,
 this function download and unzips the data
 :param url: str, utl to download data
-:param cachedir: str, path to folder where data will be
-downloaded
+:param cachedir: str, path to folder where data will be downloaded
 ```
 
 &nbsp;
@@ -87,6 +85,6 @@ downloaded from the allen atlas and returns
 a numpy array with the correct grid_size.
 see as reference:
 http://help. Brain-map. Org/display/mousebrain/api#api-
-expression3dgridsz
+    expression3dgridsz
 :param filepath: str or path object
 ```

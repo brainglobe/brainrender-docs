@@ -41,8 +41,7 @@ def get_cap_selected_frame(cap, show_frame):
 
 
 ```text
-Gets a frame from an opencv video capture object to a
-specific frame
+Gets a frame from an opencv video capture object to a specific frame
 ```
 
 &nbsp;
@@ -69,19 +68,20 @@ Gets video parameters from an opencv video capture object
 Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/video.py#L56) online
 
 ```python
-def open_cvwriter(filepath, w=None, h=None, framerate=None, format='.mp4', iscolor=False):
+def open_cvwriter(filepath, w=None, h=None, framerate=None,
+    format='.mp4', iscolor=False):
 ```  
 
 
 ```text
-Creats an instance of cv. Videowriter to write frames to
-video using python opencv
+Creats an instance of cv. Videowriter to write frames to video using
+    python opencv
 :param filepath: str, path to file to save
 :param w,h: width and height of frame in pixels
 :param framerate: fps of output video
 :param format: video format
-:param iscolor: bool, set as true if images are rgb, else
-false if they are gray
+:param iscolor: bool, set as true if images are rgb, else false if
+    they are gray
 ```
 
 &nbsp;
