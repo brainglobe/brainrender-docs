@@ -53,5 +53,11 @@ For any question, issue or bug report you can [get in touch](info/get-in-touch.m
 
 
 
+#### Referencing brainrender
+
+If you've found `brainrender` useful in your work, please cite `brainrender`'s publication. 
+
+Check [here](info/referencing-brainrender.md) for more details. 
+
 
 
