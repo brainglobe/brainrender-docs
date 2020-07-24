@@ -19,8 +19,6 @@ In most of your renderings these are the steps you will need
 3. Render, make videos, take screenshots.
 4. enjoy!
 
-
-
 When adding new elements \(`actors`\) to your `Scene` you will encounter two situations:
 
 1. [You have the data ](./#you-have-the-data)\(e.g. location of labelled cells from [cellfinder](https://docs.cellfinder.info/)\) and you just want to visualize them.
@@ -28,7 +26,11 @@ When adding new elements \(`actors`\) to your `Scene` you will encounter two sit
 
 the workflow will vary slightly between the two scenarios. Read below for more details.
 
+{% hint style="success" %}
+**Graphical User Interface**
 
+While `brainrender` doesn't come with a GUI, [one is being developed by BrainGlobe](https://github.com/brainglobe/bg-brainrender-gui). If you follow the link you will find instructions on how to install and use brainglobe's brainrender GUI for creating a scene and adding elements to it. 
+{% endhint %}
 
 ### You have the data
 
