@@ -6,7 +6,13 @@ description: How to use brainrender to visualise your own data
 
 > That's great, you've done most of the work. You've done your experiment and run the analysis, now you just want to make a good rendering of your data. Fortunately that's the easy \(and fun\) part!
 
-You have your data, and you want to crate some `actors` in your `Scene` to visualize them. How exactly you will do this depends what kind of data are you trying to visualize. The good news is that `brainrender` allows you to simultaneously visualise data from different individuals \(and even different sources if you use [publicly available data](public.md)\), thus facilitating comparisons across experiments. We've tried to implement enough methods to cover common visualization needs, but if you spot something missing to let us know! We are always happy to add new functionality.
+You have your data, and you want to crate some `actors` in your `Scene` to visualize them. How exactly you will do this depends what kind of data are you trying to visualize. The good news is that `brainrender` allows you to simultaneously visualize data from different individuals \(and even different sources if you use [publicly available data](public.md)\), thus facilitating comparisons across experiments. We've tried to implement enough methods to cover common visualization needs, but if you spot something missing to let us know! We are always happy to add new functionality.
+
+
+
+As an example of how `brainrender` can be used to visualize experimental data. Below is the location of 20 neuropixels probe inserted in the brain of several mice from [**Steinmetz et al. 2019**](https://figshare.com/articles/Dataset_from_Steinmetz_et_al_2019/9598406) ****\[the code to generate this figure is [here](https://github.com/FedeClaudi/brainrenderscenes/blob/master/scenes/Steinmetz_probes.py)\]**:**
+
+![20 neuropixel probes implanted in the mouse brain. ](../.gitbook/assets/steinmetz%20%281%29.png)
 
 
 
