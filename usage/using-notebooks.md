@@ -21,7 +21,7 @@ As said above, you might not have access to all features when embedding your ren
 
 In particular `Scene.render()` will prepare the rendering for you, but it won't actually create the render. To visualize your scene you will need a couple extra lines of code:
 
-```text
+```python
 from vedo import Plotter
 
 vp = Plotter()
@@ -34,7 +34,7 @@ show(scene.get_actors())
 
 If you've decided to **not** embed your scene in the notebook, then you just need to add a couple lines at the beginning of your notebook:
 
-```text
+```python
 from vedo import embedWindow
 embedWindow(False) 
 ```

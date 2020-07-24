@@ -23,8 +23,8 @@ In most of your renderings these are the steps you will need
 
 When adding new elements \(`actors`\) to your `Scene` you will encounter two situations:
 
-1. You have the data \(e.g. location of labelled cells from [cellfinder](https://docs.cellfinder.info/)\) and you just want to visualize them.
-2. You don't have the data but you want to visualize a specific item \(e.g. a brain region in the mouse brain\).
+1. [You have the data ](./#you-have-the-data)\(e.g. location of labelled cells from [cellfinder](https://docs.cellfinder.info/)\) and you just want to visualize them.
+2. You [don't have the data ](./#you-dont-have-the-data)but you want to visualize a specific item \(e.g. a brain region in the mouse brain\).
 
 the workflow will vary slightly between the two scenarios. Read below for more details.
 
@@ -50,5 +50,5 @@ While you'll be using `Scene` to do all of this, `Atlas` is where most of this w
 
 ## Using Notebooks
 
-`brainrender` can be used with Jupyter notebooks: you can fid more details [here](using-notebooks.md).
+`brainrender` can be used with Jupyter notebooks: you can find more details [here](../using-notebooks.md).
 

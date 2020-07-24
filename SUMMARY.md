@@ -14,12 +14,12 @@
 ## Usage
 
 * [Overview](usage/overview/README.md)
-  * [Using Notebooks](usage/overview/using-notebooks.md)
   * [Command Line Interface](usage/overview/command-line-interface.md)
 * [Atlas class](usage/atlas.md)
 * [Scene class](usage/scene.md)
 * [User-generated data](usage/user.md)
 * [Publicly available datasets](usage/public.md)
+* [Using Notebooks](usage/using-notebooks.md)
 * [Videos, animations and exporting to html](usage/videos-animations-and-exporting-to-html.md)
 
 ## Info

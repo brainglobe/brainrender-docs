@@ -16,7 +16,7 @@ There's some amazing open-science datasets of neuro-atomy out there. You can use
 `brainrender` brings the best of both options together by giving you the **flexibility** of the APIs with a easy to use interface which requires minimal coding skills.
 
 {% hint style="success" %}
-**Note:** all publicly available datasets currently supported are based on the Allen Institute altas of the mouse brain. If you know of a cool dataset for a different species that you would like to see supported by `brainrender,` [get in touch](../info/get-in-touch.md)!
+**Note:** all publicly available datasets currently supported are based on the Allen Institute atlas of the mouse brain. If you know of a cool data set for a different species that you would like to see supported by `brainrender,` [get in touch](../info/get-in-touch.md)!
 {% endhint %}
 
 ## Allen Institute Data
