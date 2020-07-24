@@ -24,7 +24,7 @@ Contents
 --------
 # **`get_random_colormap`** [#392]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L392) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/colors.py#L392) online
 
 ```python
 def get_random_colormap():
@@ -40,7 +40,7 @@ no docstring
 --------
 # **`get_n_shades_of`** [#396]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L396) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/colors.py#L396) online
 
 ```python
 def get_n_shades_of(shade, n):
@@ -61,7 +61,7 @@ docstring:
 --------
 # **`_isSequence`** [#409]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L409) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/colors.py#L409) online
 
 ```python
 def _isSequence(arg):
@@ -80,7 +80,7 @@ docstring:
 --------
 # **`getColor`** [#425]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L425) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/colors.py#L425) online
 
 ```python
 def getColor(rgb=None, hsv=None):
@@ -127,7 +127,7 @@ Example:
 --------
 # **`getColorName`** [#510]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L510) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/colors.py#L510) online
 
 ```python
 def getColorName(c):
@@ -150,7 +150,7 @@ Find the name of a color.
 --------
 # **`hsv2rgb`** [#529]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L529) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/colors.py#L529) online
 
 ```python
 def hsv2rgb(hsv):
@@ -171,7 +171,7 @@ Convert HSV to RGB color.
 --------
 # **`rgb2hsv`** [#539]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L539) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/colors.py#L539) online
 
 ```python
 def rgb2hsv(rgb):
@@ -192,7 +192,7 @@ Convert RGB to HSV color.
 --------
 # **`rgb2int`** [#549]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L549) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/colors.py#L549) online
 
 ```python
 def rgb2int(rgb_tuple):
@@ -211,7 +211,7 @@ docstring:
 --------
 # **`colorMap`** [#563]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L563) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/colors.py#L563) online
 
 ```python
 def colorMap(value, name='jet', vmin=None, vmax=None):
@@ -266,7 +266,7 @@ print( colorMap(0.2, cm.flag, 0, 1) )
 --------
 # **`makePalette`** [#629]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L629) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/colors.py#L629) online
 
 ```python
 def makePalette(N, *colors):
@@ -294,7 +294,7 @@ Adapted from vedo makePalette function
 --------
 # **`get_random_colors`** [#684]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L684) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/colors.py#L684) online
 
 ```python
 def get_random_colors(n_colors=1):
@@ -313,7 +313,7 @@ docstring:
 --------
 # **`check_colors`** [#701]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/colors.py#L701) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/colors.py#L701) online
 
 ```python
 def check_colors(color):

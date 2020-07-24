@@ -13,7 +13,7 @@ Contents
 --------
 # **`main`** [#6]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/cli.py#L6) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/cli.py#L6) online
 
 ```python
 def main(regions, atlas=None, cartoon=False, debug=False, file=None):

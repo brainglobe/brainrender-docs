@@ -5,29 +5,30 @@
 Contents
 ========
 
-* [**`listdir`** [#15]](#listdir-15)
-* [**`get_subdirs`** [#28]](#get_subdirs-28)
-* [**`check_file_exists`** [#35]](#check_file_exists-35)
-* [**`get_file_name`** [#45]](#get_file_name-45)
-* [**`load_npy_from_gz`** [#51]](#load_npy_from_gz-51)
-* [**`save_npy_to_gz`** [#56]](#save_npy_to_gz-56)
-* [**`save_json`** [#62]](#save_json-62)
-* [**`save_yaml`** [#81]](#save_yaml-81)
-* [**`load_json`** [#103]](#load_json-103)
-* [**`load_yaml`** [#117]](#load_yaml-117)
-* [**`load_volume_file`** [#131]](#load_volume_file-131)
-* [**`load_mesh_from_file`** [#149]](#load_mesh_from_file-149)
-* [**`connected_to_internet`** [#180]](#connected_to_internet-180)
-* [**`send_query`** [#196]](#send_query-196)
-* [**`get_probe_points_from_sharptrack`** [#215]](#get_probe_points_from_sharptrack-215)
+* [**`listdir`** [#17]](#listdir-17)
+* [**`get_subdirs`** [#30]](#get_subdirs-30)
+* [**`check_file_exists`** [#37]](#check_file_exists-37)
+* [**`get_file_name`** [#47]](#get_file_name-47)
+* [**`load_cells_from_file`** [#53]](#load_cells_from_file-53)
+* [**`load_npy_from_gz`** [#105]](#load_npy_from_gz-105)
+* [**`save_npy_to_gz`** [#110]](#save_npy_to_gz-110)
+* [**`save_json`** [#116]](#save_json-116)
+* [**`save_yaml`** [#135]](#save_yaml-135)
+* [**`load_json`** [#157]](#load_json-157)
+* [**`load_yaml`** [#171]](#load_yaml-171)
+* [**`load_volume_file`** [#185]](#load_volume_file-185)
+* [**`load_mesh_from_file`** [#203]](#load_mesh_from_file-203)
+* [**`connected_to_internet`** [#234]](#connected_to_internet-234)
+* [**`send_query`** [#250]](#send_query-250)
+* [**`get_probe_points_from_sharptrack`** [#269]](#get_probe_points_from_sharptrack-269)
 
 
 &nbsp;
 
 --------
-# **`listdir`** [#15]
+# **`listdir`** [#17]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_io.py#L15) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_io.py#L17) online
 
 ```python
 def listdir(fld):
@@ -47,9 +48,9 @@ List the files into a folder with the coplete file path instead of the
 &nbsp;
 
 --------
-# **`get_subdirs`** [#28]
+# **`get_subdirs`** [#30]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_io.py#L28) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_io.py#L30) online
 
 ```python
 def get_subdirs(folderpath):
@@ -66,9 +67,9 @@ Returns the subfolders in a given folder
 &nbsp;
 
 --------
-# **`check_file_exists`** [#35]
+# **`check_file_exists`** [#37]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_io.py#L35) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_io.py#L37) online
 
 ```python
 def check_file_exists(filepath, raise_error=False):
@@ -82,9 +83,9 @@ no docstring
 &nbsp;
 
 --------
-# **`get_file_name`** [#45]
+# **`get_file_name`** [#47]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_io.py#L45) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_io.py#L47) online
 
 ```python
 def get_file_name(filepath):
@@ -98,9 +99,25 @@ no docstring
 &nbsp;
 
 --------
-# **`load_npy_from_gz`** [#51]
+# **`load_cells_from_file`** [#53]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_io.py#L51) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_io.py#L53) online
+
+```python
+def load_cells_from_file(filepath, hdf_key='hdf'):
+```
+
+&nbsp;  
+docstring:
+
+no docstring
+
+&nbsp;
+
+--------
+# **`load_npy_from_gz`** [#105]
+  
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_io.py#L105) online
 
 ```python
 def load_npy_from_gz(filepath):
@@ -114,9 +131,9 @@ no docstring
 &nbsp;
 
 --------
-# **`save_npy_to_gz`** [#56]
+# **`save_npy_to_gz`** [#110]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_io.py#L56) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_io.py#L110) online
 
 ```python
 def save_npy_to_gz(filepath, data):
@@ -130,9 +147,9 @@ no docstring
 &nbsp;
 
 --------
-# **`save_json`** [#62]
+# **`save_json`** [#116]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_io.py#L62) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_io.py#L116) online
 
 ```python
 def save_json(filepath, content, append=False):
@@ -153,9 +170,9 @@ Saves content to a JSON file
 &nbsp;
 
 --------
-# **`save_yaml`** [#81]
+# **`save_yaml`** [#135]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_io.py#L81) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_io.py#L135) online
 
 ```python
 def save_yaml(filepath, content, append=False, topcomment=None):
@@ -176,9 +193,9 @@ Saves content to a yaml file
 &nbsp;
 
 --------
-# **`load_json`** [#103]
+# **`load_json`** [#157]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_io.py#L103) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_io.py#L157) online
 
 ```python
 def load_json(filepath):
@@ -197,9 +214,9 @@ Load a JSON file
 &nbsp;
 
 --------
-# **`load_yaml`** [#117]
+# **`load_yaml`** [#171]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_io.py#L117) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_io.py#L171) online
 
 ```python
 def load_yaml(filepath):
@@ -218,9 +235,9 @@ Load a YAML file
 &nbsp;
 
 --------
-# **`load_volume_file`** [#131]
+# **`load_volume_file`** [#185]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_io.py#L131) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_io.py#L185) online
 
 ```python
 def load_volume_file(filepath):
@@ -241,9 +258,9 @@ Load a volume file (e.g., .nii) and returns the data
 &nbsp;
 
 --------
-# **`load_mesh_from_file`** [#149]
+# **`load_mesh_from_file`** [#203]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_io.py#L149) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_io.py#L203) online
 
 ```python
 def load_mesh_from_file(filepath, *args, **kwargs):
@@ -264,9 +281,9 @@ Load a a mesh or volume from files like .obj, .stl, ...
 &nbsp;
 
 --------
-# **`connected_to_internet`** [#180]
+# **`connected_to_internet`** [#234]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_io.py#L180) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_io.py#L234) online
 
 ```python
 def connected_to_internet(url='http://www.google.com/', timeout=5):
@@ -288,9 +305,9 @@ Check that there is an internet connection
 &nbsp;
 
 --------
-# **`send_query`** [#196]
+# **`send_query`** [#250]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_io.py#L196) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_io.py#L250) online
 
 ```python
 def send_query(query_string, clean=False):
@@ -311,9 +328,9 @@ Send a query/request to a website
 &nbsp;
 
 --------
-# **`get_probe_points_from_sharptrack`** [#215]
+# **`get_probe_points_from_sharptrack`** [#269]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_io.py#L215) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_io.py#L269) online
 
 ```python
 def get_probe_points_from_sharptrack(points_filepath,

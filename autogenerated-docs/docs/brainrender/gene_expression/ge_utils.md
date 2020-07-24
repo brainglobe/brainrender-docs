@@ -16,7 +16,7 @@ Contents
 --------
 # **`check_gene_cached`** [#11]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/gene_expression/ge_utils.py#L11) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/ge_utils.py#L11) online
 
 ```python
 def check_gene_cached(cache_folder, gene_id, exp_id):
@@ -45,7 +45,7 @@ exist the gene is not cached.
 --------
 # **`download_and_cache`** [#34]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/gene_expression/ge_utils.py#L34) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/ge_utils.py#L34) online
 
 ```python
 def download_and_cache(url, cachedir):
@@ -70,7 +70,7 @@ this function download and unzips the data
 --------
 # **`load_cached_gene`** [#54]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/gene_expression/ge_utils.py#L54) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/ge_utils.py#L54) online
 
 ```python
 def load_cached_gene(cache, metric, grid_size):
@@ -89,7 +89,7 @@ Loads a gene's data from cache
 --------
 # **`read_raw`** [#70]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/gene_expression/ge_utils.py#L70) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/ge_utils.py#L70) online
 
 ```python
 def read_raw(filepath, grid_size):

@@ -14,7 +14,7 @@ Contents
 --------
 # **`get_neuron_actors_with_morphapi`** [#11]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/morphology/utils.py#L11) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/morphology/utils.py#L11) online
 
 ```python
 def get_neuron_actors_with_morphapi(swcfile=None, neuron=None,
@@ -31,7 +31,7 @@ no docstring
 --------
 # **`edit_neurons`** [#50]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/morphology/utils.py#L50) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/morphology/utils.py#L50) online
 
 ```python
 def edit_neurons(neurons, **kwargs):

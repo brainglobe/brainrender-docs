@@ -33,7 +33,7 @@ Contents
 &nbsp;
 ## **`__init__`** [#18]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L18) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/base.py#L18) online
 
 ```python
 def __init__(self):
@@ -47,7 +47,7 @@ no docstring
 &nbsp;
 ## **`get_plane_at_point`** [#26]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L26) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/base.py#L26) online
 
 ```python
 def get_plane_at_point(self, pos, norm, sx, sy, color='lightgray',
@@ -78,7 +78,7 @@ sx, sy.
 &nbsp;
 ## **`get_sagittal_plane`** [#42]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L42) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/base.py#L42) online
 
 ```python
 def get_sagittal_plane(self, pos=None, **kwargs):
@@ -103,7 +103,7 @@ point the plane goes through.
 &nbsp;
 ## **`get_horizontal_plane`** [#69]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L69) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/base.py#L69) online
 
 ```python
 def get_horizontal_plane(self, pos=None, **kwargs):
@@ -128,7 +128,7 @@ point the plane goes through.
 &nbsp;
 ## **`get_coronal_plane`** [#96]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L96) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/base.py#L96) online
 
 ```python
 def get_coronal_plane(self, pos=None, **kwargs):
@@ -153,7 +153,7 @@ point the plane goes through.
 &nbsp;
 ## **`get_region_CenterOfMass`** [#124]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L124) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/base.py#L124) online
 
 ```python
 def get_region_CenterOfMass(self, regions, unilateral=True,
@@ -185,7 +185,7 @@ If a list is passed then a dictionary is returned. ]
 &nbsp;
 ## **`_get_structure_mesh`** [#167]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L167) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/base.py#L167) online
 
 ```python
 def _get_structure_mesh(self, acronym, **kwargs):
@@ -199,7 +199,7 @@ no docstring
 &nbsp;
 ## **`get_brain_regions`** [#171]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L171) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/base.py#L171) online
 
 ```python
 def get_brain_regions(self, brain_regions, add_labels=False,
@@ -247,7 +247,7 @@ Use the kwargs to specify more detailes on how the regins should be
 &nbsp;
 ## **`get_structure_ancestors`** [#286]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L286) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/base.py#L286) online
 
 ```python
 def get_structure_ancestors(self, regions, ancestors=True,
@@ -273,7 +273,7 @@ Get's the ancestors of the region(s) passed as arguments
 &nbsp;
 ## **`get_structure_descendants`** [#328]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L328) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/base.py#L328) online
 
 ```python
 def get_structure_descendants(self, regions):
@@ -287,7 +287,7 @@ no docstring
 &nbsp;
 ## **`get_structure_parent`** [#333]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L333) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/base.py#L333) online
 
 ```python
 def get_structure_parent(self, acronyms):
@@ -309,7 +309,7 @@ Allen Brain Atals.
 &nbsp;
 ## **`get_region_unilateral`** [#359]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L359) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/base.py#L359) online
 
 ```python
 def get_region_unilateral(self, region, hemisphere='both', color=None,
@@ -339,7 +339,7 @@ This function splits them in two.
 &nbsp;
 ## **`mirror_point_across_hemispheres`** [#398]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L398) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/base.py#L398) online
 
 ```python
 def mirror_point_across_hemispheres(self, point):
@@ -353,7 +353,7 @@ no docstring
 &nbsp;
 ## **`get_colors_from_coordinates`** [#403]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/base.py#L403) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/base.py#L403) online
 
 ```python
 def get_colors_from_coordinates(self, p0):

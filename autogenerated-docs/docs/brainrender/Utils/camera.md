@@ -17,7 +17,7 @@ Contents
 --------
 # **`check_camera_param`** [#44]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/camera.py#L44) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/camera.py#L44) online
 
 ```python
 def check_camera_param(camera):
@@ -33,7 +33,7 @@ no docstring
 --------
 # **`buildcam`** [#70]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/camera.py#L70) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/camera.py#L70) online
 
 ```python
 def buildcam(cm):
@@ -52,7 +52,7 @@ Builds a camera from a dictionary of parameters, from vedo
 --------
 # **`set_camera_params`** [#108]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/camera.py#L108) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/camera.py#L108) online
 
 ```python
 def set_camera_params(camera, params):
@@ -68,7 +68,7 @@ no docstring
 --------
 # **`set_camera`** [#117]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/camera.py#L117) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/camera.py#L117) online
 
 ```python
 def set_camera(scene, camera):
@@ -94,7 +94,7 @@ a dictionary of camera parameters.
 --------
 # **`get_camera_params`** [#140]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/camera.py#L140) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/camera.py#L140) online
 
 ```python
 def get_camera_params(scene=None, camera=None):

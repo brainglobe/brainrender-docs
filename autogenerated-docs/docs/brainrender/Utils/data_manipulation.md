@@ -18,7 +18,7 @@ Contents
 --------
 # **`return_list_smart`** [#1]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L1) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_manipulation.py#L1) online
 
 ```python
 def return_list_smart(lst):
@@ -41,7 +41,7 @@ if it has length == 0 it returns None
 --------
 # **`return_dict_smart`** [#15]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L15) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_manipulation.py#L15) online
 
 ```python
 def return_dict_smart(dct):
@@ -57,7 +57,7 @@ no docstring
 --------
 # **`get_coords`** [#25]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L25) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_manipulation.py#L25) online
 
 ```python
 def get_coords(obj, mirror=False, mirror_ax='x'):
@@ -87,7 +87,7 @@ Can take a dict, Pandas Dataframe or Series
 --------
 # **`flatten_list`** [#66]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L66) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_manipulation.py#L66) online
 
 ```python
 def flatten_list(lst):
@@ -108,7 +108,7 @@ Flattens a list of lists
 --------
 # **`is_any_item_in_list`** [#82]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L82) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_manipulation.py#L82) online
 
 ```python
 def is_any_item_in_list(L1, L2):
@@ -131,7 +131,7 @@ Checks if an item in a list is in another  list
 --------
 # **`get_slice_coord`** [#98]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/data_manipulation.py#L98) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/data_manipulation.py#L98) online
 
 ```python
 def get_slice_coord(bounds, n):

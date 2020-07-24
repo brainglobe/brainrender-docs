@@ -15,7 +15,7 @@ Contents
 --------
 # **`request`** [#10]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/webqueries.py#L10) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/webqueries.py#L10) online
 
 ```python
 def request(url):
@@ -36,7 +36,7 @@ Sends a request to a url
 --------
 # **`fail_on_no_connection`** [#30]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/webqueries.py#L30) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/webqueries.py#L30) online
 
 ```python
 def fail_on_no_connection(func):
@@ -52,7 +52,7 @@ no docstring
 --------
 # **`inner`** [#34]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/webqueries.py#L34) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/webqueries.py#L34) online
 
 ```python
 def inner(*args, **kwargs):

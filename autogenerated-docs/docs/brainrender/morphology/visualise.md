@@ -22,7 +22,7 @@ Contents
 &nbsp;
 ## **`__init__`** [#35]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/morphology/visualise.py#L35) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/morphology/visualise.py#L35) online
 
 ```python
 def __init__(self, *args, **kwargs):
@@ -36,7 +36,7 @@ no docstring
 &nbsp;
 ## **`_add_neurons_get_colors`** [#62]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/morphology/visualise.py#L62) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/morphology/visualise.py#L62) online
 
 ```python
 def _add_neurons_get_colors(self, neurons, color):
@@ -73,7 +73,7 @@ or a dictionary of colors for each neuron
 &nbsp;
 ## **`add_neurons`** [#180]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/morphology/visualise.py#L180) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/morphology/visualise.py#L180) online
 
 ```python
 def add_neurons(self, neurons, color=None, display_axon=True,

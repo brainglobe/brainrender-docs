@@ -21,7 +21,7 @@ Contents
 --------
 # **`mirror_actor_at_point`** [#6]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L6) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L6) online
 
 ```python
 def mirror_actor_at_point(actor, point, axis='x'):
@@ -46,7 +46,7 @@ Mirror an actor around a point
 --------
 # **`set_wireframe`** [#60]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L60) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L60) online
 
 ```python
 def set_wireframe(actor):
@@ -67,7 +67,7 @@ set an actor's look to wireframe
 --------
 # **`set_solid`** [#70]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L70) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L70) online
 
 ```python
 def set_solid(actor):
@@ -88,7 +88,7 @@ set an actor's look to solid
 --------
 # **`set_color`** [#80]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L80) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L80) online
 
 ```python
 def set_color(actor, color):
@@ -111,7 +111,7 @@ set an actor's look to a specific color
 --------
 # **`set_line`** [#91]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L91) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L91) online
 
 ```python
 def set_line(actor, lw=None, c=None):
@@ -136,7 +136,7 @@ set an actor's look to specify the line width and color
 --------
 # **`upsample_actor`** [#106]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L106) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L106) online
 
 ```python
 def upsample_actor(actor, fact=1):
@@ -159,7 +159,7 @@ Increase resolution of actor
 --------
 # **`downsample_actor`** [#117]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L117) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L117) online
 
 ```python
 def downsample_actor(actor, fact=0.5):
@@ -182,7 +182,7 @@ Reduce resolution of actor
 --------
 # **`smooth_actor`** [#128]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L128) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L128) online
 
 ```python
 def smooth_actor(actor, factor=15):
@@ -205,7 +205,7 @@ Smooth an actor's mesh
 --------
 # **`edit_actor`** [#139]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/actors_funcs.py#L139) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L139) online
 
 ```python
 def edit_actor(actor, wireframe=False, solid=False, color=False,

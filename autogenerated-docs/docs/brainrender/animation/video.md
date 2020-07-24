@@ -29,7 +29,7 @@ Contents
 &nbsp;
 ## **`__init__`** [#19]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/animation/video.py#L19) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/animation/video.py#L19) online
 
 ```python
 def __init__(self, *args, fmt='mp4', **kwargs):
@@ -43,7 +43,7 @@ no docstring
 &nbsp;
 ## **`get_cap_from_images_folder`** [#23]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/animation/video.py#L23) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/animation/video.py#L23) online
 
 ```python
 def get_cap_from_images_folder(self, img_format='%1d.png'):
@@ -60,7 +60,7 @@ It creates a cv2 VideoCaptur 'cap' from a folder of images (frames)
 &nbsp;
 ## **`close`** [#46]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/animation/video.py#L46) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/animation/video.py#L46) online
 
 ```python
 def close(self):
@@ -97,7 +97,7 @@ Use kwargs to specify:
 &nbsp;
 ## **`__init__`** [#79]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/animation/video.py#L79) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/animation/video.py#L79) online
 
 ```python
 def __init__(self, scene, **kwargs):
@@ -111,7 +111,7 @@ no docstring
 &nbsp;
 ## **`parse_kwargs`** [#95]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/animation/video.py#L95) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/animation/video.py#L95) online
 
 ```python
 def parse_kwargs(self, **kwargs):
@@ -144,7 +144,7 @@ Arguments not specified in kwargs will be assigned default values
 &nbsp;
 ## **`make_video`** [#115]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/animation/video.py#L115) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/animation/video.py#L115) online
 
 ```python
 def make_video(self, azimuth=0, elevation=0, roll=0, **kwargs):
@@ -183,7 +183,7 @@ Subclasses BasicVideoMaker and replaces make_video method.
 &nbsp;
 ## **`__init__`** [#163]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/animation/video.py#L163) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/animation/video.py#L163) online
 
 ```python
 def __init__(self, scene, **kwargs):
@@ -197,7 +197,7 @@ no docstring
 &nbsp;
 ## **`make_video`** [#166]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/animation/video.py#L166) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/animation/video.py#L166) online
 
 ```python
 def make_video(self, video_function, **kwargs):

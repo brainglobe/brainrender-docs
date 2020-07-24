@@ -15,7 +15,7 @@ Contents
 --------
 # **`load_labelled_volume`** [#9]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/volume.py#L9) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/volume.py#L9) online
 
 ```python
 def load_labelled_volume(data, vmin=0, alpha=1, **kwargs):
@@ -50,7 +50,7 @@ are labelles (e.g. to indicate the location of a brain region in a
 --------
 # **`extract_volume_surface`** [#40]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/volume.py#L40) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/volume.py#L40) online
 
 ```python
 def extract_volume_surface(vol, threshold=0.1, smooth=False):
@@ -76,7 +76,7 @@ Returns a vedo mesh actor with just the outer surface of a volume
 --------
 # **`extract_label_mesh`** [#62]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/volume.py#L62) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/volume.py#L62) online
 
 ```python
 def extract_label_mesh(vol, lbl):

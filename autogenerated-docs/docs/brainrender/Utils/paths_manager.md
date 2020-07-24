@@ -20,7 +20,7 @@ Contents
 &nbsp;
 ## **`__init__`** [#69]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/paths_manager.py#L69) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/paths_manager.py#L69) online
 
 ```python
 def __init__(self, base_dir=None, **kwargs):

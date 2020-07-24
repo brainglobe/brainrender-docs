@@ -29,7 +29,7 @@ Handles query to the Allen ImageDownloadApi and saves the data
 &nbsp;
 ## **`__init__`** [#34]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/atlas_images.py#L34) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L34) online
 
 ```python
 def __init__(self):
@@ -43,7 +43,7 @@ no docstring
 &nbsp;
 ## **`get_atlas_by_name`** [#89]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/atlas_images.py#L89) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L89) online
 
 ```python
 def get_atlas_by_name(self, atlas_name):
@@ -62,7 +62,7 @@ Get a brain atlas in the Allen's database given it's name
 &nbsp;
 ## **`get_products_by_species`** [#104]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/atlas_images.py#L104) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L104) online
 
 ```python
 def get_products_by_species(self, species):
@@ -81,7 +81,7 @@ Get all 'products' in the Allen Database for a given species
 &nbsp;
 ## **`get_experimentsid_by_productid`** [#113]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/atlas_images.py#L113) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L113) online
 
 ```python
 def get_experimentsid_by_productid(self, productid, **kwargs):
@@ -102,7 +102,7 @@ Get the experiment's ID that belong to the same project (product).
 &nbsp;
 ## **`get_experimentimages_by_expid`** [#126]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/atlas_images.py#L126) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L126) online
 
 ```python
 def get_experimentimages_by_expid(self, expid):
@@ -121,7 +121,7 @@ Get's images that belong to an experiment
 &nbsp;
 ## **`get_atlasimages_by_atlasid`** [#136]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/atlas_images.py#L136) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L136) online
 
 ```python
 def get_atlasimages_by_atlasid(self, atlasid):
@@ -140,7 +140,7 @@ Get the metadata of images that belong to an atlas.
 &nbsp;
 ## **`download_images_by_imagesid`** [#149]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/atlas_images.py#L149) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L149) online
 
 ```python
 def download_images_by_imagesid(self, savedir, imagesids,
@@ -174,7 +174,7 @@ Downloads and saves images given a list of images IDs.
 &nbsp;
 ## **`download_images_by_atlasid`** [#216]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/ABA/atlas_images.py#L216) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L216) online
 
 ```python
 def download_images_by_atlasid(self, savedir, atlasid, debug=False,

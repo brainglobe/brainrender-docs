@@ -17,7 +17,7 @@ Contents
 --------
 # **`cap_set_frame`** [#15]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/video.py#L15) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/video.py#L15) online
 
 ```python
 def cap_set_frame(cap, frame_number):
@@ -36,7 +36,7 @@ Sets an opencv video capture object to a specific frame
 --------
 # **`get_cap_selected_frame`** [#22]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/video.py#L22) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/video.py#L22) online
 
 ```python
 def get_cap_selected_frame(cap, show_frame):
@@ -55,7 +55,7 @@ Gets a frame from an opencv video capture object to a specific frame
 --------
 # **`get_video_params`** [#35]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/video.py#L35) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/video.py#L35) online
 
 ```python
 def get_video_params(cap):
@@ -74,7 +74,7 @@ Gets video parameters from an opencv video capture object
 --------
 # **`open_cvwriter`** [#56]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/video.py#L56) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/video.py#L56) online
 
 ```python
 def open_cvwriter(filepath, w=None, h=None, framerate=None,
@@ -106,7 +106,7 @@ Creats an instance of cv.VideoWriter to write frames to video using
 --------
 # **`save_videocap_to_video`** [#81]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/Utils/video.py#L81) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/video.py#L81) online
 
 ```python
 def save_videocap_to_video(cap, savepath, fmt, fps=30, iscolor=True):

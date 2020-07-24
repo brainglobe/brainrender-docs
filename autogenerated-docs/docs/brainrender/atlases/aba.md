@@ -8,11 +8,11 @@ Contents
 * [**ABA**](#aba)
 	* [**`__init__`** [#46]](#__init__-46)
 	* [**`get_neurons`** [#76]](#get_neurons-76)
-	* [**`get_tractography`** [#204]](#get_tractography-204)
-	* [**`get_streamlines`** [#334]](#get_streamlines-334)
-	* [**`get_projection_tracts_to_target`** [#387]](#get_projection_tracts_to_target-387)
-	* [**`download_streamlines_for_region`** [#415]](#download_streamlines_for_region-415)
-	* [**`download_streamlines_to_region`** [#440]](#download_streamlines_to_region-440)
+	* [**`get_tractography`** [#207]](#get_tractography-207)
+	* [**`get_streamlines`** [#341]](#get_streamlines-341)
+	* [**`get_projection_tracts_to_target`** [#394]](#get_projection_tracts_to_target-394)
+	* [**`download_streamlines_for_region`** [#422]](#download_streamlines_for_region-422)
+	* [**`download_streamlines_to_region`** [#447]](#download_streamlines_to_region-447)
 
 
 &nbsp;
@@ -32,7 +32,7 @@ and neuronal morphology data.
 &nbsp;
 ## **`__init__`** [#46]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/aba.py#L46) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/aba.py#L46) online
 
 ```python
 def __init__(self):
@@ -46,7 +46,7 @@ no docstring
 &nbsp;
 ## **`get_neurons`** [#76]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/aba.py#L76) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/aba.py#L76) online
 
 ```python
 def get_neurons(self, neurons, color=None, display_axon=True,
@@ -107,9 +107,9 @@ or a dictionary of colors for each neuron
 ```
 
 &nbsp;
-## **`get_tractography`** [#204]
+## **`get_tractography`** [#207]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/aba.py#L204) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/aba.py#L207) online
 
 ```python
 def get_tractography(self, tractography, color=None,
@@ -163,9 +163,9 @@ options:
 ```
 
 &nbsp;
-## **`get_streamlines`** [#334]
+## **`get_streamlines`** [#341]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/aba.py#L334) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/aba.py#L341) online
 
 ```python
 def get_streamlines(self, sl_file, color=None, *args, **kwargs):
@@ -192,9 +192,9 @@ Render streamline data downloaded from
 ```
 
 &nbsp;
-## **`get_projection_tracts_to_target`** [#387]
+## **`get_projection_tracts_to_target`** [#394]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/aba.py#L387) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/aba.py#L394) online
 
 ```python
 def get_projection_tracts_to_target(self, p0=None, **kwargs):
@@ -215,9 +215,9 @@ Gets tractography data for all experiments whose projections reach the
 ```
 
 &nbsp;
-## **`download_streamlines_for_region`** [#415]
+## **`download_streamlines_for_region`** [#422]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/aba.py#L415) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/aba.py#L422) online
 
 ```python
 def download_streamlines_for_region(self, region, *args, **kwargs):
@@ -247,9 +247,9 @@ to see how to change this behaviour.
 ```
 
 &nbsp;
-## **`download_streamlines_to_region`** [#440]
+## **`download_streamlines_to_region`** [#447]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/aba.py#L440) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/aba.py#L447) online
 
 ```python
 def download_streamlines_to_region(self, p0, *args, mouse_line='wt',

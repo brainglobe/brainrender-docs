@@ -6,51 +6,51 @@ Contents
 ========
 
 * [**Scene**](#scene)
-	* [**`__init__`** [#48]](#__init__-48)
-	* [**`_check_point_in_region`** [#237]](#_check_point_in_region-237)
-	* [**`_get_inset`** [#249]](#_get_inset-249)
-	* [**`get_n_random_points_in_region`** [#277]](#get_n_random_points_in_region-277)
-	* [**`edit_actors`** [#312]](#edit_actors-312)
-	* [**`mirror_actor_hemisphere`** [#325]](#mirror_actor_hemisphere-325)
-	* [**`cut_actors_with_plane`** [#338]](#cut_actors_with_plane-338)
-	* [**`get_cells_in_region`** [#405]](#get_cells_in_region-405)
-	* [**`add_root`** [#432]](#add_root-432)
-	* [**`add_brain_regions`** [#456]](#add_brain_regions-456)
-	* [**`add_neurons`** [#481]](#add_neurons-481)
-	* [**`add_neurons_synapses`** [#499]](#add_neurons_synapses-499)
-	* [**`add_tractography`** [#514]](#add_tractography-514)
-	* [**`add_streamlines`** [#524]](#add_streamlines-524)
-	* [**`add_actor`** [#534]](#add_actor-534)
-	* [**`add_mesh_silhouette`** [#558]](#add_mesh_silhouette-558)
-	* [**`add_from_file`** [#566]](#add_from_file-566)
-	* [**`add_sphere_at_point`** [#582]](#add_sphere_at_point-582)
-	* [**`add_cells_from_file`** [#600]](#add_cells_from_file-600)
-	* [**`add_cells`** [#664]](#add_cells-664)
-	* [**`add_optic_cannula`** [#768]](#add_optic_cannula-768)
-	* [**`add_text`** [#838]](#add_text-838)
-	* [**`add_actor_label`** [#857]](#add_actor_label-857)
-	* [**`add_line_at_point`** [#935]](#add_line_at_point-935)
-	* [**`add_rostrocaudal_line_at_point`** [#958]](#add_rostrocaudal_line_at_point-958)
-	* [**`add_dorsoventral_line_at_point`** [#968]](#add_dorsoventral_line_at_point-968)
-	* [**`add_mediolateral_line_at_point`** [#978]](#add_mediolateral_line_at_point-978)
-	* [**`add_crosshair_at_point`** [#988]](#add_crosshair_at_point-988)
-	* [**`add_plane`** [#1031]](#add_plane-1031)
-	* [**`add_probe_from_sharptrack`** [#1070]](#add_probe_from_sharptrack-1070)
-	* [**`apply_render_style`** [#1138]](#apply_render_style-1138)
-	* [**`get_actors`** [#1157]](#get_actors-1157)
-	* [**`render`** [#1179]](#render-1179)
-	* [**`close`** [#1261]](#close-1261)
-	* [**`export_for_web`** [#1264]](#export_for_web-1264)
-	* [**`keypress`** [#1310]](#keypress-1310)
-	* [**`take_screenshot`** [#1343]](#take_screenshot-1343)
+	* [**`__init__`** [#49]](#__init__-49)
+	* [**`_check_point_in_region`** [#239]](#_check_point_in_region-239)
+	* [**`_get_inset`** [#251]](#_get_inset-251)
+	* [**`get_n_random_points_in_region`** [#279]](#get_n_random_points_in_region-279)
+	* [**`edit_actors`** [#314]](#edit_actors-314)
+	* [**`mirror_actor_hemisphere`** [#327]](#mirror_actor_hemisphere-327)
+	* [**`cut_actors_with_plane`** [#340]](#cut_actors_with_plane-340)
+	* [**`get_cells_in_region`** [#407]](#get_cells_in_region-407)
+	* [**`add_root`** [#434]](#add_root-434)
+	* [**`add_brain_regions`** [#460]](#add_brain_regions-460)
+	* [**`add_neurons`** [#486]](#add_neurons-486)
+	* [**`add_neurons_synapses`** [#504]](#add_neurons_synapses-504)
+	* [**`add_tractography`** [#519]](#add_tractography-519)
+	* [**`add_streamlines`** [#529]](#add_streamlines-529)
+	* [**`add_actor`** [#539]](#add_actor-539)
+	* [**`add_mesh_silhouette`** [#563]](#add_mesh_silhouette-563)
+	* [**`add_from_file`** [#571]](#add_from_file-571)
+	* [**`add_sphere_at_point`** [#588]](#add_sphere_at_point-588)
+	* [**`add_cells_from_file`** [#607]](#add_cells_from_file-607)
+	* [**`add_cells`** [#631]](#add_cells-631)
+	* [**`add_optic_cannula`** [#735]](#add_optic_cannula-735)
+	* [**`add_text`** [#805]](#add_text-805)
+	* [**`add_actor_label`** [#824]](#add_actor_label-824)
+	* [**`add_line_at_point`** [#902]](#add_line_at_point-902)
+	* [**`add_rostrocaudal_line_at_point`** [#925]](#add_rostrocaudal_line_at_point-925)
+	* [**`add_dorsoventral_line_at_point`** [#935]](#add_dorsoventral_line_at_point-935)
+	* [**`add_mediolateral_line_at_point`** [#945]](#add_mediolateral_line_at_point-945)
+	* [**`add_crosshair_at_point`** [#955]](#add_crosshair_at_point-955)
+	* [**`add_plane`** [#998]](#add_plane-998)
+	* [**`add_probe_from_sharptrack`** [#1037]](#add_probe_from_sharptrack-1037)
+	* [**`apply_render_style`** [#1106]](#apply_render_style-1106)
+	* [**`get_actors`** [#1125]](#get_actors-1125)
+	* [**`render`** [#1147]](#render-1147)
+	* [**`close`** [#1229]](#close-1229)
+	* [**`export_for_web`** [#1232]](#export_for_web-1232)
+	* [**`keypress`** [#1278]](#keypress-1278)
+	* [**`take_screenshot`** [#1311]](#take_screenshot-1311)
 * [**DualScene**](#dualscene)
-	* [**`__init__`** [#1356]](#__init__-1356)
-	* [**`render`** [#1359]](#render-1359)
-	* [**`close`** [#1396]](#close-1396)
+	* [**`__init__`** [#1324]](#__init__-1324)
+	* [**`render`** [#1327]](#render-1327)
+	* [**`close`** [#1364]](#close-1364)
 * [**MultiScene**](#multiscene)
-	* [**`__init__`** [#1403]](#__init__-1403)
-	* [**`render`** [#1416]](#render-1416)
-	* [**`close`** [#1467]](#close-1467)
+	* [**`__init__`** [#1371]](#__init__-1371)
+	* [**`render`** [#1384]](#render-1384)
+	* [**`close`** [#1435]](#close-1435)
 
 
 &nbsp;
@@ -68,9 +68,9 @@ and other classes within the same package.
 ```
 
 &nbsp;
-## **`__init__`** [#48]
+## **`__init__`** [#49]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L48) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L49) online
 
 ```python
 def __init__(self, brain_regions=None, regions_aba_color=False,
@@ -158,9 +158,9 @@ name is passed it will try to load the corresponding brainglobe atlas.
 ```
 
 &nbsp;
-## **`_check_point_in_region`** [#237]
+## **`_check_point_in_region`** [#239]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L237) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L239) online
 
 ```python
 def _check_point_in_region(self, point, region_actor):
@@ -180,9 +180,9 @@ Checks if a point of defined coordinates is within the mesh of a given
 ```
 
 &nbsp;
-## **`_get_inset`** [#249]
+## **`_get_inset`** [#251]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L249) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L251) online
 
 ```python
 def _get_inset(self, **kwargs):
@@ -200,9 +200,9 @@ Handles the rendering of the inset showing the outline of the whole
 ```
 
 &nbsp;
-## **`get_n_random_points_in_region`** [#277]
+## **`get_n_random_points_in_region`** [#279]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L277) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L279) online
 
 ```python
 def get_n_random_points_in_region(self, region, N, hemisphere=None):
@@ -222,9 +222,9 @@ Gets N random points inside (or on the surface) of the mesh defining a
 ```
 
 &nbsp;
-## **`edit_actors`** [#312]
+## **`edit_actors`** [#314]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L312) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L314) online
 
 ```python
 def edit_actors(self, actors, **kwargs):
@@ -243,9 +243,9 @@ edits a list of actors (e.g. render as wireframe or solid)
 ```
 
 &nbsp;
-## **`mirror_actor_hemisphere`** [#325]
+## **`mirror_actor_hemisphere`** [#327]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L325) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L327) online
 
 ```python
 def mirror_actor_hemisphere(self, actors):
@@ -260,9 +260,9 @@ Mirrors actors from one hemisphere to the next
 ```
 
 &nbsp;
-## **`cut_actors_with_plane`** [#338]
+## **`cut_actors_with_plane`** [#340]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L338) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L340) online
 
 ```python
 def cut_actors_with_plane(self, plane, actors=None, showplane=False,
@@ -275,9 +275,9 @@ docstring:
 no docstring
 
 &nbsp;
-## **`get_cells_in_region`** [#405]
+## **`get_cells_in_region`** [#407]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L405) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L407) online
 
 ```python
 def get_cells_in_region(self, cells, region):
@@ -295,9 +295,9 @@ Selects the cells that are in a list of user provided regions from a
 ```
 
 &nbsp;
-## **`add_root`** [#432]
+## **`add_root`** [#434]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L432) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L434) online
 
 ```python
 def add_root(self, render=True, **kwargs):
@@ -316,9 +316,9 @@ adds the root the scene (i.e. the whole brain outline)
 ```
 
 &nbsp;
-## **`add_brain_regions`** [#456]
+## **`add_brain_regions`** [#460]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L456) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L460) online
 
 ```python
 def add_brain_regions(self, *args, **kwargs):
@@ -335,9 +335,9 @@ Check the atlas' method to know how it works
 ```
 
 &nbsp;
-## **`add_neurons`** [#481]
+## **`add_neurons`** [#486]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L481) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L486) online
 
 ```python
 def add_neurons(self, *args, **kwargs):
@@ -354,9 +354,9 @@ Check the atlas' method to know how it works
 ```
 
 &nbsp;
-## **`add_neurons_synapses`** [#499]
+## **`add_neurons_synapses`** [#504]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L499) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L504) online
 
 ```python
 def add_neurons_synapses(self, *args, **kwargs):
@@ -374,9 +374,9 @@ Check the atlas' method to know how it works.
 ```
 
 &nbsp;
-## **`add_tractography`** [#514]
+## **`add_tractography`** [#519]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L514) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L519) online
 
 ```python
 def add_tractography(self, *args, **kwargs):
@@ -393,9 +393,9 @@ Check the function definition in ABA for more details
 ```
 
 &nbsp;
-## **`add_streamlines`** [#524]
+## **`add_streamlines`** [#529]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L524) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L529) online
 
 ```python
 def add_streamlines(self, *args, **kwargs):
@@ -412,9 +412,9 @@ Check the function definition in ABA for more details
 ```
 
 &nbsp;
-## **`add_actor`** [#534]
+## **`add_actor`** [#539]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L534) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L539) online
 
 ```python
 def add_actor(self, *actors, store=None):
@@ -436,9 +436,9 @@ being created. It needs to be a list
 ```
 
 &nbsp;
-## **`add_mesh_silhouette`** [#558]
+## **`add_mesh_silhouette`** [#563]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L558) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L563) online
 
 ```python
 def add_mesh_silhouette(self, *actors, lw=1, color='k', **kwargs):
@@ -455,9 +455,9 @@ to them.
 ```
 
 &nbsp;
-## **`add_from_file`** [#566]
+## **`add_from_file`** [#571]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L566) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L571) online
 
 ```python
 def add_from_file(self, *filepaths, **kwargs):
@@ -478,9 +478,9 @@ Add data to the scene by loading them from a file. Should handle .obj,
 ```
 
 &nbsp;
-## **`add_sphere_at_point`** [#582]
+## **`add_sphere_at_point`** [#588]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L582) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L588) online
 
 ```python
 def add_sphere_at_point(self, pos=[0, 0, 0], radius=100,
@@ -506,13 +506,13 @@ Adds a shere at a location specified by the user
 ```
 
 &nbsp;
-## **`add_cells_from_file`** [#600]
+## **`add_cells_from_file`** [#607]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L600) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L607) online
 
 ```python
 def add_cells_from_file(self, filepath, hdf_key='hdf', color='red',
-    radius=25, res=3, alpha=1):
+    radius=25, res=7, alpha=1):
 ```
 
 &nbsp;  
@@ -541,13 +541,13 @@ Load location of cells from a file (csv and HDF) and render as spheres
 ```
 
 &nbsp;
-## **`add_cells`** [#664]
+## **`add_cells`** [#631]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L664) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L631) online
 
 ```python
 def add_cells(self, coords, color='red', color_by_region=False,
-    color_by_metadata=None, radius=25, res=3, alpha=1, col_names=None,
+    color_by_metadata=None, radius=25, res=7, alpha=1, col_names=None,
     regions=None, verbose=True):
 ```
 
@@ -599,9 +599,9 @@ which have the x, y, z coordinates. If not passed, it is assumed that
 ```
 
 &nbsp;
-## **`add_optic_cannula`** [#768]
+## **`add_optic_cannula`** [#735]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L768) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L735) online
 
 ```python
 def add_optic_cannula(self, target_region=None, pos=None, x_offset=0,
@@ -647,9 +647,9 @@ of the rendered cylinder: color, alpha, rotation axis...
 ```
 
 &nbsp;
-## **`add_text`** [#838]
+## **`add_text`** [#805]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L838) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L805) online
 
 ```python
 def add_text(self, text, **kwargs):
@@ -670,9 +670,9 @@ text at the top of the rendering window.
 ```
 
 &nbsp;
-## **`add_actor_label`** [#857]
+## **`add_actor_label`** [#824]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L857) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L824) online
 
 ```python
 def add_actor_label(self, actors, labels, **kwargs):
@@ -704,9 +704,9 @@ if None the actor's color is used. Default None.
 ```
 
 &nbsp;
-## **`add_line_at_point`** [#935]
+## **`add_line_at_point`** [#902]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L935) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L902) online
 
 ```python
 def add_line_at_point(self, point, replace_coord, bounds, **kwargs):
@@ -733,9 +733,9 @@ Adds a line oriented on a given axis at a point
 ```
 
 &nbsp;
-## **`add_rostrocaudal_line_at_point`** [#958]
+## **`add_rostrocaudal_line_at_point`** [#925]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L958) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L925) online
 
 ```python
 def add_rostrocaudal_line_at_point(self, point, **kwargs):
@@ -756,9 +756,9 @@ Add a line at a point oriented along the trostrocaudal axis
 ```
 
 &nbsp;
-## **`add_dorsoventral_line_at_point`** [#968]
+## **`add_dorsoventral_line_at_point`** [#935]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L968) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L935) online
 
 ```python
 def add_dorsoventral_line_at_point(self, point, **kwargs):
@@ -779,9 +779,9 @@ Add a line at a point oriented along the mdorsoventralediolateral axis
 ```
 
 &nbsp;
-## **`add_mediolateral_line_at_point`** [#978]
+## **`add_mediolateral_line_at_point`** [#945]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L978) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L945) online
 
 ```python
 def add_mediolateral_line_at_point(self, point, **kwargs):
@@ -802,9 +802,9 @@ Add a line at a point oriented along the mediolateral axis
 ```
 
 &nbsp;
-## **`add_crosshair_at_point`** [#988]
+## **`add_crosshair_at_point`** [#955]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L988) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L955) online
 
 ```python
 def add_crosshair_at_point(self, point, ml=True, dv=True, ap=True,
@@ -843,9 +843,9 @@ centered on a given point.
 ```
 
 &nbsp;
-## **`add_plane`** [#1031]
+## **`add_plane`** [#998]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1031) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L998) online
 
 ```python
 def add_plane(self, plane, **kwargs):
@@ -872,13 +872,13 @@ or an instance of the Plane class from vedo.shapes
 ```
 
 &nbsp;
-## **`add_probe_from_sharptrack`** [#1070]
+## **`add_probe_from_sharptrack`** [#1037]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1070) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L1037) online
 
 ```python
 def add_probe_from_sharptrack(self, probe_points_file,
-    points_kwargs={}, **kwargs):
+    points_kwargs={}, name=None, **kwargs):
 ```
 
 &nbsp;  
@@ -908,9 +908,9 @@ Code contributed by @tbslv on github.
 ```
 
 &nbsp;
-## **`apply_render_style`** [#1138]
+## **`apply_render_style`** [#1106]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1138) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L1106) online
 
 ```python
 def apply_render_style(self):
@@ -922,9 +922,9 @@ docstring:
 no docstring
 
 &nbsp;
-## **`get_actors`** [#1157]
+## **`get_actors`** [#1125]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1157) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L1125) online
 
 ```python
 def get_actors(self):
@@ -936,9 +936,9 @@ docstring:
 no docstring
 
 &nbsp;
-## **`render`** [#1179]
+## **`render`** [#1147]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1179) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L1147) online
 
 ```python
 def render(self, interactive=True, video=False, camera=None,
@@ -954,9 +954,9 @@ Takes care of rendering the scene
 ```
 
 &nbsp;
-## **`close`** [#1261]
+## **`close`** [#1229]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1261) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L1229) online
 
 ```python
 def close(self):
@@ -968,9 +968,9 @@ docstring:
 no docstring
 
 &nbsp;
-## **`export_for_web`** [#1264]
+## **`export_for_web`** [#1232]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1264) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L1232) online
 
 ```python
 def export_for_web(self, filepath='brexport.html'):
@@ -989,9 +989,9 @@ be opened in a web browser to show an interactive brainrender scene
 ```
 
 &nbsp;
-## **`keypress`** [#1310]
+## **`keypress`** [#1278]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1310) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L1278) online
 
 ```python
 def keypress(self, key):
@@ -1003,9 +1003,9 @@ docstring:
 no docstring
 
 &nbsp;
-## **`take_screenshot`** [#1343]
+## **`take_screenshot`** [#1311]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1343) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L1311) online
 
 ```python
 def take_screenshot(self):
@@ -1027,9 +1027,9 @@ no docstring
 ```
 
 &nbsp;
-## **`__init__`** [#1356]
+## **`__init__`** [#1324]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1356) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L1324) online
 
 ```python
 def __init__(self, *args, **kwargs):
@@ -1041,9 +1041,9 @@ docstring:
 no docstring
 
 &nbsp;
-## **`render`** [#1359]
+## **`render`** [#1327]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1359) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L1327) online
 
 ```python
 def render(self, _interactive=True):
@@ -1057,9 +1057,9 @@ docstring:
 ```
 
 &nbsp;
-## **`close`** [#1396]
+## **`close`** [#1364]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1396) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L1364) online
 
 ```python
 def close(self):
@@ -1081,9 +1081,9 @@ no docstring
 ```
 
 &nbsp;
-## **`__init__`** [#1403]
+## **`__init__`** [#1371]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1403) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L1371) online
 
 ```python
 def __init__(self, N, scenes=None, *args, **kwargs):
@@ -1095,9 +1095,9 @@ docstring:
 no docstring
 
 &nbsp;
-## **`render`** [#1416]
+## **`render`** [#1384]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1416) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L1384) online
 
 ```python
 def render(self, _interactive=True, **kwargs):
@@ -1114,9 +1114,9 @@ docstring:
 ```
 
 &nbsp;
-## **`close`** [#1467]
+## **`close`** [#1435]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/scene.py#L1467) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/scene.py#L1435) online
 
 ```python
 def close(self):

@@ -31,7 +31,7 @@ Contents
 &nbsp;
 ## **`__init__`** [#62]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L62) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/celegans.py#L62) online
 
 ```python
 def __init__(self, data_folder=None, base_dir=None, **kwargs):
@@ -60,7 +60,7 @@ https://www.biorxiv.org/content/10.1101/2020.04.30.066209v1
 &nbsp;
 ## **`_make_root`** [#84]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L84) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/celegans.py#L84) online
 
 ```python
 def _make_root(self, rootpath):
@@ -79,7 +79,7 @@ then saves it as an obj file at rootpath
 &nbsp;
 ## **`get_neurons_by`** [#119]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L119) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/celegans.py#L119) online
 
 ```python
 def get_neurons_by(self, getby='pair', lookup=None):
@@ -106,7 +106,7 @@ based on the neurons metadata
 &nbsp;
 ## **`get_neuron_color`** [#151]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L151) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/celegans.py#L151) online
 
 ```python
 def get_neuron_color(self, neuron, colorby='type'):
@@ -132,7 +132,7 @@ like the neuron's type or by individual neuron etc...
 &nbsp;
 ## **`_get_data`** [#186]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L186) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/celegans.py#L186) online
 
 ```python
 def _get_data(self):
@@ -149,7 +149,7 @@ Loads data and metadata for the C. elegans connectome.
 &nbsp;
 ## **`_check_neuron_argument`** [#249]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L249) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/celegans.py#L249) online
 
 ```python
 def _check_neuron_argument(self, neurons):
@@ -170,7 +170,7 @@ elements of the list that are correct names
 &nbsp;
 ## **`_parse_neuron_skeleton`** [#272]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L272) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/celegans.py#L272) online
 
 ```python
 def _parse_neuron_skeleton(self, neuron):
@@ -191,7 +191,7 @@ to create a vtk actor that represents the neuron
 &nbsp;
 ## **`_get_structure_mesh`** [#308]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L308) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/celegans.py#L308) online
 
 ```python
 def _get_structure_mesh(self, acronym, **kwargs):
@@ -210,7 +210,7 @@ getting/making the root mesh
 &nbsp;
 ## **`get_neurons`** [#329]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L329) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/celegans.py#L329) online
 
 ```python
 def get_neurons(self, neurons, alpha=1, as_skeleton=False,
@@ -240,7 +240,7 @@ otherwise as a full mesh showing the whole morphology
 &nbsp;
 ## **`get_neurons_synapses`** [#371]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L371) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/celegans.py#L371) online
 
 ```python
 def get_neurons_synapses(self, scene_store, neurons, alpha=1,
@@ -282,7 +282,7 @@ Renders neurons and adds them to the scene.
 &nbsp;
 ## **`dist`** [#518]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L518) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/celegans.py#L518) online
 
 ```python
 def dist(p1, p2):
@@ -296,7 +296,7 @@ no docstring
 &nbsp;
 ## **`get_point`** [#525]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/atlases/celegans.py#L525) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/atlases/celegans.py#L525) online
 
 ```python
 def get_point(p1, p2, d, u):

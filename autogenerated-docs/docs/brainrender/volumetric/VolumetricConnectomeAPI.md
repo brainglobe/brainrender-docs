@@ -49,7 +49,7 @@ To download the data, this class uses code from: https://github.com/AllenInstitu
 &nbsp;
 ## **`__init__`** [#47]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L47) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L47) online
 
 ```python
 def __init__(self, base_dir=None, add_root=True, use_cache=True,
@@ -83,7 +83,7 @@ Useful to set it to false to help debugging.
 &nbsp;
 ## **`__getattr__`** [#110]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L110) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L110) online
 
 ```python
 def __getattr__(self, attr):
@@ -97,7 +97,7 @@ no docstring
 &nbsp;
 ## **`_get_structure_id`** [#124]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L124) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L124) online
 
 ```python
 def _get_structure_id(self, struct):
@@ -114,7 +114,7 @@ Get the ID of a structure (or list of structures) given it's acronym
 &nbsp;
 ## **`_load_voxel_data`** [#133]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L133) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L133) online
 
 ```python
 def _load_voxel_data(self):
@@ -131,7 +131,7 @@ Load the VoxelData array from Knox et al 2018
 &nbsp;
 ## **`_get_coordinates_from_voxel_id`** [#170]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L170) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L170) online
 
 ```python
 def _get_coordinates_from_voxel_id(self, p0, as_source=True):
@@ -156,7 +156,7 @@ If target_mask wa used set as_source as False.
 &nbsp;
 ## **`_get_mask_coords`** [#186]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L186) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L186) online
 
 ```python
 def _get_mask_coords(self, as_source):
@@ -170,7 +170,7 @@ no docstring
 &nbsp;
 ## **`_get_voxel_id_from_coordinates`** [#201]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L201) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L201) online
 
 ```python
 def _get_voxel_id_from_coordinates(self, p0, as_source=True):
@@ -184,7 +184,7 @@ no docstring
 &nbsp;
 ## **`_get_cache_filename`** [#223]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L223) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L223) online
 
 ```python
 def _get_cache_filename(self, tgt, what):
@@ -204,7 +204,7 @@ according to the convention
 &nbsp;
 ## **`_get_from_cache`** [#242]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L242) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L242) online
 
 ```python
 def _get_from_cache(self, tgt, what):
@@ -221,7 +221,7 @@ tries to load objects from cached data, if they exist
 &nbsp;
 ## **`save_to_cache`** [#253]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L253) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L253) online
 
 ```python
 def save_to_cache(self, tgt, what, obj):
@@ -238,7 +238,7 @@ Saves data to cache to avoid loading thema again in the future
 &nbsp;
 ## **`get_source`** [#264]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L264) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L264) online
 
 ```python
 def get_source(self, source, hemisphere='both'):
@@ -260,7 +260,7 @@ Loads the mask for a source structure
 &nbsp;
 ## **`get_target_mask`** [#286]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L286) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L286) online
 
 ```python
 def get_target_mask(self, target, hemisphere):
@@ -279,7 +279,7 @@ used to transform projection data from linear arrays to 3D volumes.
 &nbsp;
 ## **`get_target`** [#297]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L297) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L297) online
 
 ```python
 def get_target(self, target, hemisphere='both'):
@@ -301,7 +301,7 @@ Loads the mask for a target structure.
 &nbsp;
 ## **`get_projection`** [#327]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L327) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L327) online
 
 ```python
 def get_projection(self, source, target, name, hemisphere='both',
@@ -342,7 +342,7 @@ the source structure is return. Useful to see which part of source
 &nbsp;
 ## **`get_mapped_projection`** [#400]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L400) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L400) online
 
 ```python
 def get_mapped_projection(self, source, target, name, **kwargs):
@@ -370,7 +370,7 @@ a mapped volume instead of a linear array.
 &nbsp;
 ## **`get_mapped_projection_to_point`** [#416]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L416) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L416) online
 
 ```python
 def get_mapped_projection_to_point(self, p0, restrict_to=None,
@@ -389,7 +389,7 @@ Gets projection intensity from all voxels to the voxel corresponding
 &nbsp;
 ## **`get_mapped_projection_from_point`** [#452]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L452) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L452) online
 
 ```python
 def get_mapped_projection_from_point(self, p0, restrict_to=None,
@@ -408,7 +408,7 @@ Gets projection intensity from all voxels to the voxel corresponding
 &nbsp;
 ## **`add_mapped_projection`** [#497]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L497) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L497) online
 
 ```python
 def add_mapped_projection(self, source, target, actor_kwargs={},
@@ -448,7 +448,7 @@ Look at the arguments of 'add_volume' to see what arguments are
 &nbsp;
 ## **`add_mapped_projection_to_point`** [#551]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L551) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L551) online
 
 ```python
 def add_mapped_projection_to_point(self, p0, show_point=True,
@@ -464,7 +464,7 @@ no docstring
 &nbsp;
 ## **`add_mapped_projection_from_point`** [#625]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L625) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L625) online
 
 ```python
 def add_mapped_projection_from_point(self, *args, **kwargs):
@@ -478,7 +478,7 @@ no docstring
 &nbsp;
 ## **`add_volume`** [#630]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/tree/brainglobeintegration/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L630) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/volumetric/VolumetricConnectomeAPI.py#L630) online
 
 ```python
 def add_volume(self, volume, cmap='afmhot_r', alpha=1,
