@@ -10,6 +10,10 @@ description: A brief overview of brainrender`s functionality
 
 **`brainrender` is a python package for the visualization of three dimensional neuro-anatomical data. It can be used to render data from publicly available data set \(e.g. Allen Brain atlas\) as well as user generated experimental data. The goal of `brainrender` is to facilitate the exploration and dissemination of neuro-anatomical data by providing a user-friendly platform to create high-quality 3D renderings.**
 
+{% hint style="warning" %}
+`brainrender` v.1.0.0 is still in **alpha** version: there might be bugs we haven't discovered yet and we might have to change the code in the future.  Please [get in touch](info/get-in-touch.md) if you find any problem with brainrender. 
+{% endhint %}
+
 ### For the impatient
 
 If you've read enough and want to dive right in, good news: you can get started creating `brainrender` scenes with two commands!
