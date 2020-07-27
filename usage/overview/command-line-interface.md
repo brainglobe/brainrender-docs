@@ -18,7 +18,7 @@ but it comes with a few options to make things more interesting.
 
 ### Adding brain regions
 
-You can follow `brainrender` with the acronyms of the brain regions you'd like to add to your `Scene`. For instance say you want to have the thalamus and the striatum to your scene, then:
+You can follow `brainrender` with the acronyms of the brain regions you'd like to add to your `Scene`. For instance say you want to have the thalamus and the Striatum to your scene, then:
 
 ```text
 brainrender STR TH
@@ -26,7 +26,7 @@ brainrender STR TH
 
 ### Changing atlas
 
-You can use the optional argument `-a` to use a brainglobe atlas different from what's set as default:
+You can use the optional argument `-a` to use a [brainglobe](https://docs.brainglobe.info/) atlas different from what's set as default:
 
 ```text
 brainrender TH -a allen_human_500um

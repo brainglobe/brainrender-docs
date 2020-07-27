@@ -12,7 +12,7 @@ For more details about what each method does and which arguments it takes,  chec
 
 ### Selecting the atlas
 
-`brainrender`'s  `Atlas` functionality relies heavily on brainglobe's [atlas API](https://github.com/brainglobe/bg-atlasapi) to make sure that you can use `brainrender` features seamlessly for atlases of several different species. All you need to do is specify which atlas of those available on brainglobe \[DOCS LINK MISSING\] you want to be using, and `brainrender` will get it for your. 
+`brainrender`'s  `Atlas` functionality relies heavily on brainglobe's [atlas API](https://docs.brainglobe.info/) to make sure that you can use `brainrender` features seamlessly for atlases of several different species. All you need to do is specify which atlas of those available on [brainglobe](https://docs.brainglobe.info/) you want to be using, and `brainrender` will get it for your. 
 
 
 

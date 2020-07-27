@@ -4,16 +4,13 @@
 
 These are listed in `brainder.default_variables` where you can also find a brief description of what they do. Here's a few of the crucial ones:
 
-```text
-DEFAULT_ATLAS: default braninglobe atlas used for the `Atlas` class
-WHOLE_SCREEN: if true renderings are shown in full screen
-BACKGROUND_COLOR: color of the rendering's background
-SHOW_AXES: if True XYZ axes are shown in the rendering
-ROOT_COLOR/ROOT_ALPHA: appearance of brain's root mesh
-SHADER_STYLE: look of rendered object
-SCREENSHOT_TRANSPARENT_BACKGROUND: if true screenshots will 
-        be saved with a transparent background
-```
+* `DEFAULT_ATLAS`: default [braninglobe](https://docs.brainglobe.info/) atlas used for the \`Atlas\` class
+* `WHOLE_SCREEN`: if `true` renderings are shown in full screen
+* `BACKGROUND_COLOR`: color of the rendering's background
+* `SHOW_AXES`: if `True` axes are shown in the rendering
+* `ROOT_COLOR/ROOT_ALPHA`: appearance of brain's root mesh
+* `SHADER_STYLE`: look of rendered object
+* `SCREENSHOT_TRANSPARENT_BACKGROUND`: if true screenshots will be saved with a transparent background
 
 ### Changing parameters values
 

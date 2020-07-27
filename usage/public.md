@@ -4,14 +4,14 @@ description: How to use brainrender with publicly available datasets
 
 # Publicly available datasets
 
-There's some amazing open-science datasets of neuro-atomy out there. You can use them to learn more about your favorite brain region, to plan new experiment or to corroborate the findings of experiments you've already performed. However often interaction with these datasets requires either:
+There's some amazing open-science datasets of neuroanatomy out there. You can use them to learn more about your favorite brain region, to plan new experiment or to corroborate the findings of experiments you've already performed. However often interaction with these datasets requires either:
 
 * using dedicated software that comes with the data. 
   * **pros**:  no programming required 
   * **cons:** little room for personalizing renderings and no easy way to integrate with your own data
 * learning how to use an API to download the data you need.
   * **pros**: all the flexibility you need
-  * **cons:** often requires a time-consuming learning phase \(for each dataset\) and considerable coding skills. 
+  * **cons:** often requires a time-consuming learning phase \(for each data set\) and considerable coding skills. 
 
 `brainrender` brings the best of both options together by giving you the **flexibility** of the APIs with a easy to use interface which requires minimal coding skills.
 
@@ -29,7 +29,7 @@ There's some amazing open-science datasets of neuro-atomy out there. You can use
 
 ### Neuroanatomy
 
-`brainrender` relies on [brainglobe's Atlas API](https://github.com/brainglobe/bg-atlasapi) to get the 3d morphology of brain regions in the mouse atlas \([and others](atlas.md)\). You can use this functionality to render brain regions in your `Scene` which makes contextualizing any other data you might be visualizing easier than ever. 
+`brainrender` relies on [brainglobe's Atlas API](https://docs.brainglobe.info/) to get the 3d morphology of brain regions in the mouse atlas \([and others](atlas.md)\). You can use this functionality to render brain regions in your `Scene` which makes contextualizing any other data you might be visualizing easier than ever. 
 
 Head over to the [examples](../overview/examples.md) to see how to implement this in your `Scene`.
 

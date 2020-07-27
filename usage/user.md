@@ -18,9 +18,9 @@ As an example of how `brainrender` can be used to visualize experimental data. B
 
 ### Visualizing the location of labelled cells
 
-You've done some tracing experiment and extracted the location of labelled cells registered to a brain atlas \(e.g. using tools like [cellfinder](https://docs.cellfinder.info/)\). You can easily visualise the location of labelled cells relative to the rest of the `Atlas` in `brainrender`.
+You've done some tracing experiment and extracted the location of labelled cells registered to a brain atlas \(e.g. using tools like [cellfinder](https://docs.cellfinder.info/)\). You can easily visualize the location of labelled cells relative to the rest of the `Atlas` in `brainrender`.
 
-To do so you can simply use `Scene.add_cells` or `Scene.add_cells_from_file`. All it takes is passing the coordinates of each cell and this function will render a sphere at each cell's location. You can specify how the cells should look, color them according to the brain region they're in or, if your dataset includes metadata, color them according to some metadata value. 
+To do so you can simply use `Scene.add_cells` or `Scene.add_cells_from_file`. All it takes is passing the coordinates of each cell and this function will render a sphere at each cell's location. You can specify how the cells should look, color them according to the brain region they're in or, if your data set includes metadata, color them according to some metadata value. 
 
 ![Example of how labelled cells can be rendered](../.gitbook/assets/cells.png)
 
@@ -46,7 +46,7 @@ Have a look at the [examples](../overview/examples.md) to see how you can implem
 
 ### Visualizing the extent of an injection site
 
-Following the injection of a virus or other marker you were able to reconstruct the extend ot the injection syte registered to an atlas' reference frame \(e.g. with tools like [neuro](https://github.com/sainsburywellcomecentre/neuro)\). You can simply render this in `brainrender` by saving the mesh of the injection site as an `.obj` file and using `Scene.add_from_file` to load it into your `Scene`. 
+Following the injection of a virus or other marker you were able to reconstruct the extention of the injection syte registered to an atlas' reference frame \(e.g. with tools like [neuro](https://github.com/sainsburywellcomecentre/neuro)\). You can simply render this in `brainrender` by saving the mesh of the injection site as an `.obj` file and using `Scene.add_from_file` to load it into your `Scene`. 
 
 ![Example: extent of an injection site \(red\) in the Superior Colliculus \(magenta\)](../.gitbook/assets/inj_site.png)
 

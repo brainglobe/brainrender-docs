@@ -21,7 +21,7 @@ When creating an instance of `Scene` for the first time, you have the opportunit
 {% hint style="info" %}
 **Using different atlases**
 
-Among the parameters that Scene takes is `atlas`, this argument **let's you specify which brain atlas to use for your renderings** \(by default it's the Allen brain atlas\). The easiest way to use a different atlas is to pass the name of a [brainglobe](https://github.com/brainglobe/bg-atlasapi) atlas, `brainrender` will then download and use the desired atlas. Alternatively you can specify a custom `Atlas` class to support an atlas of your creation. Then just pass the custom class as an argument to `Scene`.
+Among the parameters that Scene takes is `atlas`, this argument **let's you specify which brain atlas to use for your renderings** \(by default it's the Allen brain atlas\). The easiest way to use a different atlas is to pass the name of a [brainglobe](https://docs.brainglobe.info/) atlas, `brainrender` will then download and use the desired atlas. Alternatively you can specify a custom `Atlas` class to support an atlas of your creation. Then just pass the custom class as an argument to `Scene`.
 {% endhint %}
 
 
@@ -31,7 +31,7 @@ Among the parameters that Scene takes is `atlas`, this argument **let's you spec
 `Scene` comes with a large number of methods that allow you to add elements \(actors\) to your visualization. These methods include \(but are not limited to\):
 
 * `add_brain_regions` to add brain regions' meshes to your scene
-* `add_cells` and `add_cells_from_file` to add colored speheres at the location of labelled cells
+* `add_cells` and `add_cells_from_file` to add colored spehers at the location of labelled cells
 * `add_neurons` e.g. to add MouseLight neurons to your scene
 * `add_actor` and `add_from_file` can be used to add a `vedo` actor or to load a mesh from a `.obj` or `.stl` file.
 * many more.. 

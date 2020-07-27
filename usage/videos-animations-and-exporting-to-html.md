@@ -93,7 +93,7 @@ Warning: for large and complex scenes the resulting html file might be fairly la
 Exporting to `html` is very easy, all you need to do is create a `Scene`, add elements to it and once you're happy with it use the `export_for_web` method of `Scene` to create the `.html`.
 
 {% hint style="info" %}
-The web export functionality requries `k3d==2.7.4` and won't work with other versions of this package
+The web export functionality requires `k3d==2.7.4` and won't work with other versions of this package
 {% endhint %}
 
 {% hint style="danger" %}
