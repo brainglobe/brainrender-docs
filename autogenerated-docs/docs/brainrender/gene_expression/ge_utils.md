@@ -5,18 +5,18 @@
 Contents
 ========
 
-* [**`check_gene_cached`** [#11]](#check_gene_cached-11)
-* [**`download_and_cache`** [#34]](#download_and_cache-34)
-* [**`load_cached_gene`** [#54]](#load_cached_gene-54)
-* [**`read_raw`** [#70]](#read_raw-70)
+* [**`check_gene_cached`** [#13]](#check_gene_cached-13)
+* [**`download_and_cache`** [#36]](#download_and_cache-36)
+* [**`load_cached_gene`** [#56]](#load_cached_gene-56)
+* [**`read_raw`** [#72]](#read_raw-72)
 
 
 &nbsp;
 
 --------
-# **`check_gene_cached`** [#11]
+# **`check_gene_cached`** [#13]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/ge_utils.py#L11) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/ge_utils.py#L13) online
 
 ```python
 def check_gene_cached(cache_folder, gene_id, exp_id):
@@ -43,9 +43,9 @@ exist the gene is not cached.
 &nbsp;
 
 --------
-# **`download_and_cache`** [#34]
+# **`download_and_cache`** [#36]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/ge_utils.py#L34) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/ge_utils.py#L36) online
 
 ```python
 def download_and_cache(url, cachedir):
@@ -68,9 +68,9 @@ this function download and unzips the data
 &nbsp;
 
 --------
-# **`load_cached_gene`** [#54]
+# **`load_cached_gene`** [#56]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/ge_utils.py#L54) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/ge_utils.py#L56) online
 
 ```python
 def load_cached_gene(cache, metric, grid_size):
@@ -87,9 +87,9 @@ Loads a gene's data from cache
 &nbsp;
 
 --------
-# **`read_raw`** [#70]
+# **`read_raw`** [#72]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/ge_utils.py#L70) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/ge_utils.py#L72) online
 
 ```python
 def read_raw(filepath, grid_size):

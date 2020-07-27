@@ -5,17 +5,64 @@
 Contents
 ========
 
-* [**`request`** [#10]](#request-10)
-* [**`fail_on_no_connection`** [#30]](#fail_on_no_connection-30)
-* [**`inner`** [#34]](#inner-34)
+* [**`connected_to_internet`** [#6]](#connected_to_internet-6)
+* [**`send_query`** [#22]](#send_query-22)
+* [**`request`** [#40]](#request-40)
 
 
 &nbsp;
 
 --------
-# **`request`** [#10]
+# **`connected_to_internet`** [#6]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/webqueries.py#L10) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/webqueries.py#L6) online
+
+```python
+def connected_to_internet(url='http://www.google.com/', timeout=5):
+```
+
+&nbsp;  
+docstring:
+
+```text
+Check that there is an internet connection
+
+:param url: url to use for testing (Default value =
+    'http://www.google.com/')
+
+:param timeout:  timeout to wait for [in seconds] (Default value = 5)
+
+```
+
+&nbsp;
+
+--------
+# **`send_query`** [#22]
+  
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/webqueries.py#L22) online
+
+```python
+def send_query(query_string, clean=False):
+```
+
+&nbsp;  
+docstring:
+
+```text
+Send a query/request to a website
+
+:param query_string: string with query content
+
+:param clean:  (Default value = False)
+
+```
+
+&nbsp;
+
+--------
+# **`request`** [#40]
+  
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/webqueries.py#L40) online
 
 ```python
 def request(url):
@@ -30,35 +77,3 @@ Sends a request to a url
 :param url:
 
 ```
-
-&nbsp;
-
---------
-# **`fail_on_no_connection`** [#30]
-  
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/webqueries.py#L30) online
-
-```python
-def fail_on_no_connection(func):
-```
-
-&nbsp;  
-docstring:
-
-no docstring
-
-&nbsp;
-
---------
-# **`inner`** [#34]
-  
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/webqueries.py#L34) online
-
-```python
-def inner(*args, **kwargs):
-```
-
-&nbsp;  
-docstring:
-
-no docstring

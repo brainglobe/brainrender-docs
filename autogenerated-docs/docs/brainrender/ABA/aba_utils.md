@@ -5,21 +5,22 @@
 Contents
 ========
 
-* [**`parse_neurons_colors`** [#28]](#parse_neurons_colors-28)
-* [**`parse_tractography_colors`** [#147]](#parse_tractography_colors-147)
-* [**`experiments_source_search`** [#243]](#experiments_source_search-243)
-* [**`parse_streamline`** [#301]](#parse_streamline-301)
-* [**`make_url_given_id`** [#378]](#make_url_given_id-378)
-* [**`download_streamlines`** [#390]](#download_streamlines-390)
-* [**`extract_ids_from_csv`** [#430]](#extract_ids_from_csv-430)
+* [**`parse_neurons_colors`** [#31]](#parse_neurons_colors-31)
+* [**`parse_tractography_colors`** [#150]](#parse_tractography_colors-150)
+* [**`experiments_source_search`** [#246]](#experiments_source_search-246)
+* [**`parse_streamline`** [#304]](#parse_streamline-304)
+* [**`make_url_given_id`** [#380]](#make_url_given_id-380)
+* [**`download_streamlines`** [#392]](#download_streamlines-392)
+* [**`extract_ids_from_csv`** [#436]](#extract_ids_from_csv-436)
+* [**`parse_sharptrack`** [#487]](#parse_sharptrack-487)
 
 
 &nbsp;
 
 --------
-# **`parse_neurons_colors`** [#28]
+# **`parse_neurons_colors`** [#31]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/aba_utils.py#L28) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/aba_utils.py#L31) online
 
 ```python
 def parse_neurons_colors(neurons, color):
@@ -57,9 +58,9 @@ or a dictionary of colors for each neuron
 &nbsp;
 
 --------
-# **`parse_tractography_colors`** [#147]
+# **`parse_tractography_colors`** [#150]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/aba_utils.py#L147) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/aba_utils.py#L150) online
 
 ```python
 def parse_tractography_colors(tractography, include_all_inj_regions,
@@ -106,9 +107,9 @@ if VIP_regions is passed, then only tracts for the VIP regions are
 &nbsp;
 
 --------
-# **`experiments_source_search`** [#243]
+# **`experiments_source_search`** [#246]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/aba_utils.py#L243) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/aba_utils.py#L246) online
 
 ```python
 def experiments_source_search(mca, SOI, *args, source=True, **kwargs):
@@ -135,9 +136,9 @@ Returns data about experiments whose injection was in the SOI,
 &nbsp;
 
 --------
-# **`parse_streamline`** [#301]
+# **`parse_streamline`** [#304]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/aba_utils.py#L301) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/aba_utils.py#L304) online
 
 ```python
 def parse_streamline(*args, filepath=None, data=None,
@@ -180,9 +181,9 @@ Either  filepath or data should be passed
 &nbsp;
 
 --------
-# **`make_url_given_id`** [#378]
+# **`make_url_given_id`** [#380]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/aba_utils.py#L378) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/aba_utils.py#L380) online
 
 ```python
 def make_url_given_id(expid):
@@ -201,9 +202,9 @@ Get url of JSON file for an experiment, give it's ID number
 &nbsp;
 
 --------
-# **`download_streamlines`** [#390]
+# **`download_streamlines`** [#392]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/aba_utils.py#L390) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/aba_utils.py#L392) online
 
 ```python
 def download_streamlines(eids, streamlines_folder=None):
@@ -228,9 +229,9 @@ json files.
 &nbsp;
 
 --------
-# **`extract_ids_from_csv`** [#430]
+# **`extract_ids_from_csv`** [#436]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/aba_utils.py#L430) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/aba_utils.py#L436) online
 
 ```python
 def extract_ids_from_csv(csv_file, download=False, **kwargs):
@@ -259,5 +260,35 @@ Also return the experiments IDs to download data from:
     (Default value = False)
 
 :param **kwargs:
+
+```
+
+&nbsp;
+
+--------
+# **`parse_sharptrack`** [#487]
+  
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/aba_utils.py#L487) online
+
+```python
+def parse_sharptrack(atlas, probe_points_file, name,
+    color_by_region=True, color='salmon', radius=30,
+    probe_color='blackboard', probe_radius=15, probe_alpha=1):
+```
+
+&nbsp;  
+docstring:
+
+```text
+Visualises the position of an implanted probe in the brain.
+
+Uses the location of points along the probe extracted with SharpTrack
+
+[https://github.com/cortex-lab/allenCCF].
+
+It renders the position of points along the probe and a line fit
+    through them.
+
+Code contributed by @tbslv on github.
 
 ```

@@ -6,14 +6,14 @@ Contents
 ========
 
 * [**GeneExpressionAPI**](#geneexpressionapi)
-	* [**`__init__`** [#37]](#__init__-37)
-	* [**`get_all_genes`** [#43]](#get_all_genes-43)
-	* [**`get_gene_id_by_name`** [#51]](#get_gene_id_by_name-51)
-	* [**`get_gene_symbol_by_id`** [#68]](#get_gene_symbol_by_id-68)
-	* [**`get_gene_experiments`** [#83]](#get_gene_experiments-83)
-	* [**`download_gene_data`** [#108]](#download_gene_data-108)
-	* [**`get_gene_data`** [#141]](#get_gene_data-141)
-	* [**`griddata_to_volume`** [#169]](#griddata_to_volume-169)
+	* [**`__init__`** [#38]](#__init__-38)
+	* [**`get_all_genes`** [#44]](#get_all_genes-44)
+	* [**`get_gene_id_by_name`** [#52]](#get_gene_id_by_name-52)
+	* [**`get_gene_symbol_by_id`** [#69]](#get_gene_symbol_by_id-69)
+	* [**`get_gene_experiments`** [#84]](#get_gene_experiments-84)
+	* [**`download_gene_data`** [#109]](#download_gene_data-109)
+	* [**`get_gene_data`** [#142]](#get_gene_data-142)
+	* [**`griddata_to_volume`** [#170]](#griddata_to_volume-170)
 
 
 &nbsp;
@@ -25,9 +25,9 @@ Contents
 
 
 &nbsp;
-## **`__init__`** [#37]
+## **`__init__`** [#38]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/api.py#L37) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/api.py#L38) online
 
 ```python
 def __init__(self, base_dir=None, **kwargs):
@@ -39,9 +39,9 @@ docstring:
 no docstring
 
 &nbsp;
-## **`get_all_genes`** [#43]
+## **`get_all_genes`** [#44]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/api.py#L43) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/api.py#L44) online
 
 ```python
 def get_all_genes(self):
@@ -57,9 +57,9 @@ Download metadata about all the genes available in the Allen gene
 ```
 
 &nbsp;
-## **`get_gene_id_by_name`** [#51]
+## **`get_gene_id_by_name`** [#52]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/api.py#L51) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/api.py#L52) online
 
 ```python
 def get_gene_id_by_name(self, gene_name):
@@ -71,9 +71,9 @@ docstring:
 no docstring
 
 &nbsp;
-## **`get_gene_symbol_by_id`** [#68]
+## **`get_gene_symbol_by_id`** [#69]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/api.py#L68) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/api.py#L69) online
 
 ```python
 def get_gene_symbol_by_id(self, gene_id):
@@ -85,9 +85,9 @@ docstring:
 no docstring
 
 &nbsp;
-## **`get_gene_experiments`** [#83]
+## **`get_gene_experiments`** [#84]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/api.py#L83) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/api.py#L84) online
 
 ```python
 def get_gene_experiments(self, gene_symbol):
@@ -106,9 +106,9 @@ experiments for this gene
 ```
 
 &nbsp;
-## **`download_gene_data`** [#108]
+## **`download_gene_data`** [#109]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/api.py#L108) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/api.py#L109) online
 
 ```python
 def download_gene_data(self, gene):
@@ -130,9 +130,9 @@ See: http://help.brain-
 ```
 
 &nbsp;
-## **`get_gene_data`** [#141]
+## **`get_gene_data`** [#142]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/api.py#L141) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/api.py#L142) online
 
 ```python
 def get_gene_data(self, gene, exp_id, metric='energy'):
@@ -147,9 +147,9 @@ Given a list of gene ids
 ```
 
 &nbsp;
-## **`griddata_to_volume`** [#169]
+## **`griddata_to_volume`** [#170]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/api.py#L169) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/gene_expression/api.py#L170) online
 
 ```python
 def griddata_to_volume(self, griddata, min_quantile=None,

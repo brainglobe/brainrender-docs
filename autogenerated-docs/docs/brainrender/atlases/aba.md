@@ -207,8 +207,8 @@ docstring:
 Gets tractography data for all experiments whose projections reach the
     brain region or location of iterest.
 
-:param p0: list of 3 floats with XYZ coordinates of point to be used
-    as seed (Default value = None)
+:param p0: list of 3 floats with AP-DV-ML coordinates of point to be
+    used as seed (Default value = None)
 
 :param **kwargs:
 
@@ -266,7 +266,7 @@ Using the Allen Mouse Connectivity data and corresponding API, this
 which resulted in fluorescence being found in the target point, then
     downloads the streamlines data.
 
-:param p0: list of floats with XYZ coordinates
+:param p0: list of floats with AP-DV-ML coordinates
 
 :param mouse_line: str with name of the mouse line to use(Default
     value = "wt")

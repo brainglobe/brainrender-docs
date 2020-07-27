@@ -5,23 +5,59 @@
 Contents
 ========
 
-* [**`mirror_actor_at_point`** [#6]](#mirror_actor_at_point-6)
-* [**`set_wireframe`** [#60]](#set_wireframe-60)
-* [**`set_solid`** [#70]](#set_solid-70)
-* [**`set_color`** [#80]](#set_color-80)
-* [**`set_line`** [#91]](#set_line-91)
-* [**`upsample_actor`** [#106]](#upsample_actor-106)
-* [**`downsample_actor`** [#117]](#downsample_actor-117)
-* [**`smooth_actor`** [#128]](#smooth_actor-128)
-* [**`edit_actor`** [#139]](#edit_actor-139)
+* [**`get_actor_bounds`** [#8]](#get_actor_bounds-8)
+* [**`get_actor_midpoint`** [#20]](#get_actor_midpoint-20)
+* [**`mirror_actor_at_point`** [#29]](#mirror_actor_at_point-29)
+* [**`set_line`** [#83]](#set_line-83)
+* [**`edit_actor`** [#98]](#edit_actor-98)
 
 
 &nbsp;
 
 --------
-# **`mirror_actor_at_point`** [#6]
+# **`get_actor_bounds`** [#8]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L6) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L8) online
+
+```python
+def get_actor_bounds(actor):
+```
+
+&nbsp;  
+docstring:
+
+```text
+Gets the AP-DV-ML bounds of an actor
+
+```
+
+&nbsp;
+
+--------
+# **`get_actor_midpoint`** [#20]
+  
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L20) online
+
+```python
+def get_actor_midpoint(actor):
+```
+
+&nbsp;  
+docstring:
+
+```text
+Get's the coordinates of the midpoint of an
+
+actor (vedo.Mesh)
+
+```
+
+&nbsp;
+
+--------
+# **`mirror_actor_at_point`** [#29]
+  
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L29) online
 
 ```python
 def mirror_actor_at_point(actor, point, axis='x'):
@@ -44,74 +80,9 @@ Mirror an actor around a point
 &nbsp;
 
 --------
-# **`set_wireframe`** [#60]
+# **`set_line`** [#83]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L60) online
-
-```python
-def set_wireframe(actor):
-```
-
-&nbsp;  
-docstring:
-
-```text
-set an actor's look to wireframe
-
-:param actor:
-
-```
-
-&nbsp;
-
---------
-# **`set_solid`** [#70]
-  
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L70) online
-
-```python
-def set_solid(actor):
-```
-
-&nbsp;  
-docstring:
-
-```text
-set an actor's look to solid
-
-:param actor:
-
-```
-
-&nbsp;
-
---------
-# **`set_color`** [#80]
-  
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L80) online
-
-```python
-def set_color(actor, color):
-```
-
-&nbsp;  
-docstring:
-
-```text
-set an actor's look to a specific color
-
-:param actor:
-
-:param color:
-
-```
-
-&nbsp;
-
---------
-# **`set_line`** [#91]
-  
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L91) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L83) online
 
 ```python
 def set_line(actor, lw=None, c=None):
@@ -134,78 +105,9 @@ set an actor's look to specify the line width and color
 &nbsp;
 
 --------
-# **`upsample_actor`** [#106]
+# **`edit_actor`** [#98]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L106) online
-
-```python
-def upsample_actor(actor, fact=1):
-```
-
-&nbsp;  
-docstring:
-
-```text
-Increase resolution of actor
-
-:param actor:
-
-:param fact:  (Default value = 1)
-
-```
-
-&nbsp;
-
---------
-# **`downsample_actor`** [#117]
-  
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L117) online
-
-```python
-def downsample_actor(actor, fact=0.5):
-```
-
-&nbsp;  
-docstring:
-
-```text
-Reduce resolution of actor
-
-:param actor:
-
-:param fact:  (Default value = 0.5)
-
-```
-
-&nbsp;
-
---------
-# **`smooth_actor`** [#128]
-  
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L128) online
-
-```python
-def smooth_actor(actor, factor=15):
-```
-
-&nbsp;  
-docstring:
-
-```text
-Smooth an actor's mesh
-
-:param actor:
-
-:param factor:  (Default value = 15)
-
-```
-
-&nbsp;
-
---------
-# **`edit_actor`** [#139]
-  
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L139) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/actors_funcs.py#L98) online
 
 ```python
 def edit_actor(actor, wireframe=False, solid=False, color=False,

@@ -6,7 +6,7 @@ Contents
 ========
 
 * [**Paths**](#paths)
-	* [**`__init__`** [#69]](#__init__-69)
+	* [**`__init__`** [#30]](#__init__-30)
 
 
 &nbsp;
@@ -18,9 +18,9 @@ Contents
 
 
 &nbsp;
-## **`__init__`** [#69]
+## **`__init__`** [#30]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/paths_manager.py#L69) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/Utils/paths_manager.py#L30) online
 
 ```python
 def __init__(self, base_dir=None, **kwargs):

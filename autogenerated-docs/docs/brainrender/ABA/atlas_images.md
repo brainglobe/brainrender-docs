@@ -6,14 +6,14 @@ Contents
 ========
 
 * [**ImageDownload**](#imagedownload)
-	* [**`__init__`** [#34]](#__init__-34)
-	* [**`get_atlas_by_name`** [#89]](#get_atlas_by_name-89)
-	* [**`get_products_by_species`** [#104]](#get_products_by_species-104)
-	* [**`get_experimentsid_by_productid`** [#113]](#get_experimentsid_by_productid-113)
-	* [**`get_experimentimages_by_expid`** [#126]](#get_experimentimages_by_expid-126)
-	* [**`get_atlasimages_by_atlasid`** [#136]](#get_atlasimages_by_atlasid-136)
-	* [**`download_images_by_imagesid`** [#149]](#download_images_by_imagesid-149)
-	* [**`download_images_by_atlasid`** [#216]](#download_images_by_atlasid-216)
+	* [**`__init__`** [#36]](#__init__-36)
+	* [**`get_atlas_by_name`** [#87]](#get_atlas_by_name-87)
+	* [**`get_products_by_species`** [#102]](#get_products_by_species-102)
+	* [**`get_experimentsid_by_productid`** [#111]](#get_experimentsid_by_productid-111)
+	* [**`get_experimentimages_by_expid`** [#124]](#get_experimentimages_by_expid-124)
+	* [**`get_atlasimages_by_atlasid`** [#134]](#get_atlasimages_by_atlasid-134)
+	* [**`download_images_by_imagesid`** [#147]](#download_images_by_imagesid-147)
+	* [**`download_images_by_atlasid`** [#211]](#download_images_by_atlasid-211)
 
 
 &nbsp;
@@ -27,9 +27,9 @@ Handles query to the Allen ImageDownloadApi and saves the data
 ```
 
 &nbsp;
-## **`__init__`** [#34]
+## **`__init__`** [#36]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L34) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L36) online
 
 ```python
 def __init__(self):
@@ -41,9 +41,9 @@ docstring:
 no docstring
 
 &nbsp;
-## **`get_atlas_by_name`** [#89]
+## **`get_atlas_by_name`** [#87]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L89) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L87) online
 
 ```python
 def get_atlas_by_name(self, atlas_name):
@@ -60,9 +60,9 @@ Get a brain atlas in the Allen's database given it's name
 ```
 
 &nbsp;
-## **`get_products_by_species`** [#104]
+## **`get_products_by_species`** [#102]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L104) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L102) online
 
 ```python
 def get_products_by_species(self, species):
@@ -79,9 +79,9 @@ Get all 'products' in the Allen Database for a given species
 ```
 
 &nbsp;
-## **`get_experimentsid_by_productid`** [#113]
+## **`get_experimentsid_by_productid`** [#111]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L113) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L111) online
 
 ```python
 def get_experimentsid_by_productid(self, productid, **kwargs):
@@ -100,9 +100,9 @@ Get the experiment's ID that belong to the same project (product).
 ```
 
 &nbsp;
-## **`get_experimentimages_by_expid`** [#126]
+## **`get_experimentimages_by_expid`** [#124]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L126) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L124) online
 
 ```python
 def get_experimentimages_by_expid(self, expid):
@@ -119,9 +119,9 @@ Get's images that belong to an experiment
 ```
 
 &nbsp;
-## **`get_atlasimages_by_atlasid`** [#136]
+## **`get_atlasimages_by_atlasid`** [#134]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L136) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L134) online
 
 ```python
 def get_atlasimages_by_atlasid(self, atlasid):
@@ -138,9 +138,9 @@ Get the metadata of images that belong to an atlas.
 ```
 
 &nbsp;
-## **`download_images_by_imagesid`** [#149]
+## **`download_images_by_imagesid`** [#147]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L149) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L147) online
 
 ```python
 def download_images_by_imagesid(self, savedir, imagesids,
@@ -172,9 +172,9 @@ Downloads and saves images given a list of images IDs.
 ```
 
 &nbsp;
-## **`download_images_by_atlasid`** [#216]
+## **`download_images_by_atlasid`** [#211]
   
-Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L216) online
+Check the [***``source code``***](https://github.com/BrancoLab/BrainRender/blob/master/brainrender/ABA/atlas_images.py#L211) online
 
 ```python
 def download_images_by_atlasid(self, savedir, atlasid, debug=False,
