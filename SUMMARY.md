@@ -15,6 +15,7 @@
 
 * [Overview](usage/overview/README.md)
   * [Command Line Interface](usage/overview/command-line-interface.md)
+* [Parameters](usage/parameters.md)
 * [Atlas class](usage/atlas.md)
 * [Scene class](usage/scene.md)
 * [User-generated data](usage/user.md)
