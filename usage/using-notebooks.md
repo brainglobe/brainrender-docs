@@ -25,7 +25,7 @@ In particular `Scene.render()` will prepare the rendering for you, but it won't 
 from vedo import Plotter
 
 vp = Plotter()
-show(scene.actors())
+show(scene.actors)
 ```
 
 
