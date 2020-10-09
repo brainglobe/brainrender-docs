@@ -22,7 +22,7 @@ As said above, you might not have access to all features when embedding your ren
 In particular `Scene.render()` will prepare the rendering for you, but it won't actually create the render. To visualize your scene you will need a couple extra lines of code:
 
 ```python
-from vedo import Plotter
+from vedo import Plotter, show
 
 vp = Plotter()
 show(scene.actors)
