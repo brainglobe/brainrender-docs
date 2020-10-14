@@ -42,7 +42,7 @@ For this reason:
 
 * we've build upon [brainglobe](https://docs.brainglobe.info/)'s atlas API, ensuring that you can use `brainrender` to visualize data from a wide range of species. 
 * we've created a simple and intuitive interface to download and render data from [publicly available](usage/public.md) datasets like the Allen Mouse Connectome and Janelia's Mouse Light projects.
-* we've built [a ton of functionality](usage/user.md) into `brainrender` to ensure that we can cover all of your visualization needs \(e.g. see these [images](overview/gallery.md) and [examples](overview/examples.md)\). If we missed something or you'd like to see a new feature added, get in touch on [github](https://github.com/BrancoLab/BrainRender)!
+* we've built [a ton of functionality](usage/user.md) into `brainrender` to ensure that we can cover all of your visualization needs \(e.g. see these [images](overview/gallery/) and [examples](overview/examples.md)\). If we missed something or you'd like to see a new feature added, get in touch on [github](https://github.com/BrancoLab/BrainRender)!
 * we're using [`vedo`](https://github.com/marcomusy/vedo), a powerful vtk-based rendering package in python. `vedo`'s flexibility ensures that you can render in `brainrender` any 3d design you can put into a `.obj` or `.stl` file. It's therefore easier than ever to add your custom experimental implant to the renderings. 
 
 

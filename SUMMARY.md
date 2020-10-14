@@ -4,7 +4,8 @@
 
 ## Overview
 
-* [Gallery](overview/gallery.md)
+* [Gallery](overview/gallery/README.md)
+  * [User Cases](overview/gallery/user-cases.md)
 * [Code examples](overview/examples.md)
 
 ## Installation

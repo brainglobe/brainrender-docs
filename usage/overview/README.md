@@ -29,7 +29,7 @@ the workflow will vary slightly between the two scenarios. Read below for more d
 {% hint style="success" %}
 **Graphical User Interface**
 
-While `brainrender` doesn't come with a GUI, [one is being developed by BrainGlobe](https://github.com/brainglobe/bg-brainrender-gui). If you follow the link you will find instructions on how to install and use [brainglobe](https://docs.brainglobe.info/)'s brainrender GUI for creating a scene and adding elements to it. 
+While `brainrender` doesn't come with a GUI, [one is being developed by BrainGlobe](https://docs.brainglobe.info/bg-brainrender-gui/bg-brainrender-gui). If you follow the link you will find instructions on how to install and use [brainglobe](https://docs.brainglobe.info/)'s brainrender GUI for creating a scene and adding elements to it. 
 {% endhint %}
 
 ### You have the data
