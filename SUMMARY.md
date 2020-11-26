@@ -14,6 +14,7 @@
   * [Working with cameras](usage/scene-1/working-with-cameras.md)
 * [Using Notebooks](usage/using-notebooks.md)
 * [Videos, animations and exporting to html](usage/videos-animations-and-exporting-to-html.md)
+* [Brainrender GUI](usage/brainrender-gui.md)
 
 ## Info
 
