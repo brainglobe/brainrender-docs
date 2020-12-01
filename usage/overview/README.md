@@ -2,7 +2,7 @@
 description: A brief overview of brainrender's code structure
 ---
 
-# Overview
+# Introduction
 
 {% hint style="danger" %}
 This documentation is for the **new brainrender 2.0**!

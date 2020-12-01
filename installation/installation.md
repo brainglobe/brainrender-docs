@@ -36,13 +36,3 @@ If you want the most recent version of `brainrender`'s code, perhaps to help dev
 pip install -U git+https://github.com/BrancoLab/BrainRender.git
 ```
 
-### Testing installation
-
-To quickly check that everything worked for your installation, try creating a `brainrender` scene directly from the terminal.
-
-```text
-  brainrender TH STR -c
-```
-
-This will show a scene based on the `allen mouse atlas` showing the Thalamus and the Striatum.
-

@@ -4,11 +4,12 @@
 
 ## Installation
 
+* [Installing brainrender](installation/installation.md)
+
 ## Usage
 
-* [Overview](usage/overview/README.md)
+* [Introduction](usage/overview/README.md)
   * [V1 -&gt; V2](usage/overview/v1-greater-than-v2.md)
-* [Installing brainrender](usage/installation.md)
 * [Actors](usage/actors.md)
 * [Scene](usage/scene-1/README.md)
   * [Working with cameras](usage/scene-1/working-with-cameras.md)
