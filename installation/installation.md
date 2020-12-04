@@ -28,6 +28,8 @@ You might get some error messages reporting conflicting version requirements for
 Note that some of `brainrender`'s more rarely used features may require the installation of additional packages. 
 {% endhint %}
 
+Once you have installed brainrender, dive right in with this [getting started example notebook!](https://github.com/brainglobe/brainrender/blob/master/getting_started.ipynb)
+
 ## Advanced installation
 
 If you want the most recent version of `brainrender`'s code, perhaps to help developing it, you can either clone/fork the [github repository](https://github.com/BrancoLab/BrainRender) or you can get it directly from GitHub with:
