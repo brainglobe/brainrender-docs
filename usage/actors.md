@@ -18,7 +18,7 @@ In all cases an `actor` instance can be created by passing the data to be render
 
 #### Visualizing other types of data
 
-While the provided `Actor` classes should support the vast majority of users' needs, occasionally you might need to render an unsupported type of data. This can be done very easily, first create a `Mesh` using [`vedo`](https://github.com/marcomusy/vedo), then use this mesh to create an `actor` by passing the mesh directly to `brainrender.actor.Actor`. 
+While the provided `Actor` classes should support the vast majority of users' needs, occasionally you might need to render an unsupported type of data: read [here](using-your-data.md) to learn how. 
 
 
 
