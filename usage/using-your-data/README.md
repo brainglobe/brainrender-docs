@@ -33,11 +33,22 @@ Neuron morphologies are generally saved as `.swc` files. Brainrender's `Neuron` 
 
 ### Loading the data
 
-Given the popularity of python for scientific research, there are tools to load almost all data formats. These include numpy to load `.npy` files,  `tiffiles` for `.tiff` etc. Brainglobe provides a general purpuse software tool for loading and saving image data:  [imio](https://github.com/brainglobe/imio). You can use imio to load most types of data:
+Given the popularity of python for scientific research, there are tools to load almost all data formats. These include numpy to load `.npy` files,  `tiffiles` for `.tiff` etc. Brainglobe provides a general purpuse software tool for loading and saving image data:  [imio](https://github.com/brainglobe/imio). You can use imio to load most types of data \(e.g.  `.npy`, `.tiff`, `.nifti` etc\) :
 
 ```python
 from imio import load
 load.load_any('mydata.tif')
+```
+
+{% hint style="success" %}
+If your data are saved as a `.npy` file,  brainrender's Volume actor can load the file directly:
+{% endhint %}
+
+```python
+from brainrender.actors import Volume
+import numpy as np
+vol = Volume(np.load('data.npy')) #  this will work
+vol = Volume('data.npy')  # this will work too :)
 ```
 
 ### volume -&gt; surface
@@ -56,6 +67,15 @@ scene.add(mesh)
 ```
 
 Vedo provides many more methods to go from volume to mesh and vice versa: check [its awesome documentation ](https://vedo.embl.es)for more details.
+
+{% hint style="info" %}
+Brainrender's Volume actor class has access to all methods of Vedo's Volume class, so this would work too:
+{% endhint %}
+
+```python
+from brainrender.actors import Volume
+mesh = Volume('data.npy').isosurface()
+```
 
 You can also render your data directly as a brainrender `Volume` class: 
 
