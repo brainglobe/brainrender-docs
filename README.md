@@ -1,8 +1,6 @@
----
-description: A brief overview of brainrender`s functionality
----
-
 # Introduction
+
+**This repository is archived. Documentation is now hosted at https://github.com/brainglobe/website**
 
 ![](.gitbook/assets/aba.png)
 
