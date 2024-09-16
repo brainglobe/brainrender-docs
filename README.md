@@ -1,6 +1,5 @@
-# Introduction
-
-**This repository is archived. Documentation is now hosted at https://github.com/brainglobe/website**
+# **This repository is archived, and this information is no longer current. The documentation repository is now at https://github.com/brainglobe/website**
+## brainrender documentation can be found at the [website](https://brainglobe.info/documentation/brainrender/index.html) and examples in the [GitHub repository](https://github.com/brainglobe/brainrender/tree/main/examples).
 
 ![](.gitbook/assets/aba.png)
 
